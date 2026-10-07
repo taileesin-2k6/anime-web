@@ -1,0 +1,1632 @@
+{
+  "arose": {
+    "root": "arise",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "arisen": {
+    "root": "arise",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "awoke": {
+    "root": "awake",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "awoken": {
+    "root": "awake",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "was": {
+    "root": "be",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "been": {
+    "root": "be",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "were": {
+    "root": "be",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "bore": {
+    "root": "bear",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "born": {
+    "root": "bear",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "borne": {
+    "root": "bear",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "beaten": {
+    "root": "beat",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "became": {
+    "root": "become",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "befell": {
+    "root": "befall",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "befallen": {
+    "root": "befall",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "begot": {
+    "root": "beget",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "begotten": {
+    "root": "beget",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "began": {
+    "root": "begin",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "begun": {
+    "root": "begin",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "beheld": {
+    "root": "behold",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "bent": {
+    "root": "bend",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "bereft": {
+    "root": "bereave",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "besought": {
+    "root": "beseech",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "bade": {
+    "root": "bid",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "bidden": {
+    "root": "bid",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "bound": {
+    "root": "bind",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "bit": {
+    "root": "bite",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "bitten": {
+    "root": "bite",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "bled": {
+    "root": "bleed",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "blew": {
+    "root": "blow",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "blown": {
+    "root": "blow",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "broke": {
+    "root": "break",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "broken": {
+    "root": "break",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "bred": {
+    "root": "breed",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "brought": {
+    "root": "bring",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "built": {
+    "root": "build",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "burnt": {
+    "root": "burn",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "bought": {
+    "root": "buy",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "caught": {
+    "root": "catch",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "chose": {
+    "root": "choose",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "chosen": {
+    "root": "choose",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "clung": {
+    "root": "cling",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "clad": {
+    "root": "clothe",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "came": {
+    "root": "come",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "crept": {
+    "root": "creep",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "dealt": {
+    "root": "deal",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "dug": {
+    "root": "dig",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "dove": {
+    "root": "dive",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "dived": {
+    "root": "dive",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "did": {
+    "root": "do",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "done": {
+    "root": "do",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "drew": {
+    "root": "draw",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "drawn": {
+    "root": "draw",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "dreamt": {
+    "root": "dream",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "drank": {
+    "root": "drink",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "drunk": {
+    "root": "drink",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "drove": {
+    "root": "drive",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "driven": {
+    "root": "drive",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "dwelt": {
+    "root": "dwell",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "ate": {
+    "root": "eat",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "eaten": {
+    "root": "eat",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "fell": {
+    "root": "fall",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "fallen": {
+    "root": "fall",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "fed": {
+    "root": "feed",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "felt": {
+    "root": "feel",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "fought": {
+    "root": "fight",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "found": {
+    "root": "find",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "fled": {
+    "root": "flee",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "flung": {
+    "root": "fling",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "flew": {
+    "root": "fly",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "flown": {
+    "root": "fly",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "forbade": {
+    "root": "forbid",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "forbidden": {
+    "root": "forbid",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "foresaw": {
+    "root": "foresee",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "foreseen": {
+    "root": "foresee",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "foretold": {
+    "root": "foretell",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "forgot": {
+    "root": "forget",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "forgotten": {
+    "root": "forget",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "forgave": {
+    "root": "forgive",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "forgiven": {
+    "root": "forgive",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "forsook": {
+    "root": "forsake",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "forsaken": {
+    "root": "forsake",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "froze": {
+    "root": "freeze",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "frozen": {
+    "root": "freeze",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "got": {
+    "root": "get",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "gotten": {
+    "root": "get",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "gave": {
+    "root": "give",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "given": {
+    "root": "give",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "went": {
+    "root": "go",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "gone": {
+    "root": "go",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "ground": {
+    "root": "grind",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "grew": {
+    "root": "grow",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "grown": {
+    "root": "grow",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "hung": {
+    "root": "hang",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "had": {
+    "root": "have",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "heard": {
+    "root": "hear",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "hid": {
+    "root": "hide",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "hidden": {
+    "root": "hide",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "held": {
+    "root": "hold",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "kept": {
+    "root": "keep",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "knelt": {
+    "root": "kneel",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "knew": {
+    "root": "know",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "known": {
+    "root": "know",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "laid": {
+    "root": "lay",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "led": {
+    "root": "lead",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "leant": {
+    "root": "lean",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "leapt": {
+    "root": "leap",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "learnt": {
+    "root": "learn",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "left": {
+    "root": "leave",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "lent": {
+    "root": "lend",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "lay": {
+    "root": "lie",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "lain": {
+    "root": "lie",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "lit": {
+    "root": "light",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "lost": {
+    "root": "lose",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "made": {
+    "root": "make",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "meant": {
+    "root": "mean",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "met": {
+    "root": "meet",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "melted": {
+    "root": "melt",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "molten": {
+    "root": "melt",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "misled": {
+    "root": "mislead",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "mistook": {
+    "root": "mistake",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "mistaken": {
+    "root": "mistake",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "mowed": {
+    "root": "mow",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "mown": {
+    "root": "mow",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "outdid": {
+    "root": "outdo",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "outdone": {
+    "root": "outdo",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "overcame": {
+    "root": "overcome",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "overdid": {
+    "root": "overdo",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "overdone": {
+    "root": "overdo",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "overheard": {
+    "root": "overhear",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "overtook": {
+    "root": "overtake",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "overtaken": {
+    "root": "overtake",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "paid": {
+    "root": "pay",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "pled": {
+    "root": "plead",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "proved": {
+    "root": "prove",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "proven": {
+    "root": "prove",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "rebuilt": {
+    "root": "rebuild",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "redid": {
+    "root": "redo",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "redone": {
+    "root": "redo",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "remade": {
+    "root": "remake",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "repaid": {
+    "root": "repay",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "reran": {
+    "root": "rerun",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "retold": {
+    "root": "retell",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "rewrote": {
+    "root": "rewrite",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "rewritten": {
+    "root": "rewrite",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "rode": {
+    "root": "ride",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "ridden": {
+    "root": "ride",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "rang": {
+    "root": "ring",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "rung": {
+    "root": "ring",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "rose": {
+    "root": "rise",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "risen": {
+    "root": "rise",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "ran": {
+    "root": "run",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "sawed": {
+    "root": "saw",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "sawn": {
+    "root": "saw",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "said": {
+    "root": "say",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "saw": {
+    "root": "see",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "seen": {
+    "root": "see",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "sought": {
+    "root": "seek",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "sold": {
+    "root": "sell",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "sent": {
+    "root": "send",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "sewed": {
+    "root": "sew",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "sewn": {
+    "root": "sew",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "shook": {
+    "root": "shake",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "shaken": {
+    "root": "shake",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "shaved": {
+    "root": "shave",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "shaven": {
+    "root": "shave",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "shore": {
+    "root": "shear",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "shorn": {
+    "root": "shear",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "shone": {
+    "root": "shine",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "shot": {
+    "root": "shoot",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "showed": {
+    "root": "show",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "shown": {
+    "root": "show",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "shrank": {
+    "root": "shrink",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "shrunk": {
+    "root": "shrink",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "sang": {
+    "root": "sing",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "sung": {
+    "root": "sing",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "sank": {
+    "root": "sink",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "sunk": {
+    "root": "sink",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "sat": {
+    "root": "sit",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "slew": {
+    "root": "slay",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "slain": {
+    "root": "slay",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "slept": {
+    "root": "sleep",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "slid": {
+    "root": "slide",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "slung": {
+    "root": "sling",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "smelt": {
+    "root": "smell",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "sowed": {
+    "root": "sow",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "sown": {
+    "root": "sow",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "spoke": {
+    "root": "speak",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "spoken": {
+    "root": "speak",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "sped": {
+    "root": "speed",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "spelt": {
+    "root": "spell",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "spent": {
+    "root": "spend",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "spilt": {
+    "root": "spill",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "spun": {
+    "root": "spin",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "spat": {
+    "root": "spit",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "spoilt": {
+    "root": "spoil",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "sprang": {
+    "root": "spring",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "sprung": {
+    "root": "spring",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "stood": {
+    "root": "stand",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "stole": {
+    "root": "steal",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "stolen": {
+    "root": "steal",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "stuck": {
+    "root": "stick",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "stung": {
+    "root": "sting",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "stank": {
+    "root": "stink",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "stunk": {
+    "root": "stink",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "strode": {
+    "root": "stride",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "stridden": {
+    "root": "stride",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "struck": {
+    "root": "strike",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "strung": {
+    "root": "string",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "strove": {
+    "root": "strive",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "striven": {
+    "root": "strive",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "swore": {
+    "root": "swear",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "sworn": {
+    "root": "swear",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "swept": {
+    "root": "sweep",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "swelled": {
+    "root": "swell",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "swollen": {
+    "root": "swell",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "swam": {
+    "root": "swim",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "swum": {
+    "root": "swim",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "swung": {
+    "root": "swing",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "took": {
+    "root": "take",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "taken": {
+    "root": "take",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "taught": {
+    "root": "teach",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "tore": {
+    "root": "tear",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "torn": {
+    "root": "tear",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "told": {
+    "root": "tell",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "thought": {
+    "root": "think",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "throve": {
+    "root": "thrive",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "thriven": {
+    "root": "thrive",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "threw": {
+    "root": "throw",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "thrown": {
+    "root": "throw",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "trod": {
+    "root": "tread",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "trodden": {
+    "root": "tread",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "underwent": {
+    "root": "undergo",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "undergone": {
+    "root": "undergo",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "understood": {
+    "root": "understand",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "undertook": {
+    "root": "undertake",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "undertaken": {
+    "root": "undertake",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "undid": {
+    "root": "undo",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "undone": {
+    "root": "undo",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "unwound": {
+    "root": "unwind",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "upheld": {
+    "root": "uphold",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "woke": {
+    "root": "wake",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "woken": {
+    "root": "wake",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "wore": {
+    "root": "wear",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "worn": {
+    "root": "wear",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "wove": {
+    "root": "weave",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "woven": {
+    "root": "weave",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "wept": {
+    "root": "weep",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "won": {
+    "root": "win",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "wound": {
+    "root": "wind",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "withdrew": {
+    "root": "withdraw",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "withdrawn": {
+    "root": "withdraw",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "withheld": {
+    "root": "withhold",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "withstood": {
+    "root": "withstand",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "wrung": {
+    "root": "wring",
+    "type": "past_or_participle",
+    "label": "Dạng Quá khứ (V2) & Phân từ (V3) của"
+  },
+  "wrote": {
+    "root": "write",
+    "type": "past_simple",
+    "label": "Quá khứ đơn (V2) của"
+  },
+  "written": {
+    "root": "write",
+    "type": "past_participle",
+    "label": "Quá khứ phân từ (V3) của"
+  },
+  "does": {
+    "root": "do",
+    "type": "3rd_singular",
+    "label": "Ngôi thứ 3 số ít của"
+  },
+  "goes": {
+    "root": "go",
+    "type": "3rd_singular",
+    "label": "Ngôi thứ 3 số ít của"
+  },
+  "has": {
+    "root": "have",
+    "type": "3rd_singular",
+    "label": "Ngôi thứ 3 số ít của"
+  },
+  "is": {
+    "root": "be",
+    "type": "3rd_singular",
+    "label": "Dạng số ít thì hiện tại của"
+  },
+  "are": {
+    "root": "be",
+    "type": "plural",
+    "label": "Dạng số nhiều thì hiện tại của"
+  },
+  "am": {
+    "root": "be",
+    "type": "1st_singular",
+    "label": "Dạng ngôi thứ nhất của"
+  },
+  "children": {
+    "root": "child",
+    "type": "plural",
+    "label": "Dạng số nhiều của"
+  },
+  "men": {
+    "root": "man",
+    "type": "plural",
+    "label": "Dạng số nhiều của"
+  },
+  "women": {
+    "root": "woman",
+    "type": "plural",
+    "label": "Dạng số nhiều của"
+  },
+  "feet": {
+    "root": "foot",
+    "type": "plural",
+    "label": "Dạng số nhiều của"
+  },
+  "teeth": {
+    "root": "tooth",
+    "type": "plural",
+    "label": "Dạng số nhiều của"
+  },
+  "geese": {
+    "root": "goose",
+    "type": "plural",
+    "label": "Dạng số nhiều của"
+  },
+  "mice": {
+    "root": "mouse",
+    "type": "plural",
+    "label": "Dạng số nhiều của"
+  },
+  "oxen": {
+    "root": "ox",
+    "type": "plural",
+    "label": "Dạng số nhiều của"
+  },
+  "people": {
+    "root": "person",
+    "type": "plural",
+    "label": "Dạng số nhiều của"
+  },
+  "criteria": {
+    "root": "criterion",
+    "type": "plural",
+    "label": "Dạng số nhiều của"
+  },
+  "phenomena": {
+    "root": "phenomenon",
+    "type": "plural",
+    "label": "Dạng số nhiều của"
+  },
+  "data": {
+    "root": "datum",
+    "type": "plural",
+    "label": "Dạng số nhiều của"
+  },
+  "analyses": {
+    "root": "analysis",
+    "type": "plural",
+    "label": "Dạng số nhiều của"
+  },
+  "hypotheses": {
+    "root": "hypothesis",
+    "type": "plural",
+    "label": "Dạng số nhiều của"
+  },
+  "crises": {
+    "root": "crisis",
+    "type": "plural",
+    "label": "Dạng số nhiều của"
+  },
+  "theses": {
+    "root": "thesis",
+    "type": "plural",
+    "label": "Dạng số nhiều của"
+  },
+  "bases": {
+    "root": "basis",
+    "type": "plural",
+    "label": "Dạng số nhiều của"
+  },
+  "diagnoses": {
+    "root": "diagnosis",
+    "type": "plural",
+    "label": "Dạng số nhiều của"
+  },
+  "ellipses": {
+    "root": "ellipsis",
+    "type": "plural",
+    "label": "Dạng số nhiều của"
+  },
+  "oases": {
+    "root": "oasis",
+    "type": "plural",
+    "label": "Dạng số nhiều của"
+  },
+  "parentheses": {
+    "root": "parenthesis",
+    "type": "plural",
+    "label": "Dạng số nhiều của"
+  },
+  "synopses": {
+    "root": "synopsis",
+    "type": "plural",
+    "label": "Dạng số nhiều của"
+  },
+  "indices": {
+    "root": "index",
+    "type": "plural",
+    "label": "Dạng số nhiều của"
+  },
+  "appendices": {
+    "root": "appendix",
+    "type": "plural",
+    "label": "Dạng số nhiều của"
+  },
+  "matrices": {
+    "root": "matrix",
+    "type": "plural",
+    "label": "Dạng số nhiều của"
+  },
+  "vortices": {
+    "root": "vortex",
+    "type": "plural",
+    "label": "Dạng số nhiều của"
+  },
+  "fungi": {
+    "root": "fungus",
+    "type": "plural",
+    "label": "Dạng số nhiều của"
+  },
+  "nuclei": {
+    "root": "nucleus",
+    "type": "plural",
+    "label": "Dạng số nhiều của"
+  },
+  "radii": {
+    "root": "radius",
+    "type": "plural",
+    "label": "Dạng số nhiều của"
+  },
+  "stimuli": {
+    "root": "stimulus",
+    "type": "plural",
+    "label": "Dạng số nhiều của"
+  },
+  "alumni": {
+    "root": "alumnus",
+    "type": "plural",
+    "label": "Dạng số nhiều của"
+  },
+  "bacilli": {
+    "root": "bacillus",
+    "type": "plural",
+    "label": "Dạng số nhiều của"
+  },
+  "cacti": {
+    "root": "cactus",
+    "type": "plural",
+    "label": "Dạng số nhiều của"
+  },
+  "foci": {
+    "root": "focus",
+    "type": "plural",
+    "label": "Dạng số nhiều của"
+  },
+  "larvae": {
+    "root": "larva",
+    "type": "plural",
+    "label": "Dạng số nhiều của"
+  },
+  "vertebrae": {
+    "root": "vertebra",
+    "type": "plural",
+    "label": "Dạng số nhiều của"
+  },
+  "formulae": {
+    "root": "formula",
+    "type": "plural",
+    "label": "Dạng số nhiều của"
+  },
+  "antennae": {
+    "root": "antenna",
+    "type": "plural",
+    "label": "Dạng số nhiều của"
+  },
+  "halves": {
+    "root": "half",
+    "type": "plural",
+    "label": "Dạng số nhiều của"
+  },
+  "knives": {
+    "root": "knife",
+    "type": "plural",
+    "label": "Dạng số nhiều của"
+  },
+  "lives": {
+    "root": "life",
+    "type": "plural",
+    "label": "Dạng số nhiều của"
+  },
+  "wives": {
+    "root": "wife",
+    "type": "plural",
+    "label": "Dạng số nhiều của"
+  },
+  "calves": {
+    "root": "calf",
+    "type": "plural",
+    "label": "Dạng số nhiều của"
+  },
+  "leaves": {
+    "root": "leaf",
+    "type": "plural",
+    "label": "Dạng số nhiều của"
+  },
+  "loaves": {
+    "root": "loaf",
+    "type": "plural",
+    "label": "Dạng số nhiều của"
+  },
+  "sheaves": {
+    "root": "sheaf",
+    "type": "plural",
+    "label": "Dạng số nhiều của"
+  },
+  "thieves": {
+    "root": "thief",
+    "type": "plural",
+    "label": "Dạng số nhiều của"
+  },
+  "wolves": {
+    "root": "wolf",
+    "type": "plural",
+    "label": "Dạng số nhiều của"
+  },
+  "scarves": {
+    "root": "scarf",
+    "type": "plural",
+    "label": "Dạng số nhiều của"
+  },
+  "shelves": {
+    "root": "shelf",
+    "type": "plural",
+    "label": "Dạng số nhiều của"
+  },
+  "better": {
+    "root": "good",
+    "type": "comparative_or_superlative",
+    "label": "Dạng so sánh hơn của"
+  },
+  "best": {
+    "root": "good",
+    "type": "comparative_or_superlative",
+    "label": "Dạng so sánh nhất của"
+  },
+  "worse": {
+    "root": "bad",
+    "type": "comparative_or_superlative",
+    "label": "Dạng so sánh hơn của"
+  },
+  "worst": {
+    "root": "bad",
+    "type": "comparative_or_superlative",
+    "label": "Dạng so sánh nhất của"
+  },
+  "farther": {
+    "root": "far",
+    "type": "comparative_or_superlative",
+    "label": "Dạng so sánh hơn của"
+  },
+  "farthest": {
+    "root": "far",
+    "type": "comparative_or_superlative",
+    "label": "Dạng so sánh nhất của"
+  },
+  "further": {
+    "root": "far",
+    "type": "comparative_or_superlative",
+    "label": "Dạng so sánh hơn của"
+  },
+  "furthest": {
+    "root": "far",
+    "type": "comparative_or_superlative",
+    "label": "Dạng so sánh nhất của"
+  },
+  "more": {
+    "root": "much / many",
+    "type": "comparative_or_superlative",
+    "label": "Dạng so sánh hơn của"
+  },
+  "most": {
+    "root": "much / many",
+    "type": "comparative_or_superlative",
+    "label": "Dạng so sánh nhất của"
+  },
+  "less": {
+    "root": "little",
+    "type": "comparative_or_superlative",
+    "label": "Dạng so sánh hơn của"
+  },
+  "least": {
+    "root": "little",
+    "type": "comparative_or_superlative",
+    "label": "Dạng so sánh nhất của"
+  },
+  "elder": {
+    "root": "old",
+    "type": "comparative_or_superlative",
+    "label": "Dạng so sánh hơn của"
+  },
+  "eldest": {
+    "root": "old",
+    "type": "comparative_or_superlative",
+    "label": "Dạng so sánh nhất của"
+  }
+}

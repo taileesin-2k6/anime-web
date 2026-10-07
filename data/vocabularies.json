@@ -1,0 +1,44 @@
+[
+  {
+    "id": "voc_1791048464168_5odi",
+    "userEmail": "lethanhtaicute@gmail.com",
+    "word": "calamity",
+    "meaning": "Tai hoạ, tai ương; thiên tai.",
+    "ipa": "/kəˈlæməti/",
+    "pos": "Danh từ",
+    "phraseType": "single",
+    "contextSentence": "It's a calamity that can  destroy a whole nation.",
+    "animeTitle": "Kusuriya no Hitorigoto 3rd Season",
+    "animeSlug": "the-apothecary-diaries-season-3",
+    "episodeNumber": 1,
+    "createdAt": "2026-10-03T17:27:44.168Z"
+  },
+  {
+    "id": "voc_1791047763739_rcpu",
+    "userEmail": "lethanhtaicute@gmail.com",
+    "word": "incense",
+    "meaning": "Nhang, hương, trầm.",
+    "ipa": "/ˈɪnsens/",
+    "pos": "Danh từ / Động từ",
+    "phraseType": "single",
+    "contextSentence": "I just remembered. Go to the market  and buy some incense for me.",
+    "animeTitle": "Kusuriya no Hitorigoto 3rd Season",
+    "animeSlug": "the-apothecary-diaries-season-3",
+    "episodeNumber": 1,
+    "createdAt": "2026-10-03T17:16:03.739Z"
+  },
+  {
+    "id": "voc_1791005253273_ewev",
+    "userEmail": "lethanhtaicute2009@gmail.com",
+    "word": "out of the way",
+    "meaning": "1. Lit. not blocking or impeding the way. (*Typically: get ~; get someone or something ~; move someone or something ~.) _ Please get out of my way. _ Would you please get your foot out of the way? 2. Fig. not along the way; not included in the propos",
+    "ipa": "",
+    "pos": "",
+    "phraseType": "idiom",
+    "contextSentence": "Hey! What are you doing  blocking traffic?! Out of the way!",
+    "animeTitle": "Kusuriya no Hitorigoto 3rd Season",
+    "animeSlug": "the-apothecary-diaries-season-3",
+    "episodeNumber": 1,
+    "createdAt": "2026-10-03T05:27:33.273Z"
+  }
+]
