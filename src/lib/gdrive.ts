@@ -40,7 +40,7 @@ export function formatVideoUrl(url: string): {
   if (gdriveId) {
     return {
       embedUrl: `https://drive.google.com/file/d/${gdriveId}/preview`,
-      directUrl: `/api/stream?gdriveId=${gdriveId}`,
+      directUrl: `https://drive.usercontent.google.com/download?id=${gdriveId}&export=download&confirm=t`,
       gdriveId,
       type: 'gdrive',
     };
