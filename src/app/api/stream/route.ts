@@ -45,12 +45,59 @@ function resolveMediaInfo(request: NextRequest): { targetFilename: string; gdriv
   return { targetFilename, gdriveId };
 }
 
+export async function OPTIONS() {
+  return new NextResponse(null, {
+    status: 204,
+    headers: {
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Methods': 'GET, HEAD, OPTIONS',
+      'Access-Control-Allow-Headers': 'Range, Accept, Content-Type',
+      'Access-Control-Max-Age': '86400',
+    },
+  });
+}
+
 export async function HEAD(request: NextRequest) {
   const { targetFilename, gdriveId } = resolveMediaInfo(request);
 
   if (gdriveId) {
     const gdriveDirectUrl = `https://drive.usercontent.google.com/download?id=${gdriveId}&export=download&confirm=t`;
-    return NextResponse.redirect(gdriveDirectUrl, { status: 307 });
+    try {
+      const controller = new AbortController();
+      const timeout = setTimeout(() => controller.abort(), 6000);
+      const res = await fetch(gdriveDirectUrl, {
+        method: 'HEAD',
+        headers: {
+          'User-Agent':
+            'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        },
+        signal: controller.signal,
+      });
+      clearTimeout(timeout);
+
+      const responseHeaders = new Headers();
+      responseHeaders.set('Content-Type', 'video/mp4');
+      responseHeaders.set('Accept-Ranges', 'bytes');
+      responseHeaders.set('Access-Control-Allow-Origin', '*');
+      responseHeaders.set('Access-Control-Allow-Methods', 'GET, HEAD, OPTIONS');
+      responseHeaders.set('Access-Control-Allow-Headers', 'Range, Accept, Content-Type');
+      const cl = res.headers.get('content-length');
+      if (cl) responseHeaders.set('Content-Length', cl);
+
+      return new NextResponse(null, {
+        status: 200,
+        headers: responseHeaders,
+      });
+    } catch {
+      return new NextResponse(null, {
+        status: 200,
+        headers: {
+          'Content-Type': 'video/mp4',
+          'Accept-Ranges': 'bytes',
+          'Access-Control-Allow-Origin': '*',
+        },
+      });
+    }
   }
 
   if (!targetFilename) {
@@ -86,10 +133,53 @@ export async function HEAD(request: NextRequest) {
 export async function GET(request: NextRequest) {
   const { targetFilename, gdriveId } = resolveMediaInfo(request);
 
-  // 1. If Google Drive file ID is available, redirect to Google Drive direct stream
+  // 1. If Google Drive file ID is available, proxy video stream from Google Drive
   if (gdriveId) {
     const gdriveDirectUrl = `https://drive.usercontent.google.com/download?id=${gdriveId}&export=download&confirm=t`;
-    return NextResponse.redirect(gdriveDirectUrl, { status: 307 });
+    try {
+      const range = request.headers.get('range');
+      const fetchHeaders: Record<string, string> = {
+        'User-Agent':
+          'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+      };
+      if (range) {
+        fetchHeaders['Range'] = range;
+      }
+
+      const res = await fetch(gdriveDirectUrl, {
+        headers: fetchHeaders,
+      });
+
+      if (res.ok || res.status === 206) {
+        const responseHeaders = new Headers();
+        responseHeaders.set('Content-Type', 'video/mp4');
+        responseHeaders.set('Accept-Ranges', 'bytes');
+        responseHeaders.set('Access-Control-Allow-Origin', '*');
+        responseHeaders.set('Access-Control-Allow-Methods', 'GET, HEAD, OPTIONS');
+        responseHeaders.set('Access-Control-Allow-Headers', 'Range, Accept, Content-Type');
+
+        const cl = res.headers.get('content-length');
+        if (cl) responseHeaders.set('Content-Length', cl);
+
+        const cr = res.headers.get('content-range');
+        if (cr) responseHeaders.set('Content-Range', cr);
+
+        const etag = res.headers.get('etag');
+        if (etag) responseHeaders.set('ETag', etag);
+
+        const lastMod = res.headers.get('last-modified');
+        if (lastMod) responseHeaders.set('Last-Modified', lastMod);
+
+        responseHeaders.set('Cache-Control', 'public, max-age=3600');
+
+        return new NextResponse(res.body, {
+          status: res.status,
+          headers: responseHeaders,
+        });
+      }
+    } catch (err: any) {
+      console.warn('Error fetching stream from Google Drive:', err);
+    }
   }
 
   // 2. Try rclone if targetFilename is given

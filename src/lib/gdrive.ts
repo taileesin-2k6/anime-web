@@ -17,8 +17,8 @@ export function extractGDriveFileId(inputUrl: string): string | null {
     return match1[1];
   }
 
-  // https://drive.google.com/open?id=FILE_ID or https://drive.google.com/uc?id=FILE_ID
-  const match2 = trimmed.match(/[?&]id=([a-zA-Z0-9_-]+)/);
+  // https://drive.google.com/open?id=FILE_ID or https://drive.google.com/uc?id=FILE_ID or ?gdriveId=FILE_ID
+  const match2 = trimmed.match(/[?&](?:id|gdriveId)=([a-zA-Z0-9_-]+)/);
   if (match2 && match2[1]) {
     return match2[1];
   }
@@ -40,7 +40,7 @@ export function formatVideoUrl(url: string): {
   if (gdriveId) {
     return {
       embedUrl: `https://drive.google.com/file/d/${gdriveId}/preview`,
-      directUrl: `https://drive.usercontent.google.com/download?id=${gdriveId}&export=download&confirm=t`,
+      directUrl: `/api/stream?gdriveId=${gdriveId}`,
       gdriveId,
       type: 'gdrive',
     };
