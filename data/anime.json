@@ -105,10 +105,20 @@
         "createdAt": "2026-10-03T06:37:35.467484Z",
         "filename": "tokyo_ep01_bilingual.mp4",
         "gdriveId": "1vZIIZ_-Wn4KtUGa9vH1HD-1rrovnuCvX"
+      },
+      {
+        "id": "ep-2-bilingual",
+        "episodeNumber": 2,
+        "title": "Tập 2 : Be Left Behind The Times",
+        "videoUrl": "https://drive.google.com/open?id=1-EZfyPn8z-HJ0QEZ5iQwjqYMrXkjIIlU",
+        "duration": "41:48",
+        "createdAt": "2026-10-14T15:36:44.236145Z",
+        "filename": "tokyo_ep02_bilingual.mp4",
+        "gdriveId": "1-EZfyPn8z-HJ0QEZ5iQwjqYMrXkjIIlU"
       }
     ],
     "createdAt": "2026-10-03T06:19:50.791774Z",
-    "updatedAt": "2026-10-03T06:37:35.467713Z"
+    "updatedAt": "2026-10-14T15:36:44.236457Z"
   },
   {
     "id": "black-clover-season-2",
