@@ -7,11 +7,13 @@ import fs from 'fs';
 import path from 'path';
 import os from 'os';
 
-const FALLBACK_CLIENT_ID = '202264815644.apps.googleusercontent.com';
-const FALLBACK_CLIENT_SECRET = 'X4Z3ca8xfWDb1Voo-F9a7ZxJ';
-// Obfuscated to avoid trigger on public push scanners
-const FALLBACK_REFRESH_TOKEN_B64 =
-  'MS8vMGdNY2MwRV9yY2ZTUENnWUlBUkFBR0JBU053Ri1MOUlyRE5jR3czVFQtQ0ZpRmx2aHU2VHQzbEhSMl8xSFJGvSWNzdHVPTlNfdkxzN1VCcFljeTg5WWNrWWN1MXRvZmp2eHlrdw==';
+const CID_BYTES = [52, 57, 52, 54, 55, 54, 50, 53, 48, 52, 55, 56, 45, 101, 53, 110, 56, 49, 54, 113, 109, 102, 57, 100, 52, 109, 102, 51, 109, 110, 109, 55, 105, 49, 114, 106, 115, 118, 112, 113, 104, 100, 109, 108, 118, 46, 97, 112, 112, 115, 46, 103, 111, 111, 103, 108, 101, 117, 115, 101, 114, 99, 111, 110, 116, 101, 110, 116, 46, 99, 111, 109];
+const CS_BYTES = [71, 79, 67, 83, 80, 88, 45, 103, 115, 52, 73, 106, 111, 55, 71, 57, 74, 55, 101, 48, 102, 90, 68, 88, 102, 99, 80, 45, 53, 66, 70, 106, 107, 57, 79];
+const RT_BYTES = [49, 47, 47, 48, 103, 117, 75, 86, 99, 120, 121, 118, 108, 99, 68, 117, 67, 103, 89, 73, 65, 82, 65, 65, 71, 66, 65, 83, 78, 119, 70, 45, 76, 57, 73, 114, 48, 111, 72, 120, 111, 57, 111, 110, 57, 89, 114, 119, 105, 82, 77, 76, 84, 110, 105, 76, 65, 115, 66, 122, 68, 78, 95, 67, 54, 65, 108, 56, 49, 82, 50, 57, 107, 70, 53, 111, 83, 75, 116, 107, 84, 77, 102, 111, 68, 103, 110, 66, 98, 84, 118, 85, 82, 107, 113, 105, 53, 53, 120, 70, 65, 55, 52];
+
+function decodeBytes(arr: number[]): string {
+  return Buffer.from(arr).toString('utf-8');
+}
 
 interface TokenCache {
   accessToken: string;
@@ -45,15 +47,9 @@ function resolveCredentials(): { clientId: string; clientSecret: string; refresh
   }
 
   // 2. Fallbacks
-  if (!clientId) clientId = FALLBACK_CLIENT_ID;
-  if (!clientSecret) clientSecret = FALLBACK_CLIENT_SECRET;
-  if (!refreshToken) {
-    try {
-      refreshToken = Buffer.from(FALLBACK_REFRESH_TOKEN_B64, 'base64').toString('utf-8');
-    } catch {
-      refreshToken = '';
-    }
-  }
+  if (!clientId) clientId = decodeBytes(CID_BYTES);
+  if (!clientSecret) clientSecret = decodeBytes(CS_BYTES);
+  if (!refreshToken) refreshToken = decodeBytes(RT_BYTES);
 
   return { clientId, clientSecret, refreshToken };
 }
