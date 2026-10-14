@@ -149,10 +149,20 @@
         "createdAt": "2026-10-04T03:11:30.531890Z",
         "filename": "black_ep01_bilingual.mp4",
         "gdriveId": "12tZ6f3Q_NT7Cw7I2dFRtDTHx-pZxbgIC"
+      },
+      {
+        "id": "ep-2-bilingual",
+        "episodeNumber": 2,
+        "title": "Tập 2 : The Door to Hell",
+        "videoUrl": "https://drive.google.com/open?id=1aErWTVPRjKI-fvXN4Y8Pi2VLVAG_bx7o",
+        "duration": "37:24",
+        "createdAt": "2026-10-14T15:55:43.573311Z",
+        "filename": "black_ep02_bilingual.mp4",
+        "gdriveId": "1aErWTVPRjKI-fvXN4Y8Pi2VLVAG_bx7o"
       }
     ],
     "createdAt": "2026-10-04T02:48:19.921434Z",
-    "updatedAt": "2026-10-04T03:11:30.532059Z"
+    "updatedAt": "2026-10-14T15:55:43.573776Z"
   },
   {
     "id": "aoashi-season-2",
