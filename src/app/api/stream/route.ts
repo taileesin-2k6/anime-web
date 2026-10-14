@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
+import { getValidAccessToken } from '@/lib/gdrive-auth';
 
 export const dynamic = 'force-dynamic';
 
@@ -93,7 +94,50 @@ export async function HEAD(request: NextRequest) {
     }
   }
 
-  // 2. Fallback to Google Drive direct
+  // 2. Authenticated Google Drive API v3 probe (for Vercel Cloud or when Rclone is offline)
+  if (gdriveId) {
+    try {
+      const accessToken = await getValidAccessToken();
+      if (accessToken) {
+        const driveApiUrl = `https://www.googleapis.com/drive/v3/files/${gdriveId}?alt=media&supportsAllDrives=true`;
+        const controller = new AbortController();
+        const timeout = setTimeout(() => controller.abort(), 6000);
+        const res = await fetch(driveApiUrl, {
+          method: 'GET',
+          headers: {
+            Authorization: `Bearer ${accessToken}`,
+            Range: 'bytes=0-0',
+          },
+          signal: controller.signal,
+        });
+        clearTimeout(timeout);
+
+        if (res.ok || res.status === 206) {
+          const responseHeaders = new Headers();
+          responseHeaders.set('Content-Type', 'video/mp4');
+          responseHeaders.set('Accept-Ranges', 'bytes');
+          responseHeaders.set('Access-Control-Allow-Origin', '*');
+          responseHeaders.set('Access-Control-Allow-Methods', 'GET, HEAD, OPTIONS');
+          responseHeaders.set('Access-Control-Allow-Headers', 'Range, Accept, Content-Type');
+
+          const cr = res.headers.get('content-range');
+          if (cr) {
+            const total = cr.split('/')[1];
+            if (total) responseHeaders.set('Content-Length', total);
+          }
+
+          return new NextResponse(null, {
+            status: 200,
+            headers: responseHeaders,
+          });
+        }
+      }
+    } catch {
+      // Fallback
+    }
+  }
+
+  // 3. Fallback to Google Drive direct
   if (gdriveId) {
     const gdriveDirectUrl = `https://drive.usercontent.google.com/download?id=${gdriveId}&export=download&confirm=t`;
     try {
@@ -203,7 +247,65 @@ export async function GET(request: NextRequest) {
     }
   }
 
-  // 2. If Google Drive file ID is available, proxy video stream from Google Drive (Fallback for cloud deployment like Vercel)
+  // 2. Try Authenticated Google Drive API v3 (Used by Vercel Cloud or when local Rclone is offline)
+  if (gdriveId) {
+    try {
+      const accessToken = await getValidAccessToken();
+      if (accessToken) {
+        const driveApiUrl = `https://www.googleapis.com/drive/v3/files/${gdriveId}?alt=media&supportsAllDrives=true`;
+        const range = request.headers.get('range');
+        const apiHeaders: Record<string, string> = {
+          Authorization: `Bearer ${accessToken}`,
+        };
+        if (range) {
+          apiHeaders['Range'] = range;
+        }
+
+        const apiRes = await fetch(driveApiUrl, {
+          headers: apiHeaders,
+        });
+
+        const contentType = apiRes.headers.get('content-type') || '';
+        if ((apiRes.ok || apiRes.status === 206) && !contentType.includes('text/html') && !contentType.includes('json')) {
+          const responseHeaders = new Headers();
+          const passthroughHeaders = [
+            'content-type',
+            'content-length',
+            'content-range',
+            'accept-ranges',
+            'cache-control',
+            'last-modified',
+            'etag',
+          ];
+
+          apiRes.headers.forEach((val, key) => {
+            if (passthroughHeaders.includes(key.toLowerCase())) {
+              responseHeaders.set(key, val);
+            }
+          });
+
+          if (!responseHeaders.has('Content-Type')) {
+            responseHeaders.set('Content-Type', 'video/mp4');
+          }
+          if (!responseHeaders.has('Accept-Ranges')) {
+            responseHeaders.set('Accept-Ranges', 'bytes');
+          }
+          responseHeaders.set('Access-Control-Allow-Origin', '*');
+          responseHeaders.set('Access-Control-Allow-Methods', 'GET, HEAD, OPTIONS');
+          responseHeaders.set('Access-Control-Allow-Headers', 'Range, Accept, Content-Type');
+
+          return new NextResponse(apiRes.body, {
+            status: apiRes.status,
+            headers: responseHeaders,
+          });
+        }
+      }
+    } catch (err: any) {
+      console.warn('Google Drive API v3 stream error, falling back to direct download:', err.message);
+    }
+  }
+
+  // 3. Fallback to unauthenticated Google Drive direct link
   if (gdriveId) {
     const gdriveDirectUrl = `https://drive.usercontent.google.com/download?id=${gdriveId}&export=download&confirm=t`;
     try {
