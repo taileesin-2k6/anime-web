@@ -329,7 +329,15 @@ export default function VideoPlayer({
 
   let videoSrc: string | null = null;
   if (directUrl) {
-    videoSrc = directUrl;
+    const queryParts: string[] = [];
+    if (animeSlug) queryParts.push(`slug=${encodeURIComponent(animeSlug)}`);
+    if (episodeNumber) queryParts.push(`ep=${encodeURIComponent(episodeNumber)}`);
+    if (queryParts.length > 0) {
+      const sep = directUrl.includes('?') ? '&' : '?';
+      videoSrc = `${directUrl}${sep}${queryParts.join('&')}`;
+    } else {
+      videoSrc = directUrl;
+    }
   } else if (isBackblaze || isPublicVideo || isApiStream) {
     videoSrc = videoUrl;
   } else if (isLocalDiskPath) {

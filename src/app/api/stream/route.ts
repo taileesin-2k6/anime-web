@@ -67,7 +67,7 @@ export async function HEAD(request: NextRequest) {
 
     try {
       const controller = new AbortController();
-      const timeout = setTimeout(() => controller.abort(), 2000);
+      const timeout = setTimeout(() => controller.abort(), 6000);
       const res = await fetch(rcloneFileUrl, { method: 'HEAD', signal: controller.signal });
       clearTimeout(timeout);
 
@@ -79,6 +79,9 @@ export async function HEAD(request: NextRequest) {
         });
         if (!responseHeaders.has('Content-Type')) responseHeaders.set('Content-Type', 'video/mp4');
         if (!responseHeaders.has('Accept-Ranges')) responseHeaders.set('Accept-Ranges', 'bytes');
+        responseHeaders.set('Access-Control-Allow-Origin', '*');
+        responseHeaders.set('Access-Control-Allow-Methods', 'GET, HEAD, OPTIONS');
+        responseHeaders.set('Access-Control-Allow-Headers', 'Range, Accept, Content-Type');
 
         return new NextResponse(null, {
           status: res.status,
@@ -106,32 +109,37 @@ export async function HEAD(request: NextRequest) {
       });
       clearTimeout(timeout);
 
-      const responseHeaders = new Headers();
-      responseHeaders.set('Content-Type', 'video/mp4');
-      responseHeaders.set('Accept-Ranges', 'bytes');
-      responseHeaders.set('Access-Control-Allow-Origin', '*');
-      responseHeaders.set('Access-Control-Allow-Methods', 'GET, HEAD, OPTIONS');
-      responseHeaders.set('Access-Control-Allow-Headers', 'Range, Accept, Content-Type');
-      const cl = res.headers.get('content-length');
-      if (cl) responseHeaders.set('Content-Length', cl);
+      const ct = res.headers.get('content-type') || '';
+      if (!ct.includes('text/html') && (res.ok || res.status === 206)) {
+        const responseHeaders = new Headers();
+        responseHeaders.set('Content-Type', 'video/mp4');
+        responseHeaders.set('Accept-Ranges', 'bytes');
+        responseHeaders.set('Access-Control-Allow-Origin', '*');
+        responseHeaders.set('Access-Control-Allow-Methods', 'GET, HEAD, OPTIONS');
+        responseHeaders.set('Access-Control-Allow-Headers', 'Range, Accept, Content-Type');
+        const cl = res.headers.get('content-length');
+        if (cl) responseHeaders.set('Content-Length', cl);
 
-      return new NextResponse(null, {
-        status: 200,
-        headers: responseHeaders,
-      });
+        return new NextResponse(null, {
+          status: 200,
+          headers: responseHeaders,
+        });
+      }
     } catch {
-      return new NextResponse(null, {
-        status: 200,
-        headers: {
-          'Content-Type': 'video/mp4',
-          'Accept-Ranges': 'bytes',
-          'Access-Control-Allow-Origin': '*',
-        },
-      });
+      // ignore
     }
   }
 
-  return new NextResponse(null, { status: 404 });
+  return new NextResponse(null, {
+    status: 200,
+    headers: {
+      'Content-Type': 'video/mp4',
+      'Accept-Ranges': 'bytes',
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Methods': 'GET, HEAD, OPTIONS',
+      'Access-Control-Allow-Headers': 'Range, Accept, Content-Type',
+    },
+  });
 }
 
 export async function GET(request: NextRequest) {
@@ -144,7 +152,7 @@ export async function GET(request: NextRequest) {
     
     try {
       const controller = new AbortController();
-      const timeout = setTimeout(() => controller.abort(), 3000);
+      const timeout = setTimeout(() => controller.abort(), 15000);
       const range = request.headers.get('range');
       const fetchHeaders: Record<string, string> = {};
       if (range) {
@@ -181,6 +189,9 @@ export async function GET(request: NextRequest) {
         if (!responseHeaders.has('Accept-Ranges')) {
           responseHeaders.set('Accept-Ranges', 'bytes');
         }
+        responseHeaders.set('Access-Control-Allow-Origin', '*');
+        responseHeaders.set('Access-Control-Allow-Methods', 'GET, HEAD, OPTIONS');
+        responseHeaders.set('Access-Control-Allow-Headers', 'Range, Accept, Content-Type');
 
         return new NextResponse(res.body, {
           status: res.status,
@@ -208,6 +219,22 @@ export async function GET(request: NextRequest) {
       const res = await fetch(gdriveDirectUrl, {
         headers: fetchHeaders,
       });
+
+      const contentType = res.headers.get('content-type') || '';
+      // Guard against quota exceeded HTML page returned by Google Drive with HTTP 200
+      if (contentType.includes('text/html')) {
+        console.warn('Google Drive direct download returned HTML (quota exceeded / confirmation page).');
+        return new NextResponse(
+          'Google Drive direct download quota exceeded. Please use the local Cloudflare tunnel / Rclone stream.',
+          {
+            status: 429,
+            headers: {
+              'Content-Type': 'text/plain; charset=utf-8',
+              'Access-Control-Allow-Origin': '*',
+            },
+          }
+        );
+      }
 
       if (res.ok || res.status === 206) {
         const responseHeaders = new Headers();
