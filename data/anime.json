@@ -61,10 +61,20 @@
         "createdAt": "2026-10-02T19:46:11.666236Z",
         "filename": "the_ep01_bilingual.mp4",
         "gdriveId": "1EwrRWBqRm574HMbzj4q9EQJq6WVx_56R"
+      },
+      {
+        "id": "ep-2-bilingual",
+        "episodeNumber": 2,
+        "title": "Tập 2 : The Fire-Rat Cloak",
+        "videoUrl": "https://drive.google.com/open?id=13c_NVynWDTuEZQFMPoIJ-lnASN8eV3Tn",
+        "duration": "40:15",
+        "createdAt": "2026-10-14T15:11:53.509714Z",
+        "filename": "the_ep02_bilingual.mp4",
+        "gdriveId": "13c_NVynWDTuEZQFMPoIJ-lnASN8eV3Tn"
       }
     ],
     "createdAt": "2026-10-02T19:24:44.055089Z",
-    "updatedAt": "2026-10-03T16:50:50.118783Z"
+    "updatedAt": "2026-10-14T15:11:53.510304Z"
   },
   {
     "id": "tokyo-revengers-santen-sensou-hen",
