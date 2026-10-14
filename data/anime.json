@@ -195,9 +195,19 @@
         "createdAt": "2026-10-04T13:43:33.799222Z",
         "filename": "blue_ep01_bilingual.mp4",
         "gdriveId": "1VJ7AlmGULpHuZMmpfEWAqOSj94MD2jRd"
+      },
+      {
+        "id": "ep-2-bilingual",
+        "episodeNumber": 2,
+        "title": "Tập 2 : You Have to Go to Nationals",
+        "videoUrl": "https://drive.google.com/open?id=1JuQISX01SGMGYPyR0v9Losa8uAHS-6Cf",
+        "duration": "38:53",
+        "createdAt": "2026-10-14T14:12:37.791837Z",
+        "filename": "blue_ep02_bilingual.mp4",
+        "gdriveId": "1JuQISX01SGMGYPyR0v9Losa8uAHS-6Cf"
       }
     ],
     "createdAt": "2026-10-04T13:27:21.144458Z",
-    "updatedAt": "2026-10-04T13:43:33.799258Z"
+    "updatedAt": "2026-10-14T14:12:37.791988Z"
   }
 ]
