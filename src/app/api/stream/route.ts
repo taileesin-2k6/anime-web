@@ -60,6 +60,37 @@ export async function OPTIONS() {
 export async function HEAD(request: NextRequest) {
   const { targetFilename, gdriveId } = resolveMediaInfo(request);
 
+  // 1. Try rclone first if targetFilename is given
+  if (targetFilename) {
+    const cleanName = path.basename(targetFilename);
+    const rcloneFileUrl = `${RCLONE_HTTP_URL}/${encodeURIComponent(cleanName)}`;
+
+    try {
+      const controller = new AbortController();
+      const timeout = setTimeout(() => controller.abort(), 2000);
+      const res = await fetch(rcloneFileUrl, { method: 'HEAD', signal: controller.signal });
+      clearTimeout(timeout);
+
+      if (res.ok) {
+        const responseHeaders = new Headers();
+        ['content-type', 'content-length', 'accept-ranges', 'last-modified', 'etag'].forEach((key) => {
+          const v = res.headers.get(key);
+          if (v) responseHeaders.set(key, v);
+        });
+        if (!responseHeaders.has('Content-Type')) responseHeaders.set('Content-Type', 'video/mp4');
+        if (!responseHeaders.has('Accept-Ranges')) responseHeaders.set('Accept-Ranges', 'bytes');
+
+        return new NextResponse(null, {
+          status: res.status,
+          headers: responseHeaders,
+        });
+      }
+    } catch {
+      // Fallback
+    }
+  }
+
+  // 2. Fallback to Google Drive direct
   if (gdriveId) {
     const gdriveDirectUrl = `https://drive.usercontent.google.com/download?id=${gdriveId}&export=download&confirm=t`;
     try {
@@ -100,40 +131,68 @@ export async function HEAD(request: NextRequest) {
     }
   }
 
-  if (!targetFilename) {
-    return new NextResponse(null, { status: 404 });
-  }
-
-  const cleanName = path.basename(targetFilename);
-  const rcloneFileUrl = `${RCLONE_HTTP_URL}/${encodeURIComponent(cleanName)}`;
-
-  try {
-    const controller = new AbortController();
-    const timeout = setTimeout(() => controller.abort(), 600);
-    const res = await fetch(rcloneFileUrl, { method: 'HEAD', signal: controller.signal });
-    clearTimeout(timeout);
-
-    const responseHeaders = new Headers();
-    ['content-type', 'content-length', 'accept-ranges', 'last-modified', 'etag'].forEach((key) => {
-      const v = res.headers.get(key);
-      if (v) responseHeaders.set(key, v);
-    });
-    if (!responseHeaders.has('Content-Type')) responseHeaders.set('Content-Type', 'video/mp4');
-    if (!responseHeaders.has('Accept-Ranges')) responseHeaders.set('Accept-Ranges', 'bytes');
-
-    return new NextResponse(null, {
-      status: res.status,
-      headers: responseHeaders,
-    });
-  } catch (err: any) {
-    return new NextResponse(null, { status: 500 });
-  }
+  return new NextResponse(null, { status: 404 });
 }
 
 export async function GET(request: NextRequest) {
   const { targetFilename, gdriveId } = resolveMediaInfo(request);
 
-  // 1. If Google Drive file ID is available, proxy video stream from Google Drive
+  // 1. Try local authenticated Rclone HTTP server first (Used by Cloudflare Tunnel / Local host)
+  if (targetFilename) {
+    const cleanName = path.basename(targetFilename);
+    const rcloneFileUrl = `${RCLONE_HTTP_URL}/${encodeURIComponent(cleanName)}`;
+    
+    try {
+      const controller = new AbortController();
+      const timeout = setTimeout(() => controller.abort(), 3000);
+      const range = request.headers.get('range');
+      const fetchHeaders: Record<string, string> = {};
+      if (range) {
+        fetchHeaders['Range'] = range;
+      }
+
+      const res = await fetch(rcloneFileUrl, {
+        headers: fetchHeaders,
+        signal: controller.signal,
+      });
+      clearTimeout(timeout);
+
+      if (res.ok || res.status === 206) {
+        const responseHeaders = new Headers();
+        const passthroughHeaders = [
+          'content-type',
+          'content-length',
+          'content-range',
+          'accept-ranges',
+          'cache-control',
+          'last-modified',
+          'etag',
+        ];
+
+        res.headers.forEach((val, key) => {
+          if (passthroughHeaders.includes(key.toLowerCase())) {
+            responseHeaders.set(key, val);
+          }
+        });
+
+        if (!responseHeaders.has('Content-Type')) {
+          responseHeaders.set('Content-Type', 'video/mp4');
+        }
+        if (!responseHeaders.has('Accept-Ranges')) {
+          responseHeaders.set('Accept-Ranges', 'bytes');
+        }
+
+        return new NextResponse(res.body, {
+          status: res.status,
+          headers: responseHeaders,
+        });
+      }
+    } catch (err: any) {
+      console.warn('Rclone stream fetch error, falling back:', err.message);
+    }
+  }
+
+  // 2. If Google Drive file ID is available, proxy video stream from Google Drive (Fallback for cloud deployment like Vercel)
   if (gdriveId) {
     const gdriveDirectUrl = `https://drive.usercontent.google.com/download?id=${gdriveId}&export=download&confirm=t`;
     try {
@@ -179,61 +238,6 @@ export async function GET(request: NextRequest) {
       }
     } catch (err: any) {
       console.warn('Error fetching stream from Google Drive:', err);
-    }
-  }
-
-  // 2. Try rclone if targetFilename is given
-  if (targetFilename) {
-    const cleanName = path.basename(targetFilename);
-    const rcloneFileUrl = `${RCLONE_HTTP_URL}/${encodeURIComponent(cleanName)}`;
-    
-    try {
-      const controller = new AbortController();
-      const timeout = setTimeout(() => controller.abort(), 800);
-      const range = request.headers.get('range');
-      const fetchHeaders: Record<string, string> = {};
-      if (range) {
-        fetchHeaders['Range'] = range;
-      }
-
-      const res = await fetch(rcloneFileUrl, {
-        headers: fetchHeaders,
-        signal: controller.signal,
-      });
-      clearTimeout(timeout);
-
-      if (res.ok || res.status === 206) {
-        const responseHeaders = new Headers();
-        const passthroughHeaders = [
-          'content-type',
-          'content-length',
-          'content-range',
-          'accept-ranges',
-          'cache-control',
-          'last-modified',
-          'etag',
-        ];
-
-        res.headers.forEach((val, key) => {
-          if (passthroughHeaders.includes(key.toLowerCase())) {
-            responseHeaders.set(key, val);
-          }
-        });
-
-        if (!responseHeaders.has('Content-Type')) {
-          responseHeaders.set('Content-Type', 'video/mp4');
-        }
-        if (!responseHeaders.has('Accept-Ranges')) {
-          responseHeaders.set('Accept-Ranges', 'bytes');
-        }
-
-        return new NextResponse(res.body, {
-          status: res.status,
-          headers: responseHeaders,
-        });
-      }
-    } catch (err: any) {
-      console.warn('Rclone stream fetch error, falling back:', err.message);
     }
   }
 
