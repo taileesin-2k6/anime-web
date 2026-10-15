@@ -249,5 +249,37 @@
     ],
     "createdAt": "2026-10-04T13:27:21.144458Z",
     "updatedAt": "2026-10-14T14:12:37.791988Z"
+  },
+  {
+    "id": "chitose-kun-wa-ramune-bin-no-naka",
+    "title": "Chitose-kun wa Ramune Bin no Naka",
+    "originalTitle": "千歳くんはラムネ瓶のなか (Chitose Is in the Ramune Bottle)",
+    "slug": "chitose-kun-wa-ramune-bin-no-naka",
+    "poster": "/posters/chitose-kun-wa-ramune-bin-no-naka.jpg",
+    "banner": "/posters/chitose-kun-wa-ramune-bin-no-naka-banner.jpg",
+    "description": "Being popular isn’t easy. It’s hard to beat Saku Chitose. The most popular kid in his high school? Check. An ironclad reputation that can weather even vicious online attacks? Check. A group of friends as attractive on the outside as they are inside? Check. But when a teacher asks for his help bringing back a student who has been shut away in his room for months, Saku’s perfect world will never be the same. What is this, some kind of normie harem story...?\n\n(Source: Yen Press)\n\nNote: The first episode has an extended runtime of ~34 minutes.",
+    "genres": [
+      "Comedy",
+      "Romance"
+    ],
+    "status": "Đang chiếu",
+    "year": 2025,
+    "totalEpisodes": "13",
+    "quality": "FHD 1080p",
+    "season": "Mùa Thu 2025",
+    "episodes": [
+      {
+        "id": "ep-14-bilingual",
+        "episodeNumber": 14,
+        "title": "Tập 14 : Your Elopement with Senpai",
+        "videoUrl": "https://drive.google.com/open?id=1uYw4AzqIgCKLXQ5Ev4YPotcxxTqf1pS5",
+        "duration": "37:38",
+        "createdAt": "2026-10-15T02:33:14.060153Z",
+        "filename": "chitose_ep14_bilingual.mp4",
+        "gdriveId": "1uYw4AzqIgCKLXQ5Ev4YPotcxxTqf1pS5"
+      }
+    ],
+    "createdAt": "2026-10-15T02:18:15.704201Z",
+    "updatedAt": "2026-10-15T02:33:14.060180Z"
   }
 ]
