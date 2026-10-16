@@ -4,6 +4,7 @@ import path from 'path';
 import { getValidAccessToken } from '@/lib/gdrive-auth';
 
 export const dynamic = 'force-dynamic';
+export const maxDuration = 60;
 
 const RCLONE_HTTP_URL = 'http://127.0.0.1:8088';
 
@@ -60,9 +61,10 @@ export async function OPTIONS() {
 
 export async function HEAD(request: NextRequest) {
   const { targetFilename, gdriveId } = resolveMediaInfo(request);
+  const isVercel = Boolean(process.env.VERCEL);
 
-  // 1. Try rclone first if targetFilename is given
-  if (targetFilename) {
+  // 1. Try rclone first if targetFilename is given (and not running on Vercel)
+  if (targetFilename && !isVercel) {
     const cleanName = path.basename(targetFilename);
     const rcloneFileUrl = `${RCLONE_HTTP_URL}/${encodeURIComponent(cleanName)}`;
 
@@ -119,6 +121,12 @@ export async function HEAD(request: NextRequest) {
           responseHeaders.set('Access-Control-Allow-Origin', '*');
           responseHeaders.set('Access-Control-Allow-Methods', 'GET, HEAD, OPTIONS');
           responseHeaders.set('Access-Control-Allow-Headers', 'Range, Accept, Content-Type');
+          responseHeaders.set(
+            'Cache-Control',
+            'public, max-age=31536000, s-maxage=31536000, stale-while-revalidate=86400, immutable'
+          );
+          responseHeaders.set('CDN-Cache-Control', 'public, max-age=31536000, s-maxage=31536000');
+          responseHeaders.set('Vercel-CDN-Cache-Control', 'public, max-age=31536000, s-maxage=31536000');
 
           const cr = res.headers.get('content-range');
           if (cr) {
@@ -188,9 +196,10 @@ export async function HEAD(request: NextRequest) {
 
 export async function GET(request: NextRequest) {
   const { targetFilename, gdriveId } = resolveMediaInfo(request);
+  const isVercel = Boolean(process.env.VERCEL);
 
-  // 1. Try local authenticated Rclone HTTP server first (Used by Cloudflare Tunnel / Local host)
-  if (targetFilename) {
+  // 1. Try local authenticated Rclone HTTP server first (Used by Cloudflare Tunnel / Local host only, not Vercel)
+  if (targetFilename && !isVercel) {
     const cleanName = path.basename(targetFilename);
     const rcloneFileUrl = `${RCLONE_HTTP_URL}/${encodeURIComponent(cleanName)}`;
     
@@ -257,8 +266,25 @@ export async function GET(request: NextRequest) {
         const apiHeaders: Record<string, string> = {
           Authorization: `Bearer ${accessToken}`,
         };
+
+        // Smart Capped Range Chunking (RFC 7233)
+        // If client requests open-ended range (e.g. bytes=0-), cap to 8MB chunk for instant buffering & Edge CDN caching
+        const CHUNK_SIZE = 8 * 1024 * 1024; // 8MB optimal chunk
         if (range) {
-          apiHeaders['Range'] = range;
+          const match = range.match(/bytes=(\d+)-(\d*)/);
+          if (match) {
+            const start = parseInt(match[1], 10);
+            if (match[2]) {
+              const end = parseInt(match[2], 10);
+              apiHeaders['Range'] = `bytes=${start}-${end}`;
+            } else {
+              apiHeaders['Range'] = `bytes=${start}-${start + CHUNK_SIZE - 1}`;
+            }
+          } else {
+            apiHeaders['Range'] = range;
+          }
+        } else {
+          apiHeaders['Range'] = `bytes=0-${CHUNK_SIZE - 1}`;
         }
 
         const apiRes = await fetch(driveApiUrl, {
@@ -273,7 +299,6 @@ export async function GET(request: NextRequest) {
             'content-length',
             'content-range',
             'accept-ranges',
-            'cache-control',
             'last-modified',
             'etag',
           ];
@@ -293,6 +318,14 @@ export async function GET(request: NextRequest) {
           responseHeaders.set('Access-Control-Allow-Origin', '*');
           responseHeaders.set('Access-Control-Allow-Methods', 'GET, HEAD, OPTIONS');
           responseHeaders.set('Access-Control-Allow-Headers', 'Range, Accept, Content-Type');
+
+          // Enable persistent Edge CDN caching across Vercel nodes worldwide
+          responseHeaders.set(
+            'Cache-Control',
+            'public, max-age=31536000, s-maxage=31536000, stale-while-revalidate=86400, immutable'
+          );
+          responseHeaders.set('CDN-Cache-Control', 'public, max-age=31536000, s-maxage=31536000');
+          responseHeaders.set('Vercel-CDN-Cache-Control', 'public, max-age=31536000, s-maxage=31536000');
 
           return new NextResponse(apiRes.body, {
             status: apiRes.status,

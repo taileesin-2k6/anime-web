@@ -88,6 +88,7 @@ export default function VideoSubtitleOverlay({
 
   const containerRef = useRef<HTMLDivElement>(null);
   const wasPlayingBeforeHoverRef = useRef(false);
+  const sentenceTokenCacheRef = useRef<Record<string, { tokens: SubtitleToken[]; meanings: Record<string, string> }>>({});
 
   // Debounced real-time suggestion fetcher (TFlat style)
   useEffect(() => {
@@ -187,6 +188,14 @@ export default function VideoSubtitleOverlay({
 
     const currentSentence = activeCueEn.text;
 
+    // Check memory cache first (instant response, 0ms, 0 network requests)
+    if (sentenceTokenCacheRef.current[currentSentence]) {
+      const cached = sentenceTokenCacheRef.current[currentSentence];
+      setActiveTokens(cached.tokens);
+      setMeaningsCache(cached.meanings);
+      return;
+    }
+
     // Fast initial fallback tokens
     const rawWords = currentSentence.split(/\s+/).filter(Boolean);
     const initialTokens: SubtitleToken[] = rawWords.map((w) => ({
@@ -198,16 +207,15 @@ export default function VideoSubtitleOverlay({
     }));
     setActiveTokens(initialTokens);
 
-    // Call Pipeline Tokenizer & Dictionary API
+    // Call Pipeline Tokenizer & Dictionary API once per sentence
     fetch(`/api/dictionary?sentence=${encodeURIComponent(currentSentence)}`)
       .then((res) => res.json())
       .then((data) => {
-        if (data.tokens && Array.isArray(data.tokens)) {
-          setActiveTokens(data.tokens);
-        }
-        if (data.meanings) {
-          setMeaningsCache(data.meanings);
-        }
+        const tokens = data.tokens && Array.isArray(data.tokens) ? data.tokens : initialTokens;
+        const meanings = data.meanings || {};
+        sentenceTokenCacheRef.current[currentSentence] = { tokens, meanings };
+        setActiveTokens(tokens);
+        setMeaningsCache(meanings);
       })
       .catch((err) => console.error('Failed to tokenize cue words:', err));
   }, [activeCueEn?.text]);
