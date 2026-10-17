@@ -71,10 +71,20 @@
         "createdAt": "2026-10-14T15:11:53.509714Z",
         "filename": "the_ep02_bilingual.mp4",
         "gdriveId": "13c_NVynWDTuEZQFMPoIJ-lnASN8eV3Tn"
+      },
+      {
+        "id": "ep-3-bilingual",
+        "episodeNumber": 3,
+        "title": "Tập 3 : If There Is No Bread",
+        "videoUrl": "https://drive.google.com/open?id=1JDrzf0L4RQ1knwnIy3c0hlyHtd1Pdnd9",
+        "duration": "37:13",
+        "createdAt": "2026-10-17T11:25:59.848750Z",
+        "filename": "the_ep03_bilingual.mp4",
+        "gdriveId": "1JDrzf0L4RQ1knwnIy3c0hlyHtd1Pdnd9"
       }
     ],
     "createdAt": "2026-10-02T19:24:44.055089Z",
-    "updatedAt": "2026-10-14T15:11:53.510304Z"
+    "updatedAt": "2026-10-17T11:25:59.848873Z"
   },
   {
     "id": "tokyo-revengers-santen-sensou-hen",
