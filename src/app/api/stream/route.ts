@@ -405,11 +405,21 @@ export async function GET(request: NextRequest) {
   }
 
   // Local fallback
-  const filePathParam = request.nextUrl.searchParams.get('file');
+  const filePathParam = request.nextUrl.searchParams.get('file') || targetFilename;
   if (filePathParam) {
     let resolvedPath = filePathParam;
-    if (!path.isAbsolute(resolvedPath)) {
-      resolvedPath = path.join(/*turbopackIgnore: true*/ process.cwd(), resolvedPath);
+    if (!fs.existsSync(resolvedPath)) {
+      const rel = filePathParam.replace(/^\/+/, '');
+      const pPublic = path.join(process.cwd(), 'public', rel);
+      const pVideos = path.join(process.cwd(), 'public', 'videos', rel);
+      const pRoot = path.join(process.cwd(), rel);
+      if (fs.existsSync(pPublic)) {
+        resolvedPath = pPublic;
+      } else if (fs.existsSync(pVideos)) {
+        resolvedPath = pVideos;
+      } else if (fs.existsSync(pRoot)) {
+        resolvedPath = pRoot;
+      }
     }
     resolvedPath = path.normalize(resolvedPath);
 
