@@ -287,9 +287,18 @@
         "createdAt": "2026-10-15T02:33:14.060153Z",
         "filename": "chitose_ep14_bilingual.mp4",
         "gdriveId": "1uYw4AzqIgCKLXQ5Ev4YPotcxxTqf1pS5"
+      },
+      {
+        "id": "ep-15-bilingual",
+        "episodeNumber": 15,
+        "title": "Tập 15 : The Blue Night of the Distant Sky That I Will Recall Someday",
+        "videoUrl": "/videos/chitose_ep15_bilingual.mp4",
+        "duration": "38:52",
+        "createdAt": "2026-10-23T02:02:41.645442Z",
+        "filename": "chitose_ep15_bilingual.mp4"
       }
     ],
     "createdAt": "2026-10-15T02:18:15.704201Z",
-    "updatedAt": "2026-10-15T02:33:14.060180Z"
+    "updatedAt": "2026-10-23T02:02:41.645561Z"
   }
 ]
