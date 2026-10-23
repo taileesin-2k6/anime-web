@@ -28,7 +28,10 @@ export default async function WatchPage({ params, searchParams }: WatchPageProps
     notFound();
   }
 
-  const initialEpNumber = ep ? Number(ep) : (anime.episodes[0]?.episodeNumber || 1);
+  let initialEpNumber = ep ? Number(ep) : (anime.episodes[0]?.episodeNumber || 1);
+  if (anime.slug === 'chitose-kun-wa-ramune-bin-no-naka' && initialEpNumber === 2 && !anime.episodes.some((e) => e.episodeNumber === 2)) {
+    initialEpNumber = 15;
+  }
 
   return <WatchClient anime={anime} initialEpNumber={initialEpNumber} />;
 }

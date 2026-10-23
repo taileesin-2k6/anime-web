@@ -30,7 +30,8 @@ function resolveMediaInfo(request: NextRequest): { targetFilename: string; gdriv
               gdriveId = gdriveId || item.gdriveId || '';
               break;
             }
-            if (ep && item.episodeNumber === parseInt(ep, 10)) {
+            const isChitoseEp2Alias = slug === 'chitose-kun-wa-ramune-bin-no-naka' && ep === '2' && item.episodeNumber === 15;
+            if (ep && (item.episodeNumber === parseInt(ep, 10) || isChitoseEp2Alias)) {
               targetFilename = targetFilename || item.filename || '';
               gdriveId = gdriveId || item.gdriveId || '';
               break;
