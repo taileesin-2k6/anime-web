@@ -1,0 +1,4015 @@
+{
+  "en": [
+    {
+      "start": 12.75,
+      "end": 15.46,
+      "text": "SEAL",
+      "vi_text": "NIÊM PHONG"
+    },
+    {
+      "start": 15.54,
+      "end": 18.54,
+      "text": "CROWN PRINCE - EI GYOUMEI",
+      "vi_text": "HOÀNG TỬ - EI GYOUMEI"
+    },
+    {
+      "start": 19.46,
+      "end": 20.71,
+      "text": "Call for a shaman.",
+      "vi_text": "Hãy gọi một pháp sư."
+    },
+    {
+      "start": 28.14,
+      "end": 30.81,
+      "text": "Enforce a thorough gag order on the medical staff once again.",
+      "vi_text": "Thực thi lệnh bịt miệng triệt để đối với nhân viên y tế một lần nữa."
+    },
+    {
+      "start": 30.89,
+      "end": 32.06,
+      "text": "Y-Yes, sir.",
+      "vi_text": "V-Vâng, thưa ngài."
+    },
+    {
+      "start": 32.31,
+      "end": 35.39,
+      "text": "Do not disclose Her Majesty the Empress's medical condition.",
+      "vi_text": "Không tiết lộ tình trạng sức khỏe của Hoàng hậu."
+    },
+    {
+      "start": 45.42,
+      "end": 49.85,
+      "text": "If anything, say she has enough composure to accept my visit.",
+      "vi_text": "Nếu có thì hãy nói rằng cô ấy có đủ bình tĩnh để chấp nhận chuyến thăm của tôi."
+    },
+    {
+      "start": 50.18,
+      "end": 53.35,
+      "text": "You need to return to the main palace ahead of me with smiles on your faces.",
+      "vi_text": "Bạn cần phải quay lại cung điện chính trước tôi với nụ cười trên môi."
+    },
+    {
+      "start": 53.43,
+      "end": 54.85,
+      "text": "H-However--",
+      "vi_text": "H-Tuy nhiên--"
+    },
+    {
+      "start": 61.92,
+      "end": 63.34,
+      "text": "Thirty minutes.",
+      "vi_text": "Ba mươi phút."
+    },
+    {
+      "start": 63.42,
+      "end": 65.21,
+      "text": "I will not take any longer than that.",
+      "vi_text": "Tôi sẽ không mất nhiều thời gian hơn thế."
+    },
+    {
+      "start": 65.71,
+      "end": 68.68,
+      "text": "So please, allow me to stay here.",
+      "vi_text": "Vì vậy xin vui lòng cho phép tôi ở lại đây."
+    },
+    {
+      "start": 85.13,
+      "end": 86.3,
+      "text": "Open up.",
+      "vi_text": "Mở ra."
+    },
+    {
+      "start": 87.26,
+      "end": 88.55,
+      "text": "Please!",
+      "vi_text": "Vui lòng!"
+    },
+    {
+      "start": 89.14,
+      "end": 91.1,
+      "text": "Is that you, Your Highness the Crown Prince?",
+      "vi_text": "Có phải ngài không, thưa Thái tử điện hạ?"
+    },
+    {
+      "start": 97.29,
+      "end": 98.2,
+      "text": "Is that you, Tousetsu?",
+      "vi_text": "Có phải bạn đó không, Tousetsu?"
+    },
+    {
+      "start": 98.29,
+      "end": 100.41,
+      "text": "A sealing talisman has been applied to the Kou Palace",
+      "vi_text": "Một lá bùa phong ấn đã được áp dụng cho Cung điện Kou"
+    },
+    {
+      "start": 100.5,
+      "end": 102.42,
+      "text": "in order to prevent the malady from spreading.",
+      "vi_text": "để ngăn ngừa bệnh lây lan."
+    },
+    {
+      "start": 112.02,
+      "end": 115.6,
+      "text": "If this is an urgent matter, I will hear it right here.",
+      "vi_text": "Nếu đây là vấn đề khẩn cấp, tôi sẽ nghe nó ngay tại đây."
+    },
+    {
+      "start": 115.85,
+      "end": 117.61,
+      "text": "Tousetsu, did Reirin...",
+      "vi_text": "Tousetsu, Reirin à..."
+    },
+    {
+      "start": 118.36,
+      "end": 121.23,
+      "text": "No. Did Shu Keigetsu come by here?",
+      "vi_text": "Không. Shu Keigetsu có ghé qua đây không?"
+    },
+    {
+      "start": 129.88,
+      "end": 132.88,
+      "text": "HEAD PERSONAL COURT LADY FOR REIRIN KOU TOUSETSU",
+      "vi_text": "PHỤ TÙNG TÒA ÁN CÁ NHÂN CHO REIRIN KOU TOUSETSU"
+    },
+    {
+      "start": 133.25,
+      "end": 135.01,
+      "text": "Open the gates, Tousetsu.",
+      "vi_text": "Mở cổng ra, Tousetsu."
+    },
+    {
+      "start": 135.26,
+      "end": 137.42,
+      "text": "Will you not heed the orders of the crown prince?",
+      "vi_text": "Bạn sẽ không chú ý đến mệnh lệnh của thái tử?"
+    },
+    {
+      "start": 170.68,
+      "end": 175.35,
+      "text": "THOUGH I AM AN INEPT VILLAINESS",
+      "vi_text": "Mặc dù tôi là một kẻ phản diện INEPT"
+    },
+    {
+      "start": 249.74,
+      "end": 253.08,
+      "text": "Tousetsu, you are aware of it, aren't you?",
+      "vi_text": "Tousetsu, cậu biết điều đó phải không?"
+    },
+    {
+      "start": 259.89,
+      "end": 261.35,
+      "text": "Answer me, Tousetsu.",
+      "vi_text": "Trả lời tôi đi, Tousetsu."
+    },
+    {
+      "start": 262.48,
+      "end": 263.81,
+      "text": "I cannot answer that query.",
+      "vi_text": "Tôi không thể trả lời câu hỏi đó."
+    },
+    {
+      "start": 263.89,
+      "end": 265.02,
+      "text": "Why is that?",
+      "vi_text": "Tại sao vậy?"
+    },
+    {
+      "start": 281.43,
+      "end": 284.93,
+      "text": "Reirin swapped bodies with Shu Keigetsu, did she not?",
+      "vi_text": "Reirin hoán đổi thân xác với Shu Keigetsu phải không?"
+    },
+    {
+      "start": 285.47,
+      "end": 288.39,
+      "text": "Didn't that woman take her body?",
+      "vi_text": "Không phải người phụ nữ đó đã lấy xác cô ấy sao?"
+    },
+    {
+      "start": 288.6,
+      "end": 290.98,
+      "text": "Your master has been violated.",
+      "vi_text": "Chủ nhân của bạn đã bị xâm phạm."
+    },
+    {
+      "start": 293.64,
+      "end": 296.14,
+      "text": "Why haven't you even tried reporting it to me?",
+      "vi_text": "Tại sao bạn thậm chí không thử báo cáo nó với tôi?"
+    },
+    {
+      "start": 304.84,
+      "end": 308.64,
+      "text": "I forbid you from harming her or yourself.",
+      "vi_text": "Tôi cấm bạn làm hại cô ấy hoặc chính bạn."
+    },
+    {
+      "start": 308.93,
+      "end": 311.98,
+      "text": "And you may not tell the truth to Her Majesty and His Highness.",
+      "vi_text": "Và bạn không được nói sự thật với Bệ hạ và Hoàng thân."
+    },
+    {
+      "start": 319.79,
+      "end": 322.33,
+      "text": "Because that is my punishment.",
+      "vi_text": "Bởi vì đó là hình phạt của tôi."
+    },
+    {
+      "start": 322.42,
+      "end": 323.33,
+      "text": "What was that?",
+      "vi_text": "Đó là gì vậy?"
+    },
+    {
+      "start": 323.42,
+      "end": 325.5,
+      "text": "Because that is my punishment for myself,",
+      "vi_text": "Vì đó là sự trừng phạt tôi dành cho chính mình,"
+    },
+    {
+      "start": 329.14,
+      "end": 332.6,
+      "text": "as I could not reach out my hand during my master's peril!",
+      "vi_text": "vì tôi không thể đưa tay ra khi chủ nhân đang gặp nguy hiểm!"
+    },
+    {
+      "start": 337.2,
+      "end": 340.08,
+      "text": "Reirin talked you into this, didn't she?",
+      "vi_text": "Reirin đã thuyết phục bạn về chuyện này phải không?"
+    },
+    {
+      "start": 351.99,
+      "end": 354.7,
+      "text": "I beg of you, talk to me, Tousetsu.",
+      "vi_text": "Tôi cầu xin bạn, hãy nói chuyện với tôi, Tousetsu."
+    },
+    {
+      "start": 355.45,
+      "end": 357.25,
+      "text": "Your Highness, you are someone",
+      "vi_text": "Thưa ngài, ngài là ai đó"
+    },
+    {
+      "start": 357.33,
+      "end": 361.63,
+      "text": "that can transcend Lady Reirin's wishes and change the situation drastically.",
+      "vi_text": "điều đó có thể vượt qua mong muốn của Lady Reirin và thay đổi tình hình một cách đáng kể."
+    },
+    {
+      "start": 370.32,
+      "end": 371.9,
+      "text": "Please spare me.",
+      "vi_text": "Xin hãy tha cho tôi."
+    },
+    {
+      "start": 372.53,
+      "end": 375.36,
+      "text": "I would change the situation drastically?",
+      "vi_text": "Tôi sẽ thay đổi tình hình một cách quyết liệt?"
+    },
+    {
+      "start": 375.86,
+      "end": 378.41,
+      "text": "Do you mean because I could go against Reirin's will",
+      "vi_text": "Ý bạn là vì tôi có thể đi ngược lại ý muốn của Reirin"
+    },
+    {
+      "start": 381.37,
+      "end": 384.17,
+      "text": "and punish Shu Keigetsu as the crown prince?",
+      "vi_text": "và trừng phạt Shu Keigetsu với tư cách là thái tử?"
+    },
+    {
+      "start": 392.11,
+      "end": 393.61,
+      "text": "Your Highness, what are you--",
+      "vi_text": "Thưa ngài, ngài đang--"
+    },
+    {
+      "start": 404.22,
+      "end": 406.22,
+      "text": "Right now, there is no crown on my head.",
+      "vi_text": "Hiện tại trên đầu tôi không có vương miện."
+    },
+    {
+      "start": 406.72,
+      "end": 409.81,
+      "text": "I swear that I will not unnecessarily brandish my authority.",
+      "vi_text": "Tôi thề rằng tôi sẽ không vung quyền lực của mình một cách không cần thiết."
+    },
+    {
+      "start": 410.39,
+      "end": 412.94,
+      "text": "So please, let me pass through.",
+      "vi_text": "Vì vậy xin vui lòng cho tôi đi qua."
+    },
+    {
+      "start": 417.67,
+      "end": 418.88,
+      "text": "As you can see...",
+      "vi_text": "Như bạn có thể thấy..."
+    },
+    {
+      "start": 418.96,
+      "end": 421.05,
+      "text": "Please stop that, Your Highness!",
+      "vi_text": "Xin hãy dừng việc đó lại, thưa Bệ hạ!"
+    },
+    {
+      "start": 436.12,
+      "end": 437.79,
+      "text": "Please, this way.",
+      "vi_text": "Làm ơn đi lối này."
+    },
+    {
+      "start": 438.88,
+      "end": 442.92,
+      "text": "I will tell you everything that I know along the way.",
+      "vi_text": "Tôi sẽ kể cho bạn nghe mọi thứ mà tôi biết trên đường đi."
+    },
+    {
+      "start": 443.42,
+      "end": 445.55,
+      "text": "I appreciate it, Tousetsu.",
+      "vi_text": "Tôi đánh giá cao điều đó, Tousetsu."
+    },
+    {
+      "start": 452.12,
+      "end": 453.99,
+      "text": "To begin with, there is no reason",
+      "vi_text": "Để bắt đầu, không có lý do"
+    },
+    {
+      "start": 454.08,
+      "end": 458.17,
+      "text": "why a court lady could send the crown prince back.",
+      "vi_text": "tại sao một cung nữ lại có thể đưa thái tử trở về."
+    },
+    {
+      "start": 466.56,
+      "end": 469.06,
+      "text": "SHU CLAN MAIDEN - SHU KEIGETSU (SOUL OF REIRIN)",
+      "vi_text": "SHU CLAN Maiden - SHU KEIGETSU (SOUL OF REIRIN)"
+    },
+    {
+      "start": 469.15,
+      "end": 472.06,
+      "text": "KOU CLAN MAIDEN - KOU REIRIN (SOUL OF KEIGETSU)",
+      "vi_text": "KOU CLAN MAIDEN - KOU REIRIN (TÂM LINH CỦA KEIGETSU)"
+    },
+    {
+      "start": 469.15,
+      "end": 472.31,
+      "text": "I just... recovered from an illness!",
+      "vi_text": "Tôi vừa... khỏi bệnh!"
+    },
+    {
+      "start": 481.26,
+      "end": 482.93,
+      "text": "I can't take it anymore.",
+      "vi_text": "Tôi không thể chịu đựng được nữa."
+    },
+    {
+      "start": 483.13,
+      "end": 484.93,
+      "text": "Please don't worry, Lady Keigetsu!",
+      "vi_text": "Xin đừng lo lắng, quý cô Keigetsu!"
+    },
+    {
+      "start": 485.47,
+      "end": 486.64,
+      "text": "We have arrived!",
+      "vi_text": "Chúng tôi đã đến!"
+    },
+    {
+      "start": 489.28,
+      "end": 491.28,
+      "text": "SHU CLAN COURT LADY - LEELEE",
+      "vi_text": "PHỤ NỮ TÒA THÁNH SHU - LEELEE"
+    },
+    {
+      "start": 498.56,
+      "end": 499.77,
+      "text": "Milady!",
+      "vi_text": "Thưa bà!"
+    },
+    {
+      "start": 499.85,
+      "end": 501.23,
+      "text": "What about canceling the swap--",
+      "vi_text": "Thế còn việc hủy trao đổi--"
+    },
+    {
+      "start": 501.39,
+      "end": 504.15,
+      "text": "Leelee, I'm sorry! I'll talk about that later!",
+      "vi_text": "Leelee, tôi xin lỗi! Tôi sẽ nói về chuyện đó sau!"
+    },
+    {
+      "start": 509.11,
+      "end": 510.53,
+      "text": "You right there!",
+      "vi_text": "Bạn ở ngay đó!"
+    },
+    {
+      "start": 510.61,
+      "end": 511.86,
+      "text": "Don't just stand there!",
+      "vi_text": "Đừng chỉ đứng đó!"
+    },
+    {
+      "start": 511.94,
+      "end": 513.91,
+      "text": "Stop her from running out of control!",
+      "vi_text": "Ngăn chặn cô ấy mất kiểm soát!"
+    },
+    {
+      "start": 522.24,
+      "end": 524.87,
+      "text": "Oh, it hasn't been resolved yet.",
+      "vi_text": "Ồ, nó vẫn chưa được giải quyết."
+    },
+    {
+      "start": 525.28,
+      "end": 527.16,
+      "text": "Here it is, Lady Keigetsu.",
+      "vi_text": "Đây rồi, quý cô Keigetsu."
+    },
+    {
+      "start": 527.24,
+      "end": 530.41,
+      "text": "The centipede that has won the cannibalism battle!",
+      "vi_text": "Con rết đã chiến thắng trong cuộc chiến ăn thịt người!"
+    },
+    {
+      "start": 532.47,
+      "end": 534.22,
+      "text": "We can make the venomcraft with it!",
+      "vi_text": "Chúng ta có thể tạo ra nọc độc với nó!"
+    },
+    {
+      "start": 546.5,
+      "end": 549.0,
+      "text": "CAPTAIN OF THE EAGLE EYES - SHIN-U",
+      "vi_text": "Thuyền Trưởng Mắt Đại Bàng - SHIN-U"
+    },
+    {
+      "start": 547.42,
+      "end": 549.0,
+      "text": "Captain!",
+      "vi_text": "Đội trưởng!"
+    },
+    {
+      "start": 550.05,
+      "end": 551.63,
+      "text": "This isn't good!",
+      "vi_text": "Điều này không tốt!"
+    },
+    {
+      "start": 554.48,
+      "end": 556.94,
+      "text": "EUNUCH - BUNKOU",
+      "vi_text": "EUNUCH - BUNKOU"
+    },
+    {
+      "start": 554.48,
+      "end": 555.77,
+      "text": "You shouldn't bring out a national treasure",
+      "vi_text": "Bạn không nên mang bảo vật quốc gia ra ngoài"
+    },
+    {
+      "start": 555.85,
+      "end": 557.23,
+      "text": "like the Bow of Warding without permission!",
+      "vi_text": "giống như Cung Warding mà không được phép!"
+    },
+    {
+      "start": 565.31,
+      "end": 566.23,
+      "text": "Shut up.",
+      "vi_text": "Câm miệng."
+    },
+    {
+      "start": 566.31,
+      "end": 569.06,
+      "text": "Shut up? That's mean!",
+      "vi_text": "Câm miệng? Thật là ác ý!"
+    },
+    {
+      "start": 569.15,
+      "end": 573.23,
+      "text": "Shu Keigetsu didn't come to seize the Bow of Warding.",
+      "vi_text": "Shu Keigetsu không đến để chiếm lấy Cung canh gác."
+    },
+    {
+      "start": 582.67,
+      "end": 585.5,
+      "text": "She is likely resorting to different means.",
+      "vi_text": "Cô ấy có thể đang sử dụng các phương tiện khác nhau."
+    },
+    {
+      "start": 586.01,
+      "end": 587.72,
+      "text": "This is of my own discretion.",
+      "vi_text": "Đây là ý kiến ​​riêng của tôi."
+    },
+    {
+      "start": 587.8,
+      "end": 591.93,
+      "text": "I will testify that you stopped me, so go ahead and shut your mouth.",
+      "vi_text": "Tôi sẽ làm chứng rằng bạn đã ngăn tôi lại, vì vậy hãy tiếp tục và ngậm miệng lại."
+    },
+    {
+      "start": 598.18,
+      "end": 600.14,
+      "text": "You're going to testify to it?",
+      "vi_text": "Bạn sẽ làm chứng cho điều đó chứ?"
+    },
+    {
+      "start": 600.22,
+      "end": 601.43,
+      "text": "Then I'll shut up.",
+      "vi_text": "Thế thì tôi sẽ im lặng."
+    },
+    {
+      "start": 602.19,
+      "end": 604.27,
+      "text": "So to pray for Her Majesty the Empress's recovery,",
+      "vi_text": "Vì thế để cầu nguyện cho Hoàng hậu được bình phục,"
+    },
+    {
+      "start": 612.44,
+      "end": 614.53,
+      "text": "this time around, you're going to do it, Captain?",
+      "vi_text": "lần này anh sẽ làm điều đó phải không đội trưởng?"
+    },
+    {
+      "start": 614.74,
+      "end": 619.28,
+      "text": "To be honest, I thought you didn't believe in curses and superstition,",
+      "vi_text": "Thành thật mà nói, tôi tưởng bạn không tin vào lời nguyền và mê tín,"
+    },
+    {
+      "start": 619.37,
+      "end": 620.45,
+      "text": "so this is unexpected.",
+      "vi_text": "nên điều này thật bất ngờ."
+    },
+    {
+      "start": 628.26,
+      "end": 629.8,
+      "text": "I don't usually believe in them.",
+      "vi_text": "Tôi thường không tin vào họ."
+    },
+    {
+      "start": 629.88,
+      "end": 633.09,
+      "text": "But as the Shu clan Maiden drew upon this bow,",
+      "vi_text": "Nhưng khi Thiếu nữ nhà Thục giương cung này,"
+    },
+    {
+      "start": 633.18,
+      "end": 635.89,
+      "text": "Lady Kou Reirin's malady subsided.",
+      "vi_text": "Bệnh tình của tiểu thư Kou Reirin đã giảm bớt."
+    },
+    {
+      "start": 647.92,
+      "end": 650.09,
+      "text": "even the greatest villainess in the Maiden Court",
+      "vi_text": "ngay cả nhân vật phản diện vĩ đại nhất trong Maiden Court"
+    },
+    {
+      "start": 650.18,
+      "end": 653.01,
+      "text": "wanted to draw the Bow for Her Majesty.",
+      "vi_text": "muốn vẽ Cung cho Bệ hạ."
+    },
+    {
+      "start": 653.1,
+      "end": 656.27,
+      "text": "I, as the Captain of the Eagle Eyes, can't just sit there and watch.",
+      "vi_text": "Tôi, với tư cách là Đội trưởng của Eagle Eyes, không thể chỉ ngồi đó và nhìn."
+    },
+    {
+      "start": 667.63,
+      "end": 671.09,
+      "text": "His Highness must have been looking out for Shu Keigetsu...",
+      "vi_text": "Chắc hẳn Hoàng thân đang tìm kiếm Shu Keigetsu..."
+    },
+    {
+      "start": 671.76,
+      "end": 674.26,
+      "text": "but why did he push her away so much?",
+      "vi_text": "nhưng tại sao anh lại đẩy cô ra xa như vậy?"
+    },
+    {
+      "start": 674.64,
+      "end": 678.06,
+      "text": "No. Scrutiny is not a job for the Eagle Eyes Captain.",
+      "vi_text": "Không. Giám sát không phải là công việc dành cho Đội trưởng Eagle Eyes."
+    },
+    {
+      "start": 688.42,
+      "end": 692.76,
+      "text": "My job is to oversee the discipline of the inner court and remove risks.",
+      "vi_text": "Công việc của tôi là giám sát kỷ luật của nội viện và loại bỏ rủi ro."
+    },
+    {
+      "start": 693.81,
+      "end": 695.52,
+      "text": "I have the Emperor's blood in me",
+      "vi_text": "Tôi mang trong mình dòng máu của Hoàng đế"
+    },
+    {
+      "start": 695.6,
+      "end": 698.27,
+      "text": "and am part of the Gen family, under the protection of water.",
+      "vi_text": "và là thành viên của gia đình Gen, được bảo vệ bởi nước."
+    },
+    {
+      "start": 702.37,
+      "end": 705.41,
+      "text": "My use of the Bow of Warding should unleash its full potential.",
+      "vi_text": "Việc sử dụng Bow of Warding của tôi sẽ phát huy hết tiềm năng của nó."
+    },
+    {
+      "start": 715.94,
+      "end": 716.98,
+      "text": "Wha?",
+      "vi_text": "Gì?"
+    },
+    {
+      "start": 717.07,
+      "end": 719.78,
+      "text": "Th-The Bow of Warding has--",
+      "vi_text": "Đ-The Bow of Warding có--"
+    },
+    {
+      "start": 719.86,
+      "end": 723.24,
+      "text": "D-Destroying a national treasure means execution!",
+      "vi_text": "D-Phá hủy kho báu quốc gia đồng nghĩa với việc xử tử!"
+    },
+    {
+      "start": 732.33,
+      "end": 734.21,
+      "text": "You pulled with a stupid amount of power!",
+      "vi_text": "Bạn đã kéo với một lượng sức mạnh ngu ngốc!"
+    },
+    {
+      "start": 734.63,
+      "end": 738.34,
+      "text": "No, such a powerful bow can't be surpassed.",
+      "vi_text": "Không, một cây cung mạnh mẽ như vậy không thể nào bị vượt qua được."
+    },
+    {
+      "start": 738.71,
+      "end": 741.26,
+      "text": "I hear the bowstring has not snapped once",
+      "vi_text": "Nghe dây cung chưa đứt một lần"
+    },
+    {
+      "start": 745.76,
+      "end": 747.64,
+      "text": "since it was strung several hundred years ago.",
+      "vi_text": "vì nó đã được xâu chuỗi từ hàng trăm năm trước."
+    },
+    {
+      "start": 747.72,
+      "end": 750.1,
+      "text": "Then, why now, of all times?",
+      "vi_text": "Vậy thì tại sao lại là bây giờ, trong mọi thời đại?"
+    },
+    {
+      "start": 761.88,
+      "end": 766.1,
+      "text": "When I drew the bow, it was as if it was cowering from something.",
+      "vi_text": "Khi tôi kéo cây cung ra, nó như thể đang co rúm lại trước một thứ gì đó."
+    },
+    {
+      "start": 766.68,
+      "end": 769.22,
+      "text": "It was like it was relieved of the pressure",
+      "vi_text": "Giống như được giải tỏa áp lực"
+    },
+    {
+      "start": 769.31,
+      "end": 772.23,
+      "text": "when in the familiar hands of the Gen clan,",
+      "vi_text": "khi nằm trong bàn tay quen thuộc của gia tộc Gen,"
+    },
+    {
+      "start": 783.28,
+      "end": 786.74,
+      "text": "and the release of tension literally snapped the string.",
+      "vi_text": "và sự giải phóng lực căng đã làm đứt dây theo đúng nghĩa đen."
+    },
+    {
+      "start": 787.83,
+      "end": 790.33,
+      "text": "The Gen clan oversees water and warfare.",
+      "vi_text": "Gia tộc Gen giám sát nước và chiến tranh."
+    },
+    {
+      "start": 790.41,
+      "end": 794.17,
+      "text": "The Bow of Warding was created by a master artisan from among them.",
+      "vi_text": "Cung Warding được tạo ra bởi một nghệ nhân bậc thầy trong số họ."
+    },
+    {
+      "start": 801.88,
+      "end": 805.43,
+      "text": "It pierces any enemy, and doesn't even fear a blazing flame.",
+      "vi_text": "Nó xuyên qua bất kỳ kẻ thù nào và thậm chí không sợ ngọn lửa rực cháy."
+    },
+    {
+      "start": 805.93,
+      "end": 809.43,
+      "text": "If there's one thing that can surpass this bow...",
+      "vi_text": "Nếu có một thứ có thể vượt qua cây cung này..."
+    },
+    {
+      "start": 819.04,
+      "end": 820.5,
+      "text": "It would be earthen qi?",
+      "vi_text": "Nó sẽ là khí đất?"
+    },
+    {
+      "start": 820.83,
+      "end": 825.13,
+      "text": "Earth defeats water. The heavy land can quell even unruly waters.",
+      "vi_text": "Trái đất đánh bại nước. Đất nặng có thể dập tắt ngay cả những vùng nước ngang ngược."
+    },
+    {
+      "start": 825.21,
+      "end": 827.34,
+      "text": "The Kou clan governs earth.",
+      "vi_text": "Gia tộc Kou cai trị trái đất."
+    },
+    {
+      "start": 836.36,
+      "end": 839.57,
+      "text": "The Shu clan maiden kept drawing the Bow of Warding for over six hours.",
+      "vi_text": "Thiếu nữ nhà Thục liên tục vẽ Cung Bảo Vệ trong hơn sáu giờ đồng hồ."
+    },
+    {
+      "start": 839.78,
+      "end": 841.86,
+      "text": "The Shu clan is governed by fire.",
+      "vi_text": "Gia tộc Shu được cai trị bởi lửa."
+    },
+    {
+      "start": 841.95,
+      "end": 844.86,
+      "text": "Ordinarily, it should not be compatible with water.",
+      "vi_text": "Thông thường, nó không tương thích với nước."
+    },
+    {
+      "start": 847.72,
+      "end": 848.81,
+      "text": "It can't be.",
+      "vi_text": "Không thể được."
+    },
+    {
+      "start": 848.89,
+      "end": 850.02,
+      "text": "But still...",
+      "vi_text": "Nhưng vẫn..."
+    },
+    {
+      "start": 858.67,
+      "end": 862.55,
+      "text": "You are often said to be a wise ruler, and you are kind, dear cousin--",
+      "vi_text": "Người ta thường nói anh là một người cai trị khôn ngoan, và anh rất tốt bụng, người anh họ thân mến--"
+    },
+    {
+      "start": 870.45,
+      "end": 872.29,
+      "text": "So that's what is going on.",
+      "vi_text": "Vì vậy, đó là những gì đang xảy ra."
+    },
+    {
+      "start": 872.87,
+      "end": 874.71,
+      "text": "Huh? Wha?",
+      "vi_text": "Hả? Gì?"
+    },
+    {
+      "start": 874.79,
+      "end": 876.21,
+      "text": "Captain?",
+      "vi_text": "Đội trưởng?"
+    },
+    {
+      "start": 879.5,
+      "end": 880.75,
+      "text": "Where are you going?",
+      "vi_text": "Bạn đang đi đâu?"
+    },
+    {
+      "start": 881.0,
+      "end": 882.63,
+      "text": "I'm going back to the Shu Palace.",
+      "vi_text": "Tôi sẽ quay lại Shu Palace."
+    },
+    {
+      "start": 892.74,
+      "end": 893.86,
+      "text": "Huh?",
+      "vi_text": "Hả?"
+    },
+    {
+      "start": 894.57,
+      "end": 899.41,
+      "text": "Y-Your testimony!",
+      "vi_text": "C-Lời khai của bạn!"
+    },
+    {
+      "start": 899.54,
+      "end": 901.54,
+      "text": "Why do you have something like that?",
+      "vi_text": "Tại sao bạn có một cái gì đó như thế?"
+    },
+    {
+      "start": 910.23,
+      "end": 912.06,
+      "text": "Well, um...",
+      "vi_text": "À, ừm..."
+    },
+    {
+      "start": 912.44,
+      "end": 914.81,
+      "text": "I was planning to use the spider and centipede",
+      "vi_text": "Tôi đã định sử dụng con nhện và con rết"
+    },
+    {
+      "start": 914.9,
+      "end": 918.65,
+      "text": "that Leelee gave me as food for my rat friend...",
+      "vi_text": "Leelee đã cho tôi làm thức ăn cho bạn chuột của tôi..."
+    },
+    {
+      "start": 925.92,
+      "end": 927.34,
+      "text": "\"Gave me\"?",
+      "vi_text": "\"Đưa cho tôi\"?"
+    },
+    {
+      "start": 927.59,
+      "end": 929.51,
+      "text": "...but I didn't have a container.",
+      "vi_text": "...nhưng tôi không có hộp đựng."
+    },
+    {
+      "start": 929.59,
+      "end": 932.63,
+      "text": "I didn't want to use the personal belongings of other people,",
+      "vi_text": "Tôi không muốn sử dụng đồ đạc cá nhân của người khác,"
+    },
+    {
+      "start": 942.98,
+      "end": 946.27,
+      "text": "so I put them together into the only jar that I had on hand.",
+      "vi_text": "vì vậy tôi đã ghép chúng lại với nhau vào chiếc lọ duy nhất mà tôi có trong tay."
+    },
+    {
+      "start": 946.36,
+      "end": 949.4,
+      "text": "And the centipede ate the spider.",
+      "vi_text": "Và con rết đã ăn thịt con nhện."
+    },
+    {
+      "start": 949.61,
+      "end": 953.15,
+      "text": "She created venomcraft as a result of her modesty, huh.",
+      "vi_text": "Cô ấy tạo ra nọc độc là kết quả của sự khiêm tốn của mình nhỉ."
+    },
+    {
+      "start": 966.06,
+      "end": 969.36,
+      "text": "But what are you going to do with it? You came looking for it?",
+      "vi_text": "Nhưng bạn sẽ làm gì với nó? Cậu tới tìm nó à?"
+    },
+    {
+      "start": 969.86,
+      "end": 974.24,
+      "text": "Leelee, Her Majesty the Empress suffers from an illness that stems from a curse.",
+      "vi_text": "Leelee, Nữ hoàng mắc phải một căn bệnh bắt nguồn từ một lời nguyền."
+    },
+    {
+      "start": 975.03,
+      "end": 978.16,
+      "text": "And that curse is one that Noble Consort Shu gave her.",
+      "vi_text": "Và lời nguyền đó chính là lời nguyền mà Quý phi Shu đã ban cho cô."
+    },
+    {
+      "start": 986.21,
+      "end": 987.21,
+      "text": "Wha?",
+      "vi_text": "Gì?"
+    },
+    {
+      "start": 987.63,
+      "end": 992.18,
+      "text": "So as soon as possible, we would like to complete the countercurse",
+      "vi_text": "Vì vậy, càng sớm càng tốt, chúng tôi muốn hoàn thành việc phản lời nguyền"
+    },
+    {
+      "start": 992.26,
+      "end": 994.1,
+      "text": "with this venomcraft and save Her Majesty.",
+      "vi_text": "với nọc độc này và cứu Nữ hoàng."
+    },
+    {
+      "start": 1001.12,
+      "end": 1002.7,
+      "text": "That can't be.",
+      "vi_text": "Điều đó không thể được."
+    },
+    {
+      "start": 1002.78,
+      "end": 1004.58,
+      "text": "Noble Consort Shu?",
+      "vi_text": "Quý phi Shu?"
+    },
+    {
+      "start": 1005.41,
+      "end": 1007.79,
+      "text": "Did you mention this to His Highness, the crown prince?",
+      "vi_text": "Bạn đã đề cập điều này với Thái tử điện hạ chưa?"
+    },
+    {
+      "start": 1016.96,
+      "end": 1018.59,
+      "text": "Huh? Why His Highness?",
+      "vi_text": "Hả? Tại sao Hoàng thượng?"
+    },
+    {
+      "start": 1019.01,
+      "end": 1024.09,
+      "text": "Actually, moments ago, right after you jumped the fence, His Highness showed up.",
+      "vi_text": "Thực ra, cách đây không lâu, ngay sau khi cậu nhảy qua hàng rào, Hoàng thân đã xuất hiện."
+    },
+    {
+      "start": 1024.47,
+      "end": 1025.97,
+      "text": "And he was pounding on the gate,",
+      "vi_text": "Và anh ta đang đập vào cổng,"
+    },
+    {
+      "start": 1037.6,
+      "end": 1040.15,
+      "text": "shouting, \"You came over here, didn't you? Reirin!\"",
+      "vi_text": "hét lên, \"Bạn đã đến đây phải không? Reirin!\""
+    },
+    {
+      "start": 1040.94,
+      "end": 1044.28,
+      "text": "It was as if he was sure that Lady Kou Reirin was not inside,",
+      "vi_text": "Cứ như thể anh ta chắc chắn rằng Quý cô Kou Reirin không có ở bên trong,"
+    },
+    {
+      "start": 1044.36,
+      "end": 1049.07,
+      "text": "but instead the Maiden that just jumped inside moments ago.",
+      "vi_text": "mà thay vào đó là Maiden vừa mới nhảy vào trong vài phút trước."
+    },
+    {
+      "start": 1053.5,
+      "end": 1054.42,
+      "text": "In other words...",
+      "vi_text": "Nói cách khác..."
+    },
+    {
+      "start": 1054.5,
+      "end": 1056.0,
+      "text": "He has figured it out.",
+      "vi_text": "Anh ấy đã tìm ra nó."
+    },
+    {
+      "start": 1056.08,
+      "end": 1057.75,
+      "text": "His Highness has finally--",
+      "vi_text": "Hoàng thân cuối cùng đã--"
+    },
+    {
+      "start": 1069.82,
+      "end": 1071.57,
+      "text": "I think so, too.",
+      "vi_text": "Tôi cũng nghĩ vậy."
+    },
+    {
+      "start": 1072.2,
+      "end": 1075.2,
+      "text": "I'm sure His Highness is angry.",
+      "vi_text": "Tôi chắc chắn Hoàng thượng đang tức giận."
+    },
+    {
+      "start": 1075.28,
+      "end": 1081.41,
+      "text": "When the room in the Kou Palace is empty, he might double back here.",
+      "vi_text": "Khi phòng trong Cung điện Kou trống, anh ta có thể quay lại đây gấp đôi."
+    },
+    {
+      "start": 1087.77,
+      "end": 1093.15,
+      "text": "Lady Keigetsu, it might be better to cancel the swap first.",
+      "vi_text": "Quý cô Keigetsu, tốt hơn hết là hủy việc trao đổi trước."
+    },
+    {
+      "start": 1100.26,
+      "end": 1102.64,
+      "text": "I won't cancel the swap.",
+      "vi_text": "Tôi sẽ không hủy việc trao đổi."
+    },
+    {
+      "start": 1103.09,
+      "end": 1104.1,
+      "text": "Huh?",
+      "vi_text": "Hả?"
+    },
+    {
+      "start": 1113.71,
+      "end": 1115.34,
+      "text": "Give me a break already!",
+      "vi_text": "Hãy cho tôi nghỉ ngơi đã!"
+    },
+    {
+      "start": 1115.42,
+      "end": 1118.13,
+      "text": "You're not in a situation where you can say that!",
+      "vi_text": "Bạn không ở trong tình huống mà bạn có thể nói như vậy!"
+    },
+    {
+      "start": 1118.21,
+      "end": 1121.68,
+      "text": "How noisy a mere lower court lady is being.",
+      "vi_text": "Một tiểu thư cấp dưới đang ồn ào biết bao."
+    },
+    {
+      "start": 1128.99,
+      "end": 1130.37,
+      "text": "Well, excuse me!",
+      "vi_text": "Vâng, xin lỗi!"
+    },
+    {
+      "start": 1130.45,
+      "end": 1132.08,
+      "text": "I'm an upper court lady now!",
+      "vi_text": "Bây giờ tôi là một quý bà thượng viện!"
+    },
+    {
+      "start": 1132.62,
+      "end": 1135.62,
+      "text": "Your life was saved by Lady Reirin!",
+      "vi_text": "Mạng sống của bạn đã được cứu bởi Lady Reirin!"
+    },
+    {
+      "start": 1141.79,
+      "end": 1144.21,
+      "text": "Don't you have a human heart in you?",
+      "vi_text": "Bạn không có trái tim con người trong mình sao?"
+    },
+    {
+      "start": 1144.3,
+      "end": 1145.3,
+      "text": "Leelee...",
+      "vi_text": "Leelee..."
+    },
+    {
+      "start": 1145.46,
+      "end": 1147.8,
+      "text": "Hurry up and cancel the swap.",
+      "vi_text": "Hãy nhanh chóng hủy bỏ việc trao đổi."
+    },
+    {
+      "start": 1153.55,
+      "end": 1155.89,
+      "text": "Don't you have the guts to wash away all this crap",
+      "vi_text": "Bạn không có đủ can đảm để rửa sạch tất cả những thứ tào lao này sao"
+    },
+    {
+      "start": 1155.97,
+      "end": 1158.14,
+      "text": "that caused so much trouble, even just a little bit?",
+      "vi_text": "đã gây ra rất nhiều rắc rối, dù chỉ một chút?"
+    },
+    {
+      "start": 1158.23,
+      "end": 1159.14,
+      "text": "I do.",
+      "vi_text": "Tôi biết."
+    },
+    {
+      "start": 1170.04,
+      "end": 1171.04,
+      "text": "Huh?",
+      "vi_text": "Hả?"
+    },
+    {
+      "start": 1171.75,
+      "end": 1175.33,
+      "text": "I have the guts to be responsible for my own actions, at least!",
+      "vi_text": "Ít nhất thì tôi cũng có can đảm để chịu trách nhiệm về hành động của mình!"
+    },
+    {
+      "start": 1176.5,
+      "end": 1180.76,
+      "text": "But cancelling the swap uses a lot of qi as well,",
+      "vi_text": "Nhưng việc hủy bỏ trao đổi cũng sử dụng rất nhiều khí,"
+    },
+    {
+      "start": 1183.0,
+      "end": 1185.08,
+      "text": "so I can't do both on the same day!",
+      "vi_text": "vì vậy tôi không thể làm cả hai việc trong cùng một ngày!"
+    },
+    {
+      "start": 1196.82,
+      "end": 1200.03,
+      "text": "So I can't do it right now.",
+      "vi_text": "Vì vậy, tôi không thể làm điều đó ngay bây giờ."
+    },
+    {
+      "start": 1200.2,
+      "end": 1204.53,
+      "text": "Does that mean that you will grant my wish first?",
+      "vi_text": "Điều đó có nghĩa là bạn sẽ thực hiện điều ước của tôi trước?"
+    },
+    {
+      "start": 1204.83,
+      "end": 1206.87,
+      "text": "Don't get me wrong!",
+      "vi_text": "Đừng hiểu lầm tôi!"
+    },
+    {
+      "start": 1215.21,
+      "end": 1217.26,
+      "text": "It's not for your sake, okay?",
+      "vi_text": "Đó không phải là vì lợi ích của bạn, được chứ?"
+    },
+    {
+      "start": 1217.42,
+      "end": 1221.3,
+      "text": "I just want to show someone who mocked me what I'm capable of doing!",
+      "vi_text": "Tôi chỉ muốn cho người đã chế nhạo tôi thấy tôi có thể làm được gì!"
+    },
+    {
+      "start": 1221.39,
+      "end": 1223.39,
+      "text": "-However-- -Oh, shut up!",
+      "vi_text": "-Tuy nhiên-- -Ồ, im đi!"
+    },
+    {
+      "start": 1230.37,
+      "end": 1233.08,
+      "text": "I'm trying to right the wrongs of the Shu clan consort",
+      "vi_text": "Tôi đang cố gắng sửa chữa những sai lầm của phối ngẫu nhà Thục"
+    },
+    {
+      "start": 1233.16,
+      "end": 1235.66,
+      "text": "as a member of the Shu clan!",
+      "vi_text": "với tư cách là thành viên của tộc Shu!"
+    },
+    {
+      "start": 1235.75,
+      "end": 1237.08,
+      "text": "\"Trying to right\"...",
+      "vi_text": "\"Cố gắng làm đúng\"..."
+    },
+    {
+      "start": 1246.13,
+      "end": 1249.97,
+      "text": "B-Besides, if I do a favor for Her Majesty the Empress,",
+      "vi_text": "B-Hơn nữa, nếu tôi giúp đỡ Nữ hoàng,"
+    },
+    {
+      "start": 1250.05,
+      "end": 1253.39,
+      "text": "it will work as extenuating circumstances after the swap is cancelled!",
+      "vi_text": "nó sẽ hoạt động như một tình tiết giảm nhẹ sau khi việc hoán đổi bị hủy bỏ!"
+    },
+    {
+      "start": 1253.64,
+      "end": 1255.02,
+      "text": "Hey, Leelee.",
+      "vi_text": "Này, Leelee."
+    },
+    {
+      "start": 1261.23,
+      "end": 1264.86,
+      "text": "Lady Keigetsu really is a darling little one after all.",
+      "vi_text": "Quý cô Keigetsu thực sự là một cô bé đáng yêu."
+    },
+    {
+      "start": 1264.94,
+      "end": 1267.28,
+      "text": "Well... I don't know about that.",
+      "vi_text": "À... tôi không biết về điều đó."
+    },
+    {
+      "start": 1278.43,
+      "end": 1282.14,
+      "text": "First off, think of who you want to curse.",
+      "vi_text": "Trước hết, hãy nghĩ xem bạn muốn nguyền rủa ai."
+    },
+    {
+      "start": 1282.31,
+      "end": 1284.64,
+      "text": "Take the representative object,\\nin this case, this jar.",
+      "vi_text": "Lấy đối tượng đại diện\\trong trường hợp này là cái bình này."
+    },
+    {
+      "start": 1284.81,
+      "end": 1286.89,
+      "text": "Write the details onto it.",
+      "vi_text": "Viết chi tiết lên đó."
+    },
+    {
+      "start": 1300.51,
+      "end": 1303.76,
+      "text": "The spider cursing a noble in the Kou Palace,",
+      "vi_text": "Con nhện nguyền rủa một quý tộc trong Cung điện Kou,"
+    },
+    {
+      "start": 1304.1,
+      "end": 1308.39,
+      "text": "so it's more like a countercurse against the venomcraft spider",
+      "vi_text": "nên nó giống một lời nguyền chống lại nhện độc hơn"
+    },
+    {
+      "start": 1308.47,
+      "end": 1311.02,
+      "text": "than placing a curse on Noble Consort Shu.",
+      "vi_text": "hơn là nguyền rủa Quý phi Shu."
+    },
+    {
+      "start": 1316.5,
+      "end": 1318.25,
+      "text": "That is a bit easier to deal with emotionally.",
+      "vi_text": "Việc giải quyết vấn đề cảm xúc sẽ dễ dàng hơn một chút."
+    },
+    {
+      "start": 1318.33,
+      "end": 1320.5,
+      "text": "The curse will rebound to Noble Consort Shu, the caster,",
+      "vi_text": "Lời nguyền sẽ quay trở lại với Noble Consort Shu, người thi triển,"
+    },
+    {
+      "start": 1320.58,
+      "end": 1321.59,
+      "text": "once it is broken.",
+      "vi_text": "một khi nó bị hỏng."
+    },
+    {
+      "start": 1324.4,
+      "end": 1326.57,
+      "text": "So ultimately we end up with the same result.",
+      "vi_text": "Vì vậy, cuối cùng chúng tôi kết thúc với cùng một kết quả."
+    },
+    {
+      "start": 1338.6,
+      "end": 1344.65,
+      "text": "Under the rules set from the beginnings of heaven and earth, listen to my command.",
+      "vi_text": "Dưới những quy tắc được đặt ra từ đầu trời và đất, hãy nghe lệnh của tôi."
+    },
+    {
+      "start": 1360.26,
+      "end": 1362.93,
+      "text": "Break off the spider that is the root of the curse",
+      "vi_text": "Phá vỡ con nhện là gốc rễ của lời nguyền"
+    },
+    {
+      "start": 1363.01,
+      "end": 1364.97,
+      "text": "and literally destroy its body.",
+      "vi_text": "và theo đúng nghĩa đen là phá hủy cơ thể của nó."
+    },
+    {
+      "start": 1371.04,
+      "end": 1372.37,
+      "text": "Destroy...",
+      "vi_text": "Hủy hoại..."
+    },
+    {
+      "start": 1372.45,
+      "end": 1375.42,
+      "text": "SPIDER CURSING A NOBLE IN KOU PALACE",
+      "vi_text": "NHỆN LỪA ĐẢO QUÝ VỊ TRONG CUNG ĐẠI KOU"
+    },
+    {
+      "start": 1387.78,
+      "end": 1389.15,
+      "text": "And now the sacrifice.",
+      "vi_text": "Và bây giờ là sự hy sinh."
+    },
+    {
+      "start": 1390.15,
+      "end": 1393.16,
+      "text": "You just have to kill this centipede.",
+      "vi_text": "Bạn chỉ cần giết con rết này."
+    },
+    {
+      "start": 1400.77,
+      "end": 1403.57,
+      "text": "Shall I do that?",
+      "vi_text": "Tôi có nên làm điều đó không?"
+    },
+    {
+      "start": 1403.65,
+      "end": 1405.03,
+      "text": "I'll do it!",
+      "vi_text": "Tôi sẽ làm điều đó!"
+    },
+    {
+      "start": 1416.89,
+      "end": 1418.64,
+      "text": "Please hold on, Lady Keigetsu.",
+      "vi_text": "Xin hãy chờ đã, quý cô Keigetsu."
+    },
+    {
+      "start": 1419.76,
+      "end": 1422.81,
+      "text": "Once broken, a curse goes back to the caster,",
+      "vi_text": "Một khi bị phá vỡ, lời nguyền sẽ quay trở lại với người thực hiện,"
+    },
+    {
+      "start": 1422.89,
+      "end": 1427.15,
+      "text": "and with the killing of the sacrifice, the spell is complete.",
+      "vi_text": "và với việc giết chết vật hiến tế, câu thần chú đã hoàn tất."
+    },
+    {
+      "start": 1439.93,
+      "end": 1443.18,
+      "text": "In other words, the caster is the one that kills the sacrifice.",
+      "vi_text": "Nói cách khác, người niệm phép là người giết chết vật hiến tế."
+    },
+    {
+      "start": 1444.1,
+      "end": 1448.1,
+      "text": "Then, on the off chance we fail, the curse will double back.",
+      "vi_text": "Sau đó, nếu chúng ta thất bại, lời nguyền sẽ tăng gấp đôi."
+    },
+    {
+      "start": 1448.19,
+      "end": 1452.36,
+      "text": "And that means, Lady Keigetsu, that you will suffer as the caster?",
+      "vi_text": "Và điều đó có nghĩa là, quý cô Keigetsu, rằng cô sẽ phải chịu đau khổ với tư cách là người làm phép?"
+    },
+    {
+      "start": 1464.76,
+      "end": 1468.52,
+      "text": "Lady Keigetsu, are you trying to shoulder the burden",
+      "vi_text": "Quý cô Keigetsu, cô đang cố gắng gánh vác gánh nặng à?"
+    },
+    {
+      "start": 1468.6,
+      "end": 1471.9,
+      "text": "of losing your own life in order to save Her Majesty?",
+      "vi_text": "mất mạng để cứu Nữ hoàng?"
+    },
+    {
+      "start": 1472.77,
+      "end": 1475.19,
+      "text": "Please tell me, Lady Keigetsu.",
+      "vi_text": "Xin hãy nói cho tôi biết, quý cô Keigetsu."
+    },
+    {
+      "start": 1488.43,
+      "end": 1493.35,
+      "text": "You always look so frivolous but clever at the strangest of times.",
+      "vi_text": "Bạn luôn trông thật phù phiếm nhưng lại thông minh vào những thời điểm kỳ lạ nhất."
+    },
+    {
+      "start": 1493.6,
+      "end": 1496.73,
+      "text": "I have not received an answer, Lady Keigetsu.",
+      "vi_text": "Tôi chưa nhận được câu trả lời, quý cô Keigetsu."
+    },
+    {
+      "start": 1497.81,
+      "end": 1499.4,
+      "text": "This is the only way I know.",
+      "vi_text": "Đây là cách duy nhất tôi biết."
+    },
+    {
+      "start": 1504.94,
+      "end": 1505.86,
+      "text": "Huh?",
+      "vi_text": "Hả?"
+    },
+    {
+      "start": 1505.94,
+      "end": 1508.24,
+      "text": "How to apologize to you.",
+      "vi_text": "Làm thế nào để xin lỗi bạn."
+    },
+    {
+      "start": 1508.32,
+      "end": 1510.32,
+      "text": "How to settle everything.",
+      "vi_text": "Làm thế nào để giải quyết mọi việc."
+    },
+    {
+      "start": 1514.75,
+      "end": 1516.04,
+      "text": "And...",
+      "vi_text": "Và..."
+    },
+    {
+      "start": 1516.41,
+      "end": 1519.0,
+      "text": "how to live up to expectations.",
+      "vi_text": "làm thế nào để đáp ứng được sự mong đợi."
+    },
+    {
+      "start": 1528.69,
+      "end": 1531.86,
+      "text": "Nobody has ever given me an opportunity.",
+      "vi_text": "Chưa ai từng cho tôi một cơ hội."
+    },
+    {
+      "start": 1531.95,
+      "end": 1534.49,
+      "text": "Nobody taught me pride.",
+      "vi_text": "Không ai dạy tôi niềm tự hào."
+    },
+    {
+      "start": 1534.57,
+      "end": 1536.49,
+      "text": "They didn't expect anything out of me at all.",
+      "vi_text": "Họ không mong đợi bất cứ điều gì ở tôi cả."
+    },
+    {
+      "start": 1543.39,
+      "end": 1544.97,
+      "text": "So I don't know.",
+      "vi_text": "Vì thế tôi không biết."
+    },
+    {
+      "start": 1545.97,
+      "end": 1547.56,
+      "text": "I don't know, but...",
+      "vi_text": "Tôi không biết, nhưng..."
+    },
+    {
+      "start": 1548.06,
+      "end": 1549.56,
+      "text": "I want to do something!",
+      "vi_text": "Tôi muốn làm điều gì đó!"
+    },
+    {
+      "start": 1560.71,
+      "end": 1564.17,
+      "text": "Because you said I was your star!",
+      "vi_text": "Bởi vì bạn nói tôi là ngôi sao của bạn!"
+    },
+    {
+      "start": 1564.43,
+      "end": 1568.8,
+      "text": "Although I have lived this whole time wandering around in the mud...",
+      "vi_text": "Dù suốt thời gian qua tôi đã sống lang thang trong bùn..."
+    },
+    {
+      "start": 1569.64,
+      "end": 1571.47,
+      "text": "it made me think that just once...",
+      "vi_text": "nó khiến tôi nghĩ rằng chỉ một lần thôi..."
+    },
+    {
+      "start": 1577.99,
+      "end": 1579.74,
+      "text": "no matter how small...",
+      "vi_text": "dù nhỏ đến đâu..."
+    },
+    {
+      "start": 1579.82,
+      "end": 1583.16,
+      "text": "I wanted to do something brilliant!",
+      "vi_text": "Tôi muốn làm điều gì đó tuyệt vời!"
+    },
+    {
+      "start": 1583.24,
+      "end": 1584.33,
+      "text": "Is that bad?",
+      "vi_text": "Điều đó có tệ không?"
+    },
+    {
+      "start": 1592.23,
+      "end": 1594.65,
+      "text": "The power of the comet...",
+      "vi_text": "Sức mạnh của sao chổi..."
+    },
+    {
+      "start": 1594.98,
+      "end": 1596.99,
+      "text": "is truly exceptional.",
+      "vi_text": "thực sự là đặc biệt."
+    },
+    {
+      "start": 1608.26,
+      "end": 1614.22,
+      "text": "I mentioned how I made two wishes upon the comet, right?",
+      "vi_text": "Tôi đã đề cập đến việc tôi đã thực hiện hai điều ước trên sao chổi, phải không?"
+    },
+    {
+      "start": 1621.83,
+      "end": 1624.25,
+      "text": "One was health.",
+      "vi_text": "Một là sức khỏe."
+    },
+    {
+      "start": 1624.87,
+      "end": 1626.75,
+      "text": "And the other...",
+      "vi_text": "Và cái khác..."
+    },
+    {
+      "start": 1630.36,
+      "end": 1632.37,
+      "text": "was that I wanted a friend.",
+      "vi_text": "là tôi muốn có một người bạn."
+    },
+    {
+      "start": 1648.36,
+      "end": 1653.7,
+      "text": "I had an understanding that I had been growing up in a privileged environment.",
+      "vi_text": "Tôi hiểu rằng tôi đã lớn lên trong một môi trường đặc quyền."
+    },
+    {
+      "start": 1654.36,
+      "end": 1658.12,
+      "text": "A gentle world, much like a cradle.",
+      "vi_text": "Một thế giới dịu dàng, tựa như một chiếc nôi."
+    },
+    {
+      "start": 1658.49,
+      "end": 1661.75,
+      "text": "However, I still am someone from the Kou family.",
+      "vi_text": "Tuy nhiên, tôi vẫn là người nhà Kou."
+    },
+    {
+      "start": 1673.86,
+      "end": 1679.24,
+      "text": "I wanted someone to show affection to and not just receive affection.",
+      "vi_text": "Tôi muốn ai đó thể hiện tình cảm chứ không chỉ nhận được tình cảm."
+    },
+    {
+      "start": 1679.53,
+      "end": 1682.33,
+      "text": "I wanted a partner where we could support each other,",
+      "vi_text": "Tôi muốn có một đối tác để chúng tôi có thể hỗ trợ lẫn nhau,"
+    },
+    {
+      "start": 1682.41,
+      "end": 1685.04,
+      "text": "a friend that treats me as an equal.",
+      "vi_text": "một người bạn đối xử bình đẳng với tôi."
+    },
+    {
+      "start": 1696.36,
+      "end": 1701.74,
+      "text": "You have a heart that changes so easily and fierce emotions beyond your control.",
+      "vi_text": "Bạn có một trái tim dễ thay đổi và có những cảm xúc mãnh liệt ngoài tầm kiểm soát của bạn."
+    },
+    {
+      "start": 1702.28,
+      "end": 1704.53,
+      "text": "You are so pure that you would risk your life",
+      "vi_text": "Bạn trong sáng đến mức có thể mạo hiểm mạng sống của mình"
+    },
+    {
+      "start": 1704.62,
+      "end": 1707.2,
+      "text": "to apologize to a girl you hated.",
+      "vi_text": "để xin lỗi cô gái mà bạn ghét."
+    },
+    {
+      "start": 1712.35,
+      "end": 1716.4,
+      "text": "You have so many things that I don't have.",
+      "vi_text": "Bạn có rất nhiều thứ mà tôi không có."
+    },
+    {
+      "start": 1727.0,
+      "end": 1731.75,
+      "text": "Please, will you become friends with me?",
+      "vi_text": "Làm ơn, bạn sẽ trở thành bạn với tôi chứ?"
+    },
+    {
+      "start": 1731.83,
+      "end": 1732.96,
+      "text": "Wha--",
+      "vi_text": "Gì--"
+    },
+    {
+      "start": 1733.25,
+      "end": 1735.58,
+      "text": "Well, even if you say you don't want to,",
+      "vi_text": "Chà, ngay cả khi bạn nói bạn không muốn,"
+    },
+    {
+      "start": 1743.31,
+      "end": 1745.6,
+      "text": "I will seal our friendship of my own accord.",
+      "vi_text": "Tôi sẽ phong ấn tình bạn của chúng ta theo cách riêng của tôi."
+    },
+    {
+      "start": 1745.77,
+      "end": 1746.85,
+      "text": "Huh?",
+      "vi_text": "Hả?"
+    },
+    {
+      "start": 1747.73,
+      "end": 1750.86,
+      "text": "If the blade must be swung down, we shall do it together.",
+      "vi_text": "Nếu lưỡi dao phải vung xuống, chúng ta sẽ cùng nhau thực hiện."
+    },
+    {
+      "start": 1757.46,
+      "end": 1759.92,
+      "text": "Split curses, too, all right?",
+      "vi_text": "Hãy chia lời nguyền nữa, được chứ?"
+    },
+    {
+      "start": 1760.21,
+      "end": 1762.34,
+      "text": "Y-You know...",
+      "vi_text": "A-Anh biết đấy..."
+    },
+    {
+      "start": 1762.42,
+      "end": 1763.42,
+      "text": "Yes.",
+      "vi_text": "Đúng."
+    },
+    {
+      "start": 1766.78,
+      "end": 1767.82,
+      "text": "You know...",
+      "vi_text": "Bạn biết..."
+    },
+    {
+      "start": 1768.45,
+      "end": 1769.45,
+      "text": "Stop that.",
+      "vi_text": "Dừng lại đi."
+    },
+    {
+      "start": 1783.27,
+      "end": 1788.11,
+      "text": "What are you trying to do without asking my permission...",
+      "vi_text": "Bạn đang cố gắng làm gì mà không xin phép tôi..."
+    },
+    {
+      "start": 1788.19,
+      "end": 1790.57,
+      "text": "NOBLE CONSORT - SHU GABI",
+      "vi_text": "PHÂN PHỐI CAO CẤP - SHU GABI"
+    },
+    {
+      "start": 1789.11,
+      "end": 1790.57,
+      "text": "Keigetsu?",
+      "vi_text": "Keigetsu?"
+    },
+    {
+      "start": 1798.68,
+      "end": 1799.93,
+      "text": "Noble Consort!",
+      "vi_text": "Quý phi!"
+    },
+    {
+      "start": 1800.47,
+      "end": 1802.43,
+      "text": "Lower your head...",
+      "vi_text": "Cúi đầu xuống..."
+    },
+    {
+      "start": 1803.02,
+      "end": 1805.19,
+      "text": "mere daughter of a foreigner.",
+      "vi_text": "chỉ là con gái của một người nước ngoài."
+    },
+    {
+      "start": 1813.13,
+      "end": 1815.63,
+      "text": "Kin Gayou...",
+      "vi_text": "Kin Gayou..."
+    },
+    {
+      "start": 1815.97,
+      "end": 1818.38,
+      "text": "S-Someone! Captain of the Eagle Eyes!",
+      "vi_text": "C-Ai đó! Đội trưởng của Mắt Đại Bàng!"
+    },
+    {
+      "start": 1818.47,
+      "end": 1819.47,
+      "text": "It's useless.",
+      "vi_text": "Nó vô dụng."
+    },
+    {
+      "start": 1829.08,
+      "end": 1831.41,
+      "text": "Right now, Her Majesty the Empress...",
+      "vi_text": "Hiện tại, Hoàng hậu bệ hạ..."
+    },
+    {
+      "start": 1831.5,
+      "end": 1834.29,
+      "text": "that aggravating woman, is in a crisis.",
+      "vi_text": "người phụ nữ phiền toái đó đang gặp khủng hoảng."
+    },
+    {
+      "start": 1834.83,
+      "end": 1837.88,
+      "text": "Everyone is watching every move of the Kou Palace.",
+      "vi_text": "Mọi người đang theo dõi từng động thái của Cung điện Kou."
+    },
+    {
+      "start": 1856.0,
+      "end": 1859.55,
+      "text": "Her heart and her right leg...",
+      "vi_text": "Trái tim và chân phải của cô ấy..."
+    },
+    {
+      "start": 1859.72,
+      "end": 1863.05,
+      "text": "Hey, what part of the target did you pierce with the Bow of Warding?",
+      "vi_text": "Này, bạn đã dùng Bow of Warding xuyên qua phần nào của mục tiêu?"
+    },
+    {
+      "start": 1863.14,
+      "end": 1866.81,
+      "text": "Once in the center and several times on the right edge.",
+      "vi_text": "Một lần ở trung tâm và nhiều lần ở cạnh phải."
+    },
+    {
+      "start": 1872.7,
+      "end": 1873.78,
+      "text": "It really was...",
+      "vi_text": "Nó thực sự là..."
+    },
+    {
+      "start": 1873.87,
+      "end": 1875.49,
+      "text": "Noble Consort Shu.",
+      "vi_text": "Quý phi Shu."
+    },
+    {
+      "start": 1875.66,
+      "end": 1878.16,
+      "text": "Y-You... should hold on a sec--",
+      "vi_text": "A-Anh... nên đợi một chút--"
+    },
+    {
+      "start": 1896.03,
+      "end": 1896.95,
+      "text": "Kou Reirin!",
+      "vi_text": "Kou Reirin!"
+    },
+    {
+      "start": 1897.03,
+      "end": 1898.24,
+      "text": "Lady Reirin?",
+      "vi_text": "Tiểu thư Reirin?"
+    },
+    {
+      "start": 1898.32,
+      "end": 1899.99,
+      "text": "Oh, my.",
+      "vi_text": "Ôi trời ơi."
+    },
+    {
+      "start": 1907.79,
+      "end": 1910.8,
+      "text": "It seems your true identity has been spreading quite a bit...",
+      "vi_text": "Có vẻ như danh tính thực sự của bạn đã được lan truyền khá nhiều..."
+    },
+    {
+      "start": 1911.34,
+      "end": 1912.34,
+      "text": "Keigetsu.",
+      "vi_text": "Keigetsu."
+    },
+    {
+      "start": 1913.3,
+      "end": 1915.43,
+      "text": "In the end, it was impossible",
+      "vi_text": "Cuối cùng, điều đó là không thể"
+    },
+    {
+      "start": 1925.56,
+      "end": 1929.52,
+      "text": "for a sewer rat to pretend to be a butterfly, I guess.",
+      "vi_text": "tôi đoán là để một con chuột cống giả vờ làm một con bướm."
+    },
+    {
+      "start": 1929.9,
+      "end": 1933.53,
+      "text": "Oh, what a useless girl you are.",
+      "vi_text": "Ôi, em thật là một cô gái vô dụng."
+    },
+    {
+      "start": 1934.4,
+      "end": 1935.53,
+      "text": "Yes.",
+      "vi_text": "Đúng."
+    },
+    {
+      "start": 1945.31,
+      "end": 1946.48,
+      "text": "As foolish as I am,",
+      "vi_text": "Cũng ngu ngốc như tôi,"
+    },
+    {
+      "start": 1946.56,
+      "end": 1950.23,
+      "text": "I have finally realized what your ambitions are, Noble Consort.",
+      "vi_text": "Cuối cùng ta đã nhận ra tham vọng của ngươi là gì, Quý phi."
+    },
+    {
+      "start": 1950.86,
+      "end": 1954.7,
+      "text": "And I am about to crush them as we speak.",
+      "vi_text": "Và tôi sắp nghiền nát chúng khi chúng ta nói chuyện."
+    },
+    {
+      "start": 1964.85,
+      "end": 1969.35,
+      "text": "If you value your life, I believe it'd be better for you to put the blade down.",
+      "vi_text": "Nếu coi trọng mạng sống của mình, tôi tin rằng tốt hơn hết là bạn nên đặt lưỡi dao xuống."
+    },
+    {
+      "start": 1969.85,
+      "end": 1971.4,
+      "text": "It's the reverse.",
+      "vi_text": "Đó là điều ngược lại."
+    },
+    {
+      "start": 1971.48,
+      "end": 1973.86,
+      "text": "You need to put it down, Keigetsu.",
+      "vi_text": "Cậu cần phải đặt nó xuống, Keigetsu."
+    },
+    {
+      "start": 1985.14,
+      "end": 1987.98,
+      "text": "You have not completed the countercurse yet, right?",
+      "vi_text": "Cậu vẫn chưa hoàn thành phản nguyền phải không?"
+    },
+    {
+      "start": 1988.06,
+      "end": 1992.07,
+      "text": "If you value the life of your \"friend\" that you finally made",
+      "vi_text": "Nếu bạn coi trọng mạng sống của \"người bạn\" mà cuối cùng bạn đã có được"
+    },
+    {
+      "start": 1992.15,
+      "end": 1995.95,
+      "text": "and if you value your own body,",
+      "vi_text": "và nếu bạn trân trọng cơ thể mình,"
+    },
+    {
+      "start": 2003.07,
+      "end": 2006.45,
+      "text": "put that jar and blade down, Keigetsu.",
+      "vi_text": "đặt cái lọ và con dao đó xuống, Keigetsu."
+    },
+    {
+      "start": 2006.7,
+      "end": 2008.66,
+      "text": "Please, Lady Keigetsu.",
+      "vi_text": "Làm ơn đi, quý cô Keigetsu."
+    },
+    {
+      "start": 2008.74,
+      "end": 2010.03,
+      "text": "Put the blade down.",
+      "vi_text": "Đặt lưỡi dao xuống."
+    },
+    {
+      "start": 2014.71,
+      "end": 2017.75,
+      "text": "No, please don't worry about me.",
+      "vi_text": "Không, xin đừng lo lắng cho tôi."
+    },
+    {
+      "start": 2017.84,
+      "end": 2019.21,
+      "text": "Do what needs to be done.",
+      "vi_text": "Hãy làm những gì cần phải làm."
+    },
+    {
+      "start": 2030.86,
+      "end": 2033.12,
+      "text": "What a noisy little butterfly.",
+      "vi_text": "Thật là một con bướm nhỏ ồn ào."
+    },
+    {
+      "start": 2033.78,
+      "end": 2038.04,
+      "text": "My poor Keigetsu. You must be so confused.",
+      "vi_text": "Keigetsu tội nghiệp của tôi. Chắc hẳn bạn đang rất bối rối."
+    },
+    {
+      "start": 2038.12,
+      "end": 2040.66,
+      "text": "My dear Maiden.",
+      "vi_text": "Trinh nữ thân yêu của tôi."
+    },
+    {
+      "start": 2051.89,
+      "end": 2054.27,
+      "text": "All right, I will tell you...",
+      "vi_text": "Được rồi, tôi sẽ kể cho bạn nghe..."
+    },
+    {
+      "start": 2055.22,
+      "end": 2059.77,
+      "text": "exactly what will happen if you complete the venomcraft right here.",
+      "vi_text": "chính xác điều gì sẽ xảy ra nếu bạn hoàn thành chế tạo nọc độc ngay tại đây."
+    },
+    {
+      "start": 2060.4,
+      "end": 2062.94,
+      "text": "I will surely die.",
+      "vi_text": "Tôi chắc chắn sẽ chết."
+    },
+    {
+      "start": 2073.28,
+      "end": 2077.62,
+      "text": "And, as a member of the Shu clan who committed mutiny,",
+      "vi_text": "Và, với tư cách là một thành viên của gia tộc Shu đã gây ra cuộc binh biến,"
+    },
+    {
+      "start": 2077.71,
+      "end": 2080.37,
+      "text": "you will not be able to escape from the penalty of death.",
+      "vi_text": "bạn sẽ không thể thoát khỏi án tử hình."
+    },
+    {
+      "start": 2080.46,
+      "end": 2083.46,
+      "text": "However, if  you put the blade down...",
+      "vi_text": "Tuy nhiên, nếu bạn đặt lưỡi dao xuống..."
+    },
+    {
+      "start": 2095.03,
+      "end": 2099.28,
+      "text": "that woman will die, and I will become the Empress.",
+      "vi_text": "người phụ nữ đó sẽ chết, và tôi sẽ trở thành Hoàng hậu."
+    },
+    {
+      "start": 2099.37,
+      "end": 2103.37,
+      "text": "And when I do, I will treat you with respect.",
+      "vi_text": "Và khi tôi làm vậy, tôi sẽ đối xử với bạn một cách tôn trọng."
+    },
+    {
+      "start": 2103.83,
+      "end": 2106.33,
+      "text": "I can even let your \"friend\" live, too.",
+      "vi_text": "Tôi thậm chí có thể để \"người bạn\" của bạn sống."
+    },
+    {
+      "start": 2110.21,
+      "end": 2113.93,
+      "text": "However, that's only if she is robbed of her consciousness.",
+      "vi_text": "Tuy nhiên, đó chỉ là khi cô bị cướp mất ý thức."
+    },
+    {
+      "start": 2125.29,
+      "end": 2127.05,
+      "text": "S-Stop that!",
+      "vi_text": "D-Dừng lại đi!"
+    },
+    {
+      "start": 2127.38,
+      "end": 2129.8,
+      "text": "Hurry up, Keigetsu.",
+      "vi_text": "Nhanh lên, Keigetsu."
+    },
+    {
+      "start": 2129.88,
+      "end": 2133.43,
+      "text": "This blade is heavy, so my hand may accidentally slip.",
+      "vi_text": "Lưỡi dao này nặng nên có thể vô tình trượt tay."
+    },
+    {
+      "start": 2137.99,
+      "end": 2139.28,
+      "text": "Milady!",
+      "vi_text": "Thưa bà!"
+    },
+    {
+      "start": 2139.49,
+      "end": 2142.24,
+      "text": "What will you do, Keigetsu?",
+      "vi_text": "Bạn sẽ làm gì, Keigetsu?"
+    },
+    {
+      "start": 2158.31,
+      "end": 2159.81,
+      "text": "Please stop it, Lady Keigetsu--",
+      "vi_text": "Làm ơn dừng lại đi, Quý cô Keigetsu--"
+    },
+    {
+      "start": 2159.89,
+      "end": 2161.22,
+      "text": "Quiet.",
+      "vi_text": "Im lặng."
+    },
+    {
+      "start": 2177.63,
+      "end": 2179.92,
+      "text": "Good girl, Keigetsu!",
+      "vi_text": "Cô gái ngoan, Keigetsu!"
+    },
+    {
+      "start": 2180.01,
+      "end": 2181.76,
+      "text": "That's what you should do!",
+      "vi_text": "Đó là điều bạn nên làm!"
+    },
+    {
+      "start": 2181.84,
+      "end": 2186.05,
+      "text": "Because you are an incompetent, crusty sewer rat!",
+      "vi_text": "Bởi vì ngươi là một con chuột cống bất tài, thô lỗ!"
+    },
+    {
+      "start": 2206.38,
+      "end": 2207.34,
+      "text": "Oh.",
+      "vi_text": "Ồ."
+    },
+    {
+      "start": 2207.42,
+      "end": 2208.59,
+      "text": "I'm sorry.",
+      "vi_text": "Tôi xin lỗi."
+    },
+    {
+      "start": 2208.76,
+      "end": 2211.51,
+      "text": "I invited you to do it together, but I did it by myself.",
+      "vi_text": "Tôi đã mời bạn làm việc đó cùng nhau, nhưng tôi đã tự mình làm điều đó."
+    },
+    {
+      "start": 2218.77,
+      "end": 2221.82,
+      "text": "Lady Keigetsu, it's still twitching,",
+      "vi_text": "Quý cô Keigetsu, nó vẫn đang co giật,"
+    },
+    {
+      "start": 2221.9,
+      "end": 2223.9,
+      "text": "so if you'd like, you can join for the final blow--",
+      "vi_text": "nên nếu muốn, bạn có thể tham gia vào trận cuối cùng--"
+    },
+    {
+      "start": 2223.99,
+      "end": 2225.87,
+      "text": "This consideration is completely uncalled for!",
+      "vi_text": "Việc xem xét này là hoàn toàn không được phép!"
+    },
+    {
+      "start": 2229.82,
+      "end": 2232.07,
+      "text": "Don't get that thing near me!",
+      "vi_text": "Đừng để thứ đó lại gần tôi!"
+    },
+    {
+      "start": 2232.49,
+      "end": 2233.61,
+      "text": "Oh, it died.",
+      "vi_text": "Ồ, nó chết rồi."
+    },
+    {
+      "start": 2255.9,
+      "end": 2257.53,
+      "text": "Stay away!",
+      "vi_text": "Tránh xa!"
+    },
+    {
+      "start": 2257.61,
+      "end": 2259.11,
+      "text": "You monster, stay away!",
+      "vi_text": "Đồ quái vật, tránh xa ra!"
+    },
+    {
+      "start": 2259.49,
+      "end": 2260.4,
+      "text": "No!",
+      "vi_text": "KHÔNG!"
+    },
+    {
+      "start": 2262.49,
+      "end": 2264.4,
+      "text": "Looks like the curse got countered.",
+      "vi_text": "Có vẻ như lời nguyền đã được hóa giải."
+    },
+    {
+      "start": 2275.06,
+      "end": 2276.73,
+      "text": "Go that way!",
+      "vi_text": "Đi lối đó!"
+    },
+    {
+      "start": 2276.81,
+      "end": 2280.02,
+      "text": "Devour and kill that hateful empress!",
+      "vi_text": "Hãy nuốt chửng và giết chết nữ hoàng đáng ghét đó!"
+    },
+    {
+      "start": 2280.23,
+      "end": 2284.03,
+      "text": "That woman who took my prince from me!",
+      "vi_text": "Người phụ nữ đã cướp đi hoàng tử của tôi!"
+    },
+    {
+      "start": 2302.73,
+      "end": 2304.77,
+      "text": "Are you all right, Reirin?",
+      "vi_text": "Bạn ổn chứ, Reirin?"
+    },
+    {
+      "start": 2304.98,
+      "end": 2305.98,
+      "text": "Dear co--",
+      "vi_text": "Bạn thân mến--"
+    },
+    {
+      "start": 2307.15,
+      "end": 2308.15,
+      "text": "Your Highness.",
+      "vi_text": "Thưa ngài."
+    }
+  ],
+  "vi": [
+    {
+      "start": 4.69,
+      "end": 7.4,
+      "text": "NIÊM PHONG"
+    },
+    {
+      "start": 7.48,
+      "end": 10.48,
+      "text": "HOÀNG TỬ - EI GYOUMEI"
+    },
+    {
+      "start": 11.4,
+      "end": 12.65,
+      "text": "Hãy gọi một pháp sư."
+    },
+    {
+      "start": 20.8,
+      "end": 23.47,
+      "text": "Thực thi lệnh bịt miệng triệt để đối với nhân viên y tế một lần nữa."
+    },
+    {
+      "start": 23.55,
+      "end": 24.72,
+      "text": "V-Vâng, thưa ngài."
+    },
+    {
+      "start": 24.97,
+      "end": 28.05,
+      "text": "Không tiết lộ tình trạng sức khỏe của Hoàng hậu."
+    },
+    {
+      "start": 35.89,
+      "end": 40.32,
+      "text": "Nếu có thì hãy nói rằng cô ấy có đủ bình tĩnh để chấp nhận chuyến thăm của tôi."
+    },
+    {
+      "start": 40.65,
+      "end": 43.82,
+      "text": "Bạn cần phải quay lại cung điện chính trước tôi với nụ cười trên môi."
+    },
+    {
+      "start": 43.9,
+      "end": 45.32,
+      "text": "H-Tuy nhiên--"
+    },
+    {
+      "start": 55.06,
+      "end": 56.48,
+      "text": "Ba mươi phút."
+    },
+    {
+      "start": 56.56,
+      "end": 58.35,
+      "text": "Tôi sẽ không mất nhiều thời gian hơn thế."
+    },
+    {
+      "start": 58.85,
+      "end": 61.82,
+      "text": "Vì vậy xin vui lòng cho phép tôi ở lại đây."
+    },
+    {
+      "start": 70.97,
+      "end": 71.97,
+      "text": "-Hiểu rồi. -Hiểu rồi."
+    },
+    {
+      "start": 75.31,
+      "end": 77.73,
+      "text": "NIÊM PHONG"
+    },
+    {
+      "start": 79.06,
+      "end": 80.23,
+      "text": "Mở ra."
+    },
+    {
+      "start": 81.19,
+      "end": 82.48,
+      "text": "Vui lòng!"
+    },
+    {
+      "start": 83.07,
+      "end": 85.03,
+      "text": "Có phải ngài không, thưa Thái tử điện hạ?"
+    },
+    {
+      "start": 92.06,
+      "end": 92.97,
+      "text": "Có phải bạn đó không, Tousetsu?"
+    },
+    {
+      "start": 93.06,
+      "end": 95.18,
+      "text": "Một lá bùa phong ấn đã được áp dụng cho Cung điện Kou"
+    },
+    {
+      "start": 95.27,
+      "end": 97.19,
+      "text": "để ngăn ngừa bệnh lây lan."
+    },
+    {
+      "start": 102.71,
+      "end": 106.29,
+      "text": "Nếu đây là vấn đề khẩn cấp, tôi sẽ nghe nó ngay tại đây."
+    },
+    {
+      "start": 106.54,
+      "end": 108.3,
+      "text": "Tousetsu, Reirin à..."
+    },
+    {
+      "start": 109.05,
+      "end": 111.92,
+      "text": "Không. Shu Keigetsu có ghé qua đây không?"
+    },
+    {
+      "start": 122.24,
+      "end": 125.24,
+      "text": "PHỤ TÙNG TÒA ÁN CÁ NHÂN CHO REIRIN KOU TOUSETSU"
+    },
+    {
+      "start": 125.61,
+      "end": 127.37,
+      "text": "Mở cổng ra, Tousetsu."
+    },
+    {
+      "start": 127.62,
+      "end": 129.78,
+      "text": "Bạn sẽ không chú ý đến mệnh lệnh của thái tử?"
+    },
+    {
+      "start": 137.51,
+      "end": 141.35,
+      "text": "NIÊM PHONG"
+    },
+    {
+      "start": 165.91,
+      "end": 170.58,
+      "text": "Mặc dù tôi là một kẻ phản diện INEPT"
+    },
+    {
+      "start": 246.3,
+      "end": 249.64,
+      "text": "Tousetsu, cậu biết điều đó phải không?"
+    },
+    {
+      "start": 254.66,
+      "end": 256.12,
+      "text": "Trả lời tôi đi, Tousetsu."
+    },
+    {
+      "start": 257.25,
+      "end": 258.58,
+      "text": "Tôi không thể trả lời câu hỏi đó."
+    },
+    {
+      "start": 258.66,
+      "end": 259.79,
+      "text": "Tại sao vậy?"
+    },
+    {
+      "start": 271.78,
+      "end": 275.28,
+      "text": "Reirin hoán đổi thân xác với Shu Keigetsu phải không?"
+    },
+    {
+      "start": 275.82,
+      "end": 278.74,
+      "text": "Không phải người phụ nữ đó đã lấy xác cô ấy sao?"
+    },
+    {
+      "start": 278.95,
+      "end": 281.33,
+      "text": "Chủ nhân của bạn đã bị xâm phạm."
+    },
+    {
+      "start": 291.06,
+      "end": 293.56,
+      "text": "Tại sao bạn thậm chí không thử báo cáo nó với tôi?"
+    },
+    {
+      "start": 297.6,
+      "end": 301.4,
+      "text": "Tôi cấm bạn làm hại cô ấy hoặc chính bạn."
+    },
+    {
+      "start": 301.69,
+      "end": 304.74,
+      "text": "Và bạn không được nói sự thật với Bệ hạ và Hoàng thân."
+    },
+    {
+      "start": 313.98,
+      "end": 316.52,
+      "text": "Bởi vì đó là hình phạt của tôi."
+    },
+    {
+      "start": 316.61,
+      "end": 317.52,
+      "text": "Đó là gì vậy?"
+    },
+    {
+      "start": 317.61,
+      "end": 319.69,
+      "text": "Vì đó là sự trừng phạt tôi dành cho chính mình,"
+    },
+    {
+      "start": 325.59,
+      "end": 329.05,
+      "text": "vì tôi không thể đưa tay ra khi chủ nhân đang gặp nguy hiểm!"
+    },
+    {
+      "start": 334.22,
+      "end": 337.1,
+      "text": "Reirin đã thuyết phục bạn về chuyện này phải không?"
+    },
+    {
+      "start": 342.25,
+      "end": 344.96,
+      "text": "Tôi cầu xin bạn, hãy nói chuyện với tôi, Tousetsu."
+    },
+    {
+      "start": 345.71,
+      "end": 347.51,
+      "text": "Thưa ngài, ngài là ai đó"
+    },
+    {
+      "start": 347.59,
+      "end": 351.89,
+      "text": "điều đó có thể vượt qua mong muốn của Lady Reirin và thay đổi tình hình một cách đáng kể."
+    },
+    {
+      "start": 362.13,
+      "end": 363.71,
+      "text": "Xin hãy tha cho tôi."
+    },
+    {
+      "start": 364.34,
+      "end": 367.17,
+      "text": "Tôi sẽ thay đổi tình hình một cách quyết liệt?"
+    },
+    {
+      "start": 367.67,
+      "end": 370.22,
+      "text": "Ý bạn là vì tôi có thể đi ngược lại ý muốn của Reirin"
+    },
+    {
+      "start": 378.49,
+      "end": 381.29,
+      "text": "và trừng phạt Shu Keigetsu với tư cách là thái tử?"
+    },
+    {
+      "start": 390.51,
+      "end": 392.01,
+      "text": "Thưa ngài, ngài đang--"
+    },
+    {
+      "start": 395.4,
+      "end": 397.4,
+      "text": "Hiện tại trên đầu tôi không có vương miện."
+    },
+    {
+      "start": 397.9,
+      "end": 400.99,
+      "text": "Tôi thề rằng tôi sẽ không vung quyền lực của mình một cách không cần thiết."
+    },
+    {
+      "start": 401.57,
+      "end": 404.12,
+      "text": "Vì vậy xin vui lòng cho tôi đi qua."
+    },
+    {
+      "start": 414.19,
+      "end": 415.4,
+      "text": "Như bạn có thể thấy..."
+    },
+    {
+      "start": 415.48,
+      "end": 417.57,
+      "text": "Xin hãy dừng việc đó lại, thưa Bệ hạ!"
+    },
+    {
+      "start": 426.59,
+      "end": 428.26,
+      "text": "Làm ơn đi lối này."
+    },
+    {
+      "start": 429.35,
+      "end": 433.39,
+      "text": "Tôi sẽ kể cho bạn nghe mọi thứ mà tôi biết trên đường đi."
+    },
+    {
+      "start": 433.89,
+      "end": 436.02,
+      "text": "Tôi đánh giá cao điều đó, Tousetsu."
+    },
+    {
+      "start": 445.97,
+      "end": 447.84,
+      "text": "Để bắt đầu, không có lý do"
+    },
+    {
+      "start": 447.93,
+      "end": 452.02,
+      "text": "tại sao một cung nữ lại có thể đưa thái tử trở về."
+    },
+    {
+      "start": 460.71,
+      "end": 463.21,
+      "text": "SHU CLAN Maiden - SHU KEIGETSU (SOUL OF REIRIN)"
+    },
+    {
+      "start": 463.3,
+      "end": 466.21,
+      "text": "KOU CLAN MAIDEN - KOU REIRIN (TÂM LINH CỦA KEIGETSU)"
+    },
+    {
+      "start": 463.3,
+      "end": 466.46,
+      "text": "Tôi vừa... khỏi bệnh!"
+    },
+    {
+      "start": 475.78,
+      "end": 477.45,
+      "text": "Tôi không thể chịu đựng được nữa."
+    },
+    {
+      "start": 477.65,
+      "end": 479.45,
+      "text": "Xin đừng lo lắng, quý cô Keigetsu!"
+    },
+    {
+      "start": 479.99,
+      "end": 481.16,
+      "text": "Chúng tôi đã đến!"
+    },
+    {
+      "start": 487.18,
+      "end": 489.18,
+      "text": "PHỤ NỮ TÒA THÁNH SHU - LEELEE"
+    },
+    {
+      "start": 492.87,
+      "end": 494.08,
+      "text": "Thưa bà!"
+    },
+    {
+      "start": 494.16,
+      "end": 495.54,
+      "text": "Thế còn việc hủy trao đổi--"
+    },
+    {
+      "start": 495.7,
+      "end": 498.46,
+      "text": "Leelee, tôi xin lỗi! Tôi sẽ nói về chuyện đó sau!"
+    },
+    {
+      "start": 504.23,
+      "end": 505.65,
+      "text": "Bạn ở ngay đó!"
+    },
+    {
+      "start": 505.73,
+      "end": 506.98,
+      "text": "Đừng chỉ đứng đó!"
+    },
+    {
+      "start": 507.06,
+      "end": 509.03,
+      "text": "Ngăn chặn cô ấy mất kiểm soát!"
+    },
+    {
+      "start": 513.99,
+      "end": 516.62,
+      "text": "Ồ, nó vẫn chưa được giải quyết."
+    },
+    {
+      "start": 517.03,
+      "end": 518.91,
+      "text": "Đây rồi, quý cô Keigetsu."
+    },
+    {
+      "start": 518.99,
+      "end": 522.16,
+      "text": "Con rết đã chiến thắng trong cuộc chiến ăn thịt người!"
+    },
+    {
+      "start": 530.62,
+      "end": 532.37,
+      "text": "Chúng ta có thể tạo ra nọc độc với nó!"
+    },
+    {
+      "start": 541.27,
+      "end": 543.77,
+      "text": "Thuyền Trưởng Mắt Đại Bàng - SHIN-U"
+    },
+    {
+      "start": 542.19,
+      "end": 543.77,
+      "text": "Đội trưởng!"
+    },
+    {
+      "start": 544.82,
+      "end": 546.4,
+      "text": "Điều này không tốt!"
+    },
+    {
+      "start": 551.68,
+      "end": 554.14,
+      "text": "EUNUCH - BUNKOU"
+    },
+    {
+      "start": 551.68,
+      "end": 552.97,
+      "text": "Bạn không nên mang bảo vật quốc gia ra ngoài"
+    },
+    {
+      "start": 553.05,
+      "end": 554.43,
+      "text": "giống như Cung Warding mà không được phép!"
+    },
+    {
+      "start": 557.31,
+      "end": 558.23,
+      "text": "Câm miệng."
+    },
+    {
+      "start": 558.31,
+      "end": 561.06,
+      "text": "Câm miệng? Thật là ác ý!"
+    },
+    {
+      "start": 561.15,
+      "end": 565.23,
+      "text": "Shu Keigetsu không đến để chiếm lấy Cung canh gác."
+    },
+    {
+      "start": 573.32,
+      "end": 576.15,
+      "text": "Cô ấy có thể đang sử dụng các phương tiện khác nhau."
+    },
+    {
+      "start": 576.66,
+      "end": 578.37,
+      "text": "Đây là ý kiến ​​riêng của tôi."
+    },
+    {
+      "start": 578.45,
+      "end": 582.58,
+      "text": "Tôi sẽ làm chứng rằng bạn đã ngăn tôi lại, vì vậy hãy tiếp tục và ngậm miệng lại."
+    },
+    {
+      "start": 592.01,
+      "end": 593.97,
+      "text": "Bạn sẽ làm chứng cho điều đó chứ?"
+    },
+    {
+      "start": 594.05,
+      "end": 595.26,
+      "text": "Thế thì tôi sẽ im lặng."
+    },
+    {
+      "start": 596.02,
+      "end": 598.1,
+      "text": "Vì thế để cầu nguyện cho Hoàng hậu được bình phục,"
+    },
+    {
+      "start": 604.35,
+      "end": 606.44,
+      "text": "lần này anh sẽ làm điều đó phải không đội trưởng?"
+    },
+    {
+      "start": 606.65,
+      "end": 611.19,
+      "text": "Thành thật mà nói, tôi tưởng bạn không tin vào lời nguyền và mê tín,"
+    },
+    {
+      "start": 611.28,
+      "end": 612.36,
+      "text": "nên điều này thật bất ngờ."
+    },
+    {
+      "start": 620.54,
+      "end": 622.08,
+      "text": "Tôi thường không tin vào họ."
+    },
+    {
+      "start": 622.16,
+      "end": 625.37,
+      "text": "Nhưng khi Thiếu nữ nhà Thục giương cung này,"
+    },
+    {
+      "start": 625.46,
+      "end": 628.17,
+      "text": "Bệnh tình của tiểu thư Kou Reirin đã giảm bớt."
+    },
+    {
+      "start": 636.18,
+      "end": 637.18,
+      "text": "Bên cạnh đó..."
+    },
+    {
+      "start": 639.47,
+      "end": 641.64,
+      "text": "ngay cả nhân vật phản diện vĩ đại nhất trong Maiden Court"
+    },
+    {
+      "start": 641.73,
+      "end": 644.56,
+      "text": "muốn vẽ Cung cho Bệ hạ."
+    },
+    {
+      "start": 644.65,
+      "end": 647.82,
+      "text": "Tôi, với tư cách là Đội trưởng của Eagle Eyes, không thể chỉ ngồi đó và nhìn."
+    },
+    {
+      "start": 657.1,
+      "end": 660.56,
+      "text": "Chắc hẳn Hoàng thân đang tìm kiếm Shu Keigetsu..."
+    },
+    {
+      "start": 661.23,
+      "end": 663.73,
+      "text": "nhưng tại sao anh lại đẩy cô ra xa như vậy?"
+    },
+    {
+      "start": 664.11,
+      "end": 667.53,
+      "text": "Không. Giám sát không phải là công việc dành cho Đội trưởng Eagle Eyes."
+    },
+    {
+      "start": 678.47,
+      "end": 682.81,
+      "text": "Công việc của tôi là giám sát kỷ luật của nội viện và loại bỏ rủi ro."
+    },
+    {
+      "start": 683.86,
+      "end": 685.57,
+      "text": "Tôi mang trong mình dòng máu của Hoàng đế"
+    },
+    {
+      "start": 685.65,
+      "end": 688.32,
+      "text": "và là thành viên của gia đình Gen, được bảo vệ bởi nước."
+    },
+    {
+      "start": 699.23,
+      "end": 702.27,
+      "text": "Việc sử dụng Bow of Warding của tôi sẽ phát huy hết tiềm năng của nó."
+    },
+    {
+      "start": 708.54,
+      "end": 709.58,
+      "text": "Gì?"
+    },
+    {
+      "start": 709.67,
+      "end": 712.38,
+      "text": "Đ-The Bow of Warding có--"
+    },
+    {
+      "start": 712.46,
+      "end": 715.84,
+      "text": "D-Phá hủy kho báu quốc gia đồng nghĩa với việc xử tử!"
+    },
+    {
+      "start": 723.32,
+      "end": 725.2,
+      "text": "Bạn đã kéo với một lượng sức mạnh ngu ngốc!"
+    },
+    {
+      "start": 725.62,
+      "end": 729.33,
+      "text": "Không, một cây cung mạnh mẽ như vậy không thể nào bị vượt qua được."
+    },
+    {
+      "start": 729.7,
+      "end": 732.25,
+      "text": "Nghe dây cung chưa đứt một lần"
+    },
+    {
+      "start": 741.34,
+      "end": 743.22,
+      "text": "vì nó đã được xâu chuỗi từ hàng trăm năm trước."
+    },
+    {
+      "start": 743.3,
+      "end": 745.68,
+      "text": "Vậy thì tại sao lại là bây giờ, trong mọi thời đại?"
+    },
+    {
+      "start": 751.43,
+      "end": 755.65,
+      "text": "Khi tôi kéo cây cung ra, nó như thể đang co rúm lại trước một thứ gì đó."
+    },
+    {
+      "start": 756.23,
+      "end": 758.77,
+      "text": "Giống như được giải tỏa áp lực"
+    },
+    {
+      "start": 758.86,
+      "end": 761.78,
+      "text": "khi nằm trong bàn tay quen thuộc của gia tộc Gen,"
+    },
+    {
+      "start": 772.31,
+      "end": 775.77,
+      "text": "và sự giải phóng lực căng đã làm đứt dây theo đúng nghĩa đen."
+    },
+    {
+      "start": 776.86,
+      "end": 779.36,
+      "text": "Gia tộc Gen giám sát nước và chiến tranh."
+    },
+    {
+      "start": 779.44,
+      "end": 783.2,
+      "text": "Cung Warding được tạo ra bởi một nghệ nhân bậc thầy trong số họ."
+    },
+    {
+      "start": 794.25,
+      "end": 797.8,
+      "text": "Nó xuyên qua bất kỳ kẻ thù nào và thậm chí không sợ ngọn lửa rực cháy."
+    },
+    {
+      "start": 798.3,
+      "end": 801.8,
+      "text": "Nếu có một thứ có thể vượt qua cây cung này..."
+    },
+    {
+      "start": 810.64,
+      "end": 812.1,
+      "text": "Nó sẽ là khí đất?"
+    },
+    {
+      "start": 812.43,
+      "end": 816.73,
+      "text": "Trái đất đánh bại nước. Đất nặng có thể dập tắt ngay cả những vùng nước ngang ngược."
+    },
+    {
+      "start": 816.81,
+      "end": 818.94,
+      "text": "Gia tộc Kou cai trị trái đất."
+    },
+    {
+      "start": 827.76,
+      "end": 830.97,
+      "text": "Thiếu nữ nhà Thục liên tục vẽ Cung Bảo Vệ trong hơn sáu giờ đồng hồ."
+    },
+    {
+      "start": 831.18,
+      "end": 833.26,
+      "text": "Gia tộc Shu được cai trị bởi lửa."
+    },
+    {
+      "start": 833.35,
+      "end": 836.26,
+      "text": "Thông thường, nó không tương thích với nước."
+    },
+    {
+      "start": 845.32,
+      "end": 846.41,
+      "text": "Không thể được."
+    },
+    {
+      "start": 846.49,
+      "end": 847.62,
+      "text": "Nhưng vẫn..."
+    },
+    {
+      "start": 854.69,
+      "end": 858.57,
+      "text": "Người ta thường nói anh là một người cai trị khôn ngoan, và anh rất tốt bụng, người anh họ thân mến--"
+    },
+    {
+      "start": 864.59,
+      "end": 866.43,
+      "text": "Vì vậy, đó là những gì đang xảy ra."
+    },
+    {
+      "start": 867.01,
+      "end": 868.85,
+      "text": "Hả? Gì?"
+    },
+    {
+      "start": 868.93,
+      "end": 870.35,
+      "text": "Đội trưởng?"
+    },
+    {
+      "start": 876.29,
+      "end": 877.54,
+      "text": "Bạn đang đi đâu?"
+    },
+    {
+      "start": 877.79,
+      "end": 879.42,
+      "text": "Tôi sẽ quay lại Shu Palace."
+    },
+    {
+      "start": 883.84,
+      "end": 884.96,
+      "text": "Hả?"
+    },
+    {
+      "start": 885.67,
+      "end": 890.51,
+      "text": "C-Lời khai của bạn!"
+    },
+    {
+      "start": 890.64,
+      "end": 892.64,
+      "text": "Tại sao bạn có một cái gì đó như thế?"
+    },
+    {
+      "start": 901.71,
+      "end": 903.54,
+      "text": "À, ừm..."
+    },
+    {
+      "start": 903.92,
+      "end": 906.29,
+      "text": "Tôi đã định sử dụng con nhện và con rết"
+    },
+    {
+      "start": 906.38,
+      "end": 910.13,
+      "text": "Leelee đã cho tôi làm thức ăn cho bạn chuột của tôi..."
+    },
+    {
+      "start": 919.11,
+      "end": 920.53,
+      "text": "\"Đưa cho tôi\"?"
+    },
+    {
+      "start": 920.78,
+      "end": 922.7,
+      "text": "...nhưng tôi không có hộp đựng."
+    },
+    {
+      "start": 922.78,
+      "end": 925.82,
+      "text": "Tôi không muốn sử dụng đồ đạc cá nhân của người khác,"
+    },
+    {
+      "start": 932.72,
+      "end": 936.01,
+      "text": "vì vậy tôi đã ghép chúng lại với nhau vào chiếc lọ duy nhất mà tôi có trong tay."
+    },
+    {
+      "start": 936.1,
+      "end": 939.14,
+      "text": "Và con rết đã ăn thịt con nhện."
+    },
+    {
+      "start": 939.35,
+      "end": 942.89,
+      "text": "Cô ấy tạo ra nọc độc là kết quả của sự khiêm tốn của mình nhỉ."
+    },
+    {
+      "start": 953.86,
+      "end": 957.16,
+      "text": "Nhưng bạn sẽ làm gì với nó? Cậu tới tìm nó à?"
+    },
+    {
+      "start": 957.66,
+      "end": 962.04,
+      "text": "Leelee, Nữ hoàng mắc phải một căn bệnh bắt nguồn từ một lời nguyền."
+    },
+    {
+      "start": 962.83,
+      "end": 965.96,
+      "text": "Và lời nguyền đó chính là lời nguyền mà Quý phi Shu đã ban cho cô."
+    },
+    {
+      "start": 978.24,
+      "end": 979.24,
+      "text": "Gì?"
+    },
+    {
+      "start": 979.66,
+      "end": 984.21,
+      "text": "Vì vậy, càng sớm càng tốt, chúng tôi muốn hoàn thành việc phản lời nguyền"
+    },
+    {
+      "start": 984.29,
+      "end": 986.13,
+      "text": "với nọc độc này và cứu Nữ hoàng."
+    },
+    {
+      "start": 994.35,
+      "end": 995.93,
+      "text": "Điều đó không thể được."
+    },
+    {
+      "start": 996.01,
+      "end": 997.81,
+      "text": "Quý phi Shu?"
+    },
+    {
+      "start": 998.64,
+      "end": 1001.02,
+      "text": "Bạn đã đề cập điều này với Thái tử điện hạ chưa?"
+    },
+    {
+      "start": 1007.87,
+      "end": 1009.5,
+      "text": "Hả? Tại sao Hoàng thượng?"
+    },
+    {
+      "start": 1009.92,
+      "end": 1015.0,
+      "text": "Thực ra, cách đây không lâu, ngay sau khi cậu nhảy qua hàng rào, Hoàng thân đã xuất hiện."
+    },
+    {
+      "start": 1015.38,
+      "end": 1016.88,
+      "text": "Và anh ta đang đập vào cổng,"
+    },
+    {
+      "start": 1026.05,
+      "end": 1028.6,
+      "text": "hét lên, \"Bạn đã đến đây phải không? Reirin!\""
+    },
+    {
+      "start": 1029.39,
+      "end": 1032.73,
+      "text": "Cứ như thể anh ta chắc chắn rằng Quý cô Kou Reirin không có ở bên trong,"
+    },
+    {
+      "start": 1032.81,
+      "end": 1037.52,
+      "text": "mà thay vào đó là Maiden vừa mới nhảy vào trong vài phút trước."
+    },
+    {
+      "start": 1049.16,
+      "end": 1050.08,
+      "text": "Nói cách khác..."
+    },
+    {
+      "start": 1050.16,
+      "end": 1051.66,
+      "text": "Anh ấy đã tìm ra nó."
+    },
+    {
+      "start": 1051.74,
+      "end": 1053.41,
+      "text": "Hoàng thân cuối cùng đã--"
+    },
+    {
+      "start": 1058.13,
+      "end": 1059.88,
+      "text": "Tôi cũng nghĩ vậy."
+    },
+    {
+      "start": 1060.51,
+      "end": 1063.51,
+      "text": "Tôi chắc chắn Hoàng thượng đang tức giận."
+    },
+    {
+      "start": 1063.59,
+      "end": 1069.72,
+      "text": "Khi phòng trong Cung điện Kou trống, anh ta có thể quay lại đây gấp đôi."
+    },
+    {
+      "start": 1082.29,
+      "end": 1087.67,
+      "text": "Quý cô Keigetsu, tốt hơn hết là hủy việc trao đổi trước."
+    },
+    {
+      "start": 1096.32,
+      "end": 1098.7,
+      "text": "Tôi sẽ không hủy việc trao đổi."
+    },
+    {
+      "start": 1099.15,
+      "end": 1100.16,
+      "text": "Hả?"
+    },
+    {
+      "start": 1105.64,
+      "end": 1107.27,
+      "text": "Hãy cho tôi nghỉ ngơi đã!"
+    },
+    {
+      "start": 1107.35,
+      "end": 1110.06,
+      "text": "Bạn không ở trong tình huống mà bạn có thể nói như vậy!"
+    },
+    {
+      "start": 1110.14,
+      "end": 1113.61,
+      "text": "Một tiểu thư cấp dưới đang ồn ào biết bao."
+    },
+    {
+      "start": 1122.26,
+      "end": 1123.64,
+      "text": "Vâng, xin lỗi!"
+    },
+    {
+      "start": 1123.72,
+      "end": 1125.35,
+      "text": "Bây giờ tôi là một quý bà thượng viện!"
+    },
+    {
+      "start": 1125.89,
+      "end": 1128.89,
+      "text": "Mạng sống của bạn đã được cứu bởi Lady Reirin!"
+    },
+    {
+      "start": 1135.7,
+      "end": 1138.12,
+      "text": "Bạn không có trái tim con người trong mình sao?"
+    },
+    {
+      "start": 1138.21,
+      "end": 1139.21,
+      "text": "Leelee..."
+    },
+    {
+      "start": 1139.37,
+      "end": 1141.71,
+      "text": "Hãy nhanh chóng hủy bỏ việc trao đổi."
+    },
+    {
+      "start": 1147.88,
+      "end": 1150.22,
+      "text": "Bạn không có đủ can đảm để rửa sạch tất cả những thứ tào lao này sao"
+    },
+    {
+      "start": 1150.3,
+      "end": 1152.47,
+      "text": "đã gây ra rất nhiều rắc rối, dù chỉ một chút?"
+    },
+    {
+      "start": 1152.56,
+      "end": 1153.47,
+      "text": "Tôi biết."
+    },
+    {
+      "start": 1159.23,
+      "end": 1160.23,
+      "text": "Hả?"
+    },
+    {
+      "start": 1160.94,
+      "end": 1164.52,
+      "text": "Ít nhất thì tôi cũng có can đảm để chịu trách nhiệm về hành động của mình!"
+    },
+    {
+      "start": 1165.69,
+      "end": 1169.95,
+      "text": "Nhưng việc hủy bỏ trao đổi cũng sử dụng rất nhiều khí,"
+    },
+    {
+      "start": 1180.84,
+      "end": 1182.92,
+      "text": "vì vậy tôi không thể làm cả hai việc trong cùng một ngày!"
+    },
+    {
+      "start": 1186.67,
+      "end": 1189.88,
+      "text": "Vì vậy, tôi không thể làm điều đó ngay bây giờ."
+    },
+    {
+      "start": 1190.05,
+      "end": 1194.38,
+      "text": "Điều đó có nghĩa là bạn sẽ thực hiện điều ước của tôi trước?"
+    },
+    {
+      "start": 1194.68,
+      "end": 1196.72,
+      "text": "Đừng hiểu lầm tôi!"
+    },
+    {
+      "start": 1206.95,
+      "end": 1209.0,
+      "text": "Đó không phải là vì lợi ích của bạn, được chứ?"
+    },
+    {
+      "start": 1209.16,
+      "end": 1213.04,
+      "text": "Tôi chỉ muốn cho người đã chế nhạo tôi thấy tôi có thể làm được gì!"
+    },
+    {
+      "start": 1213.13,
+      "end": 1215.13,
+      "text": "-Tuy nhiên-- -Ồ, im đi!"
+    },
+    {
+      "start": 1223.56,
+      "end": 1226.27,
+      "text": "Tôi đang cố gắng sửa chữa những sai lầm của phối ngẫu nhà Thục"
+    },
+    {
+      "start": 1226.35,
+      "end": 1228.85,
+      "text": "với tư cách là thành viên của tộc Shu!"
+    },
+    {
+      "start": 1228.94,
+      "end": 1230.27,
+      "text": "\"Cố gắng làm đúng\"..."
+    },
+    {
+      "start": 1237.16,
+      "end": 1241.0,
+      "text": "B-Hơn nữa, nếu tôi giúp đỡ Nữ hoàng,"
+    },
+    {
+      "start": 1241.08,
+      "end": 1244.42,
+      "text": "nó sẽ hoạt động như một tình tiết giảm nhẹ sau khi việc hoán đổi bị hủy bỏ!"
+    },
+    {
+      "start": 1244.67,
+      "end": 1246.05,
+      "text": "Này, Leelee."
+    },
+    {
+      "start": 1255.1,
+      "end": 1258.73,
+      "text": "Quý cô Keigetsu thực sự là một cô bé đáng yêu."
+    },
+    {
+      "start": 1258.81,
+      "end": 1261.15,
+      "text": "À... tôi không biết về điều đó."
+    },
+    {
+      "start": 1269.87,
+      "end": 1273.58,
+      "text": "Trước hết, hãy nghĩ xem bạn muốn nguyền rủa ai."
+    },
+    {
+      "start": 1273.75,
+      "end": 1276.08,
+      "text": "Lấy đối tượng đại diện\\trong trường hợp này là cái bình này."
+    },
+    {
+      "start": 1276.25,
+      "end": 1278.33,
+      "text": "Viết chi tiết lên đó."
+    },
+    {
+      "start": 1289.9,
+      "end": 1293.15,
+      "text": "Con nhện nguyền rủa một quý tộc trong Cung điện Kou,"
+    },
+    {
+      "start": 1293.49,
+      "end": 1297.78,
+      "text": "nên nó giống một lời nguyền chống lại nhện độc hơn"
+    },
+    {
+      "start": 1297.86,
+      "end": 1300.41,
+      "text": "hơn là nguyền rủa Quý phi Shu."
+    },
+    {
+      "start": 1311.31,
+      "end": 1313.06,
+      "text": "Việc giải quyết vấn đề cảm xúc sẽ dễ dàng hơn một chút."
+    },
+    {
+      "start": 1313.14,
+      "end": 1315.31,
+      "text": "Lời nguyền sẽ quay trở lại với Noble Consort Shu, người thi triển,"
+    },
+    {
+      "start": 1315.39,
+      "end": 1316.4,
+      "text": "một khi nó bị hỏng."
+    },
+    {
+      "start": 1322.13,
+      "end": 1324.3,
+      "text": "Vì vậy, cuối cùng chúng tôi kết thúc với cùng một kết quả."
+    },
+    {
+      "start": 1328.74,
+      "end": 1329.86,
+      "text": "Hãy bắt đầu."
+    },
+    {
+      "start": 1332.45,
+      "end": 1338.5,
+      "text": "Dưới những quy tắc được đặt ra từ đầu trời và đất, hãy nghe lệnh của tôi."
+    },
+    {
+      "start": 1355.45,
+      "end": 1358.12,
+      "text": "Phá vỡ con nhện là gốc rễ của lời nguyền"
+    },
+    {
+      "start": 1358.2,
+      "end": 1360.16,
+      "text": "và theo đúng nghĩa đen là phá hủy cơ thể của nó."
+    },
+    {
+      "start": 1366.56,
+      "end": 1367.89,
+      "text": "Hủy hoại..."
+    },
+    {
+      "start": 1367.97,
+      "end": 1370.94,
+      "text": "NHỆN LỪA ĐẢO QUÝ VỊ TRONG CUNG ĐẠI KOU"
+    },
+    {
+      "start": 1382.3,
+      "end": 1383.67,
+      "text": "Và bây giờ là sự hy sinh."
+    },
+    {
+      "start": 1384.67,
+      "end": 1387.68,
+      "text": "Bạn chỉ cần giết con rết này."
+    },
+    {
+      "start": 1396.41,
+      "end": 1399.21,
+      "text": "Tôi có nên làm điều đó không?"
+    },
+    {
+      "start": 1399.29,
+      "end": 1400.67,
+      "text": "Tôi sẽ làm điều đó!"
+    },
+    {
+      "start": 1406.53,
+      "end": 1408.28,
+      "text": "Xin hãy chờ đã, quý cô Keigetsu."
+    },
+    {
+      "start": 1409.4,
+      "end": 1412.45,
+      "text": "Một khi bị phá vỡ, lời nguyền sẽ quay trở lại với người thực hiện,"
+    },
+    {
+      "start": 1412.53,
+      "end": 1416.79,
+      "text": "và với việc giết chết vật hiến tế, câu thần chú đã hoàn tất."
+    },
+    {
+      "start": 1427.4,
+      "end": 1430.65,
+      "text": "Nói cách khác, người niệm phép là người giết chết vật hiến tế."
+    },
+    {
+      "start": 1431.57,
+      "end": 1435.57,
+      "text": "Sau đó, nếu chúng ta thất bại, lời nguyền sẽ tăng gấp đôi."
+    },
+    {
+      "start": 1435.66,
+      "end": 1439.83,
+      "text": "Và điều đó có nghĩa là, quý cô Keigetsu, rằng cô sẽ phải chịu đau khổ với tư cách là người làm phép?"
+    },
+    {
+      "start": 1454.23,
+      "end": 1457.99,
+      "text": "Quý cô Keigetsu, cô đang cố gắng gánh vác gánh nặng à?"
+    },
+    {
+      "start": 1458.07,
+      "end": 1461.37,
+      "text": "mất mạng để cứu Nữ hoàng?"
+    },
+    {
+      "start": 1462.24,
+      "end": 1464.66,
+      "text": "Xin hãy nói cho tôi biết, quý cô Keigetsu."
+    },
+    {
+      "start": 1477.36,
+      "end": 1482.28,
+      "text": "Bạn luôn trông thật phù phiếm nhưng lại thông minh vào những thời điểm kỳ lạ nhất."
+    },
+    {
+      "start": 1482.53,
+      "end": 1485.66,
+      "text": "Tôi chưa nhận được câu trả lời, quý cô Keigetsu."
+    },
+    {
+      "start": 1486.74,
+      "end": 1488.33,
+      "text": "Đây là cách duy nhất tôi biết."
+    },
+    {
+      "start": 1499.48,
+      "end": 1500.4,
+      "text": "Hả?"
+    },
+    {
+      "start": 1500.48,
+      "end": 1502.78,
+      "text": "Làm thế nào để xin lỗi bạn."
+    },
+    {
+      "start": 1502.86,
+      "end": 1504.86,
+      "text": "Làm thế nào để giải quyết mọi việc."
+    },
+    {
+      "start": 1510.41,
+      "end": 1511.7,
+      "text": "Và..."
+    },
+    {
+      "start": 1512.07,
+      "end": 1514.66,
+      "text": "làm thế nào để đáp ứng được sự mong đợi."
+    },
+    {
+      "start": 1520.79,
+      "end": 1523.96,
+      "text": "Chưa ai từng cho tôi một cơ hội."
+    },
+    {
+      "start": 1524.05,
+      "end": 1526.59,
+      "text": "Không ai dạy tôi niềm tự hào."
+    },
+    {
+      "start": 1526.67,
+      "end": 1528.59,
+      "text": "Họ không mong đợi bất cứ điều gì ở tôi cả."
+    },
+    {
+      "start": 1537.12,
+      "end": 1538.7,
+      "text": "Vì thế tôi không biết."
+    },
+    {
+      "start": 1539.7,
+      "end": 1541.29,
+      "text": "Tôi không biết, nhưng..."
+    },
+    {
+      "start": 1541.79,
+      "end": 1543.29,
+      "text": "Tôi muốn làm điều gì đó!"
+    },
+    {
+      "start": 1549.85,
+      "end": 1553.31,
+      "text": "Bởi vì bạn nói tôi là ngôi sao của bạn!"
+    },
+    {
+      "start": 1553.57,
+      "end": 1557.94,
+      "text": "Dù suốt thời gian qua tôi đã sống lang thang trong bùn..."
+    },
+    {
+      "start": 1558.78,
+      "end": 1560.61,
+      "text": "nó khiến tôi nghĩ rằng chỉ một lần thôi..."
+    },
+    {
+      "start": 1571.56,
+      "end": 1573.31,
+      "text": "dù nhỏ đến đâu..."
+    },
+    {
+      "start": 1573.39,
+      "end": 1576.73,
+      "text": "Tôi muốn làm điều gì đó tuyệt vời!"
+    },
+    {
+      "start": 1576.81,
+      "end": 1577.9,
+      "text": "Điều đó có tệ không?"
+    },
+    {
+      "start": 1587.37,
+      "end": 1589.79,
+      "text": "Sức mạnh của sao chổi..."
+    },
+    {
+      "start": 1590.12,
+      "end": 1592.13,
+      "text": "thực sự là đặc biệt."
+    },
+    {
+      "start": 1602.2,
+      "end": 1608.16,
+      "text": "Tôi đã đề cập đến việc tôi đã thực hiện hai điều ước trên sao chổi, phải không?"
+    },
+    {
+      "start": 1616.81,
+      "end": 1619.23,
+      "text": "Một là sức khỏe."
+    },
+    {
+      "start": 1619.85,
+      "end": 1621.73,
+      "text": "Và cái khác..."
+    },
+    {
+      "start": 1628.25,
+      "end": 1630.26,
+      "text": "là tôi muốn có một người bạn."
+    },
+    {
+      "start": 1634.87,
+      "end": 1640.21,
+      "text": "Tôi hiểu rằng tôi đã lớn lên trong một môi trường đặc quyền."
+    },
+    {
+      "start": 1640.87,
+      "end": 1644.63,
+      "text": "Một thế giới dịu dàng, tựa như một chiếc nôi."
+    },
+    {
+      "start": 1645.0,
+      "end": 1648.26,
+      "text": "Tuy nhiên, tôi vẫn là người nhà Kou."
+    },
+    {
+      "start": 1662.58,
+      "end": 1667.96,
+      "text": "Tôi muốn ai đó thể hiện tình cảm chứ không chỉ nhận được tình cảm."
+    },
+    {
+      "start": 1668.25,
+      "end": 1671.05,
+      "text": "Tôi muốn có một đối tác để chúng tôi có thể hỗ trợ lẫn nhau,"
+    },
+    {
+      "start": 1671.13,
+      "end": 1673.76,
+      "text": "một người bạn đối xử bình đẳng với tôi."
+    },
+    {
+      "start": 1685.42,
+      "end": 1690.8,
+      "text": "Bạn có một trái tim dễ thay đổi và có những cảm xúc mãnh liệt ngoài tầm kiểm soát của bạn."
+    },
+    {
+      "start": 1691.34,
+      "end": 1693.59,
+      "text": "Bạn trong sáng đến mức có thể mạo hiểm mạng sống của mình"
+    },
+    {
+      "start": 1693.68,
+      "end": 1696.26,
+      "text": "để xin lỗi cô gái mà bạn ghét."
+    },
+    {
+      "start": 1708.2,
+      "end": 1712.25,
+      "text": "Bạn có rất nhiều thứ mà tôi không có."
+    },
+    {
+      "start": 1718.32,
+      "end": 1723.07,
+      "text": "Làm ơn, bạn sẽ trở thành bạn với tôi chứ?"
+    },
+    {
+      "start": 1723.15,
+      "end": 1724.28,
+      "text": "Gì--"
+    },
+    {
+      "start": 1724.57,
+      "end": 1726.9,
+      "text": "Chà, ngay cả khi bạn nói bạn không muốn,"
+    },
+    {
+      "start": 1735.67,
+      "end": 1737.96,
+      "text": "Tôi sẽ phong ấn tình bạn của chúng ta theo cách riêng của tôi."
+    },
+    {
+      "start": 1738.13,
+      "end": 1739.21,
+      "text": "Hả?"
+    },
+    {
+      "start": 1740.09,
+      "end": 1743.22,
+      "text": "Nếu lưỡi dao phải vung xuống, chúng ta sẽ cùng nhau thực hiện."
+    },
+    {
+      "start": 1751.4,
+      "end": 1753.86,
+      "text": "Hãy chia lời nguyền nữa, được chứ?"
+    },
+    {
+      "start": 1754.15,
+      "end": 1756.28,
+      "text": "A-Anh biết đấy..."
+    },
+    {
+      "start": 1756.36,
+      "end": 1757.36,
+      "text": "Đúng."
+    },
+    {
+      "start": 1764.01,
+      "end": 1765.05,
+      "text": "Bạn biết..."
+    },
+    {
+      "start": 1765.68,
+      "end": 1766.68,
+      "text": "Dừng lại đi."
+    },
+    {
+      "start": 1775.87,
+      "end": 1780.71,
+      "text": "Bạn đang cố gắng làm gì mà không xin phép tôi..."
+    },
+    {
+      "start": 1780.79,
+      "end": 1783.17,
+      "text": "PHÂN PHỐI CAO CẤP - SHU GABI"
+    },
+    {
+      "start": 1781.71,
+      "end": 1783.17,
+      "text": "Keigetsu?"
+    },
+    {
+      "start": 1792.07,
+      "end": 1793.32,
+      "text": "Quý phi!"
+    },
+    {
+      "start": 1793.86,
+      "end": 1795.82,
+      "text": "Cúi đầu xuống..."
+    },
+    {
+      "start": 1796.41,
+      "end": 1798.58,
+      "text": "chỉ là con gái của một người nước ngoài."
+    },
+    {
+      "start": 1806.69,
+      "end": 1809.19,
+      "text": "Kin Gayou..."
+    },
+    {
+      "start": 1809.53,
+      "end": 1811.94,
+      "text": "C-Ai đó! Đội trưởng của Mắt Đại Bàng!"
+    },
+    {
+      "start": 1812.03,
+      "end": 1813.03,
+      "text": "Nó vô dụng."
+    },
+    {
+      "start": 1820.18,
+      "end": 1822.51,
+      "text": "Hiện tại, Hoàng hậu bệ hạ..."
+    },
+    {
+      "start": 1822.6,
+      "end": 1825.39,
+      "text": "người phụ nữ phiền toái đó đang gặp khủng hoảng."
+    },
+    {
+      "start": 1825.93,
+      "end": 1828.98,
+      "text": "Mọi người đang theo dõi từng động thái của Cung điện Kou."
+    },
+    {
+      "start": 1838.46,
+      "end": 1841.88,
+      "text": "Sẽ không có ai đến đây."
+    },
+    {
+      "start": 1845.09,
+      "end": 1848.64,
+      "text": "Trái tim và chân phải của cô ấy..."
+    },
+    {
+      "start": 1848.81,
+      "end": 1852.14,
+      "text": "Này, bạn đã dùng Bow of Warding xuyên qua phần nào của mục tiêu?"
+    },
+    {
+      "start": 1852.23,
+      "end": 1855.9,
+      "text": "Một lần ở trung tâm và nhiều lần ở cạnh phải."
+    },
+    {
+      "start": 1867.14,
+      "end": 1868.22,
+      "text": "Nó thực sự là..."
+    },
+    {
+      "start": 1868.31,
+      "end": 1869.93,
+      "text": "Quý phi Shu."
+    },
+    {
+      "start": 1870.1,
+      "end": 1872.6,
+      "text": "A-Anh... nên đợi một chút--"
+    },
+    {
+      "start": 1885.84,
+      "end": 1886.84,
+      "text": "Leelee!"
+    },
+    {
+      "start": 1891.97,
+      "end": 1892.89,
+      "text": "Kou Reirin!"
+    },
+    {
+      "start": 1892.97,
+      "end": 1894.18,
+      "text": "Tiểu thư Reirin?"
+    },
+    {
+      "start": 1894.26,
+      "end": 1895.93,
+      "text": "Ôi trời ơi."
+    },
+    {
+      "start": 1900.07,
+      "end": 1903.08,
+      "text": "Có vẻ như danh tính thực sự của bạn đã được lan truyền khá nhiều..."
+    },
+    {
+      "start": 1903.62,
+      "end": 1904.62,
+      "text": "Keigetsu."
+    },
+    {
+      "start": 1905.58,
+      "end": 1907.71,
+      "text": "Cuối cùng, điều đó là không thể"
+    },
+    {
+      "start": 1915.51,
+      "end": 1919.47,
+      "text": "tôi đoán là để một con chuột cống giả vờ làm một con bướm."
+    },
+    {
+      "start": 1919.85,
+      "end": 1923.48,
+      "text": "Ôi, em thật là một cô gái vô dụng."
+    },
+    {
+      "start": 1924.35,
+      "end": 1925.48,
+      "text": "Đúng."
+    },
+    {
+      "start": 1935.82,
+      "end": 1936.99,
+      "text": "Cũng ngu ngốc như tôi,"
+    },
+    {
+      "start": 1937.07,
+      "end": 1940.74,
+      "text": "Cuối cùng ta đã nhận ra tham vọng của ngươi là gì, Quý phi."
+    },
+    {
+      "start": 1941.37,
+      "end": 1945.21,
+      "text": "Và tôi sắp nghiền nát chúng khi chúng ta nói chuyện."
+    },
+    {
+      "start": 1955.74,
+      "end": 1960.24,
+      "text": "Nếu coi trọng mạng sống của mình, tôi tin rằng tốt hơn hết là bạn nên đặt lưỡi dao xuống."
+    },
+    {
+      "start": 1960.74,
+      "end": 1962.29,
+      "text": "Đó là điều ngược lại."
+    },
+    {
+      "start": 1962.37,
+      "end": 1964.75,
+      "text": "Cậu cần phải đặt nó xuống, Keigetsu."
+    },
+    {
+      "start": 1974.23,
+      "end": 1977.07,
+      "text": "Cậu vẫn chưa hoàn thành phản nguyền phải không?"
+    },
+    {
+      "start": 1977.15,
+      "end": 1981.16,
+      "text": "Nếu bạn coi trọng mạng sống của \"người bạn\" mà cuối cùng bạn đã có được"
+    },
+    {
+      "start": 1981.24,
+      "end": 1985.04,
+      "text": "và nếu bạn trân trọng cơ thể mình,"
+    },
+    {
+      "start": 1996.03,
+      "end": 1999.41,
+      "text": "đặt cái lọ và con dao đó xuống, Keigetsu."
+    },
+    {
+      "start": 1999.66,
+      "end": 2001.62,
+      "text": "Làm ơn đi, quý cô Keigetsu."
+    },
+    {
+      "start": 2001.7,
+      "end": 2002.99,
+      "text": "Đặt lưỡi dao xuống."
+    },
+    {
+      "start": 2010.12,
+      "end": 2013.16,
+      "text": "Không, xin đừng lo lắng cho tôi."
+    },
+    {
+      "start": 2013.25,
+      "end": 2014.62,
+      "text": "Hãy làm những gì cần phải làm."
+    },
+    {
+      "start": 2020.96,
+      "end": 2023.22,
+      "text": "Thật là một con bướm nhỏ ồn ào."
+    },
+    {
+      "start": 2023.88,
+      "end": 2028.14,
+      "text": "Keigetsu tội nghiệp của tôi. Chắc hẳn bạn đang rất bối rối."
+    },
+    {
+      "start": 2028.22,
+      "end": 2030.76,
+      "text": "Trinh nữ thân yêu của tôi."
+    },
+    {
+      "start": 2040.75,
+      "end": 2043.13,
+      "text": "Được rồi, tôi sẽ kể cho bạn nghe..."
+    },
+    {
+      "start": 2044.08,
+      "end": 2048.63,
+      "text": "chính xác điều gì sẽ xảy ra nếu bạn hoàn thành chế tạo nọc độc ngay tại đây."
+    },
+    {
+      "start": 2049.26,
+      "end": 2051.8,
+      "text": "Tôi chắc chắn sẽ chết."
+    },
+    {
+      "start": 2063.02,
+      "end": 2067.36,
+      "text": "Và, với tư cách là một thành viên của gia tộc Shu đã gây ra cuộc binh biến,"
+    },
+    {
+      "start": 2067.45,
+      "end": 2070.11,
+      "text": "bạn sẽ không thể thoát khỏi án tử hình."
+    },
+    {
+      "start": 2070.2,
+      "end": 2073.2,
+      "text": "Tuy nhiên, nếu bạn đặt lưỡi dao xuống..."
+    },
+    {
+      "start": 2083.63,
+      "end": 2087.88,
+      "text": "người phụ nữ đó sẽ chết, và tôi sẽ trở thành Hoàng hậu."
+    },
+    {
+      "start": 2087.97,
+      "end": 2091.97,
+      "text": "Và khi tôi làm vậy, tôi sẽ đối xử với bạn một cách tôn trọng."
+    },
+    {
+      "start": 2092.43,
+      "end": 2094.93,
+      "text": "Tôi thậm chí có thể để \"người bạn\" của bạn sống."
+    },
+    {
+      "start": 2106.41,
+      "end": 2110.13,
+      "text": "Tuy nhiên, đó chỉ là khi cô bị cướp mất ý thức."
+    },
+    {
+      "start": 2117.05,
+      "end": 2118.81,
+      "text": "D-Dừng lại đi!"
+    },
+    {
+      "start": 2119.14,
+      "end": 2121.56,
+      "text": "Nhanh lên, Keigetsu."
+    },
+    {
+      "start": 2121.64,
+      "end": 2125.19,
+      "text": "Lưỡi dao này nặng nên có thể vô tình trượt tay."
+    },
+    {
+      "start": 2133.64,
+      "end": 2134.93,
+      "text": "Thưa bà!"
+    },
+    {
+      "start": 2135.14,
+      "end": 2137.89,
+      "text": "Bạn sẽ làm gì, Keigetsu?"
+    },
+    {
+      "start": 2155.3,
+      "end": 2156.8,
+      "text": "Làm ơn dừng lại đi, Quý cô Keigetsu--"
+    },
+    {
+      "start": 2156.88,
+      "end": 2158.21,
+      "text": "Im lặng."
+    },
+    {
+      "start": 2169.11,
+      "end": 2171.4,
+      "text": "Cô gái ngoan, Keigetsu!"
+    },
+    {
+      "start": 2171.49,
+      "end": 2173.24,
+      "text": "Đó là điều bạn nên làm!"
+    },
+    {
+      "start": 2173.32,
+      "end": 2177.53,
+      "text": "Bởi vì ngươi là một con chuột cống bất tài, thô lỗ!"
+    },
+    {
+      "start": 2188.6,
+      "end": 2189.85,
+      "text": "Bạn đã mất cảnh giác!"
+    },
+    {
+      "start": 2196.98,
+      "end": 2198.36,
+      "text": "Tôi đã tóm được nó!"
+    },
+    {
+      "start": 2201.15,
+      "end": 2202.11,
+      "text": "Ồ."
+    },
+    {
+      "start": 2202.19,
+      "end": 2203.36,
+      "text": "Tôi xin lỗi."
+    },
+    {
+      "start": 2203.53,
+      "end": 2206.28,
+      "text": "Tôi đã mời bạn làm việc đó cùng nhau, nhưng tôi đã tự mình làm điều đó."
+    },
+    {
+      "start": 2211.59,
+      "end": 2214.64,
+      "text": "Quý cô Keigetsu, nó vẫn đang co giật,"
+    },
+    {
+      "start": 2214.72,
+      "end": 2216.72,
+      "text": "nên nếu muốn, bạn có thể tham gia vào trận cuối cùng--"
+    },
+    {
+      "start": 2216.81,
+      "end": 2218.69,
+      "text": "Việc xem xét này là hoàn toàn không được phép!"
+    },
+    {
+      "start": 2225.95,
+      "end": 2228.2,
+      "text": "Đừng để thứ đó lại gần tôi!"
+    },
+    {
+      "start": 2228.62,
+      "end": 2229.74,
+      "text": "Ồ, nó chết rồi."
+    },
+    {
+      "start": 2239.87,
+      "end": 2242.62,
+      "text": "Hoàng Hậu - KOU KENSHUU"
+    },
+    {
+      "start": 2251.3,
+      "end": 2252.93,
+      "text": "Tránh xa!"
+    },
+    {
+      "start": 2253.01,
+      "end": 2254.51,
+      "text": "Đồ quái vật, tránh xa ra!"
+    },
+    {
+      "start": 2254.89,
+      "end": 2255.8,
+      "text": "KHÔNG!"
+    },
+    {
+      "start": 2260.49,
+      "end": 2262.4,
+      "text": "Có vẻ như lời nguyền đã được hóa giải."
+    },
+    {
+      "start": 2265.99,
+      "end": 2267.66,
+      "text": "Đi lối đó!"
+    },
+    {
+      "start": 2267.74,
+      "end": 2270.95,
+      "text": "Hãy nuốt chửng và giết chết nữ hoàng đáng ghét đó!"
+    },
+    {
+      "start": 2271.16,
+      "end": 2274.96,
+      "text": "Người phụ nữ đã cướp đi hoàng tử của tôi!"
+    },
+    {
+      "start": 2288.7,
+      "end": 2289.95,
+      "text": "Chết tiệt!"
+    },
+    {
+      "start": 2292.08,
+      "end": 2295.62,
+      "text": "Đồ chuột cống!"
+    },
+    {
+      "start": 2297.21,
+      "end": 2299.25,
+      "text": "Bạn ổn chứ, Reirin?"
+    },
+    {
+      "start": 2299.46,
+      "end": 2300.46,
+      "text": "Bạn thân mến--"
+    },
+    {
+      "start": 2301.63,
+      "end": 2302.63,
+      "text": "Thưa ngài."
+    }
+  ]
+}
