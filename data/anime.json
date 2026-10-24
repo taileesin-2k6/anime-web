@@ -99,10 +99,19 @@
         "createdAt": "2026-10-17T11:25:59.848750Z",
         "filename": "the_ep03_bilingual.mp4",
         "gdriveId": "1JDrzf0L4RQ1knwnIy3c0hlyHtd1Pdnd9"
+      },
+      {
+        "id": "ep-4-bilingual",
+        "episodeNumber": 4,
+        "title": "Tập 4 : The Last Volume",
+        "videoUrl": "/videos/the_ep04_bilingual.mp4",
+        "duration": "38:15",
+        "createdAt": "2026-10-24T04:09:33.080913Z",
+        "filename": "the_ep04_bilingual.mp4"
       }
     ],
     "createdAt": "2026-10-02T19:24:44.055089Z",
-    "updatedAt": "2026-10-17T11:25:59.848873Z"
+    "updatedAt": "2026-10-24T04:09:33.081024Z"
   },
   {
     "id": "tokyo-revengers-santen-sensou-hen",

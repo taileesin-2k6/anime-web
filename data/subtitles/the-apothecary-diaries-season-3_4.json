@@ -1,0 +1,3232 @@
+{
+  "en": [
+    {
+      "start": 113.57,
+      "end": 115.47,
+      "text": "We have eagerly awaited your arrival.",
+      "vi_text": "Chúng tôi đã háo hức chờ đợi sự xuất hiện của bạn."
+    },
+    {
+      "start": 134.24,
+      "end": 136.2,
+      "text": "Have you finished changing?",
+      "vi_text": "Bạn đã thay đồ xong chưa?"
+    },
+    {
+      "start": 136.5,
+      "end": 137.4,
+      "text": "Yes.",
+      "vi_text": "Đúng."
+    },
+    {
+      "start": 153.16,
+      "end": 155.24,
+      "text": "Impressive. This was  the emperor's villa after all.",
+      "vi_text": "Ấn tượng. Dù sao đây cũng là biệt thự của hoàng đế."
+    },
+    {
+      "start": 155.24,
+      "end": 159.45,
+      "text": "Now it's the home of a former  member of the Four Ladies.",
+      "vi_text": "Bây giờ nó là nhà của một cựu thành viên Four Ladies."
+    },
+    {
+      "start": 170.92,
+      "end": 171.94,
+      "text": "Welcome.",
+      "vi_text": "Chào mừng."
+    },
+    {
+      "start": 172.27,
+      "end": 174.49,
+      "text": "It's been a long time, Lady Ah-Duo.",
+      "vi_text": "Đã lâu không gặp, tiểu thư A Đa."
+    },
+    {
+      "start": 175.02,
+      "end": 177.48,
+      "text": "So, you have business with her today?",
+      "vi_text": "Vậy hôm nay cậu có việc với cô ấy à?"
+    },
+    {
+      "start": 186.62,
+      "end": 187.29,
+      "text": "Yes.",
+      "vi_text": "Đúng."
+    },
+    {
+      "start": 187.75,
+      "end": 192.18,
+      "text": "Suirei is the late emperor's grandchild,  but is also related to the Shi clan.",
+      "vi_text": "Suirei là cháu của cố hoàng đế, nhưng cũng có quan hệ họ hàng với gia tộc Shi."
+    },
+    {
+      "start": 192.97,
+      "end": 195.66,
+      "text": "She can't step out into public anymore.",
+      "vi_text": "Cô ấy không thể bước ra ngoài nơi công cộng được nữa."
+    },
+    {
+      "start": 203.72,
+      "end": 206.73,
+      "text": "She will most likely live out  the rest of her life in captivity.",
+      "vi_text": "Rất có thể cô ấy sẽ sống nốt phần đời còn lại trong cảnh bị giam cầm."
+    },
+    {
+      "start": 207.31,
+      "end": 209.48,
+      "text": "What does she plan to do from now on?",
+      "vi_text": "Cô ấy dự định làm gì từ bây giờ?"
+    },
+    {
+      "start": 209.48,
+      "end": 211.68,
+      "text": "What is the emperor going to do with her?",
+      "vi_text": "Hoàng đế định làm gì với cô ấy?"
+    },
+    {
+      "start": 221.96,
+      "end": 225.4,
+      "text": "I have no idea, but given how skilled  she is as an apothecary,",
+      "vi_text": "Tôi không biết, nhưng xét đến kỹ năng bào chế thuốc của cô ấy,"
+    },
+    {
+      "start": 225.4,
+      "end": 228.19,
+      "text": "it would be a waste for her  to stay hidden like this.",
+      "vi_text": "Sẽ thật lãng phí nếu cô ấy cứ ẩn náu như thế này."
+    },
+    {
+      "start": 228.19,
+      "end": 232.14,
+      "text": "I will stay here, but don't mind me,  talk amongst yourselves.",
+      "vi_text": "Tôi sẽ ở lại đây, nhưng đừng bận tâm đến tôi, hãy nói chuyện với nhau."
+    },
+    {
+      "start": 241.68,
+      "end": 245.22,
+      "text": "I can't help but mind her, but...",
+      "vi_text": "Tôi không thể không bận tâm đến cô ấy, nhưng..."
+    },
+    {
+      "start": 260.24,
+      "end": 262.39,
+      "text": "They were used by my master.",
+      "vi_text": "Chúng đã được chủ nhân của tôi sử dụng."
+    },
+    {
+      "start": 262.85,
+      "end": 264.27,
+      "text": "Is this the whole series?",
+      "vi_text": "Đây có phải là toàn bộ bộ truyện?"
+    },
+    {
+      "start": 264.92,
+      "end": 266.4,
+      "text": "It's missing one.",
+      "vi_text": "Nó đang thiếu một cái."
+    },
+    {
+      "start": 273.13,
+      "end": 276.02,
+      "text": "I believe there were fifteen books.",
+      "vi_text": "Tôi tin rằng có mười lăm cuốn sách."
+    },
+    {
+      "start": 276.53,
+      "end": 279.4,
+      "text": "Do you have any idea where  the last remaining volume is?",
+      "vi_text": "Bạn có biết tập cuối cùng còn lại ở đâu không?"
+    },
+    {
+      "start": 287.39,
+      "end": 288.52,
+      "text": "No, I don't.",
+      "vi_text": "Không, tôi không."
+    },
+    {
+      "start": 289.05,
+      "end": 291.27,
+      "text": "She doesn't seem to be lying.",
+      "vi_text": "Cô ấy có vẻ không nói dối."
+    },
+    {
+      "start": 291.27,
+      "end": 293.91,
+      "text": "She's got no reason to, regardless.",
+      "vi_text": "Dù sao đi nữa, cô ấy không có lý do gì để làm vậy."
+    },
+    {
+      "start": 298.01,
+      "end": 302.01,
+      "text": "So, this \"master\" of yours,  where is he now?",
+      "vi_text": "Vậy “chủ nhân” này của bạn hiện đang ở đâu?"
+    },
+    {
+      "start": 305.93,
+      "end": 307.92,
+      "text": "He is alive, isn't he?",
+      "vi_text": "Anh ấy còn sống phải không?"
+    },
+    {
+      "start": 316.5,
+      "end": 319.25,
+      "text": "The resurrection potion that you used...",
+      "vi_text": "Thuốc hồi sinh mà bạn đã sử dụng..."
+    },
+    {
+      "start": 319.25,
+      "end": 322.72,
+      "text": "He tested it on himself, didn't he?",
+      "vi_text": "Anh ấy đã tự mình thử nghiệm nó phải không?"
+    },
+    {
+      "start": 336.03,
+      "end": 337.54,
+      "text": "That's correct.",
+      "vi_text": "Điều đó đúng."
+    },
+    {
+      "start": 337.91,
+      "end": 342.2,
+      "text": "If he didn't, there was no way he  could have escaped that stronghold.",
+      "vi_text": "Nếu không, không đời nào anh ta có thể thoát khỏi thành trì đó."
+    },
+    {
+      "start": 342.79,
+      "end": 347.42,
+      "text": "But he probably wouldn't be able  to answer your questions.",
+      "vi_text": "Nhưng có lẽ anh ấy sẽ không thể trả lời câu hỏi của bạn."
+    },
+    {
+      "start": 358.5,
+      "end": 360.28,
+      "text": "What do you mean?",
+      "vi_text": "Ý anh là gì?"
+    },
+    {
+      "start": 360.28,
+      "end": 364.31,
+      "text": "Kyou-u... I mean, his new  name is Chou-u, I guess.",
+      "vi_text": "Kyou-u... Ý tôi là, tên mới của anh ấy là Chou-u, tôi đoán vậy."
+    },
+    {
+      "start": 364.75,
+      "end": 369.16,
+      "text": "He lost his memories  and is paralyzed on one side.",
+      "vi_text": "Anh bị mất trí nhớ và bị liệt một bên."
+    },
+    {
+      "start": 377.29,
+      "end": 379.24,
+      "text": "Does that give you any hints?",
+      "vi_text": "Điều đó có gợi ý gì cho bạn không?"
+    },
+    {
+      "start": 379.24,
+      "end": 381.9,
+      "text": "You're saying he lost his memories?",
+      "vi_text": "Ý anh là anh ấy bị mất trí nhớ?"
+    },
+    {
+      "start": 382.42,
+      "end": 385.32,
+      "text": "It's a little different, but similar.",
+      "vi_text": "Nó hơi khác một chút, nhưng giống nhau."
+    },
+    {
+      "start": 394.81,
+      "end": 398.46,
+      "text": "In fact, you may have passed by him  without noticing.",
+      "vi_text": "Trên thực tế, bạn có thể đã đi ngang qua anh ấy mà không để ý."
+    },
+    {
+      "start": 398.86,
+      "end": 400.73,
+      "text": "What do you mean?",
+      "vi_text": "Ý anh là gì?"
+    },
+    {
+      "start": 401.39,
+      "end": 403.61,
+      "text": "Do you remember the hot spring resort?",
+      "vi_text": "Bạn có nhớ khu nghỉ dưỡng suối nước nóng không?"
+    },
+    {
+      "start": 414.22,
+      "end": 415.3,
+      "text": "Yes.",
+      "vi_text": "Đúng."
+    },
+    {
+      "start": 415.82,
+      "end": 419.0,
+      "text": "The hidden village, worshipping the fox.",
+      "vi_text": "Làng ẩn, thờ cáo."
+    },
+    {
+      "start": 419.68,
+      "end": 423.94,
+      "text": "My master is one of  the bedridden old men there.",
+      "vi_text": "Thầy tôi là một trong những ông già nằm liệt giường ở đó."
+    },
+    {
+      "start": 437.34,
+      "end": 440.14,
+      "text": "That place was being used  as a hot spring sanatorium.",
+      "vi_text": "Nơi đó đang được sử dụng làm viện điều dưỡng suối nước nóng."
+    },
+    {
+      "start": 440.44,
+      "end": 445.08,
+      "text": "She snuck him in there as one of  the sick, to hide him from Shenmei.",
+      "vi_text": "Cô lẻn anh vào đó như một người bệnh, để giấu anh khỏi Shenmei."
+    },
+    {
+      "start": 445.72,
+      "end": 449.56,
+      "text": "He doesn't remember who he is anymore.",
+      "vi_text": "Anh không còn nhớ mình là ai nữa."
+    },
+    {
+      "start": 451.28,
+      "end": 452.9,
+      "text": "If he'd been in good shape,",
+      "vi_text": "Nếu anh ấy ở trong tình trạng tốt,"
+    },
+    {
+      "start": 465.16,
+      "end": 470.42,
+      "text": "she wouldn't have thought of getting  you involved in the incident.",
+      "vi_text": "cô ấy sẽ không nghĩ đến việc lôi kéo bạn vào vụ việc này."
+    },
+    {
+      "start": 471.23,
+      "end": 473.23,
+      "text": "Suirei must have noticed.",
+      "vi_text": "Suirei hẳn đã nhận thấy."
+    },
+    {
+      "start": 474.03,
+      "end": 476.05,
+      "text": "Shisui did all of that  to work with her father",
+      "vi_text": "Shisui làm tất cả những điều đó để làm việc với bố cô ấy"
+    },
+    {
+      "start": 487.22,
+      "end": 490.49,
+      "text": "to reveal all the evil  hidden in this nation.",
+      "vi_text": "để vạch trần mọi tội ác ẩn giấu trong đất nước này."
+    },
+    {
+      "start": 490.78,
+      "end": 494.74,
+      "text": "And to release her sister from her mother.",
+      "vi_text": "Và để giải thoát em gái mình khỏi mẹ cô ấy."
+    },
+    {
+      "start": 495.66,
+      "end": 498.29,
+      "text": "If Suirei's master was available,",
+      "vi_text": "Nếu chủ nhân của Suirei có mặt,"
+    },
+    {
+      "start": 508.93,
+      "end": 513.0,
+      "text": "they wouldn't have had to  take me to that stronghold.",
+      "vi_text": "họ sẽ không phải đưa tôi đến thành trì đó."
+    },
+    {
+      "start": 513.84,
+      "end": 516.34,
+      "text": "No clues, I guess.",
+      "vi_text": "Không có manh mối nào cả, tôi đoán vậy."
+    },
+    {
+      "start": 516.34,
+      "end": 519.47,
+      "text": "I thought I finally had something.",
+      "vi_text": "Tôi nghĩ cuối cùng tôi đã có được thứ gì đó."
+    },
+    {
+      "start": 530.45,
+      "end": 535.4,
+      "text": "In that case, do you know anything  about the locusts he was studying?",
+      "vi_text": "Trong trường hợp đó, bạn có biết gì về loài châu chấu mà anh ấy đang nghiên cứu không?"
+    },
+    {
+      "start": 536.19,
+      "end": 539.18,
+      "text": "I wasn't part of that research.",
+      "vi_text": "Tôi không phải là một phần của nghiên cứu đó."
+    },
+    {
+      "start": 539.18,
+      "end": 540.94,
+      "text": "I'm not good with insects...",
+      "vi_text": "Tôi không giỏi với côn trùng..."
+    },
+    {
+      "start": 544.41,
+      "end": 547.78,
+      "text": "That was her area of expertise.",
+      "vi_text": "Đó là lĩnh vực chuyên môn của cô ấy."
+    },
+    {
+      "start": 554.56,
+      "end": 556.1,
+      "text": "I understand.",
+      "vi_text": "Tôi hiểu."
+    },
+    {
+      "start": 556.52,
+      "end": 559.65,
+      "text": "And \"she\" is no longer with us.",
+      "vi_text": "Và “cô ấy” không còn ở bên chúng ta nữa."
+    },
+    {
+      "start": 571.43,
+      "end": 574.28,
+      "text": "When we were ordered to  create the immortality potion,",
+      "vi_text": "Khi chúng tôi được lệnh tạo ra lọ thuốc trường sinh bất tử,"
+    },
+    {
+      "start": 574.58,
+      "end": 578.31,
+      "text": "they destroyed most of  the research material.",
+      "vi_text": "họ đã phá hủy hầu hết các tài liệu nghiên cứu."
+    },
+    {
+      "start": 578.31,
+      "end": 581.29,
+      "text": "The contents of that room is  pretty much all that remains.",
+      "vi_text": "Nội dung của căn phòng đó gần như là tất cả những gì còn sót lại."
+    },
+    {
+      "start": 595.11,
+      "end": 598.14,
+      "text": "But the master,  wanting to continue his studies,",
+      "vi_text": "Nhưng người chủ muốn tiếp tục việc học của mình,"
+    },
+    {
+      "start": 598.14,
+      "end": 604.19,
+      "text": "used his guard Sazen to do research. I see.",
+      "vi_text": "sử dụng người bảo vệ Sazen của mình để nghiên cứu. Tôi hiểu rồi."
+    },
+    {
+      "start": 604.61,
+      "end": 608.41,
+      "text": "This girl you keep talking about,  she must have been very smart.",
+      "vi_text": "Cô gái mà bạn hay nhắc đến, chắc chắn cô ấy rất thông minh."
+    },
+    {
+      "start": 612.72,
+      "end": 616.04,
+      "text": "No matter how smart...  She's no longer with us.",
+      "vi_text": "Dù thông minh đến đâu... Cô ấy cũng không còn ở bên chúng ta nữa."
+    },
+    {
+      "start": 625.02,
+      "end": 629.59,
+      "text": "So, if she's so smart, would she go  without leaving anything behind?",
+      "vi_text": "Vậy nếu cô ấy thông minh như vậy liệu cô ấy có đi mà không để lại gì không?"
+    },
+    {
+      "start": 641.42,
+      "end": 643.33,
+      "text": "I-I'm sorry.",
+      "vi_text": "Tôi-tôi xin lỗi."
+    },
+    {
+      "start": 643.33,
+      "end": 645.68,
+      "text": "Don't worry. Relax.",
+      "vi_text": "Đừng lo lắng. Thư giãn."
+    },
+    {
+      "start": 645.68,
+      "end": 647.69,
+      "text": "I don't like formalities, anyway.",
+      "vi_text": "Dù sao thì tôi cũng không thích hình thức."
+    },
+    {
+      "start": 661.6,
+      "end": 666.27,
+      "text": "Look at her. She's lost in thought, with  manners and whatnot out the window.",
+      "vi_text": "Hãy nhìn cô ấy. Cô ấy đang chìm đắm trong suy nghĩ, với cách cư xử và những thứ linh tinh ngoài cửa sổ."
+    },
+    {
+      "start": 666.6,
+      "end": 670.15,
+      "text": "No, I understand I was  supposed to apologize there.",
+      "vi_text": "Không, tôi hiểu là tôi phải xin lỗi ở đó."
+    },
+    {
+      "start": 670.58,
+      "end": 674.83,
+      "text": "If Shisui left something behind...  Where would it be?",
+      "vi_text": "Nếu Shisui để lại thứ gì đó... nó sẽ ở đâu?"
+    },
+    {
+      "start": 683.85,
+      "end": 684.64,
+      "text": "The stronghold?",
+      "vi_text": "Thành trì?"
+    },
+    {
+      "start": 685.68,
+      "end": 686.52,
+      "text": "The rear palace?",
+      "vi_text": "Cung điện phía sau?"
+    },
+    {
+      "start": 687.71,
+      "end": 688.65,
+      "text": "The medical office?",
+      "vi_text": "Văn phòng y tế?"
+    },
+    {
+      "start": 703.01,
+      "end": 704.28,
+      "text": "The clinic...",
+      "vi_text": "Phòng khám..."
+    },
+    {
+      "start": 704.51,
+      "end": 705.74,
+      "text": "The clinic!",
+      "vi_text": "Phòng khám!"
+    },
+    {
+      "start": 715.02,
+      "end": 717.28,
+      "text": "Right before getting abducted  from the rear palace,",
+      "vi_text": "Ngay trước khi bị bắt cóc từ hậu cung,"
+    },
+    {
+      "start": 717.28,
+      "end": 719.98,
+      "text": "I did see the book of insects there.",
+      "vi_text": "Tôi đã thấy cuốn sách về côn trùng ở đó."
+    },
+    {
+      "start": 719.98,
+      "end": 722.49,
+      "text": "Oh, Shisui, you're...",
+      "vi_text": "Ôi, Shisui, cậu..."
+    },
+    {
+      "start": 740.28,
+      "end": 741.43,
+      "text": "This is it, right?",
+      "vi_text": "Đây là nó, phải không?"
+    },
+    {
+      "start": 742.17,
+      "end": 743.39,
+      "text": "Thank you.",
+      "vi_text": "Cảm ơn."
+    },
+    {
+      "start": 744.02,
+      "end": 748.99,
+      "text": "When you were kidnapped,  we confiscated everything in the clinic.",
+      "vi_text": "Khi bạn bị bắt cóc, chúng tôi đã tịch thu mọi thứ trong phòng khám."
+    },
+    {
+      "start": 755.66,
+      "end": 757.35,
+      "text": "This was part of it.",
+      "vi_text": "Đây là một phần của nó."
+    },
+    {
+      "start": 757.35,
+      "end": 758.26,
+      "text": "I see.",
+      "vi_text": "Tôi hiểu rồi."
+    },
+    {
+      "start": 759.06,
+      "end": 761.92,
+      "text": "The clinic was temporarily closed.",
+      "vi_text": "Phòng khám đã tạm thời đóng cửa."
+    },
+    {
+      "start": 772.55,
+      "end": 776.07,
+      "text": "Shenlü, the worker who assisted  in the escape from the rear palace,",
+      "vi_text": "Shenlü, người công nhân đã hỗ trợ trốn thoát khỏi cung điện phía sau,"
+    },
+    {
+      "start": 776.07,
+      "end": 782.75,
+      "text": "attempted suicide, survived, and was  imprisoned for her serious crimes.",
+      "vi_text": "đã cố gắng tự tử, sống sót và bị bỏ tù vì những tội ác nghiêm trọng của mình."
+    },
+    {
+      "start": 799.67,
+      "end": 801.89,
+      "text": "Are those all drawings of grasshoppers?",
+      "vi_text": "Đó có phải là tất cả những bức vẽ của châu chấu?"
+    },
+    {
+      "start": 801.89,
+      "end": 804.08,
+      "text": "Yes, they are.",
+      "vi_text": "Vâng, đúng vậy."
+    },
+    {
+      "start": 804.08,
+      "end": 806.08,
+      "text": "According to the descriptions  in the pictures,",
+      "vi_text": "Theo mô tả trong hình ảnh,"
+    },
+    {
+      "start": 815.12,
+      "end": 818.84,
+      "text": "they can be separated into two  major types, or three minor ones.",
+      "vi_text": "chúng có thể được chia thành hai loại chính hoặc ba loại nhỏ."
+    },
+    {
+      "start": 819.25,
+      "end": 822.49,
+      "text": "These are normal grasshoppers.",
+      "vi_text": "Đây là những con châu chấu bình thường."
+    },
+    {
+      "start": 822.49,
+      "end": 824.06,
+      "text": "The illustration shows them in parts,",
+      "vi_text": "Hình minh họa cho thấy chúng theo từng phần,"
+    },
+    {
+      "start": 834.14,
+      "end": 836.72,
+      "text": "but it appears this one has shorter wings.",
+      "vi_text": "nhưng có vẻ như con này có cánh ngắn hơn."
+    },
+    {
+      "start": 837.2,
+      "end": 841.16,
+      "text": "And this is the type we're expecting  to see more of this year.",
+      "vi_text": "Và đây là loại chúng tôi mong đợi sẽ thấy nhiều hơn trong năm nay."
+    },
+    {
+      "start": 841.16,
+      "end": 844.12,
+      "text": "It seems like this is the type  that causes a locust plague.",
+      "vi_text": "Có vẻ như đây là loại gây ra dịch châu chấu."
+    },
+    {
+      "start": 851.16,
+      "end": 854.86,
+      "text": "Hmm. The color's brown instead of green.",
+      "vi_text": "Ừm. Màu nâu thay vì màu xanh lá cây."
+    },
+    {
+      "start": 855.5,
+      "end": 857.19,
+      "text": "These have longer wings, too.",
+      "vi_text": "Chúng cũng có đôi cánh dài hơn."
+    },
+    {
+      "start": 870.68,
+      "end": 875.8,
+      "text": "And this is the type that caused  the small locust plague last year.",
+      "vi_text": "Và đây chính là loại gây ra nạn châu chấu nhỏ năm ngoái."
+    },
+    {
+      "start": 876.22,
+      "end": 880.8,
+      "text": "So, they change into these brown  grasshoppers in steps, over time.",
+      "vi_text": "Vì vậy, chúng biến đổi thành những con châu chấu màu nâu này theo từng bước, theo thời gian."
+    },
+    {
+      "start": 881.27,
+      "end": 882.72,
+      "text": "That seems to be the case.",
+      "vi_text": "Đó có vẻ là trường hợp."
+    },
+    {
+      "start": 897.25,
+      "end": 902.26,
+      "text": "Grasshoppers change their body color and  shape when certain conditions are met.",
+      "vi_text": "Châu chấu thay đổi màu sắc và hình dạng cơ thể khi đáp ứng một số điều kiện nhất định."
+    },
+    {
+      "start": 902.59,
+      "end": 906.66,
+      "text": "The changes take several generations,  and their numbers increase as they change.",
+      "vi_text": "Những thay đổi diễn ra trong nhiều thế hệ và số lượng của chúng tăng lên khi chúng thay đổi."
+    },
+    {
+      "start": 907.14,
+      "end": 909.68,
+      "text": "Does the multiplication  cause the shape change,",
+      "vi_text": "Phép nhân có làm thay đổi hình dạng không?"
+    },
+    {
+      "start": 923.27,
+      "end": 925.88,
+      "text": "or does the shape change  cause the multiplication?",
+      "vi_text": "hoặc hình dạng thay đổi có gây ra phép nhân không?"
+    },
+    {
+      "start": 926.28,
+      "end": 930.31,
+      "text": "According to the book,  the former is more likely the cause.",
+      "vi_text": "Theo cuốn sách, nguyên nhân có nhiều khả năng là nguyên nhân đầu tiên."
+    },
+    {
+      "start": 930.61,
+      "end": 936.76,
+      "text": "In other words, a small locust plague  is the precursor to a larger one.",
+      "vi_text": "Nói cách khác, một trận dịch châu chấu nhỏ là điềm báo trước cho một trận dịch lớn hơn."
+    },
+    {
+      "start": 950.14,
+      "end": 954.32,
+      "text": "So, we should expect  a larger locust plague this year.",
+      "vi_text": "Vì vậy, chúng ta nên dự kiến ​​một trận dịch châu chấu lớn hơn trong năm nay."
+    },
+    {
+      "start": 954.92,
+      "end": 958.29,
+      "text": "Yes. I don't know exactly how large.",
+      "vi_text": "Đúng. Tôi không biết chính xác lớn đến mức nào."
+    },
+    {
+      "start": 958.76,
+      "end": 962.29,
+      "text": "Does it describe anywhere  how to prevent this?",
+      "vi_text": "Nó có mô tả bất cứ nơi nào làm thế nào để ngăn chặn điều này?"
+    },
+    {
+      "start": 973.77,
+      "end": 975.52,
+      "text": "No.",
+      "vi_text": "KHÔNG."
+    },
+    {
+      "start": 975.52,
+      "end": 980.1,
+      "text": "It says, once damages are observed,  we need to eliminate the larvae,",
+      "vi_text": "Nó nói rằng, một khi thấy thiệt hại, chúng ta cần loại bỏ ấu trùng,"
+    },
+    {
+      "start": 980.1,
+      "end": 982.15,
+      "text": "but the only way is lots of manpower.",
+      "vi_text": "nhưng cách duy nhất là rất nhiều nhân lực."
+    },
+    {
+      "start": 993.72,
+      "end": 998.16,
+      "text": "It also says if they grow to maturity,  we should light bonfires, but...",
+      "vi_text": "Nó cũng nói rằng nếu chúng trưởng thành, chúng ta nên đốt lửa, nhưng..."
+    },
+    {
+      "start": 998.6,
+      "end": 1000.89,
+      "text": "That's just the classic way.",
+      "vi_text": "Đó chỉ là cách cổ điển."
+    },
+    {
+      "start": 1001.49,
+      "end": 1005.19,
+      "text": "There's also a recipe for an insecticide.",
+      "vi_text": "Ngoài ra còn có một công thức cho thuốc trừ sâu."
+    },
+    {
+      "start": 1018.43,
+      "end": 1022.52,
+      "text": "I'm sorry. There wasn't  much of use in here.",
+      "vi_text": "Tôi xin lỗi. Ở đây không có nhiều tác dụng."
+    },
+    {
+      "start": 1022.52,
+      "end": 1026.44,
+      "text": "No, the insecticide information  is worth something.",
+      "vi_text": "Không, thông tin về thuốc diệt côn trùng có giá trị gì đó."
+    },
+    {
+      "start": 1027.15,
+      "end": 1029.4,
+      "text": "Let's gather the ingredients now.",
+      "vi_text": "Bây giờ chúng ta hãy thu thập các thành phần."
+    },
+    {
+      "start": 1040.47,
+      "end": 1044.79,
+      "text": "This is the map of the area  where locust plagues are occurring.",
+      "vi_text": "Đây là bản đồ khu vực đang xảy ra dịch châu chấu."
+    },
+    {
+      "start": 1045.8,
+      "end": 1047.58,
+      "text": "Do you notice anything?",
+      "vi_text": "Bạn có nhận thấy điều gì không?"
+    },
+    {
+      "start": 1048.03,
+      "end": 1049.88,
+      "text": "Notice? Hmm...",
+      "vi_text": "Để ý? Ừm..."
+    },
+    {
+      "start": 1062.41,
+      "end": 1066.67,
+      "text": "Is there more damage in the plains because  grasshoppers thrive more easily there?",
+      "vi_text": "Có phải vùng đồng bằng bị thiệt hại nhiều hơn vì châu chấu ở đó phát triển dễ dàng hơn?"
+    },
+    {
+      "start": 1066.67,
+      "end": 1074.1,
+      "text": "Probably. But this region hasn't seen  a serious locust plague in decades.",
+      "vi_text": "Có lẽ. Nhưng khu vực này chưa từng chứng kiến ​​nạn dịch châu chấu nghiêm trọng trong nhiều thập kỷ."
+    },
+    {
+      "start": 1086.41,
+      "end": 1087.76,
+      "text": "The forest...",
+      "vi_text": "Rừng..."
+    },
+    {
+      "start": 1088.04,
+      "end": 1091.77,
+      "text": "I would think, if a forest were near,  birds would eat the grasshoppers.",
+      "vi_text": "Tôi nghĩ, nếu có một khu rừng ở gần, chim sẽ ăn châu chấu."
+    },
+    {
+      "start": 1092.28,
+      "end": 1096.39,
+      "text": "The Shihoku-shu region  was known for its rich forests,",
+      "vi_text": "Vùng Shihoku-shu được biết đến với những khu rừng trù phú,"
+    },
+    {
+      "start": 1108.67,
+      "end": 1111.63,
+      "text": "but this area is mostly bare now.",
+      "vi_text": "nhưng khu vực này hiện nay gần như trống rỗng."
+    },
+    {
+      "start": 1112.56,
+      "end": 1116.09,
+      "text": "In the late emperor's era,  strict limits were put on logging.",
+      "vi_text": "Vào thời hậu hoàng đế, người ta đặt ra những giới hạn nghiêm ngặt đối với việc khai thác gỗ."
+    },
+    {
+      "start": 1116.66,
+      "end": 1120.85,
+      "text": "After he passed away, the Shi clan  began ignoring those limits.",
+      "vi_text": "Sau khi ông qua đời, gia tộc Shi bắt đầu phớt lờ những giới hạn đó."
+    },
+    {
+      "start": 1131.67,
+      "end": 1136.8,
+      "text": "The late emperor's era...  The Empress must have banned it.",
+      "vi_text": "Thời hậu hoàng đế... Hoàng hậu nhất định đã cấm điều đó."
+    },
+    {
+      "start": 1137.12,
+      "end": 1140.16,
+      "text": "Perhaps there are more insects  because there are less birds,",
+      "vi_text": "Có lẽ có nhiều côn trùng hơn vì có ít chim hơn,"
+    },
+    {
+      "start": 1140.16,
+      "end": 1141.64,
+      "text": "because the trees were cut down?",
+      "vi_text": "vì cây đã bị đốn hạ?"
+    },
+    {
+      "start": 1150.8,
+      "end": 1152.87,
+      "text": "That's very possible.",
+      "vi_text": "Điều đó rất có thể."
+    },
+    {
+      "start": 1153.65,
+      "end": 1157.36,
+      "text": "I had high hopes for the forest  resources of Shihoku-shu...",
+      "vi_text": "Tôi rất hy vọng vào tài nguyên rừng của Shihoku-shu..."
+    },
+    {
+      "start": 1157.93,
+      "end": 1159.21,
+      "text": "I see.",
+      "vi_text": "Tôi hiểu rồi."
+    },
+    {
+      "start": 1169.43,
+      "end": 1171.54,
+      "text": "He was trying to make up  for the grain shortages",
+      "vi_text": "Anh ấy đang cố gắng bù đắp sự thiếu hụt ngũ cốc"
+    },
+    {
+      "start": 1171.54,
+      "end": 1174.87,
+      "text": "by selling off wood and buying food.",
+      "vi_text": "bằng cách bán gỗ và mua thực phẩm."
+    },
+    {
+      "start": 1175.24,
+      "end": 1179.55,
+      "text": "We might run out of ingredients  for the one insecticide in the book.",
+      "vi_text": "Chúng ta có thể hết nguyên liệu cho loại thuốc diệt côn trùng trong sách."
+    },
+    {
+      "start": 1189.38,
+      "end": 1191.66,
+      "text": "I'll prepare other recipes  as well, just in case.",
+      "vi_text": "Tôi cũng sẽ chuẩn bị các công thức nấu ăn khác để đề phòng."
+    },
+    {
+      "start": 1192.06,
+      "end": 1193.45,
+      "text": "Yes, please do.",
+      "vi_text": "Vâng, xin vui lòng làm."
+    },
+    {
+      "start": 1194.02,
+      "end": 1199.11,
+      "text": "Can we perhaps burn off the areas  where larvae were spotted?",
+      "vi_text": "Liệu chúng ta có thể đốt cháy những khu vực có ấu trùng được phát hiện không?"
+    },
+    {
+      "start": 1207.8,
+      "end": 1209.28,
+      "text": "Depends on the area.",
+      "vi_text": "Phụ thuộc vào khu vực."
+    },
+    {
+      "start": 1209.7,
+      "end": 1213.81,
+      "text": "Also... banning hunting  sparrows would help a little.",
+      "vi_text": "Ngoài ra... cấm săn chim sẻ sẽ giúp ích được một chút."
+    },
+    {
+      "start": 1214.06,
+      "end": 1216.39,
+      "text": "Sparrows are a common food source.",
+      "vi_text": "Chim sẻ là nguồn thức ăn phổ biến."
+    },
+    {
+      "start": 1221.54,
+      "end": 1224.2,
+      "text": "If we ban it too suddenly,  we would get pushback.",
+      "vi_text": "Nếu chúng tôi cấm nó quá đột ngột, chúng tôi sẽ bị phản đối."
+    },
+    {
+      "start": 1224.2,
+      "end": 1225.64,
+      "text": "If there was something to replace it...",
+      "vi_text": "Nếu có thứ gì đó có thể thay thế nó..."
+    },
+    {
+      "start": 1225.64,
+      "end": 1226.16,
+      "text": "Oh,",
+      "vi_text": "Ồ,"
+    },
+    {
+      "start": 1231.65,
+      "end": 1236.55,
+      "text": "why don't we develop a grasshopper  recipe and call it royal cuisine?",
+      "vi_text": "tại sao chúng ta không phát triển công thức châu chấu và gọi đó là ẩm thực hoàng gia?"
+    },
+    {
+      "start": 1245.32,
+      "end": 1249.27,
+      "text": "More people would hunt for them  to deliver to the palace,",
+      "vi_text": "Nhiều người sẽ săn lùng chúng để giao cho cung điện,"
+    },
+    {
+      "start": 1249.27,
+      "end": 1251.85,
+      "text": "and it would spread from  the palace to the public, too...",
+      "vi_text": "và nó cũng sẽ lan từ cung điện tới công chúng..."
+    },
+    {
+      "start": 1257.25,
+      "end": 1260.99,
+      "text": "This guy... Should I feed him  the leftover broiled grasshopper?",
+      "vi_text": "Anh chàng này... Mình có nên cho anh ta ăn châu chấu nướng còn sót lại không?"
+    },
+    {
+      "start": 1269.72,
+      "end": 1272.82,
+      "text": "Can we keep that as a last resort?",
+      "vi_text": "Chúng ta có thể giữ điều đó như là phương sách cuối cùng không?"
+    },
+    {
+      "start": 1272.82,
+      "end": 1275.77,
+      "text": "Well, we wouldn't have a problem  if we don't see too many of them.",
+      "vi_text": "Chà, chúng ta sẽ không gặp vấn đề gì nếu không thấy quá nhiều người trong số họ."
+    },
+    {
+      "start": 1285.18,
+      "end": 1286.19,
+      "text": "You're right.",
+      "vi_text": "Bạn nói đúng."
+    },
+    {
+      "start": 1287.06,
+      "end": 1289.51,
+      "text": "He seems a little more optimistic now.",
+      "vi_text": "Bây giờ anh ấy có vẻ lạc quan hơn một chút."
+    },
+    {
+      "start": 1289.51,
+      "end": 1292.79,
+      "text": "But are they really that bad to eat?",
+      "vi_text": "Nhưng chúng có thực sự tệ đến thế khi ăn không?"
+    },
+    {
+      "start": 1303.06,
+      "end": 1304.6,
+      "text": "Um, Master Jinshi.",
+      "vi_text": "Ừm, Thầy Nhâm Thị."
+    },
+    {
+      "start": 1304.89,
+      "end": 1306.14,
+      "text": "W-What?",
+      "vi_text": "Cái gì cơ?"
+    },
+    {
+      "start": 1306.57,
+      "end": 1310.65,
+      "text": "Would you like to have a meal  with us before you leave?",
+      "vi_text": "Bạn có muốn dùng bữa với chúng tôi trước khi rời đi không?"
+    },
+    {
+      "start": 1355.27,
+      "end": 1360.69,
+      "text": "I was going to let him off the hook if he  was even a bit bothered, but this guy...",
+      "vi_text": "Tôi đã định thả anh ta ra nếu anh ta hơi khó chịu một chút, nhưng anh chàng này..."
+    },
+    {
+      "start": 1365.84,
+      "end": 1366.88,
+      "text": "Porridge.",
+      "vi_text": "Cháo."
+    },
+    {
+      "start": 1367.29,
+      "end": 1368.11,
+      "text": "Yes.",
+      "vi_text": "Đúng."
+    },
+    {
+      "start": 1379.53,
+      "end": 1381.05,
+      "text": "Why won't he take it?",
+      "vi_text": "Tại sao anh ấy không nhận nó?"
+    },
+    {
+      "start": 1381.9,
+      "end": 1384.17,
+      "text": "Does he not like what's in it?",
+      "vi_text": "Anh ấy không thích những gì trong đó à?"
+    },
+    {
+      "start": 1413.76,
+      "end": 1416.33,
+      "text": "Perhaps it was a bit  too shocking for children...",
+      "vi_text": "Có lẽ điều đó hơi quá sốc đối với trẻ em..."
+    },
+    {
+      "start": 1424.65,
+      "end": 1427.16,
+      "text": "Freckles, I'm taking Zulin away.",
+      "vi_text": "Tàn nhang, tôi sẽ lấy Zulin đi."
+    },
+    {
+      "start": 1427.82,
+      "end": 1431.17,
+      "text": "Also, man, you need to take  responsibility for your actions.",
+      "vi_text": "Ngoài ra, anh bạn, bạn cần phải chịu trách nhiệm về hành động của mình."
+    },
+    {
+      "start": 1436.68,
+      "end": 1438.49,
+      "text": "I guess that was my bad.",
+      "vi_text": "Tôi đoán đó là điều xấu của tôi."
+    },
+    {
+      "start": 1453.49,
+      "end": 1455.73,
+      "text": "What is he, a baby?",
+      "vi_text": "Anh ta là gì vậy, một đứa bé à?"
+    },
+    {
+      "start": 1473.26,
+      "end": 1474.63,
+      "text": "Where'd you get that paper?",
+      "vi_text": "Cậu lấy tờ giấy đó ở đâu thế?"
+    },
+    {
+      "start": 1474.63,
+      "end": 1477.25,
+      "text": "Oh, Grams gave it to me.",
+      "vi_text": "Ồ, Grams đã đưa nó cho tôi."
+    },
+    {
+      "start": 1477.25,
+      "end": 1479.62,
+      "text": "That penny-pincher gave you  something for free?",
+      "vi_text": "Kẻ hám tiền đó đã cho bạn thứ gì đó miễn phí?"
+    },
+    {
+      "start": 1485.69,
+      "end": 1487.81,
+      "text": "What's she up to now?",
+      "vi_text": "Bây giờ cô ấy đang làm gì?"
+    },
+    {
+      "start": 1488.14,
+      "end": 1490.26,
+      "text": "Anyway, sit down.",
+      "vi_text": "Dù sao thì hãy ngồi xuống."
+    },
+    {
+      "start": 1490.26,
+      "end": 1491.32,
+      "text": "Why?",
+      "vi_text": "Tại sao?"
+    },
+    {
+      "start": 1499.18,
+      "end": 1501.96,
+      "text": "Maomao! Listen to what Chou-u has to say.",
+      "vi_text": "Maomao! Hãy nghe Châu nói nhé."
+    },
+    {
+      "start": 1502.31,
+      "end": 1504.22,
+      "text": "And you'll be sleeping here tonight.",
+      "vi_text": "Và tối nay cậu sẽ ngủ ở đây."
+    },
+    {
+      "start": 1504.22,
+      "end": 1506.94,
+      "text": "We already made a bed  for you in that other room.",
+      "vi_text": "Chúng tôi đã dọn giường cho bạn ở phòng kia rồi."
+    },
+    {
+      "start": 1512.36,
+      "end": 1513.96,
+      "text": "What's wrong, Grams?",
+      "vi_text": "Có chuyện gì thế, Gram?"
+    },
+    {
+      "start": 1513.96,
+      "end": 1516.96,
+      "text": "Did that weird show I put on  earlier make you go crazy?",
+      "vi_text": "Buổi biểu diễn kì lạ mà tôi trình diễn trước đó có làm bạn phát điên không?"
+    },
+    {
+      "start": 1516.96,
+      "end": 1517.68,
+      "text": "Ow!",
+      "vi_text": "Ôi!"
+    },
+    {
+      "start": 1522.11,
+      "end": 1523.93,
+      "text": "Just shut up and do as I say!",
+      "vi_text": "Hãy im lặng và làm theo lời tôi nói!"
+    },
+    {
+      "start": 1524.56,
+      "end": 1526.44,
+      "text": "So suspicious...",
+      "vi_text": "Đáng nghi quá..."
+    },
+    {
+      "start": 1544.64,
+      "end": 1546.44,
+      "text": "So very suspicious...",
+      "vi_text": "Nên rất đáng nghi..."
+    },
+    {
+      "start": 1547.23,
+      "end": 1549.97,
+      "text": "Freckles, describe  the type of guy you like.",
+      "vi_text": "Tàn nhang, hãy miêu tả mẫu chàng trai mà bạn thích."
+    },
+    {
+      "start": 1549.97,
+      "end": 1552.69,
+      "text": "Like, \"tall,\" \"muscular,\" stuff like that.",
+      "vi_text": "Giống như \"cao\", \"cơ bắp\", những thứ tương tự."
+    },
+    {
+      "start": 1555.87,
+      "end": 1557.3,
+      "text": "What a bother.",
+      "vi_text": "Thật là phiền phức."
+    },
+    {
+      "start": 1557.71,
+      "end": 1558.5,
+      "text": "Hmm?",
+      "vi_text": "Ừm?"
+    },
+    {
+      "start": 1567.41,
+      "end": 1569.44,
+      "text": "I like 'em not too big.",
+      "vi_text": "Tôi thích chúng không quá lớn."
+    },
+    {
+      "start": 1569.85,
+      "end": 1571.32,
+      "text": "Hmm.",
+      "vi_text": "Ừm."
+    },
+    {
+      "start": 1571.87,
+      "end": 1574.66,
+      "text": "Plump is better than skinny.",
+      "vi_text": "Đầy đặn tốt hơn gầy."
+    },
+    {
+      "start": 1578.58,
+      "end": 1579.71,
+      "text": "Beard?",
+      "vi_text": "Râu?"
+    },
+    {
+      "start": 1579.71,
+      "end": 1581.12,
+      "text": "I'm not against it.",
+      "vi_text": "Tôi không chống lại nó."
+    },
+    {
+      "start": 1581.12,
+      "end": 1582.4,
+      "text": "Face shape?",
+      "vi_text": "Hình dạng khuôn mặt?"
+    },
+    {
+      "start": 1590.32,
+      "end": 1593.04,
+      "text": "Soft is better than sharp.",
+      "vi_text": "Mềm mại tốt hơn sắc nét."
+    },
+    {
+      "start": 1593.64,
+      "end": 1595.77,
+      "text": "Fox-like eyes would be the worst.",
+      "vi_text": "Đôi mắt giống cáo sẽ là tồi tệ nhất."
+    },
+    {
+      "start": 1595.77,
+      "end": 1597.77,
+      "text": "Maomao!",
+      "vi_text": "Maomao!"
+    },
+    {
+      "start": 1602.56,
+      "end": 1603.58,
+      "text": "Destroy.",
+      "vi_text": "Hủy hoại."
+    },
+    {
+      "start": 1603.58,
+      "end": 1606.11,
+      "text": "Descending eyebrows, maybe?",
+      "vi_text": "Có thể là lông mày đang nhíu lại?"
+    },
+    {
+      "start": 1606.11,
+      "end": 1607.25,
+      "text": "Yeah, up to you.",
+      "vi_text": "Vâng, tùy bạn."
+    },
+    {
+      "start": 1611.41,
+      "end": 1612.72,
+      "text": "Hmm.",
+      "vi_text": "Ừm."
+    },
+    {
+      "start": 1613.39,
+      "end": 1614.95,
+      "text": "I guess this is it then.",
+      "vi_text": "Tôi đoán là thế này rồi."
+    },
+    {
+      "start": 1624.12,
+      "end": 1626.61,
+      "text": "Oh, seems kind of drab.",
+      "vi_text": "Ồ, có vẻ buồn tẻ."
+    },
+    {
+      "start": 1626.61,
+      "end": 1628.9,
+      "text": "Looks naive to me.",
+      "vi_text": "Có vẻ ngây thơ với tôi."
+    },
+    {
+      "start": 1628.9,
+      "end": 1630.7,
+      "text": "Yikes, that's a no from me.",
+      "vi_text": "Rất tiếc, đó là điều không từ tôi."
+    },
+    {
+      "start": 1637.48,
+      "end": 1638.98,
+      "text": "What's wrong?",
+      "vi_text": "Có chuyện gì vậy?"
+    },
+    {
+      "start": 1638.98,
+      "end": 1641.69,
+      "text": "Oh, it looks like someone I know.",
+      "vi_text": "Ồ, có vẻ như là một người tôi biết."
+    },
+    {
+      "start": 1641.69,
+      "end": 1642.85,
+      "text": "What was he like?",
+      "vi_text": "Anh ấy như thế nào?"
+    },
+    {
+      "start": 1645.57,
+      "end": 1647.68,
+      "text": "He looks just like the rear palace doctor.",
+      "vi_text": "Anh ta trông giống hệt bác sĩ cung điện phía sau."
+    },
+    {
+      "start": 1654.79,
+      "end": 1656.7,
+      "text": "Boring.",
+      "vi_text": "Nhạt nhẽo."
+    },
+    {
+      "start": 1656.7,
+      "end": 1658.48,
+      "text": "Come on, let's go.",
+      "vi_text": "Đi nào, đi thôi."
+    },
+    {
+      "start": 1658.48,
+      "end": 1660.42,
+      "text": "Time for a bath.",
+      "vi_text": "Đến giờ tắm rồi."
+    },
+    {
+      "start": 1682.39,
+      "end": 1685.64,
+      "text": "I do understand your feelings, somewhat.",
+      "vi_text": "Tôi hiểu cảm giác của bạn phần nào."
+    },
+    {
+      "start": 1686.09,
+      "end": 1687.44,
+      "text": "Joka.",
+      "vi_text": "Joka."
+    },
+    {
+      "start": 1697.11,
+      "end": 1701.03,
+      "text": "Men are fickle things,  you never know when they change.",
+      "vi_text": "Đàn ông là thứ hay thay đổi, bạn không bao giờ biết khi nào họ thay đổi."
+    },
+    {
+      "start": 1701.96,
+      "end": 1705.36,
+      "text": "That's especially true for men in power.",
+      "vi_text": "Điều đó đặc biệt đúng với những người đàn ông nắm quyền lực."
+    },
+    {
+      "start": 1719.74,
+      "end": 1723.28,
+      "text": "If you had Pairin's personality,  I wouldn't stop you.",
+      "vi_text": "Nếu bạn có tính cách của Pairin, tôi sẽ không ngăn cản bạn."
+    },
+    {
+      "start": 1723.28,
+      "end": 1725.41,
+      "text": "She's a natural enchantress.",
+      "vi_text": "Cô ấy là một nữ phù thủy bẩm sinh."
+    },
+    {
+      "start": 1726.14,
+      "end": 1729.29,
+      "text": "But Maomao, you're different.",
+      "vi_text": "Nhưng Maomao, cậu thì khác."
+    },
+    {
+      "start": 1732.34,
+      "end": 1735.29,
+      "text": "If I had to make a comparison,  you're closer to me.",
+      "vi_text": "Nếu phải so sánh thì bạn ở gần tôi hơn."
+    },
+    {
+      "start": 1745.73,
+      "end": 1748.68,
+      "text": "Every man has changes of heart.",
+      "vi_text": "Mỗi người đều có những thay đổi trong lòng."
+    },
+    {
+      "start": 1748.68,
+      "end": 1751.73,
+      "text": "Working here, that's so painfully obvious.",
+      "vi_text": "Làm việc ở đây, điều đó quá rõ ràng."
+    },
+    {
+      "start": 1751.73,
+      "end": 1753.86,
+      "text": "What's the point in believing?",
+      "vi_text": "Tin tưởng có ích gì?"
+    },
+    {
+      "start": 1763.51,
+      "end": 1767.43,
+      "text": "After all, I'm a harlot,  and you're the daughter of one.",
+      "vi_text": "Suy cho cùng, tôi là một gái điếm, còn em là con gái của một người."
+    },
+    {
+      "start": 1778.67,
+      "end": 1780.36,
+      "text": "Aren't you smoking a bit too much?",
+      "vi_text": "Bạn không hút thuốc hơi nhiều à?"
+    },
+    {
+      "start": 1780.65,
+      "end": 1782.41,
+      "text": "It's fine, I rarely do this.",
+      "vi_text": "Không sao đâu, tôi hiếm khi làm điều này."
+    },
+    {
+      "start": 1782.41,
+      "end": 1787.37,
+      "text": "Those straight-edge bureaucrats  hate seeing women smoke pipes.",
+      "vi_text": "Những quan chức thẳng thắn đó ghét nhìn thấy phụ nữ hút tẩu."
+    },
+    {
+      "start": 1809.62,
+      "end": 1812.62,
+      "text": "I heard from a customer yesterday  that there's a sorceress-like girl",
+      "vi_text": "Hôm qua tôi nghe khách hàng nói có một cô gái giống như nữ phù thủy"
+    },
+    {
+      "start": 1812.96,
+      "end": 1817.92,
+      "text": "who's rarer than the Three  Princesses of the Verdigris House.",
+      "vi_text": "người hiếm hơn Ba Công chúa của Nhà Verdigris."
+    },
+    {
+      "start": 1818.35,
+      "end": 1822.55,
+      "text": "Those high-ranking officials  sure love oddities.",
+      "vi_text": "Những quan chức cấp cao đó chắc chắn thích những điều kỳ quặc."
+    },
+    {
+      "start": 1831.16,
+      "end": 1834.65,
+      "text": "Yeah yeah, we're too old  to be of any value.",
+      "vi_text": "Ừ ừ, chúng ta đã quá già để có bất cứ giá trị nào."
+    },
+    {
+      "start": 1835.01,
+      "end": 1838.43,
+      "text": "To think they used to  treat us like gemstones!",
+      "vi_text": "Nghĩ đến việc họ từng đối xử với chúng tôi như những viên đá quý!"
+    },
+    {
+      "start": 1838.43,
+      "end": 1839.67,
+      "text": "Yeah, yeah.",
+      "vi_text": "Vâng, vâng."
+    },
+    {
+      "start": 1843.22,
+      "end": 1846.09,
+      "text": "Wrong. That stone will die there.",
+      "vi_text": "Sai. Hòn đá đó sẽ chết ở đó."
+    },
+    {
+      "start": 1862.79,
+      "end": 1867.07,
+      "text": "Seeing them like this, I feel they're  still at the top of their game.",
+      "vi_text": "Nhìn họ như thế này, tôi có cảm giác họ vẫn đang đứng đầu trong cuộc chơi của mình."
+    },
+    {
+      "start": 1867.07,
+      "end": 1871.22,
+      "text": "According to the stories,  the sorceress has pure white hair.",
+      "vi_text": "Theo những câu chuyện kể, nữ phù thủy có mái tóc trắng tinh."
+    },
+    {
+      "start": 1871.22,
+      "end": 1872.64,
+      "text": "And red eyes, too.",
+      "vi_text": "Và cả mắt đỏ nữa."
+    },
+    {
+      "start": 1878.79,
+      "end": 1880.54,
+      "text": "That's quite rare.",
+      "vi_text": "Điều đó khá hiếm."
+    },
+    {
+      "start": 1880.54,
+      "end": 1882.5,
+      "text": "Oh, an albino then.",
+      "vi_text": "Ồ, thế thì là một người bạch tạng."
+    },
+    {
+      "start": 1882.9,
+      "end": 1884.46,
+      "text": "Probably.",
+      "vi_text": "Có lẽ."
+    },
+    {
+      "start": 1898.28,
+      "end": 1902.34,
+      "text": "Very rarely, a person can be  born without color.",
+      "vi_text": "Rất hiếm khi một người sinh ra không có màu sắc."
+    },
+    {
+      "start": 1902.67,
+      "end": 1904.83,
+      "text": "Their eyes are red too,  because you can see the blood.",
+      "vi_text": "Mắt họ cũng đỏ vì bạn có thể nhìn thấy máu."
+    },
+    {
+      "start": 1904.83,
+      "end": 1906.8,
+      "text": "They're called albinos, and—",
+      "vi_text": "Họ được gọi là người bạch tạng, và—"
+    },
+    {
+      "start": 1914.95,
+      "end": 1918.25,
+      "text": "Their hair and skin are very white,  but they were born that way.",
+      "vi_text": "Tóc và da của họ rất trắng nhưng họ sinh ra đã như vậy."
+    },
+    {
+      "start": 1918.25,
+      "end": 1920.39,
+      "text": "They're the same as us on the inside.",
+      "vi_text": "Bên trong họ cũng giống như chúng ta."
+    },
+    {
+      "start": 1920.39,
+      "end": 1922.44,
+      "text": "That's what my dad taught me.",
+      "vi_text": "Đó là điều bố tôi đã dạy tôi."
+    },
+    {
+      "start": 1929.09,
+      "end": 1931.07,
+      "text": "A white sorceress, huh?",
+      "vi_text": "Một phù thủy trắng à?"
+    },
+    {
+      "start": 1931.07,
+      "end": 1934.96,
+      "text": "And they say she uses actual sorcery.",
+      "vi_text": "Và họ nói rằng cô ấy sử dụng phép thuật thực sự."
+    },
+    {
+      "start": 1944.07,
+      "end": 1946.71,
+      "text": "She used to perform in a show tent,",
+      "vi_text": "Cô ấy từng biểu diễn trong lều biểu diễn,"
+    },
+    {
+      "start": 1946.71,
+      "end": 1949.65,
+      "text": "but now you can see her  at the theater in the city.",
+      "vi_text": "nhưng bây giờ bạn có thể nhìn thấy cô ấy ở nhà hát trong thành phố."
+    },
+    {
+      "start": 1950.28,
+      "end": 1951.36,
+      "text": "Oh, I remember.",
+      "vi_text": "Ồ, tôi nhớ rồi."
+    },
+    {
+      "start": 1962.6,
+      "end": 1966.39,
+      "text": "Grams was complaining that sales at  the Verdigris House fell over 20 percent.",
+      "vi_text": "Grams phàn nàn rằng doanh số bán hàng tại Verdigris House đã giảm hơn 20%."
+    },
+    {
+      "start": 1966.39,
+      "end": 1969.25,
+      "text": "I guess people are leaving the pleasure  district to go to the theater.",
+      "vi_text": "Tôi đoán mọi người đang rời khỏi khu vui chơi để đến rạp hát."
+    },
+    {
+      "start": 1970.15,
+      "end": 1973.3,
+      "text": "Who sees the same show more than once?",
+      "vi_text": "Ai xem cùng một chương trình nhiều lần?"
+    },
+    {
+      "start": 1990.63,
+      "end": 1992.48,
+      "text": "Ever heard of liandan-shu?",
+      "vi_text": "Bạn đã bao giờ nghe nói về liandan-shu chưa?"
+    },
+    {
+      "start": 1992.79,
+      "end": 1994.23,
+      "text": "What brings that up?",
+      "vi_text": "Điều gì mang lại điều đó?"
+    },
+    {
+      "start": 1995.0,
+      "end": 1998.41,
+      "text": "The art claiming to create immortal  sorcerers through medicine.",
+      "vi_text": "Nghệ thuật tuyên bố tạo ra các phù thủy bất tử thông qua y học."
+    },
+    {
+      "start": 2009.83,
+      "end": 2014.23,
+      "text": "Dad told me never to try to imitate it,  as it was completely shady.",
+      "vi_text": "Bố bảo tôi đừng bao giờ cố gắng bắt chước nó, vì nó hoàn toàn mờ ám."
+    },
+    {
+      "start": 2014.23,
+      "end": 2018.22,
+      "text": "They say, in addition to her  rare appearance,",
+      "vi_text": "Người ta nói, ngoài vẻ ngoài hiếm có của cô ấy,"
+    },
+    {
+      "start": 2018.22,
+      "end": 2021.15,
+      "text": "the sorceress can read  people's minds and create gold.",
+      "vi_text": "mụ phù thủy có thể đọc được suy nghĩ của mọi người và tạo ra vàng."
+    },
+    {
+      "start": 2027.93,
+      "end": 2028.83,
+      "text": "Huh.",
+      "vi_text": "Hừ."
+    },
+    {
+      "start": 2029.23,
+      "end": 2031.5,
+      "text": "If you were a high-ranking  official with doubts,",
+      "vi_text": "Nếu bạn là một quan chức cấp cao hay nghi ngờ,"
+    },
+    {
+      "start": 2031.5,
+      "end": 2034.17,
+      "text": "but had your mind read  on the spot, how would you feel?",
+      "vi_text": "nhưng nếu đọc được suy nghĩ của bạn ngay tại chỗ, bạn sẽ cảm thấy thế nào?"
+    },
+    {
+      "start": 2041.93,
+      "end": 2043.5,
+      "text": "I see.",
+      "vi_text": "Tôi hiểu rồi."
+    },
+    {
+      "start": 2043.93,
+      "end": 2045.96,
+      "text": "If you entered doubtful  and laughing at her,",
+      "vi_text": "Nếu bạn bước vào với sự nghi ngờ và cười nhạo cô ấy,"
+    },
+    {
+      "start": 2045.96,
+      "end": 2049.59,
+      "text": "the feeling gets flipped  upside down to worship.",
+      "vi_text": "cảm giác bị đảo lộn để tôn thờ."
+    },
+    {
+      "start": 2064.04,
+      "end": 2069.34,
+      "text": "That makes it easier to swallow  the immortality hoax, too.",
+      "vi_text": "Điều đó cũng khiến cho trò lừa bịp bất tử trở nên dễ dàng hơn."
+    },
+    {
+      "start": 2069.63,
+      "end": 2072.24,
+      "text": "What a giant pile of idiocy.",
+      "vi_text": "Thật là một đống ngu ngốc khổng lồ."
+    },
+    {
+      "start": 2072.24,
+      "end": 2077.93,
+      "text": "So, this so-called sorceress is gathering  a crowd using claims of immortality?",
+      "vi_text": "Vậy, người được gọi là nữ phù thủy này đang tập hợp một đám đông bằng cách tuyên bố về sự bất tử?"
+    },
+    {
+      "start": 2089.21,
+      "end": 2091.16,
+      "text": "I don't know that much.",
+      "vi_text": "Tôi không biết nhiều lắm."
+    },
+    {
+      "start": 2091.16,
+      "end": 2094.77,
+      "text": "I just overheard the story  from a follower of an official.",
+      "vi_text": "Tôi vừa tình cờ nghe được câu chuyện từ một người đi theo một quan chức."
+    },
+    {
+      "start": 2095.39,
+      "end": 2100.07,
+      "text": "And to think Master Jinshi is racking  his brains over the locust plague...",
+      "vi_text": "Và nghĩ đến việc Master Nhâm Thị đang vắt óc suy nghĩ về bệnh dịch châu chấu..."
+    },
+    {
+      "start": 2110.3,
+      "end": 2113.35,
+      "text": "The other officials have  way too much time on their hands.",
+      "vi_text": "Các quan chức khác có quá nhiều thời gian rảnh rỗi."
+    },
+    {
+      "start": 2114.46,
+      "end": 2117.73,
+      "text": "If you're curious, you could just  go check her out yourself.",
+      "vi_text": "Nếu tò mò, bạn có thể tự mình đi kiểm tra cô ấy."
+    },
+    {
+      "start": 2117.73,
+      "end": 2120.43,
+      "text": "I can't afford the expensive show.",
+      "vi_text": "Tôi không đủ khả năng chi trả cho buổi biểu diễn đắt tiền."
+    },
+    {
+      "start": 2127.91,
+      "end": 2130.53,
+      "text": "You could just ask.",
+      "vi_text": "Bạn chỉ có thể hỏi."
+    },
+    {
+      "start": 2131.15,
+      "end": 2135.29,
+      "text": "Ask who? Who has the time for that?",
+      "vi_text": "Hỏi ai? Ai có thời gian cho việc đó?"
+    },
+    {
+      "start": 2287.49,
+      "end": 2290.03,
+      "text": "Next time:  \"The White-Snake Immortal\".",
+      "vi_text": "Lần tới: \"Rắn Trắng Bất Tử\"."
+    }
+  ],
+  "vi": [
+    {
+      "start": 111.57,
+      "end": 113.47,
+      "text": "Chúng tôi đã háo hức chờ đợi sự xuất hiện của bạn."
+    },
+    {
+      "start": 130.98,
+      "end": 132.94,
+      "text": "Bạn đã thay đồ xong chưa?"
+    },
+    {
+      "start": 133.24,
+      "end": 134.14,
+      "text": "Đúng."
+    },
+    {
+      "start": 140.42,
+      "end": 141.46,
+      "text": "Làm ơn đi lối này."
+    },
+    {
+      "start": 146.77,
+      "end": 148.85,
+      "text": "Ấn tượng. Dù sao đây cũng là biệt thự của hoàng đế."
+    },
+    {
+      "start": 148.85,
+      "end": 153.06,
+      "text": "Bây giờ nó là nhà của một cựu thành viên Four Ladies."
+    },
+    {
+      "start": 161.56,
+      "end": 162.93,
+      "text": "Cô ấy ở đây."
+    },
+    {
+      "start": 164.26,
+      "end": 165.28,
+      "text": "Chào mừng."
+    },
+    {
+      "start": 165.61,
+      "end": 167.83,
+      "text": "Đã lâu không gặp, tiểu thư A Đa."
+    },
+    {
+      "start": 168.36,
+      "end": 170.82,
+      "text": "Vậy hôm nay cậu có việc với cô ấy à?"
+    },
+    {
+      "start": 177.53,
+      "end": 178.2,
+      "text": "Đúng."
+    },
+    {
+      "start": 178.66,
+      "end": 183.09,
+      "text": "Suirei là cháu của cố hoàng đế, nhưng cũng có quan hệ họ hàng với gia tộc Shi."
+    },
+    {
+      "start": 183.88,
+      "end": 186.57,
+      "text": "Cô ấy không thể bước ra ngoài nơi công cộng được nữa."
+    },
+    {
+      "start": 195.71,
+      "end": 198.72,
+      "text": "Rất có thể cô ấy sẽ sống nốt phần đời còn lại trong cảnh bị giam cầm."
+    },
+    {
+      "start": 199.3,
+      "end": 201.47,
+      "text": "Cô ấy dự định làm gì từ bây giờ?"
+    },
+    {
+      "start": 201.47,
+      "end": 203.67,
+      "text": "Hoàng đế định làm gì với cô ấy?"
+    },
+    {
+      "start": 211.73,
+      "end": 215.17,
+      "text": "Tôi không biết, nhưng xét đến kỹ năng bào chế thuốc của cô ấy,"
+    },
+    {
+      "start": 215.17,
+      "end": 217.96,
+      "text": "Sẽ thật lãng phí nếu cô ấy cứ ẩn náu như thế này."
+    },
+    {
+      "start": 217.96,
+      "end": 221.91,
+      "text": "Tôi sẽ ở lại đây, nhưng đừng bận tâm đến tôi, hãy nói chuyện với nhau."
+    },
+    {
+      "start": 232.19,
+      "end": 233.83,
+      "text": "Tôi hiểu. Cảm ơn."
+    },
+    {
+      "start": 238.04,
+      "end": 241.58,
+      "text": "Tôi không thể không bận tâm đến cô ấy, nhưng..."
+    },
+    {
+      "start": 248.8,
+      "end": 251.16,
+      "text": "Bạn có nhớ những điều này không?"
+    },
+    {
+      "start": 253.98,
+      "end": 256.13,
+      "text": "Chúng đã được chủ nhân của tôi sử dụng."
+    },
+    {
+      "start": 256.59,
+      "end": 258.01,
+      "text": "Đây có phải là toàn bộ bộ truyện?"
+    },
+    {
+      "start": 258.66,
+      "end": 260.14,
+      "text": "Nó đang thiếu một cái."
+    },
+    {
+      "start": 266.76,
+      "end": 269.65,
+      "text": "Tôi tin rằng có mười lăm cuốn sách."
+    },
+    {
+      "start": 270.16,
+      "end": 273.03,
+      "text": "Bạn có biết tập cuối cùng còn lại ở đâu không?"
+    },
+    {
+      "start": 280.77,
+      "end": 281.9,
+      "text": "Không, tôi không."
+    },
+    {
+      "start": 282.43,
+      "end": 284.65,
+      "text": "Cô ấy có vẻ không nói dối."
+    },
+    {
+      "start": 284.65,
+      "end": 287.29,
+      "text": "Dù sao đi nữa, cô ấy không có lý do gì để làm vậy."
+    },
+    {
+      "start": 293.96,
+      "end": 297.96,
+      "text": "Vậy “chủ nhân” này của bạn hiện đang ở đâu?"
+    },
+    {
+      "start": 303.84,
+      "end": 305.83,
+      "text": "Anh ấy còn sống phải không?"
+    },
+    {
+      "start": 310.18,
+      "end": 312.93,
+      "text": "Thuốc hồi sinh mà bạn đã sử dụng..."
+    },
+    {
+      "start": 312.93,
+      "end": 316.4,
+      "text": "Anh ấy đã tự mình thử nghiệm nó phải không?"
+    },
+    {
+      "start": 324.54,
+      "end": 326.05,
+      "text": "Điều đó đúng."
+    },
+    {
+      "start": 326.42,
+      "end": 330.71,
+      "text": "Nếu không, không đời nào anh ta có thể thoát khỏi thành trì đó."
+    },
+    {
+      "start": 331.3,
+      "end": 335.93,
+      "text": "Nhưng có lẽ anh ấy sẽ không thể trả lời câu hỏi của bạn."
+    },
+    {
+      "start": 347.74,
+      "end": 349.52,
+      "text": "Ý anh là gì?"
+    },
+    {
+      "start": 349.52,
+      "end": 353.55,
+      "text": "Kyou-u... Ý tôi là, tên mới của anh ấy là Chou-u, tôi đoán vậy."
+    },
+    {
+      "start": 353.99,
+      "end": 358.4,
+      "text": "Anh bị mất trí nhớ và bị liệt một bên."
+    },
+    {
+      "start": 369.21,
+      "end": 371.16,
+      "text": "Điều đó có gợi ý gì cho bạn không?"
+    },
+    {
+      "start": 371.16,
+      "end": 373.82,
+      "text": "Ý anh là anh ấy bị mất trí nhớ?"
+    },
+    {
+      "start": 374.34,
+      "end": 377.24,
+      "text": "Nó hơi khác một chút, nhưng giống nhau."
+    },
+    {
+      "start": 385.91,
+      "end": 389.56,
+      "text": "Trên thực tế, bạn có thể đã đi ngang qua anh ấy mà không để ý."
+    },
+    {
+      "start": 389.96,
+      "end": 391.83,
+      "text": "Ý anh là gì?"
+    },
+    {
+      "start": 392.49,
+      "end": 394.71,
+      "text": "Bạn có nhớ khu nghỉ dưỡng suối nước nóng không?"
+    },
+    {
+      "start": 404.4,
+      "end": 405.48,
+      "text": "Đúng."
+    },
+    {
+      "start": 406.0,
+      "end": 409.18,
+      "text": "Làng ẩn, thờ cáo."
+    },
+    {
+      "start": 409.86,
+      "end": 414.12,
+      "text": "Thầy tôi là một trong những ông già nằm liệt giường ở đó."
+    },
+    {
+      "start": 425.02,
+      "end": 427.82,
+      "text": "Nơi đó đang được sử dụng làm viện điều dưỡng suối nước nóng."
+    },
+    {
+      "start": 428.12,
+      "end": 432.76,
+      "text": "Cô lẻn anh vào đó như một người bệnh, để giấu anh khỏi Shenmei."
+    },
+    {
+      "start": 433.4,
+      "end": 437.24,
+      "text": "Anh không còn nhớ mình là ai nữa."
+    },
+    {
+      "start": 449.61,
+      "end": 451.23,
+      "text": "Nếu anh ấy ở trong tình trạng tốt,"
+    },
+    {
+      "start": 454.17,
+      "end": 459.43,
+      "text": "cô ấy sẽ không nghĩ đến việc lôi kéo bạn vào vụ việc này."
+    },
+    {
+      "start": 460.24,
+      "end": 462.24,
+      "text": "Suirei hẳn đã nhận thấy."
+    },
+    {
+      "start": 463.04,
+      "end": 465.06,
+      "text": "Shisui làm tất cả những điều đó để làm việc với bố cô ấy"
+    },
+    {
+      "start": 476.1,
+      "end": 479.37,
+      "text": "để vạch trần mọi tội ác ẩn giấu trong đất nước này."
+    },
+    {
+      "start": 479.66,
+      "end": 483.62,
+      "text": "Và để giải thoát em gái mình khỏi mẹ cô ấy."
+    },
+    {
+      "start": 484.54,
+      "end": 487.17,
+      "text": "Nếu chủ nhân của Suirei có mặt,"
+    },
+    {
+      "start": 498.34,
+      "end": 502.41,
+      "text": "họ sẽ không phải đưa tôi đến thành trì đó."
+    },
+    {
+      "start": 503.25,
+      "end": 505.75,
+      "text": "Không có manh mối nào cả, tôi đoán vậy."
+    },
+    {
+      "start": 505.75,
+      "end": 508.88,
+      "text": "Tôi nghĩ cuối cùng tôi đã có được thứ gì đó."
+    },
+    {
+      "start": 519.86,
+      "end": 524.81,
+      "text": "Trong trường hợp đó, bạn có biết gì về loài châu chấu mà anh ấy đang nghiên cứu không?"
+    },
+    {
+      "start": 525.6,
+      "end": 528.59,
+      "text": "Tôi không phải là một phần của nghiên cứu đó."
+    },
+    {
+      "start": 528.59,
+      "end": 530.35,
+      "text": "Tôi không giỏi với côn trùng..."
+    },
+    {
+      "start": 540.99,
+      "end": 544.36,
+      "text": "Đó là lĩnh vực chuyên môn của cô ấy."
+    },
+    {
+      "start": 549.37,
+      "end": 550.91,
+      "text": "Tôi hiểu."
+    },
+    {
+      "start": 551.33,
+      "end": 554.46,
+      "text": "Và “cô ấy” không còn ở bên chúng ta nữa."
+    },
+    {
+      "start": 561.47,
+      "end": 564.32,
+      "text": "Khi chúng tôi được lệnh tạo ra lọ thuốc trường sinh bất tử,"
+    },
+    {
+      "start": 564.62,
+      "end": 568.35,
+      "text": "họ đã phá hủy hầu hết các tài liệu nghiên cứu."
+    },
+    {
+      "start": 568.35,
+      "end": 571.33,
+      "text": "Nội dung của căn phòng đó gần như là tất cả những gì còn sót lại."
+    },
+    {
+      "start": 581.71,
+      "end": 584.74,
+      "text": "Nhưng người chủ muốn tiếp tục việc học của mình,"
+    },
+    {
+      "start": 584.74,
+      "end": 590.79,
+      "text": "sử dụng người bảo vệ Sazen của mình để nghiên cứu. Tôi hiểu rồi."
+    },
+    {
+      "start": 591.21,
+      "end": 595.01,
+      "text": "Cô gái mà bạn hay nhắc đến, chắc chắn cô ấy rất thông minh."
+    },
+    {
+      "start": 609.3,
+      "end": 612.62,
+      "text": "Dù thông minh đến đâu... Cô ấy cũng không còn ở bên chúng ta nữa."
+    },
+    {
+      "start": 620.35,
+      "end": 624.92,
+      "text": "Vậy nếu cô ấy thông minh như vậy liệu cô ấy có đi mà không để lại gì không?"
+    },
+    {
+      "start": 635.05,
+      "end": 636.96,
+      "text": "Tôi-tôi xin lỗi."
+    },
+    {
+      "start": 636.96,
+      "end": 639.31,
+      "text": "Đừng lo lắng. Thư giãn."
+    },
+    {
+      "start": 639.31,
+      "end": 641.32,
+      "text": "Dù sao thì tôi cũng không thích hình thức."
+    },
+    {
+      "start": 648.27,
+      "end": 652.94,
+      "text": "Hãy nhìn cô ấy. Cô ấy đang chìm đắm trong suy nghĩ, với cách cư xử và những thứ linh tinh ngoài cửa sổ."
+    },
+    {
+      "start": 653.27,
+      "end": 656.82,
+      "text": "Không, tôi hiểu là tôi phải xin lỗi ở đó."
+    },
+    {
+      "start": 657.25,
+      "end": 661.5,
+      "text": "Nếu Shisui để lại thứ gì đó... nó sẽ ở đâu?"
+    },
+    {
+      "start": 678.95,
+      "end": 679.74,
+      "text": "Thành trì?"
+    },
+    {
+      "start": 680.78,
+      "end": 681.62,
+      "text": "Cung điện phía sau?"
+    },
+    {
+      "start": 682.81,
+      "end": 683.75,
+      "text": "Văn phòng y tế?"
+    },
+    {
+      "start": 690.01,
+      "end": 691.32,
+      "text": "KHÔNG."
+    },
+    {
+      "start": 692.97,
+      "end": 694.15,
+      "text": "Đó là..."
+    },
+    {
+      "start": 700.18,
+      "end": 701.45,
+      "text": "Phòng khám..."
+    },
+    {
+      "start": 701.68,
+      "end": 702.91,
+      "text": "Phòng khám!"
+    },
+    {
+      "start": 707.45,
+      "end": 709.71,
+      "text": "Ngay trước khi bị bắt cóc từ hậu cung,"
+    },
+    {
+      "start": 709.71,
+      "end": 712.41,
+      "text": "Tôi đã thấy cuốn sách về côn trùng ở đó."
+    },
+    {
+      "start": 712.41,
+      "end": 714.92,
+      "text": "Ôi, Shisui, cậu..."
+    },
+    {
+      "start": 726.14,
+      "end": 728.12,
+      "text": "Thật xảo quyệt!"
+    },
+    {
+      "start": 731.47,
+      "end": 732.62,
+      "text": "Đây là nó, phải không?"
+    },
+    {
+      "start": 733.36,
+      "end": 734.58,
+      "text": "Cảm ơn."
+    },
+    {
+      "start": 735.21,
+      "end": 740.18,
+      "text": "Khi bạn bị bắt cóc, chúng tôi đã tịch thu mọi thứ trong phòng khám."
+    },
+    {
+      "start": 749.3,
+      "end": 750.99,
+      "text": "Đây là một phần của nó."
+    },
+    {
+      "start": 750.99,
+      "end": 751.9,
+      "text": "Tôi hiểu rồi."
+    },
+    {
+      "start": 752.7,
+      "end": 755.56,
+      "text": "Phòng khám đã tạm thời đóng cửa."
+    },
+    {
+      "start": 762.25,
+      "end": 765.77,
+      "text": "Shenlü, người công nhân đã hỗ trợ trốn thoát khỏi cung điện phía sau,"
+    },
+    {
+      "start": 765.77,
+      "end": 772.45,
+      "text": "đã cố gắng tự tử, sống sót và bị bỏ tù vì những tội ác nghiêm trọng của mình."
+    },
+    {
+      "start": 789.88,
+      "end": 791.17,
+      "text": "Đây là một."
+    },
+    {
+      "start": 793.16,
+      "end": 795.38,
+      "text": "Đó có phải là tất cả những bức vẽ của châu chấu?"
+    },
+    {
+      "start": 795.38,
+      "end": 797.57,
+      "text": "Vâng, đúng vậy."
+    },
+    {
+      "start": 797.57,
+      "end": 799.57,
+      "text": "Theo mô tả trong hình ảnh,"
+    },
+    {
+      "start": 806.13,
+      "end": 809.85,
+      "text": "chúng có thể được chia thành hai loại chính hoặc ba loại nhỏ."
+    },
+    {
+      "start": 810.26,
+      "end": 813.5,
+      "text": "Đây là những con châu chấu bình thường."
+    },
+    {
+      "start": 813.5,
+      "end": 815.07,
+      "text": "Hình minh họa cho thấy chúng theo từng phần,"
+    },
+    {
+      "start": 824.11,
+      "end": 826.69,
+      "text": "nhưng có vẻ như con này có cánh ngắn hơn."
+    },
+    {
+      "start": 827.17,
+      "end": 831.13,
+      "text": "Và đây là loại chúng tôi mong đợi sẽ thấy nhiều hơn trong năm nay."
+    },
+    {
+      "start": 831.13,
+      "end": 834.09,
+      "text": "Có vẻ như đây là loại gây ra dịch châu chấu."
+    },
+    {
+      "start": 845.03,
+      "end": 848.73,
+      "text": "Ừm. Màu nâu thay vì màu xanh lá cây."
+    },
+    {
+      "start": 849.37,
+      "end": 851.06,
+      "text": "Chúng cũng có đôi cánh dài hơn."
+    },
+    {
+      "start": 858.54,
+      "end": 863.66,
+      "text": "Và đây chính là loại gây ra nạn châu chấu nhỏ năm ngoái."
+    },
+    {
+      "start": 864.08,
+      "end": 868.66,
+      "text": "Vì vậy, chúng biến đổi thành những con châu chấu màu nâu này theo từng bước, theo thời gian."
+    },
+    {
+      "start": 869.13,
+      "end": 870.58,
+      "text": "Đó có vẻ là trường hợp."
+    },
+    {
+      "start": 884.72,
+      "end": 889.73,
+      "text": "Châu chấu thay đổi màu sắc và hình dạng cơ thể khi đáp ứng một số điều kiện nhất định."
+    },
+    {
+      "start": 890.06,
+      "end": 894.13,
+      "text": "Những thay đổi diễn ra trong nhiều thế hệ và số lượng của chúng tăng lên khi chúng thay đổi."
+    },
+    {
+      "start": 894.61,
+      "end": 897.15,
+      "text": "Phép nhân có làm thay đổi hình dạng không?"
+    },
+    {
+      "start": 909.73,
+      "end": 912.34,
+      "text": "hoặc hình dạng thay đổi có gây ra phép nhân không?"
+    },
+    {
+      "start": 912.74,
+      "end": 916.77,
+      "text": "Theo cuốn sách, nguyên nhân có nhiều khả năng là nguyên nhân đầu tiên."
+    },
+    {
+      "start": 917.07,
+      "end": 923.22,
+      "text": "Nói cách khác, một trận dịch châu chấu nhỏ là điềm báo trước cho một trận dịch lớn hơn."
+    },
+    {
+      "start": 937.89,
+      "end": 942.07,
+      "text": "Vì vậy, chúng ta nên dự kiến ​​một trận dịch châu chấu lớn hơn trong năm nay."
+    },
+    {
+      "start": 942.67,
+      "end": 946.04,
+      "text": "Đúng. Tôi không biết chính xác lớn đến mức nào."
+    },
+    {
+      "start": 946.51,
+      "end": 950.04,
+      "text": "Nó có mô tả bất cứ nơi nào làm thế nào để ngăn chặn điều này?"
+    },
+    {
+      "start": 965.29,
+      "end": 967.04,
+      "text": "KHÔNG."
+    },
+    {
+      "start": 967.04,
+      "end": 971.62,
+      "text": "Nó nói rằng, một khi thấy thiệt hại, chúng ta cần loại bỏ ấu trùng,"
+    },
+    {
+      "start": 971.62,
+      "end": 973.67,
+      "text": "nhưng cách duy nhất là rất nhiều nhân lực."
+    },
+    {
+      "start": 982.2,
+      "end": 986.64,
+      "text": "Nó cũng nói rằng nếu chúng trưởng thành, chúng ta nên đốt lửa, nhưng..."
+    },
+    {
+      "start": 987.08,
+      "end": 989.37,
+      "text": "Đó chỉ là cách cổ điển."
+    },
+    {
+      "start": 989.97,
+      "end": 993.67,
+      "text": "Ngoài ra còn có một công thức cho thuốc trừ sâu."
+    },
+    {
+      "start": 1007.36,
+      "end": 1011.45,
+      "text": "Tôi xin lỗi. Ở đây không có nhiều tác dụng."
+    },
+    {
+      "start": 1011.45,
+      "end": 1015.37,
+      "text": "Không, thông tin về thuốc diệt côn trùng có giá trị gì đó."
+    },
+    {
+      "start": 1016.08,
+      "end": 1018.33,
+      "text": "Bây giờ chúng ta hãy thu thập các thành phần."
+    },
+    {
+      "start": 1030.96,
+      "end": 1035.28,
+      "text": "Đây là bản đồ khu vực đang xảy ra dịch châu chấu."
+    },
+    {
+      "start": 1036.29,
+      "end": 1038.07,
+      "text": "Bạn có nhận thấy điều gì không?"
+    },
+    {
+      "start": 1038.52,
+      "end": 1040.37,
+      "text": "Để ý? Ừm..."
+    },
+    {
+      "start": 1050.62,
+      "end": 1054.88,
+      "text": "Có phải vùng đồng bằng bị thiệt hại nhiều hơn vì châu chấu ở đó phát triển dễ dàng hơn?"
+    },
+    {
+      "start": 1054.88,
+      "end": 1062.31,
+      "text": "Có lẽ. Nhưng khu vực này chưa từng chứng kiến ​​nạn dịch châu chấu nghiêm trọng trong nhiều thập kỷ."
+    },
+    {
+      "start": 1076.33,
+      "end": 1077.68,
+      "text": "Rừng..."
+    },
+    {
+      "start": 1077.96,
+      "end": 1081.69,
+      "text": "Tôi nghĩ, nếu có một khu rừng ở gần, chim sẽ ăn châu chấu."
+    },
+    {
+      "start": 1082.2,
+      "end": 1086.31,
+      "text": "Vùng Shihoku-shu được biết đến với những khu rừng trù phú,"
+    },
+    {
+      "start": 1096.44,
+      "end": 1099.4,
+      "text": "nhưng khu vực này hiện nay gần như trống rỗng."
+    },
+    {
+      "start": 1100.33,
+      "end": 1103.86,
+      "text": "Vào thời hậu hoàng đế, người ta đặt ra những giới hạn nghiêm ngặt đối với việc khai thác gỗ."
+    },
+    {
+      "start": 1104.43,
+      "end": 1108.62,
+      "text": "Sau khi ông qua đời, gia tộc Shi bắt đầu phớt lờ những giới hạn đó."
+    },
+    {
+      "start": 1121.6,
+      "end": 1126.73,
+      "text": "Thời hậu hoàng đế... Hoàng hậu nhất định đã cấm điều đó."
+    },
+    {
+      "start": 1127.05,
+      "end": 1130.09,
+      "text": "Có lẽ có nhiều côn trùng hơn vì có ít chim hơn,"
+    },
+    {
+      "start": 1130.09,
+      "end": 1131.57,
+      "text": "vì cây đã bị đốn hạ?"
+    },
+    {
+      "start": 1142.29,
+      "end": 1144.36,
+      "text": "Điều đó rất có thể."
+    },
+    {
+      "start": 1145.14,
+      "end": 1148.85,
+      "text": "Tôi rất hy vọng vào tài nguyên rừng của Shihoku-shu..."
+    },
+    {
+      "start": 1149.42,
+      "end": 1150.7,
+      "text": "Tôi hiểu rồi."
+    },
+    {
+      "start": 1159.26,
+      "end": 1161.37,
+      "text": "Anh ấy đang cố gắng bù đắp sự thiếu hụt ngũ cốc"
+    },
+    {
+      "start": 1161.37,
+      "end": 1164.7,
+      "text": "bằng cách bán gỗ và mua thực phẩm."
+    },
+    {
+      "start": 1165.07,
+      "end": 1169.38,
+      "text": "Chúng ta có thể hết nguyên liệu cho loại thuốc diệt côn trùng trong sách."
+    },
+    {
+      "start": 1179.6,
+      "end": 1181.88,
+      "text": "Tôi cũng sẽ chuẩn bị các công thức nấu ăn khác để đề phòng."
+    },
+    {
+      "start": 1182.28,
+      "end": 1183.67,
+      "text": "Vâng, xin vui lòng làm."
+    },
+    {
+      "start": 1184.24,
+      "end": 1189.33,
+      "text": "Liệu chúng ta có thể đốt cháy những khu vực có ấu trùng được phát hiện không?"
+    },
+    {
+      "start": 1199.16,
+      "end": 1200.64,
+      "text": "Phụ thuộc vào khu vực."
+    },
+    {
+      "start": 1201.06,
+      "end": 1205.17,
+      "text": "Ngoài ra... cấm săn chim sẻ sẽ giúp ích được một chút."
+    },
+    {
+      "start": 1205.42,
+      "end": 1207.75,
+      "text": "Chim sẻ là nguồn thức ăn phổ biến."
+    },
+    {
+      "start": 1216.82,
+      "end": 1219.48,
+      "text": "Nếu chúng tôi cấm nó quá đột ngột, chúng tôi sẽ bị phản đối."
+    },
+    {
+      "start": 1219.48,
+      "end": 1220.92,
+      "text": "Nếu có thứ gì đó có thể thay thế nó..."
+    },
+    {
+      "start": 1220.92,
+      "end": 1221.44,
+      "text": "Ồ,"
+    },
+    {
+      "start": 1226.65,
+      "end": 1231.55,
+      "text": "tại sao chúng ta không phát triển công thức châu chấu và gọi đó là ẩm thực hoàng gia?"
+    },
+    {
+      "start": 1238.69,
+      "end": 1242.64,
+      "text": "Nhiều người sẽ săn lùng chúng để giao cho cung điện,"
+    },
+    {
+      "start": 1242.64,
+      "end": 1245.22,
+      "text": "và nó cũng sẽ lan từ cung điện tới công chúng..."
+    },
+    {
+      "start": 1253.41,
+      "end": 1257.15,
+      "text": "Anh chàng này... Mình có nên cho anh ta ăn châu chấu nướng còn sót lại không?"
+    },
+    {
+      "start": 1263.57,
+      "end": 1266.67,
+      "text": "Chúng ta có thể giữ điều đó như là phương sách cuối cùng không?"
+    },
+    {
+      "start": 1266.67,
+      "end": 1269.62,
+      "text": "Chà, chúng ta sẽ không gặp vấn đề gì nếu không thấy quá nhiều người trong số họ."
+    },
+    {
+      "start": 1277.47,
+      "end": 1278.48,
+      "text": "Bạn nói đúng."
+    },
+    {
+      "start": 1279.35,
+      "end": 1281.8,
+      "text": "Bây giờ anh ấy có vẻ lạc quan hơn một chút."
+    },
+    {
+      "start": 1281.8,
+      "end": 1285.08,
+      "text": "Nhưng chúng có thực sự tệ đến thế khi ăn không?"
+    },
+    {
+      "start": 1295.37,
+      "end": 1296.91,
+      "text": "Ừm, Thầy Nhâm Thị."
+    },
+    {
+      "start": 1297.2,
+      "end": 1298.45,
+      "text": "Cái gì cơ?"
+    },
+    {
+      "start": 1298.88,
+      "end": 1302.96,
+      "text": "Bạn có muốn dùng bữa với chúng tôi trước khi rời đi không?"
+    },
+    {
+      "start": 1325.16,
+      "end": 1327.46,
+      "text": "Hãy tận hưởng nhé, Master Nhâm Thị."
+    },
+    {
+      "start": 1338.3,
+      "end": 1340.87,
+      "text": "Nói \"à.\""
+    },
+    {
+      "start": 1342.19,
+      "end": 1343.77,
+      "text": "Tôi đoán thế là đủ rồi."
+    },
+    {
+      "start": 1349.75,
+      "end": 1355.17,
+      "text": "Tôi đã định thả anh ta ra nếu anh ta hơi khó chịu một chút, nhưng anh chàng này..."
+    },
+    {
+      "start": 1363.47,
+      "end": 1364.51,
+      "text": "Cháo."
+    },
+    {
+      "start": 1364.92,
+      "end": 1365.74,
+      "text": "Đúng."
+    },
+    {
+      "start": 1371.77,
+      "end": 1372.8,
+      "text": "Vui lòng."
+    },
+    {
+      "start": 1374.79,
+      "end": 1376.31,
+      "text": "Tại sao anh ấy không nhận nó?"
+    },
+    {
+      "start": 1377.16,
+      "end": 1379.43,
+      "text": "Anh ấy không thích những gì trong đó à?"
+    },
+    {
+      "start": 1411.09,
+      "end": 1413.66,
+      "text": "Có lẽ điều đó hơi quá sốc đối với trẻ em..."
+    },
+    {
+      "start": 1418.03,
+      "end": 1420.54,
+      "text": "Tàn nhang, tôi sẽ lấy Zulin đi."
+    },
+    {
+      "start": 1421.2,
+      "end": 1424.55,
+      "text": "Ngoài ra, anh bạn, bạn cần phải chịu trách nhiệm về hành động của mình."
+    },
+    {
+      "start": 1434.77,
+      "end": 1436.58,
+      "text": "Tôi đoán đó là điều xấu của tôi."
+    },
+    {
+      "start": 1448.8,
+      "end": 1449.65,
+      "text": "Đây."
+    },
+    {
+      "start": 1451.15,
+      "end": 1453.39,
+      "text": "Anh ta là gì vậy, một đứa bé à?"
+    },
+    {
+      "start": 1463.55,
+      "end": 1465.48,
+      "text": "Này, Tàn Nhang."
+    },
+    {
+      "start": 1466.8,
+      "end": 1468.17,
+      "text": "Cậu lấy tờ giấy đó ở đâu thế?"
+    },
+    {
+      "start": 1468.17,
+      "end": 1470.79,
+      "text": "Ồ, Grams đã đưa nó cho tôi."
+    },
+    {
+      "start": 1470.79,
+      "end": 1473.16,
+      "text": "Kẻ hám tiền đó đã cho bạn thứ gì đó miễn phí?"
+    },
+    {
+      "start": 1479.96,
+      "end": 1482.08,
+      "text": "Bây giờ cô ấy đang làm gì?"
+    },
+    {
+      "start": 1482.41,
+      "end": 1484.53,
+      "text": "Dù sao thì hãy ngồi xuống."
+    },
+    {
+      "start": 1484.53,
+      "end": 1485.59,
+      "text": "Tại sao?"
+    },
+    {
+      "start": 1491.37,
+      "end": 1494.15,
+      "text": "Maomao! Hãy nghe Châu nói nhé."
+    },
+    {
+      "start": 1494.5,
+      "end": 1496.41,
+      "text": "Và tối nay cậu sẽ ngủ ở đây."
+    },
+    {
+      "start": 1496.41,
+      "end": 1499.13,
+      "text": "Chúng tôi đã dọn giường cho bạn ở phòng kia rồi."
+    },
+    {
+      "start": 1506.99,
+      "end": 1508.59,
+      "text": "Có chuyện gì thế, Gram?"
+    },
+    {
+      "start": 1508.59,
+      "end": 1511.59,
+      "text": "Buổi biểu diễn kì lạ mà tôi trình diễn trước đó có làm bạn phát điên không?"
+    },
+    {
+      "start": 1511.59,
+      "end": 1512.31,
+      "text": "Ôi!"
+    },
+    {
+      "start": 1517.73,
+      "end": 1519.55,
+      "text": "Hãy im lặng và làm theo lời tôi nói!"
+    },
+    {
+      "start": 1520.18,
+      "end": 1522.06,
+      "text": "Đáng nghi quá..."
+    },
+    {
+      "start": 1536.49,
+      "end": 1538.29,
+      "text": "Nên rất đáng nghi..."
+    },
+    {
+      "start": 1539.08,
+      "end": 1541.82,
+      "text": "Tàn nhang, hãy miêu tả mẫu chàng trai mà bạn thích."
+    },
+    {
+      "start": 1541.82,
+      "end": 1544.54,
+      "text": "Giống như \"cao\", \"cơ bắp\", những thứ tương tự."
+    },
+    {
+      "start": 1553.14,
+      "end": 1554.57,
+      "text": "Thật là phiền phức."
+    },
+    {
+      "start": 1554.98,
+      "end": 1555.77,
+      "text": "Ừm?"
+    },
+    {
+      "start": 1560.06,
+      "end": 1562.09,
+      "text": "Tôi thích chúng không quá lớn."
+    },
+    {
+      "start": 1562.5,
+      "end": 1563.97,
+      "text": "Ừm."
+    },
+    {
+      "start": 1564.52,
+      "end": 1567.31,
+      "text": "Đầy đặn tốt hơn gầy."
+    },
+    {
+      "start": 1574.71,
+      "end": 1575.84,
+      "text": "Râu?"
+    },
+    {
+      "start": 1575.84,
+      "end": 1577.25,
+      "text": "Tôi không chống lại nó."
+    },
+    {
+      "start": 1577.25,
+      "end": 1578.53,
+      "text": "Hình dạng khuôn mặt?"
+    },
+    {
+      "start": 1582.77,
+      "end": 1585.49,
+      "text": "Mềm mại tốt hơn sắc nét."
+    },
+    {
+      "start": 1586.09,
+      "end": 1588.22,
+      "text": "Đôi mắt giống cáo sẽ là tồi tệ nhất."
+    },
+    {
+      "start": 1588.22,
+      "end": 1590.22,
+      "text": "Maomao!"
+    },
+    {
+      "start": 1597.82,
+      "end": 1598.84,
+      "text": "Hủy hoại."
+    },
+    {
+      "start": 1598.84,
+      "end": 1601.37,
+      "text": "Có thể là lông mày đang nhíu lại?"
+    },
+    {
+      "start": 1601.37,
+      "end": 1602.51,
+      "text": "Vâng, tùy bạn."
+    },
+    {
+      "start": 1607.77,
+      "end": 1609.08,
+      "text": "Ừm."
+    },
+    {
+      "start": 1609.75,
+      "end": 1611.31,
+      "text": "Tôi đoán là thế này rồi."
+    },
+    {
+      "start": 1617.44,
+      "end": 1619.93,
+      "text": "Ồ, có vẻ buồn tẻ."
+    },
+    {
+      "start": 1619.93,
+      "end": 1622.22,
+      "text": "Có vẻ ngây thơ với tôi."
+    },
+    {
+      "start": 1622.22,
+      "end": 1624.02,
+      "text": "Rất tiếc, đó là điều không từ tôi."
+    },
+    {
+      "start": 1632.01,
+      "end": 1633.51,
+      "text": "Có chuyện gì vậy?"
+    },
+    {
+      "start": 1633.51,
+      "end": 1636.22,
+      "text": "Ồ, có vẻ như là một người tôi biết."
+    },
+    {
+      "start": 1636.22,
+      "end": 1637.38,
+      "text": "Anh ấy như thế nào?"
+    },
+    {
+      "start": 1643.36,
+      "end": 1645.47,
+      "text": "Anh ta trông giống hệt bác sĩ cung điện phía sau."
+    },
+    {
+      "start": 1649.06,
+      "end": 1650.97,
+      "text": "Nhạt nhẽo."
+    },
+    {
+      "start": 1650.97,
+      "end": 1652.75,
+      "text": "Đi nào, đi thôi."
+    },
+    {
+      "start": 1652.75,
+      "end": 1654.69,
+      "text": "Đến giờ tắm rồi."
+    },
+    {
+      "start": 1677.24,
+      "end": 1680.49,
+      "text": "Tôi hiểu cảm giác của bạn phần nào."
+    },
+    {
+      "start": 1680.94,
+      "end": 1682.29,
+      "text": "Joka."
+    },
+    {
+      "start": 1688.76,
+      "end": 1692.68,
+      "text": "Đàn ông là thứ hay thay đổi, bạn không bao giờ biết khi nào họ thay đổi."
+    },
+    {
+      "start": 1693.61,
+      "end": 1697.01,
+      "text": "Điều đó đặc biệt đúng với những người đàn ông nắm quyền lực."
+    },
+    {
+      "start": 1710.09,
+      "end": 1713.63,
+      "text": "Nếu bạn có tính cách của Pairin, tôi sẽ không ngăn cản bạn."
+    },
+    {
+      "start": 1713.63,
+      "end": 1715.76,
+      "text": "Cô ấy là một nữ phù thủy bẩm sinh."
+    },
+    {
+      "start": 1716.49,
+      "end": 1719.64,
+      "text": "Nhưng Maomao, cậu thì khác."
+    },
+    {
+      "start": 1729.34,
+      "end": 1732.29,
+      "text": "Nếu phải so sánh thì bạn ở gần tôi hơn."
+    },
+    {
+      "start": 1737.5,
+      "end": 1740.45,
+      "text": "Mỗi người đều có những thay đổi trong lòng."
+    },
+    {
+      "start": 1740.45,
+      "end": 1743.5,
+      "text": "Làm việc ở đây, điều đó quá rõ ràng."
+    },
+    {
+      "start": 1743.5,
+      "end": 1745.63,
+      "text": "Tin tưởng có ích gì?"
+    },
+    {
+      "start": 1759.49,
+      "end": 1763.41,
+      "text": "Suy cho cùng, tôi là một gái điếm, còn em là con gái của một người."
+    },
+    {
+      "start": 1769.87,
+      "end": 1771.56,
+      "text": "Bạn không hút thuốc hơi nhiều à?"
+    },
+    {
+      "start": 1771.85,
+      "end": 1773.61,
+      "text": "Không sao đâu, tôi hiếm khi làm điều này."
+    },
+    {
+      "start": 1773.61,
+      "end": 1778.57,
+      "text": "Những quan chức thẳng thắn đó ghét nhìn thấy phụ nữ hút tẩu."
+    },
+    {
+      "start": 1796.59,
+      "end": 1799.59,
+      "text": "Hôm qua tôi nghe khách hàng nói có một cô gái giống như nữ phù thủy"
+    },
+    {
+      "start": 1799.93,
+      "end": 1804.89,
+      "text": "người hiếm hơn Ba Công chúa của Nhà Verdigris."
+    },
+    {
+      "start": 1805.32,
+      "end": 1809.52,
+      "text": "Những quan chức cấp cao đó chắc chắn thích những điều kỳ quặc."
+    },
+    {
+      "start": 1822.6,
+      "end": 1826.09,
+      "text": "Ừ ừ, chúng ta đã quá già để có bất cứ giá trị nào."
+    },
+    {
+      "start": 1826.45,
+      "end": 1829.87,
+      "text": "Nghĩ đến việc họ từng đối xử với chúng tôi như những viên đá quý!"
+    },
+    {
+      "start": 1829.87,
+      "end": 1831.11,
+      "text": "Vâng, vâng."
+    },
+    {
+      "start": 1840.25,
+      "end": 1843.12,
+      "text": "Sai. Hòn đá đó sẽ chết ở đó."
+    },
+    {
+      "start": 1852.84,
+      "end": 1857.12,
+      "text": "Nhìn họ như thế này, tôi có cảm giác họ vẫn đang đứng đầu trong cuộc chơi của mình."
+    },
+    {
+      "start": 1857.12,
+      "end": 1861.27,
+      "text": "Theo những câu chuyện kể, nữ phù thủy có mái tóc trắng tinh."
+    },
+    {
+      "start": 1861.27,
+      "end": 1862.69,
+      "text": "Và cả mắt đỏ nữa."
+    },
+    {
+      "start": 1873.02,
+      "end": 1874.77,
+      "text": "Điều đó khá hiếm."
+    },
+    {
+      "start": 1874.77,
+      "end": 1876.73,
+      "text": "Ồ, thế thì là một người bạch tạng."
+    },
+    {
+      "start": 1877.13,
+      "end": 1878.69,
+      "text": "Có lẽ."
+    },
+    {
+      "start": 1889.66,
+      "end": 1893.72,
+      "text": "Rất hiếm khi một người sinh ra không có màu sắc."
+    },
+    {
+      "start": 1894.05,
+      "end": 1896.21,
+      "text": "Mắt họ cũng đỏ vì bạn có thể nhìn thấy máu."
+    },
+    {
+      "start": 1896.21,
+      "end": 1898.18,
+      "text": "Họ được gọi là người bạch tạng, và—"
+    },
+    {
+      "start": 1907.36,
+      "end": 1910.66,
+      "text": "Tóc và da của họ rất trắng nhưng họ sinh ra đã như vậy."
+    },
+    {
+      "start": 1910.66,
+      "end": 1912.8,
+      "text": "Bên trong họ cũng giống như chúng ta."
+    },
+    {
+      "start": 1912.8,
+      "end": 1914.85,
+      "text": "Đó là điều bố tôi đã dạy tôi."
+    },
+    {
+      "start": 1923.12,
+      "end": 1925.1,
+      "text": "Một phù thủy trắng à?"
+    },
+    {
+      "start": 1925.1,
+      "end": 1928.99,
+      "text": "Và họ nói rằng cô ấy sử dụng phép thuật thực sự."
+    },
+    {
+      "start": 1936.68,
+      "end": 1939.32,
+      "text": "Cô ấy từng biểu diễn trong lều biểu diễn,"
+    },
+    {
+      "start": 1939.32,
+      "end": 1942.26,
+      "text": "nhưng bây giờ bạn có thể nhìn thấy cô ấy ở nhà hát trong thành phố."
+    },
+    {
+      "start": 1942.89,
+      "end": 1943.97,
+      "text": "Ồ, tôi nhớ rồi."
+    },
+    {
+      "start": 1951.8,
+      "end": 1955.59,
+      "text": "Grams phàn nàn rằng doanh số bán hàng tại Verdigris House đã giảm hơn 20%."
+    },
+    {
+      "start": 1955.59,
+      "end": 1958.45,
+      "text": "Tôi đoán mọi người đang rời khỏi khu vui chơi để đến rạp hát."
+    },
+    {
+      "start": 1959.35,
+      "end": 1962.5,
+      "text": "Ai xem cùng một chương trình nhiều lần?"
+    },
+    {
+      "start": 1973.35,
+      "end": 1974.88,
+      "text": "Bạn sẽ ngạc nhiên."
+    },
+    {
+      "start": 1977.05,
+      "end": 1978.89,
+      "text": "Ồ, cảm ơn."
+    },
+    {
+      "start": 1982.75,
+      "end": 1984.6,
+      "text": "Bạn đã bao giờ nghe nói về liandan-shu chưa?"
+    },
+    {
+      "start": 1984.91,
+      "end": 1986.35,
+      "text": "Điều gì mang lại điều đó?"
+    },
+    {
+      "start": 1987.12,
+      "end": 1990.53,
+      "text": "Nghệ thuật tuyên bố tạo ra các phù thủy bất tử thông qua y học."
+    },
+    {
+      "start": 1998.46,
+      "end": 2002.86,
+      "text": "Bố bảo tôi đừng bao giờ cố gắng bắt chước nó, vì nó hoàn toàn mờ ám."
+    },
+    {
+      "start": 2002.86,
+      "end": 2006.85,
+      "text": "Người ta nói, ngoài vẻ ngoài hiếm có của cô ấy,"
+    },
+    {
+      "start": 2006.85,
+      "end": 2009.78,
+      "text": "mụ phù thủy có thể đọc được suy nghĩ của mọi người và tạo ra vàng."
+    },
+    {
+      "start": 2021.59,
+      "end": 2022.49,
+      "text": "Hừ."
+    },
+    {
+      "start": 2022.89,
+      "end": 2025.16,
+      "text": "Nếu bạn là một quan chức cấp cao hay nghi ngờ,"
+    },
+    {
+      "start": 2025.16,
+      "end": 2027.83,
+      "text": "nhưng nếu đọc được suy nghĩ của bạn ngay tại chỗ, bạn sẽ cảm thấy thế nào?"
+    },
+    {
+      "start": 2034.22,
+      "end": 2035.79,
+      "text": "Tôi hiểu rồi."
+    },
+    {
+      "start": 2036.22,
+      "end": 2038.25,
+      "text": "Nếu bạn bước vào với sự nghi ngờ và cười nhạo cô ấy,"
+    },
+    {
+      "start": 2038.25,
+      "end": 2041.88,
+      "text": "cảm giác bị đảo lộn để tôn thờ."
+    },
+    {
+      "start": 2050.05,
+      "end": 2055.35,
+      "text": "Điều đó cũng khiến cho trò lừa bịp bất tử trở nên dễ dàng hơn."
+    },
+    {
+      "start": 2055.64,
+      "end": 2058.25,
+      "text": "Thật là một đống ngu ngốc khổng lồ."
+    },
+    {
+      "start": 2058.25,
+      "end": 2063.94,
+      "text": "Vậy, người được gọi là nữ phù thủy này đang tập hợp một đám đông bằng cách tuyên bố về sự bất tử?"
+    },
+    {
+      "start": 2078.25,
+      "end": 2080.2,
+      "text": "Tôi không biết nhiều lắm."
+    },
+    {
+      "start": 2080.2,
+      "end": 2083.81,
+      "text": "Tôi vừa tình cờ nghe được câu chuyện từ một người đi theo một quan chức."
+    },
+    {
+      "start": 2084.43,
+      "end": 2089.11,
+      "text": "Và nghĩ đến việc Master Nhâm Thị đang vắt óc suy nghĩ về bệnh dịch châu chấu..."
+    },
+    {
+      "start": 2100.12,
+      "end": 2103.17,
+      "text": "Các quan chức khác có quá nhiều thời gian rảnh rỗi."
+    },
+    {
+      "start": 2104.28,
+      "end": 2107.55,
+      "text": "Nếu tò mò, bạn có thể tự mình đi kiểm tra cô ấy."
+    },
+    {
+      "start": 2107.55,
+      "end": 2110.25,
+      "text": "Tôi không đủ khả năng chi trả cho buổi biểu diễn đắt tiền."
+    },
+    {
+      "start": 2120.48,
+      "end": 2123.1,
+      "text": "Bạn chỉ có thể hỏi."
+    },
+    {
+      "start": 2123.72,
+      "end": 2127.86,
+      "text": "Hỏi ai? Ai có thời gian cho việc đó?"
+    },
+    {
+      "start": 2284.85,
+      "end": 2287.39,
+      "text": "Lần tới: \"Rắn Trắng Bất Tử\"."
+    }
+  ]
+}
