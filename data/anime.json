@@ -74,10 +74,19 @@
         "duration": "37:42",
         "createdAt": "2026-10-24T04:46:08.077968Z",
         "filename": "futsutsuka_ep06_bilingual.mp4"
+      },
+      {
+        "id": "ep-7-bilingual",
+        "episodeNumber": 7,
+        "title": "Tập 7",
+        "videoUrl": "/videos/futsutsuka_ep07_bilingual.mp4",
+        "duration": "40:15",
+        "createdAt": "2026-10-24T05:18:51.045972Z",
+        "filename": "futsutsuka_ep07_bilingual.mp4"
       }
     ],
     "createdAt": "2026-09-22T01:25:00.000Z",
-    "updatedAt": "2026-10-24T04:46:08.078012Z"
+    "updatedAt": "2026-10-24T05:18:51.046008Z"
   },
   {
     "id": "the-apothecary-diaries-season-3",
