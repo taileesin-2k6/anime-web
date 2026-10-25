@@ -363,10 +363,19 @@
         "duration": "38:22",
         "createdAt": "2026-10-23T02:05:09.355685Z",
         "filename": "blue_ep03_bilingual.mp4"
+      },
+      {
+        "id": "ep-4-bilingual",
+        "episodeNumber": 4,
+        "title": "Tập 4 : Love Is the Most Powerful Feeling",
+        "videoUrl": "/videos/blue_ep04_bilingual.mp4",
+        "duration": "37:22",
+        "createdAt": "2026-10-25T18:19:56.352963Z",
+        "filename": "blue_ep04_bilingual.mp4"
       }
     ],
     "createdAt": "2026-10-04T13:27:21.144458Z",
-    "updatedAt": "2026-10-23T02:30:18.465399Z"
+    "updatedAt": "2026-10-25T18:19:56.352989Z"
   },
   {
     "id": "chitose-kun-wa-ramune-bin-no-naka",
