@@ -413,9 +413,18 @@
         "duration": "38:52",
         "createdAt": "2026-10-23T02:02:41.645442Z",
         "filename": "chitose_ep15_bilingual.mp4"
+      },
+      {
+        "id": "ep-16-bilingual",
+        "episodeNumber": 16,
+        "title": "Tập 16 : Tomorrow's Wind",
+        "videoUrl": "/videos/chitose_ep16_bilingual.mp4",
+        "duration": "40:03",
+        "createdAt": "2026-10-28T04:36:42.753555Z",
+        "filename": "chitose_ep16_bilingual.mp4"
       }
     ],
     "createdAt": "2026-10-15T02:18:15.704201Z",
-    "updatedAt": "2026-10-23T02:02:41.645561Z"
+    "updatedAt": "2026-10-28T04:36:42.753633Z"
   }
 ]
