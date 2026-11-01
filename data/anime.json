@@ -180,10 +180,19 @@
         "duration": "38:15",
         "createdAt": "2026-10-24T04:09:33.080913Z",
         "filename": "the_ep04_bilingual.mp4"
+      },
+      {
+        "id": "ep-5-bilingual",
+        "episodeNumber": 5,
+        "title": "Tập 5 : The White-Snake Immortal",
+        "videoUrl": "/videos/the_ep05_bilingual.mp4",
+        "duration": "37:29",
+        "createdAt": "2026-11-01T09:34:52.124584Z",
+        "filename": "the_ep05_bilingual.mp4"
       }
     ],
     "createdAt": "2026-10-02T19:24:44.055089Z",
-    "updatedAt": "2026-10-24T04:09:33.081024Z"
+    "updatedAt": "2026-11-01T09:34:52.124951Z"
   },
   {
     "id": "tokyo-revengers-santen-sensou-hen",
