@@ -12,16 +12,33 @@ export async function GET(request: NextRequest) {
     return NextResponse.json({ en: [], vi: [] });
   }
 
-  const subPath = path.join(/*turbopackIgnore: true*/ process.cwd(), 'data', 'subtitles', `${slug}_${ep}.json`);
-  if (fs.existsSync(/*turbopackIgnore: true*/ subPath)) {
+  // 1. Try public/subtitles
+  const pubPath = path.join(process.cwd(), 'public', 'subtitles', `${slug}_${ep}.json`);
+  if (typeof fs !== 'undefined' && fs.existsSync && fs.existsSync(pubPath)) {
     try {
-      const content = fs.readFileSync(/*turbopackIgnore: true*/ subPath, 'utf-8');
-      const data = JSON.parse(content);
-      return NextResponse.json(data);
-    } catch (err: any) {
-      console.error('Error reading subtitle file:', err);
-    }
+      const content = fs.readFileSync(pubPath, 'utf-8');
+      return NextResponse.json(JSON.parse(content));
+    } catch {}
   }
+
+  // 2. Try data/subtitles
+  const subPath = path.join(process.cwd(), 'data', 'subtitles', `${slug}_${ep}.json`);
+  if (typeof fs !== 'undefined' && fs.existsSync && fs.existsSync(subPath)) {
+    try {
+      const content = fs.readFileSync(subPath, 'utf-8');
+      return NextResponse.json(JSON.parse(content));
+    } catch {}
+  }
+
+  // 3. Fallback to asset fetch for Cloudflare Edge / Workers
+  try {
+    const origin = request.nextUrl.origin;
+    const assetRes = await fetch(`${origin}/subtitles/${encodeURIComponent(slug)}_${encodeURIComponent(ep)}.json`);
+    if (assetRes.ok) {
+      const data = await assetRes.json();
+      return NextResponse.json(data);
+    }
+  } catch {}
 
   return NextResponse.json({ en: [], vi: [] });
 }

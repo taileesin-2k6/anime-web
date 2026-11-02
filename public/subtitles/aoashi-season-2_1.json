@@ -1,0 +1,3628 @@
+{
+  "en": [
+    {
+      "start": 27.51,
+      "end": 28.55,
+      "text": "B TO A: OTOMO, AOI…",
+      "vi_text": "LÊN A: OTOMO, AOI…"
+    },
+    {
+      "start": 28.55,
+      "end": 29.47,
+      "text": "A TO B: NAGANO…",
+      "vi_text": "XUỐNG B: NAGANO…"
+    },
+    {
+      "start": 35.27,
+      "end": 36.14,
+      "text": "It's finally time.",
+      "vi_text": "Đến lúc rồi."
+    },
+    {
+      "start": 37.14,
+      "end": 38.48,
+      "text": "Starting today, you're on Team A.",
+      "vi_text": "Từ nay cậu vào đội A."
+    },
+    {
+      "start": 39.22,
+      "end": 40.97,
+      "text": "Go get 'em, Ashito.",
+      "vi_text": "Cố lên nhé, Ashito."
+    },
+    {
+      "start": 45.33,
+      "end": 46.16,
+      "text": "Yeah.",
+      "vi_text": "Ừ."
+    },
+    {
+      "start": 46.7,
+      "end": 47.95,
+      "text": "You too, Tachibana.",
+      "vi_text": "Cậu nữa, Tachibana."
+    },
+    {
+      "start": 47.96,
+      "end": 48.96,
+      "text": "I'll be waiting for you.",
+      "vi_text": "Tôi sẽ đợi cậu."
+    },
+    {
+      "start": 56.7,
+      "end": 59.24,
+      "text": "We're counting on you, Yuma! You're our only hope!",
+      "vi_text": "Nhờ cậu hết, Yuma! Chỉ còn hy vọng ở cậu!"
+    },
+    {
+      "start": 59.25,
+      "end": 62.8,
+      "text": "Help us bridge the gap with the Team A seniors!",
+      "vi_text": "Giúp bọn này thu hẹp khoảng cách với các đàn anh đội A!"
+    },
+    {
+      "start": 73.78,
+      "end": 76.62,
+      "text": "We don't need no damn bridges.",
+      "vi_text": "Chúng ta cần quái gì thu hẹp chứ."
+    },
+    {
+      "start": 76.62,
+      "end": 78.75,
+      "text": "Wait, what are you saying, Togashi?!",
+      "vi_text": "Khoan, cậu nói gì thế, Togashi?"
+    },
+    {
+      "start": 79.46,
+      "end": 83.42,
+      "text": "No point making friends with guys we're gonna bench.",
+      "vi_text": "Chẳng việc gì phải kết bạn với những kẻ sẽ bị ta đẩy lên ghế dự bị."
+    },
+    {
+      "start": 88.65,
+      "end": 91.32,
+      "text": "I'm never going back to B!",
+      "vi_text": "Tôi sẽ chả bao giờ quay lại đội B!"
+    },
+    {
+      "start": 105.94,
+      "end": 108.03,
+      "text": "I'm not going back to B!",
+      "vi_text": "Tôi sẽ không quay lại đội B đâu!"
+    },
+    {
+      "start": 224.2,
+      "end": 227.41,
+      "text": "Isn't it kinda crowded?",
+      "vi_text": "Nhìn hình như hơi đông nhỉ?"
+    },
+    {
+      "start": 227.41,
+      "end": 230.29,
+      "text": "Is Team A practice always like this?",
+      "vi_text": "Buổi tập của đội A lúc nào cũng thế này à?"
+    },
+    {
+      "start": 230.29,
+      "end": 231.75,
+      "text": "No, no.",
+      "vi_text": "Không phải đâu."
+    },
+    {
+      "start": 240.94,
+      "end": 244.78,
+      "text": "Kuribayashi's coming back, so that's who they're here to see.",
+      "vi_text": "Kuribayashi sắp quay lại nên họ đến xem anh ấy."
+    },
+    {
+      "start": 245.65,
+      "end": 249.28,
+      "text": "He's not even practicing today, so joke's on them.",
+      "vi_text": "Hôm nay anh ấy còn chẳng tập nên họ uổng công rồi."
+    },
+    {
+      "start": 265.06,
+      "end": 269.31,
+      "text": "Here in Vietnam, at the Asian Champions League group stage,",
+      "vi_text": "Tại Việt Nam, trong khuôn khổ vòng bảng AFC Champions League,"
+    },
+    {
+      "start": 270.11,
+      "end": 274.2,
+      "text": "Tokyo City Esperion defeated Hanoi SC 3-0.",
+      "vi_text": "Tokyo City Esperion đã đánh bại CLB Hà Nội với tỷ số 3 - 0."
+    },
+    {
+      "start": 274.9,
+      "end": 277.53,
+      "text": "The highly anticipated 16-year-old, Kuribayashi,",
+      "vi_text": "Tài năng trẻ 16 tuổi được kỳ vọng cao, Kuribayashi,"
+    },
+    {
+      "start": 288.88,
+      "end": 291.12,
+      "text": "was subbed in 25 minutes into the second half.",
+      "vi_text": "đã được tung vào sân ở phút 25 của hiệp hai."
+    },
+    {
+      "start": 291.96,
+      "end": 295.92,
+      "text": "With this, Kuribayashi has appeared in six matches since his J1 debut.",
+      "vi_text": "Với trận này, kể từ khi ra mắt J1, Kuribayashi đã ra sân sáu trận."
+    },
+    {
+      "start": 296.42,
+      "end": 300.13,
+      "text": "Fans hoped he'd become the youngest scorer in ACL history, but…",
+      "vi_text": "Người hâm mộ mong cậu là cầu thủ trẻ nhất ghi bàn trong lịch sử ACL, nhưng…"
+    },
+    {
+      "start": 311.62,
+      "end": 314.5,
+      "text": "How was your first ACL?",
+      "vi_text": "Trận ACL đầu tiên của cậu thế nào?"
+    },
+    {
+      "start": 315.08,
+      "end": 319.96,
+      "text": "Did Manager Garulla say anything about my performance?",
+      "vi_text": "Quản lý Garulla có nói gì về phần thi đấu của em không ạ?"
+    },
+    {
+      "start": 326.44,
+      "end": 328.65,
+      "text": "Same as usual. He praised you.",
+      "vi_text": "Vẫn như mọi khi. Ông ấy khen cậu."
+    },
+    {
+      "start": 329.61,
+      "end": 331.61,
+      "text": "You're doing a great job.",
+      "vi_text": "Cậu đang làm rất tốt."
+    },
+    {
+      "start": 338.51,
+      "end": 340.39,
+      "text": "your run with the first team is over.",
+      "vi_text": "Hành trình ở đội chính xong rồi."
+    },
+    {
+      "start": 351.75,
+      "end": 353.96,
+      "text": "Head back to the youth team once you're in Japan.",
+      "vi_text": "Về Nhật thì trở lại đội thiếu niên đi."
+    },
+    {
+      "start": 354.54,
+      "end": 357.92,
+      "text": "But you just said I'm doing a great job… Was it Garulla who…",
+      "vi_text": "Nhưng thầy vừa bảo em làm tốt mà. Là do Quản lý Garulla…"
+    },
+    {
+      "start": 358.55,
+      "end": 360.55,
+      "text": "No, it was Fukuda.",
+      "vi_text": "Không, là Fukuda."
+    },
+    {
+      "start": 364.57,
+      "end": 366.91,
+      "text": "He insisted we send you back for a while.",
+      "vi_text": "Cậu ấy nhất quyết đưa cậu về một thời gian."
+    },
+    {
+      "start": 382.94,
+      "end": 387.53,
+      "text": "It's way too loud out on the practice field!",
+      "vi_text": "Ngoài sân tập ồn ào quá đi mất!"
+    },
+    {
+      "start": 387.53,
+      "end": 390.62,
+      "text": "I'm completely awake now!",
+      "vi_text": "Mình tỉnh ngủ hẳn luôn rồi!"
+    },
+    {
+      "start": 390.61,
+      "end": 393.57,
+      "text": "I wanted to sleep until the last second.",
+      "vi_text": "Mình muốn ngủ cho đến sát giờ thôi."
+    },
+    {
+      "start": 398.54,
+      "end": 399.57,
+      "text": "Yoshitsune.",
+      "vi_text": "Anh Yoshitsune."
+    },
+    {
+      "start": 399.58,
+      "end": 400.54,
+      "text": "What?",
+      "vi_text": "Cái gì hả?"
+    },
+    {
+      "start": 401.12,
+      "end": 403.41,
+      "text": "Kuribayashi is coming back.",
+      "vi_text": "Kuribayashi sắp về đấy."
+    },
+    {
+      "start": 417.19,
+      "end": 420.36,
+      "text": "Let's see, what does this say?",
+      "vi_text": "Xem nào, bài này viết gì đây?"
+    },
+    {
+      "start": 421.44,
+      "end": 428.53,
+      "text": "\"Prodigy Kuribayashi fails to earn Garulla's trust. ACL debut falls flat.\"",
+      "vi_text": "\"Thần đồng Kuribayashi không được Garulla tin tưởng. Ra mắt ở ACL mờ nhạt\"."
+    },
+    {
+      "start": 433.17,
+      "end": 437.71,
+      "text": "That reporter always writes harsh stuff no matter how Kuribayashi plays.",
+      "vi_text": "Tay phóng viên đó luôn viết cay nghiệt, bất kể Kuribayashi chơi thế nào."
+    },
+    {
+      "start": 452.65,
+      "end": 454.49,
+      "text": "Kuribayashi!",
+      "vi_text": "Kuribayashi!"
+    },
+    {
+      "start": 455.57,
+      "end": 457.49,
+      "text": "When did you get inside the clubhouse?",
+      "vi_text": "Hả? Cậu vào trong nhà câu lạc bộ từ lúc nào vậy?"
+    },
+    {
+      "start": 458.37,
+      "end": 462.12,
+      "text": "There's a huge crowd waiting for you out there.",
+      "vi_text": "Cả một đám đông đang đợi cậu ngoài kia đó."
+    },
+    {
+      "start": 471.89,
+      "end": 476.14,
+      "text": "Mibu from PR did me a favor and brought out his family's bento van.",
+      "vi_text": "Anh Mibu ở bộ phận PR giúp tôi đi bằng xe bán cơm bento của nhà anh ấy."
+    },
+    {
+      "start": 476.14,
+      "end": 477.48,
+      "text": "Kuribayashi Spiky-kun!",
+      "vi_text": "Kuribayashi Đầu Nhím!"
+    },
+    {
+      "start": 478.14,
+      "end": 481.48,
+      "text": "Nobody would ever guess a player was riding in that.",
+      "vi_text": "Đâu ai nghĩ lại có cầu thủ ngồi trong xe đó chứ."
+    },
+    {
+      "start": 485.86,
+      "end": 488.19,
+      "text": "Are you doing okay?",
+      "vi_text": "Cậu vẫn ổn chứ?"
+    },
+    {
+      "start": 488.2,
+      "end": 489.21,
+      "text": "Where's Coach Fukuda?",
+      "vi_text": "HLV Fukuda đâu?"
+    },
+    {
+      "start": 492.76,
+      "end": 494.36,
+      "text": "He was in the lobby with Akutsu earlier--",
+      "vi_text": "Lúc nãy anh ấy ở sảnh với Akutsu…"
+    },
+    {
+      "start": 517.26,
+      "end": 519.89,
+      "text": "Let's give them some space, guys.",
+      "vi_text": "Để họ nói chuyện riêng đi, các cậu."
+    },
+    {
+      "start": 519.89,
+      "end": 520.72,
+      "text": "It's fine.",
+      "vi_text": "Không sao đâu."
+    },
+    {
+      "start": 521.93,
+      "end": 524.02,
+      "text": "I don't mind if you guys hear this.",
+      "vi_text": "Tôi chả phiền nếu mọi người nghe."
+    },
+    {
+      "start": 528.54,
+      "end": 531.42,
+      "text": "Will you tell me the reason, Coach Fukuda?",
+      "vi_text": "Anh có thể cho em biết lý do không, HLV Fukuda?"
+    },
+    {
+      "start": 541.78,
+      "end": 542.66,
+      "text": "Well,",
+      "vi_text": "À thì…"
+    },
+    {
+      "start": 543.24,
+      "end": 544.21,
+      "text": "call it a gut feeling.",
+      "vi_text": "linh cảm thôi."
+    },
+    {
+      "start": 553.57,
+      "end": 556.16,
+      "text": "But that's a boring answer.",
+      "vi_text": "Mà câu trả lời đó nhạt nhẽo nhỉ."
+    },
+    {
+      "start": 556.15,
+      "end": 557.03,
+      "text": "For one,",
+      "vi_text": "Thứ nhất,"
+    },
+    {
+      "start": 557.61,
+      "end": 560.78,
+      "text": "the Premier League is really exciting right now!",
+      "vi_text": "giải Premier League hiện đang rất kịch tính!"
+    },
+    {
+      "start": 569.18,
+      "end": 571.89,
+      "text": "Sitting on the J. League bench is a waste of your time.",
+      "vi_text": "Ngồi dự bị ở J.League chỉ phí thời gian."
+    },
+    {
+      "start": 572.44,
+      "end": 573.98,
+      "text": "It's the high schools.",
+      "vi_text": "Mấy trường trung học đó."
+    },
+    {
+      "start": 573.98,
+      "end": 576.61,
+      "text": "Their teams are incredible this year. They're all strong!",
+      "vi_text": "Năm nay đội nào cũng giỏi. Tất cả đều mạnh!"
+    },
+    {
+      "start": 586.71,
+      "end": 589.05,
+      "text": "Funabashi Academy High School is in first.",
+      "vi_text": "Trung học Funabashi Gakuin đứng đầu."
+    },
+    {
+      "start": 589.05,
+      "end": 591.97,
+      "text": "We're second, and Aomori Seiran High School is third.",
+      "vi_text": "Ta đứng thứ hai, Trung học Aomori Seiran thứ ba."
+    },
+    {
+      "start": 592.67,
+      "end": 595.96,
+      "text": "Like Coach said, they're incredibly strong this year.",
+      "vi_text": "Đúng như HLV Fukuda nói, năm nay họ mạnh kinh khủng."
+    },
+    {
+      "start": 605.45,
+      "end": 607.24,
+      "text": "We have a lot to gain by playing them.",
+      "vi_text": "Đấu với họ sẽ học được nhiều."
+    },
+    {
+      "start": 607.95,
+      "end": 612.0,
+      "text": "We have a string of matchups against high schools coming up.",
+      "vi_text": "Sắp tới ta có loạt trận đấu với các trường trung học."
+    },
+    {
+      "start": 613.08,
+      "end": 614.12,
+      "text": "Even so…",
+      "vi_text": "Dù vậy…"
+    },
+    {
+      "start": 621.11,
+      "end": 623.07,
+      "text": "I'd gain more by staying with the pros.",
+      "vi_text": "Em sẽ học nhiều hơn ở đội chuyên."
+    },
+    {
+      "start": 624.07,
+      "end": 627.12,
+      "text": "There's another, bigger reason.",
+      "vi_text": "Còn một lý do khác quan trọng hơn."
+    },
+    {
+      "start": 631.84,
+      "end": 632.97,
+      "text": "You know…",
+      "vi_text": "Cậu đấy…"
+    },
+    {
+      "start": 633.55,
+      "end": 634.88,
+      "text": "you need to calm down a bit.",
+      "vi_text": "Cậu cần bình tĩnh lại."
+    },
+    {
+      "start": 642.37,
+      "end": 646.79,
+      "text": "You push way too far forward in every first-team match.",
+      "vi_text": "Cậu dâng lên quá cao trong mọi trận đấu ở đội chính."
+    },
+    {
+      "start": 646.79,
+      "end": 648.17,
+      "text": "It's unlike you.",
+      "vi_text": "Không giống cậu gì hết."
+    },
+    {
+      "start": 659.94,
+      "end": 663.24,
+      "text": "You're just trying to leave an impression.",
+      "vi_text": "Cậu chỉ đang cố tạo ấn tượng thôi."
+    },
+    {
+      "start": 663.9,
+      "end": 665.32,
+      "text": "Even in the last ACL game,",
+      "vi_text": "Ngay trận ACL vừa rồi,"
+    },
+    {
+      "start": 666.15,
+      "end": 670.32,
+      "text": "you deliberately took two touches instead of a smooth one-touch pass.",
+      "vi_text": "cậu cố tình chạm bóng hai nhịp thay vì chuyền một chạm mượt mà."
+    },
+    {
+      "start": 678.97,
+      "end": 681.31,
+      "text": "You wanted to show off your technique",
+      "vi_text": "Cậu muốn phô diễn kỹ thuật"
+    },
+    {
+      "start": 681.31,
+      "end": 684.36,
+      "text": "to the manager and fans before passing.",
+      "vi_text": "cho quản lý và người hâm mộ thấy trước khi chuyền."
+    },
+    {
+      "start": 685.35,
+      "end": 686.81,
+      "text": "I know what you're doing.",
+      "vi_text": "Tôi biết cậu làm gì."
+    },
+    {
+      "start": 692.41,
+      "end": 694.95,
+      "text": "You want everyone to accept you as a starter.",
+      "vi_text": "Cậu muốn mọi người công nhận cậu đá chính."
+    },
+    {
+      "start": 695.53,
+      "end": 697.91,
+      "text": "I get how you feel, Kuribayashi.",
+      "vi_text": "Tôi hiểu cảm giác của cậu, Kuribayashi."
+    },
+    {
+      "start": 711.4,
+      "end": 715.53,
+      "text": "But to me, it looks like you're losing your cool.",
+      "vi_text": "Nhưng tôi thấy có vẻ cậu đang mất bình tĩnh."
+    },
+    {
+      "start": 716.19,
+      "end": 720.45,
+      "text": "That's probably because of the crowd outside.",
+      "vi_text": "Có lẽ là do đám đông ngoài kia."
+    },
+    {
+      "start": 729.89,
+      "end": 733.89,
+      "text": "You're losing your true self trying to meet their expectations.",
+      "vi_text": "Cậu đang đánh mất chính mình khi cố đáp ứng kỳ vọng của họ."
+    },
+    {
+      "start": 734.68,
+      "end": 738.35,
+      "text": "I wanted to put the brakes on that for you.",
+      "vi_text": "Tôi muốn giúp cậu kiềm chế việc đó lại."
+    },
+    {
+      "start": 756.85,
+      "end": 760.52,
+      "text": "Say I do lose my cool,",
+      "vi_text": "Nếu em mất bình tĩnh"
+    },
+    {
+      "start": 760.52,
+      "end": 764.48,
+      "text": "what are you worried will happen, Coach Fukuda?",
+      "vi_text": "thì anh lo nhất chuyện gì, HLV Fukuda?"
+    },
+    {
+      "start": 766.11,
+      "end": 767.32,
+      "text": "Well…",
+      "vi_text": "À thì…"
+    },
+    {
+      "start": 770.33,
+      "end": 772.25,
+      "text": "you getting injured, I suppose.",
+      "vi_text": "Bị chấn thương, tôi nghĩ vậy."
+    },
+    {
+      "start": 780.43,
+      "end": 781.77,
+      "text": "The same goes for you all.",
+      "vi_text": "Các cậu cũng thế."
+    },
+    {
+      "start": 782.94,
+      "end": 784.57,
+      "text": "Please don't get hurt.",
+      "vi_text": "Đừng có để bị thương."
+    },
+    {
+      "start": 785.1,
+      "end": 786.6,
+      "text": "Keep your instincts sharp.",
+      "vi_text": "Giữ trực giác nhạy bén."
+    },
+    {
+      "start": 795.13,
+      "end": 798.22,
+      "text": "If you sense danger, I want you to have the courage to pull back.",
+      "vi_text": "Nếu thấy nguy hiểm, tôi muốn các cậu có can đảm để lùi lại."
+    },
+    {
+      "start": 799.05,
+      "end": 802.72,
+      "text": "Sorry for the vague instructions, but that's all I can say.",
+      "vi_text": "Xin lỗi vì chỉ đạo mơ hồ, nhưng đó là mọi thứ tôi có thể nói."
+    },
+    {
+      "start": 807.82,
+      "end": 808.82,
+      "text": "Understood.",
+      "vi_text": "Em hiểu rồi."
+    },
+    {
+      "start": 809.36,
+      "end": 811.15,
+      "text": "I'll follow your instructions, Coach.",
+      "vi_text": "Em sẽ theo chỉ đạo của anh."
+    },
+    {
+      "start": 816.68,
+      "end": 818.47,
+      "text": "That's creepy.",
+      "vi_text": "Nghe ớn quá đi."
+    },
+    {
+      "start": 818.48,
+      "end": 819.86,
+      "text": "What do you want from me?",
+      "vi_text": "Cậu muốn gì ở tôi hả?"
+    },
+    {
+      "start": 836.43,
+      "end": 838.14,
+      "text": "kind of put me at ease.",
+      "vi_text": "lại khiến em thấy nhẹ nhõm."
+    },
+    {
+      "start": 839.18,
+      "end": 841.89,
+      "text": "Garulla really wants to keep you close.",
+      "vi_text": "Garulla thực sự muốn giữ cậu ở lại."
+    },
+    {
+      "start": 842.39,
+      "end": 845.02,
+      "text": "He made sure to remind me that this is only for two months.",
+      "vi_text": "Ông ấy dặn tôi là việc này chỉ hai tháng."
+    },
+    {
+      "start": 853.16,
+      "end": 856.4,
+      "text": "Is that so? Well, anyway, I'm going to sleep today.",
+      "vi_text": "Thật vậy sao? Dù sao thì hôm nay em sẽ đi ngủ."
+    },
+    {
+      "start": 856.4,
+      "end": 858.82,
+      "text": "I just got back from Vietnam this morning.",
+      "vi_text": "Sáng nay em vừa từ Việt Nam về."
+    },
+    {
+      "start": 858.82,
+      "end": 861.2,
+      "text": "Right, get some good rest.",
+      "vi_text": "Được rồi, nghỉ ngơi cho tốt nhé."
+    },
+    {
+      "start": 869.85,
+      "end": 871.39,
+      "text": "Oh, by the way,",
+      "vi_text": "À, nhân tiện,"
+    },
+    {
+      "start": 872.48,
+      "end": 874.9,
+      "text": "who's playing fullback?",
+      "vi_text": "ai sẽ đá hậu vệ cánh thế?"
+    },
+    {
+      "start": 875.94,
+      "end": 877.15,
+      "text": "It hasn't been decided yet.",
+      "vi_text": "Vẫn chưa quyết định."
+    },
+    {
+      "start": 887.14,
+      "end": 890.89,
+      "text": "All right. I'm going, too. Don't be late for practice, you guys.",
+      "vi_text": "Được rồi. Tôi đi đây. Mấy cậu đừng có đi tập muộn đấy."
+    },
+    {
+      "start": 890.89,
+      "end": 891.93,
+      "text": "Got it.",
+      "vi_text": "Rõ ạ."
+    },
+    {
+      "start": 912.39,
+      "end": 915.52,
+      "text": "Their conversation is on another level. Damn it!",
+      "vi_text": "Họ nói chuyện ở đẳng cấp khác hẳn. Chết tiệt!"
+    },
+    {
+      "start": 916.68,
+      "end": 920.81,
+      "text": "He deliberately showed off his technique at the ACL?",
+      "vi_text": "Cậu ta cố tình phô diễn kỹ thuật ở ACL sao?"
+    },
+    {
+      "start": 921.48,
+      "end": 924.07,
+      "text": "And he pulled him back because it was dangerous?",
+      "vi_text": "Và anh ấy bắt cậu ta về vì nguy hiểm?"
+    },
+    {
+      "start": 935.59,
+      "end": 938.18,
+      "text": "Their conversation is already beyond the pro level.",
+      "vi_text": "Cuộc trò chuyện của họ đã vượt xa cấp độ chuyên nghiệp."
+    },
+    {
+      "start": 938.76,
+      "end": 941.43,
+      "text": "But this is where it begins, Kuribayashi.",
+      "vi_text": "Nhưng mọi chuyện mới chỉ bắt đầu thôi, Kuribayashi."
+    },
+    {
+      "start": 942.48,
+      "end": 946.11,
+      "text": "I have no intention of settling for being your number two.",
+      "vi_text": "Tôi không có ý định an phận làm người đứng sau cậu đâu."
+    },
+    {
+      "start": 954.62,
+      "end": 955.91,
+      "text": "I will surpass you!",
+      "vi_text": "Tôi sẽ vượt qua cậu!"
+    },
+    {
+      "start": 956.58,
+      "end": 957.75,
+      "text": "I swear it!",
+      "vi_text": "Tôi thề đấy!"
+    },
+    {
+      "start": 958.91,
+      "end": 963.04,
+      "text": "There's no doubt the team will be energized now that Kuribayashi is back.",
+      "vi_text": "Kuribayashi trở lại thế này chắc chắn đội bóng sẽ tràn đầy khí thế."
+    },
+    {
+      "start": 971.98,
+      "end": 973.77,
+      "text": "Yeah. I'm looking forward to it.",
+      "vi_text": "Ừ. Tôi rất mong chờ đấy."
+    },
+    {
+      "start": 974.56,
+      "end": 976.65,
+      "text": "The strongest Esperion is going to be rock solid.",
+      "vi_text": "Esperion mạnh nhất sẽ khó bị đánh bại."
+    },
+    {
+      "start": 977.19,
+      "end": 980.82,
+      "text": "Speaking of which, I don't know if they'll help us be rock solid,",
+      "vi_text": "Nhắc mới nhớ, không biết họ có giúp chúng ta vững hơn không,"
+    },
+    {
+      "start": 989.21,
+      "end": 991.75,
+      "text": "but we have some new talent joining us today.",
+      "vi_text": "nhưng hôm nay có vài tân binh gia nhập đấy."
+    },
+    {
+      "start": 991.74,
+      "end": 994.58,
+      "text": "Promoted from Team B. Four first-years.",
+      "vi_text": "Được đôn lên từ đội B. Bốn học sinh năm nhất."
+    },
+    {
+      "start": 994.58,
+      "end": 997.5,
+      "text": "Good on you for keeping track of that stuff, Taira.",
+      "vi_text": "Khá khen cho cậu vì nắm rõ mấy chuyện đó, Taira."
+    },
+    {
+      "start": 1004.3,
+      "end": 1005.46,
+      "text": "One of them is Kuroda, and--",
+      "vi_text": "Có Kuroda và…"
+    },
+    {
+      "start": 1005.46,
+      "end": 1007.92,
+      "text": "We don't need to know their names.",
+      "vi_text": "Chúng ta đâu cần biết tên mấy đứa đó."
+    },
+    {
+      "start": 1009.04,
+      "end": 1011.0,
+      "text": "They won't be able to keep up at first anyway.",
+      "vi_text": "Dù gì lúc đầu cũng đâu theo kịp."
+    },
+    {
+      "start": 1018.98,
+      "end": 1020.56,
+      "text": "That was thrilling, wasn't it?",
+      "vi_text": "Hồi hộp thật nhỉ?"
+    },
+    {
+      "start": 1020.56,
+      "end": 1021.39,
+      "text": "Totally.",
+      "vi_text": "Ừ."
+    },
+    {
+      "start": 1049.69,
+      "end": 1051.73,
+      "text": "Soft, natural grass.",
+      "vi_text": "Mặt cỏ tự nhiên mềm mại."
+    },
+    {
+      "start": 1052.82,
+      "end": 1055.45,
+      "text": "Team A gets to practice here all the time.",
+      "vi_text": "Đội A lúc nào cũng được tập ở đây."
+    },
+    {
+      "start": 1061.55,
+      "end": 1062.97,
+      "text": "Back-to-back Premier League champs.",
+      "vi_text": "Vô địch Premier League."
+    },
+    {
+      "start": 1063.51,
+      "end": 1065.14,
+      "text": "The strongest youth team.",
+      "vi_text": "Đội thiếu niên mạnh nhất."
+    },
+    {
+      "start": 1071.7,
+      "end": 1074.37,
+      "text": "finally reached the starting line!",
+      "vi_text": "cuối cùng cũng đã chạm tới vạch xuất phát!"
+    },
+    {
+      "start": 1104.88,
+      "end": 1106.01,
+      "text": "You are…",
+      "vi_text": "Cậu là…"
+    },
+    {
+      "start": 1106.01,
+      "end": 1108.14,
+      "text": "Are you here to observe our youth team?",
+      "vi_text": "Cậu đến xem đội thiếu niên của bọn tôi à?"
+    },
+    {
+      "start": 1108.68,
+      "end": 1111.22,
+      "text": "I have the day off from practice today,",
+      "vi_text": "Hôm nay tôi được nghỉ tập"
+    },
+    {
+      "start": 1120.2,
+      "end": 1121.83,
+      "text": "so I came to take a look.",
+      "vi_text": "nên đến xem thử."
+    },
+    {
+      "start": 1121.83,
+      "end": 1125.83,
+      "text": "This is Team A. Tachibana isn't here.",
+      "vi_text": "Đây là đội A. Tachibana không có ở đây đâu."
+    },
+    {
+      "start": 1126.96,
+      "end": 1128.5,
+      "text": "I'm a player too,",
+      "vi_text": "Tôi cũng là cầu thủ,"
+    },
+    {
+      "start": 1131.81,
+      "end": 1132.81,
+      "text": "so I'm curious.",
+      "vi_text": "nên tôi tò mò."
+    },
+    {
+      "start": 1133.39,
+      "end": 1134.22,
+      "text": "About him.",
+      "vi_text": "Về cậu ấy."
+    },
+    {
+      "start": 1144.0,
+      "end": 1145.29,
+      "text": "We just had a match yesterday.",
+      "vi_text": "Hôm qua ta vừa đấu."
+    },
+    {
+      "start": 1145.96,
+      "end": 1147.21,
+      "text": "And we have some new guys here.",
+      "vi_text": "Có vài người mới ở đây."
+    },
+    {
+      "start": 1147.71,
+      "end": 1149.63,
+      "text": "We'll do a light drill.",
+      "vi_text": "Chúng ta sẽ tập bài nhẹ nhàng."
+    },
+    {
+      "start": 1158.61,
+      "end": 1160.03,
+      "text": "An Osim-style passing drill.",
+      "vi_text": "Chuyền bóng kiểu Osim."
+    },
+    {
+      "start": 1160.57,
+      "end": 1164.87,
+      "text": "We did this drill a lot in Team B, too. Is he dumbing things down to our level?",
+      "vi_text": "Ở đội B ta cũng tập bài này suốt. Anh ấy hạ độ khó cho bằng bọn mình à?"
+    },
+    {
+      "start": 1165.45,
+      "end": 1166.99,
+      "text": "For starters,",
+      "vi_text": "Trước hết,"
+    },
+    {
+      "start": 1175.82,
+      "end": 1177.11,
+      "text": "no trapping.",
+      "vi_text": "không đỡ bóng."
+    },
+    {
+      "start": 1177.11,
+      "end": 1179.2,
+      "text": "String passes together using only direct passes.",
+      "vi_text": "Chỉ được chuyền một chạm."
+    },
+    {
+      "start": 1179.2,
+      "end": 1184.0,
+      "text": "One defender. We'll gradually raise the difficulty from there. That's all.",
+      "vi_text": "Một hậu vệ. Từ đó chúng ta sẽ tăng dần độ khó. Thế thôi."
+    },
+    {
+      "start": 1204.11,
+      "end": 1205.69,
+      "text": "That's the first team over there.",
+      "vi_text": "Bên kia là đội chính."
+    },
+    {
+      "start": 1205.69,
+      "end": 1206.61,
+      "text": "Taira.",
+      "vi_text": "Anh Taira."
+    },
+    {
+      "start": 1206.61,
+      "end": 1210.61,
+      "text": "Taira! Seeing your face is a huge relief.",
+      "vi_text": "Anh Taira! Nhìn thấy mặt anh nhẹ cả người."
+    },
+    {
+      "start": 1214.96,
+      "end": 1219.21,
+      "text": "You newcomers will be playing with us in Team A's reserve group.",
+      "vi_text": "Mấy người mới các cậu sẽ đá với bọn tôi ở nhóm dự bị của đội A."
+    },
+    {
+      "start": 1231.07,
+      "end": 1233.11,
+      "text": "Where's Yuma?",
+      "vi_text": "Hả? Yuma đâu?"
+    },
+    {
+      "start": 1234.28,
+      "end": 1238.16,
+      "text": "We do have a shortage of forwards, but he is really something.",
+      "vi_text": "Bọn tôi đang thiếu tiền đạo, nhưng cậu ấy thực sự giỏi đấy."
+    },
+    {
+      "start": 1238.16,
+      "end": 1241.37,
+      "text": "Yuma, what happened to acting as a bridge?!",
+      "vi_text": "Yuma, có chuyện gì với việc thu hẹp khoảng cách vậy?"
+    },
+    {
+      "start": 1251.48,
+      "end": 1254.23,
+      "text": "What is it? You want to join them?",
+      "vi_text": "Gì thế? Cậu muốn tham gia cùng họ à?"
+    },
+    {
+      "start": 1254.74,
+      "end": 1255.91,
+      "text": "Yes.",
+      "vi_text": "- Vâng. - Hả?"
+    },
+    {
+      "start": 1256.53,
+      "end": 1260.28,
+      "text": "If I'm going to experience an insane gap in skill, the sooner the better.",
+      "vi_text": "Nếu phải gặp đối thủ chênh lệch trình độ thì gặp càng sớm càng tốt."
+    },
+    {
+      "start": 1270.59,
+      "end": 1272.26,
+      "text": "What the hell is this guy saying?",
+      "vi_text": "Thằng nhóc này đang nói gì thế?"
+    },
+    {
+      "start": 1272.84,
+      "end": 1275.76,
+      "text": "Now, now. He's just a passionate guy, Matsunaga.",
+      "vi_text": "À, cậu ấy chỉ nhiệt huyết thôi, Matsunaga."
+    },
+    {
+      "start": 1276.35,
+      "end": 1279.27,
+      "text": "You seem to be rushing things from day one,",
+      "vi_text": "Mới ngày đầu mà cậu có vẻ vội vàng,"
+    },
+    {
+      "start": 1285.88,
+      "end": 1289.76,
+      "text": "but even in Team A's reserve group, you won't be able to keep up at first.",
+      "vi_text": "nhưng ngay cả ở nhóm dự bị của đội A, lúc đầu cậu cũng không theo kịp đâu."
+    },
+    {
+      "start": 1290.6,
+      "end": 1291.77,
+      "text": "You'll see soon enough.",
+      "vi_text": "Cậu sẽ sớm nhận ra."
+    },
+    {
+      "start": 1302.16,
+      "end": 1303.29,
+      "text": "- Kuroda! - Ashito!",
+      "vi_text": "- Kuroda! - Ashito!"
+    },
+    {
+      "start": 1303.28,
+      "end": 1304.82,
+      "text": "- Taira! - Matsunaga!",
+      "vi_text": "Taira!"
+    },
+    {
+      "start": 1304.83,
+      "end": 1305.54,
+      "text": "Baba!",
+      "vi_text": "- Matsunaga! - Baba!"
+    },
+    {
+      "start": 1314.78,
+      "end": 1316.45,
+      "text": "Osim-style passing drill.",
+      "vi_text": "Bài tập chuyền bóng kiểu Osim."
+    },
+    {
+      "start": 1317.62,
+      "end": 1320.25,
+      "text": "The ball holder designates the next target",
+      "vi_text": "Người giữ bóng chỉ định mục tiêu tiếp theo"
+    },
+    {
+      "start": 1320.25,
+      "end": 1323.34,
+      "text": "by calling out another player's name.",
+      "vi_text": "bằng cách gọi tên một cầu thủ khác."
+    },
+    {
+      "start": 1334.27,
+      "end": 1338.57,
+      "text": "The receiver must pass it to that exact player.",
+      "vi_text": "Người nhận bóng phải chuyền cho đúng cầu thủ đó."
+    },
+    {
+      "start": 1339.06,
+      "end": 1341.23,
+      "text": "And before the ball even arrives,",
+      "vi_text": "Và ngay trước khi bóng tới chân,"
+    },
+    {
+      "start": 1341.23,
+      "end": 1344.23,
+      "text": "the receiver needs to know where his target is,",
+      "vi_text": "người nhận cần phải biết mục tiêu của mình ở đâu,"
+    },
+    {
+      "start": 1353.51,
+      "end": 1354.64,
+      "text": "and think of a player",
+      "vi_text": "chọn một cầu thủ"
+    },
+    {
+      "start": 1354.63,
+      "end": 1358.38,
+      "text": "so that the next pass will be hard for the defender to steal.",
+      "vi_text": "sao cho đường chuyền tiếp theo không dễ bị hậu vệ cắt bóng."
+    },
+    {
+      "start": 1359.06,
+      "end": 1362.69,
+      "text": "Then he designates the next player and passes. It's a continuous loop.",
+      "vi_text": "Rồi chỉ định người tiếp theo và chuyền. Một vòng lặp liên tục."
+    },
+    {
+      "start": 1375.34,
+      "end": 1380.6,
+      "text": "It completely fails if you only watch the ball or rely on footwork.",
+      "vi_text": "Sẽ hỏng bét nếu chỉ nhìn bóng hoặc dựa vào động tác chân."
+    },
+    {
+      "start": 1381.22,
+      "end": 1383.06,
+      "text": "Look around and think.",
+      "vi_text": "Quan sát xung quanh và nghĩ đi."
+    },
+    {
+      "start": 1383.72,
+      "end": 1386.35,
+      "text": "This drill pushes those skills to the limit.",
+      "vi_text": "Bài tập này đẩy các kỹ năng đó tới giới hạn."
+    },
+    {
+      "start": 1400.43,
+      "end": 1403.18,
+      "text": "They're passing the ball way too fast!",
+      "vi_text": "Họ chuyền bóng quá nhanh!"
+    },
+    {
+      "start": 1403.18,
+      "end": 1404.18,
+      "text": "Kuroda!",
+      "vi_text": "Kuroda!"
+    },
+    {
+      "start": 1404.18,
+      "end": 1405.85,
+      "text": "- Osieck! - Aoi!",
+      "vi_text": "- Osieck! - Aoi!"
+    },
+    {
+      "start": 1414.74,
+      "end": 1416.02,
+      "text": "Otomo!",
+      "vi_text": "Otomo!"
+    },
+    {
+      "start": 1416.02,
+      "end": 1419.27,
+      "text": "My brain can't keep up with my feet.",
+      "vi_text": "Não mình không theo kịp chân."
+    },
+    {
+      "start": 1419.28,
+      "end": 1423.53,
+      "text": "The ball arrives while I'm still trying to find the next player!",
+      "vi_text": "Bóng tới nơi trong khi mình vẫn loay hoay tìm người tiếp theo!"
+    },
+    {
+      "start": 1430.05,
+      "end": 1433.42,
+      "text": "And they're going to raise the difficulty from here?",
+      "vi_text": "Mà từ đây họ còn định tăng độ khó lên nữa sao?"
+    },
+    {
+      "start": 1433.42,
+      "end": 1435.26,
+      "text": "You're kidding me…",
+      "vi_text": "Đùa nhau à…"
+    },
+    {
+      "start": 1435.26,
+      "end": 1436.47,
+      "text": "Aoi!",
+      "vi_text": "Aoi!"
+    },
+    {
+      "start": 1443.98,
+      "end": 1445.39,
+      "text": "You, first-year,",
+      "vi_text": "Này, nhóc năm nhất."
+    },
+    {
+      "start": 1446.01,
+      "end": 1450.22,
+      "text": "before you start talking big, show me you can do the basics.",
+      "vi_text": "Trước khi mạnh mồm thì chứng minh cậu làm được những điều cơ bản đã."
+    },
+    {
+      "start": 1450.22,
+      "end": 1451.39,
+      "text": "Ozzie!",
+      "vi_text": "Ozzie!"
+    },
+    {
+      "start": 1462.21,
+      "end": 1463.96,
+      "text": "If I prove myself here,",
+      "vi_text": "Nếu chứng minh được bản thân ở đây,"
+    },
+    {
+      "start": 1463.96,
+      "end": 1467.67,
+      "text": "I can make it to the J. League even as a high schooler.",
+      "vi_text": "dù mới học trung học thì mình vẫn có thể đá giải J.League."
+    },
+    {
+      "start": 1467.68,
+      "end": 1470.22,
+      "text": "That's what the J-Youth first team is about.",
+      "vi_text": "Đó là mục tiêu của đội chính J Thiếu niên."
+    },
+    {
+      "start": 1479.61,
+      "end": 1481.69,
+      "text": "If I do that, my dream will come true.",
+      "vi_text": "Nếu làm được thì ước mơ sẽ thành hiện thực."
+    },
+    {
+      "start": 1482.27,
+      "end": 1484.31,
+      "text": "I can send money to Mom!",
+      "vi_text": "Mình có thể gửi tiền về cho mẹ!"
+    },
+    {
+      "start": 1485.4,
+      "end": 1488.82,
+      "text": "You won't be able to keep up at first. You'll see soon enough.",
+      "vi_text": "Lúc đầu cậu cũng không theo kịp đâu. Cậu sẽ sớm nhận ra."
+    },
+    {
+      "start": 1496.11,
+      "end": 1498.95,
+      "text": "Even if I have to crawl, I'm not dropping down to Team B!",
+      "vi_text": "Dù có phải bò, mình cũng sẽ không rớt xuống đội B!"
+    },
+    {
+      "start": 1499.74,
+      "end": 1502.24,
+      "text": "I'm going to prove myself right here!",
+      "vi_text": "Mình sẽ chứng minh bản thân ngay tại đây!"
+    },
+    {
+      "start": 1510.35,
+      "end": 1511.27,
+      "text": "Kuroda!",
+      "vi_text": "Kuroda!"
+    },
+    {
+      "start": 1511.27,
+      "end": 1512.27,
+      "text": "- Aoi! - Matsunaga!",
+      "vi_text": "- Aoi! - Matsunaga!"
+    },
+    {
+      "start": 1512.27,
+      "end": 1513.52,
+      "text": "Otomo!",
+      "vi_text": "Otomo!"
+    },
+    {
+      "start": 1521.42,
+      "end": 1522.34,
+      "text": "This guy…",
+      "vi_text": "Tên này…"
+    },
+    {
+      "start": 1524.04,
+      "end": 1526.96,
+      "text": "Ashito is actually keeping up.",
+      "vi_text": "Ashito thực sự đang theo kịp!"
+    },
+    {
+      "start": 1535.07,
+      "end": 1536.28,
+      "text": "All right!",
+      "vi_text": "Tốt lắm!"
+    },
+    {
+      "start": 1536.28,
+      "end": 1538.57,
+      "text": "Let's add one more ball!",
+      "vi_text": "Thêm một quả bóng nữa nào!"
+    },
+    {
+      "start": 1538.57,
+      "end": 1539.49,
+      "text": "What?",
+      "vi_text": "Gì cơ?"
+    },
+    {
+      "start": 1549.14,
+      "end": 1551.89,
+      "text": "You new guys look pretty tired.",
+      "vi_text": "Mấy cậu mới đến trông có vẻ mệt rồi."
+    },
+    {
+      "start": 1552.43,
+      "end": 1555.18,
+      "text": "By the way, everything up to here is just the basics.",
+      "vi_text": "À mà mọi thứ từ nãy đến giờ chỉ là cơ bản."
+    },
+    {
+      "start": 1555.18,
+      "end": 1557.99,
+      "text": "From here on out, applying it is what matters.",
+      "vi_text": "Kể từ bây giờ, việc áp dụng nó mới quan trọng."
+    },
+    {
+      "start": 1567.98,
+      "end": 1569.82,
+      "text": "Applying it?",
+      "vi_text": "Áp dụng?"
+    },
+    {
+      "start": 1570.65,
+      "end": 1573.03,
+      "text": "You've gotta be kidding.",
+      "vi_text": "Đùa nhau chắc."
+    },
+    {
+      "start": 1573.02,
+      "end": 1577.86,
+      "text": "I can't even keep up with this speed, and now there are two balls?!",
+      "vi_text": "Tốc độ này mình còn chưa theo kịp, giờ lại thêm hai quả bóng nữa sao?"
+    },
+    {
+      "start": 1594.89,
+      "end": 1597.1,
+      "text": "Your decision-making is too slow!",
+      "vi_text": "Ra quyết định quá chậm!"
+    },
+    {
+      "start": 1597.1,
+      "end": 1600.48,
+      "text": "Don't watch the ball! Watch the players! Watch the space!",
+      "vi_text": "Đừng nhìn bóng! Nhìn cầu thủ đi! Nhìn khoảng trống đi!"
+    },
+    {
+      "start": 1612.1,
+      "end": 1614.77,
+      "text": "I can't do this.",
+      "vi_text": "Mình không làm được."
+    },
+    {
+      "start": 1614.77,
+      "end": 1618.65,
+      "text": "Now that there are two balls, I have even less time to think.",
+      "vi_text": "Giờ có hai quả bóng, mình lại càng có ít thời gian nghĩ hơn."
+    },
+    {
+      "start": 1619.27,
+      "end": 1622.37,
+      "text": "Otomo and I are making all the mistakes,",
+      "vi_text": "Mình và Otomo đang mắc hết lỗi này đến lỗi khác,"
+    },
+    {
+      "start": 1624.31,
+      "end": 1625.98,
+      "text": "so we're stuck playing defense the whole time.",
+      "vi_text": "nên bọn mình cứ phải phòng thủ."
+    },
+    {
+      "start": 1629.33,
+      "end": 1631.0,
+      "text": "Is it just us two?",
+      "vi_text": "Chỉ hai đứa mình thôi sao?"
+    },
+    {
+      "start": 1637.98,
+      "end": 1639.52,
+      "text": "Hey, don't slack off, first-years!",
+      "vi_text": "Này, đừng lười, mấy nhóc năm nhất!"
+    },
+    {
+      "start": 1640.52,
+      "end": 1641.57,
+      "text": "Here it comes, Kuroda!",
+      "vi_text": "Đến đây rồi này, Kuroda!"
+    },
+    {
+      "start": 1646.78,
+      "end": 1647.96,
+      "text": "- Kuroda! - Baba!",
+      "vi_text": "- Kuroda! - Baba!"
+    },
+    {
+      "start": 1647.96,
+      "end": 1649.04,
+      "text": "- Togashi! - Aoi!",
+      "vi_text": "- Togashi! - Aoi!"
+    },
+    {
+      "start": 1649.04,
+      "end": 1650.08,
+      "text": "- Matsunaga! - Ozzie!",
+      "vi_text": "Matsunaga!"
+    },
+    {
+      "start": 1653.27,
+      "end": 1654.23,
+      "text": "- Baba! - Matsunaga!",
+      "vi_text": "- Baba! - Matsunaga!"
+    },
+    {
+      "start": 1654.23,
+      "end": 1655.15,
+      "text": "- Aoi! - Togashi!",
+      "vi_text": "- Aoi! - Togashi!"
+    },
+    {
+      "start": 1655.15,
+      "end": 1656.36,
+      "text": "Baba!",
+      "vi_text": "Baba!"
+    },
+    {
+      "start": 1666.04,
+      "end": 1668.92,
+      "text": "Kuroda makes sense since he used to be on A,",
+      "vi_text": "Kuroda thì dễ hiểu vì cậu ta từng ở đội A,"
+    },
+    {
+      "start": 1668.92,
+      "end": 1670.92,
+      "text": "but that curly-haired kid is keeping up.",
+      "vi_text": "nhưng thằng tóc xoăn kia cũng theo kịp."
+    },
+    {
+      "start": 1671.54,
+      "end": 1675.04,
+      "text": "He's hanging in there even with two balls.",
+      "vi_text": "Nó vẫn trụ vững ngay cả khi có hai quả bóng."
+    },
+    {
+      "start": 1677.93,
+      "end": 1678.85,
+      "text": "Kuroda!",
+      "vi_text": "Kuroda!"
+    },
+    {
+      "start": 1678.85,
+      "end": 1679.77,
+      "text": "- Taira! - Matsunaga!",
+      "vi_text": "Taira!"
+    },
+    {
+      "start": 1679.76,
+      "end": 1680.68,
+      "text": "- Togashi! - Kuroda!",
+      "vi_text": "Togashi!"
+    },
+    {
+      "start": 1686.36,
+      "end": 1687.19,
+      "text": "- Baba! - Matsunaga!",
+      "vi_text": "Baba!"
+    },
+    {
+      "start": 1687.19,
+      "end": 1688.28,
+      "text": "- Ashito! - Baba!",
+      "vi_text": "- Ashito! - Baba!"
+    },
+    {
+      "start": 1688.82,
+      "end": 1691.91,
+      "text": "Incredible speed! It's way faster than Team B.",
+      "vi_text": "Tốc độ đáng kinh ngạc! Nhanh hơn đội B nhiều quá."
+    },
+    {
+      "start": 1700.34,
+      "end": 1701.21,
+      "text": "But…",
+      "vi_text": "Nhưng…"
+    },
+    {
+      "start": 1701.75,
+      "end": 1704.75,
+      "text": "You thought things would work out once you got here, didn't you?",
+      "vi_text": "Cậu tưởng mọi thứ sẽ ổn nếu cậu gia nhập đội Thiếu niên chứ gì?"
+    },
+    {
+      "start": 1705.34,
+      "end": 1708.68,
+      "text": "You thought you'd be able to do it someday, right?",
+      "vi_text": "Cậu nghĩ sẽ làm được vào một ngày nào đó, đúng không?"
+    },
+    {
+      "start": 1717.52,
+      "end": 1719.76,
+      "text": "I'm different from back then!",
+      "vi_text": "Mình đã khác xưa rồi!"
+    },
+    {
+      "start": 1719.76,
+      "end": 1724.22,
+      "text": "It has to be now! I need to be able to do this now!",
+      "vi_text": "Phải là lúc này! Mình phải làm được việc này ngay lúc này!"
+    },
+    {
+      "start": 1724.22,
+      "end": 1726.26,
+      "text": "Precisely because I've moved up to Team A!",
+      "vi_text": "Chính vì mình đã được lên đội A!"
+    },
+    {
+      "start": 1734.95,
+      "end": 1736.54,
+      "text": "Togashi!",
+      "vi_text": "Togashi!"
+    },
+    {
+      "start": 1737.12,
+      "end": 1739.04,
+      "text": "A floating pass. This is…",
+      "vi_text": "Một đường chuyền bổng. Quả này là…"
+    },
+    {
+      "start": 1739.62,
+      "end": 1743.54,
+      "text": "I'm testing you, first-year. Let's see you react to this.",
+      "vi_text": "Tôi đang thử cậu đấy, nhóc năm nhất. Để xem cậu xử lý quả này thế nào."
+    },
+    {
+      "start": 1751.06,
+      "end": 1752.02,
+      "text": "Who is it?",
+      "vi_text": "Là ai đây?"
+    },
+    {
+      "start": 1752.98,
+      "end": 1754.27,
+      "text": "From Togashi's position,",
+      "vi_text": "Từ chỗ của Togashi,"
+    },
+    {
+      "start": 1775.98,
+      "end": 1778.77,
+      "text": "Damn it! I saw exactly where I needed to pass it!",
+      "vi_text": "Khỉ gió! Mình đã thấy chính xác chỗ cần chuyền!"
+    },
+    {
+      "start": 1779.31,
+      "end": 1782.69,
+      "text": "But my footwork and my first step couldn't keep up!",
+      "vi_text": "Nhưng bộ chân và bước đầu của mình lại không theo kịp!"
+    },
+    {
+      "start": 1782.69,
+      "end": 1783.52,
+      "text": "Damn!",
+      "vi_text": "Khốn kiếp!"
+    },
+    {
+      "start": 1789.09,
+      "end": 1792.68,
+      "text": "Can't be helped. I'm the chaser next. Keep passing, guys.",
+      "vi_text": "Đành chịu. Lượt tới tôi cướp bóng. Tiếp tục chuyền đi."
+    },
+    {
+      "start": 1798.49,
+      "end": 1802.29,
+      "text": "What's wrong? Let's keep going. Hurry up and let's go, everyone.",
+      "vi_text": "Sao thế? Tiếp tục nào. Mau lên, tiếp tục thôi, mọi người."
+    },
+    {
+      "start": 1808.61,
+      "end": 1810.49,
+      "text": "Ashito! Kuroda, too.",
+      "vi_text": "Ashito! Cả Kuroda nữa."
+    },
+    {
+      "start": 1811.16,
+      "end": 1812.75,
+      "text": "Come join them for a bit.",
+      "vi_text": "Qua đây đá với họ chút."
+    },
+    {
+      "start": 1819.89,
+      "end": 1822.56,
+      "text": "That curly-haired first-year has some good movement.",
+      "vi_text": "Thằng nhóc năm nhất tóc xoăn đó di chuyển tốt đấy chứ."
+    },
+    {
+      "start": 1831.17,
+      "end": 1832.75,
+      "text": "Kuribayashi?!",
+      "vi_text": "Anh Kuribayashi?"
+    },
+    {
+      "start": 1832.76,
+      "end": 1835.47,
+      "text": "His name is Ashito Aoi, right?",
+      "vi_text": "Tên cậu ấy là Aoi Ashito, đúng không?"
+    },
+    {
+      "start": 1835.47,
+      "end": 1837.44,
+      "text": "Why are you here?",
+      "vi_text": "Sao anh lại ở đây?"
+    },
+    {
+      "start": 1848.15,
+      "end": 1852.28,
+      "text": "Almost everyone out there today is here to see you.",
+      "vi_text": "Gần như tất cả mọi người ngoài kia hôm nay đều đến để xem anh đấy."
+    },
+    {
+      "start": 1852.28,
+      "end": 1855.03,
+      "text": "You sponsors sure love to lecture.",
+      "vi_text": "Mấy nhà tài trợ các em thích lên lớp thật đấy."
+    },
+    {
+      "start": 1855.16,
+      "end": 1858.75,
+      "text": "You just got back from Vietnam. Were you able to get some sleep?",
+      "vi_text": "Vừa từ Việt Nam về, anh đã ngủ được chút nào chưa?"
+    },
+    {
+      "start": 1861.47,
+      "end": 1863.51,
+      "text": "Yeah, I slept for about 30 minutes.",
+      "vi_text": "Rồi, tôi ngủ được khoảng 30 phút."
+    },
+    {
+      "start": 1874.08,
+      "end": 1877.04,
+      "text": "Looks like that Aoi guy is joining the starters.",
+      "vi_text": "Có vẻ cậu nhóc Aoi kia sắp vào tập cùng đội chính."
+    },
+    {
+      "start": 1877.88,
+      "end": 1879.01,
+      "text": "This should be fun to watch.",
+      "vi_text": "Chắc sẽ hay ho đây."
+    },
+    {
+      "start": 1880.13,
+      "end": 1883.05,
+      "text": "Let these two play without penalties.",
+      "vi_text": "Cho hai đứa này chơi không bị phạt."
+    },
+    {
+      "start": 1886.58,
+      "end": 1889.04,
+      "text": "Meaning, even if they mess up, they won't be put on defense.",
+      "vi_text": "Dù mắc lỗi cũng sẽ không bị xuống phòng ngự."
+    },
+    {
+      "start": 1905.49,
+      "end": 1907.41,
+      "text": "Coach Fukuda is unpredictable.",
+      "vi_text": "HLV Fukuda khó đoán thật."
+    },
+    {
+      "start": 1908.03,
+      "end": 1910.07,
+      "text": "He's probably just testing us.",
+      "vi_text": "Chắc anh ấy chỉ đang thử bọn mình."
+    },
+    {
+      "start": 1910.74,
+      "end": 1913.08,
+      "text": "But Aoi, this is our chance.",
+      "vi_text": "Nhưng mà Aoi, đây là cơ hội của ta."
+    },
+    {
+      "start": 1917.14,
+      "end": 1920.31,
+      "text": "Yeah, Kuroda. Let's show them what we've got.",
+      "vi_text": "Đúng, Kuroda. Cho họ thấy ta làm được gì."
+    },
+    {
+      "start": 1935.55,
+      "end": 1938.47,
+      "text": "- What? What the heck is this?! - Shimura!",
+      "vi_text": "Gì đây? Cái quái gì thế này?"
+    },
+    {
+      "start": 1938.47,
+      "end": 1939.39,
+      "text": "- Yuma! - Akutsu.",
+      "vi_text": "- Shimura! - Yuma!"
+    },
+    {
+      "start": 1949.28,
+      "end": 1950.27,
+      "text": "This speed…",
+      "vi_text": "Tốc độ này…"
+    },
+    {
+      "start": 1950.27,
+      "end": 1954.9,
+      "text": "Every single one of them instantly switches between footwork, light passes,",
+      "vi_text": "Tất cả bọn họ đều lập tức chuyển đổi cách di chuyển chân, chuyền nhẹ"
+    },
+    {
+      "start": 1954.9,
+      "end": 1958.4,
+      "text": "and fast passes to distribute the ball.",
+      "vi_text": "và chuyền nhanh để luân chuyển bóng."
+    },
+    {
+      "start": 1966.46,
+      "end": 1969.66,
+      "text": "On top of that, their passing ideas are completely different.",
+      "vi_text": "Ý tưởng chuyền bóng của họ cũng hoàn toàn khác biệt."
+    },
+    {
+      "start": 1969.67,
+      "end": 1973.17,
+      "text": "I can't keep up. I can't read the flow at all!",
+      "vi_text": "Mình không theo kịp. Mình không thể bắt được nhịp!"
+    },
+    {
+      "start": 1973.17,
+      "end": 1974.21,
+      "text": "Shimu--",
+      "vi_text": "Shimu…"
+    },
+    {
+      "start": 2002.26,
+      "end": 2005.22,
+      "text": "Akutsu, you're off your game today.",
+      "vi_text": "Akutsu, hôm nay cậu chơi dưới sức đấy."
+    },
+    {
+      "start": 2006.14,
+      "end": 2009.48,
+      "text": "Swap out for defense. You're totally unfocused.",
+      "vi_text": "Ra tranh bóng đi. Cậu mất tập trung quá."
+    },
+    {
+      "start": 2010.1,
+      "end": 2011.19,
+      "text": "Did something happen?",
+      "vi_text": "Có chuyện gì à?"
+    },
+    {
+      "start": 2028.76,
+      "end": 2029.64,
+      "text": "Don't lose.",
+      "vi_text": "Đừng thua."
+    },
+    {
+      "start": 2030.43,
+      "end": 2031.35,
+      "text": "Don't lose.",
+      "vi_text": "Đừng thua."
+    },
+    {
+      "start": 2032.1,
+      "end": 2033.06,
+      "text": "- Don't lose! - Shimura.",
+      "vi_text": "- Đừng! - Shimura."
+    },
+    {
+      "start": 2037.04,
+      "end": 2038.57,
+      "text": "- Kiriki. - Takasugi.",
+      "vi_text": "- Kiriki. - Takasugi."
+    },
+    {
+      "start": 2038.58,
+      "end": 2039.54,
+      "text": "- Yoshitsune. - Yuma.",
+      "vi_text": "Yoshitsune."
+    },
+    {
+      "start": 2039.54,
+      "end": 2040.92,
+      "text": "- Yamada. - Don't lose.",
+      "vi_text": "- Yamada. - Đừng thua."
+    },
+    {
+      "start": 2044.72,
+      "end": 2046.04,
+      "text": "Don't lose!",
+      "vi_text": "Không được thua!"
+    },
+    {
+      "start": 2046.04,
+      "end": 2047.04,
+      "text": "- Yoshitsune. - Takasugi.",
+      "vi_text": "Yoshitsune."
+    },
+    {
+      "start": 2047.04,
+      "end": 2048.42,
+      "text": "Now's the time!",
+      "vi_text": "Chính là lúc này!"
+    },
+    {
+      "start": 2053.38,
+      "end": 2054.16,
+      "text": "- Aoi! - Shimura!",
+      "vi_text": "- Aoi! - Shimura!"
+    },
+    {
+      "start": 2054.83,
+      "end": 2058.25,
+      "text": "Who is it? Who's the best option here?",
+      "vi_text": "Lựa chọn tốt nhất lúc này là ai?"
+    },
+    {
+      "start": 2076.91,
+      "end": 2077.83,
+      "text": "Damn it!",
+      "vi_text": "Chết tiệt!"
+    },
+    {
+      "start": 2078.41,
+      "end": 2079.24,
+      "text": "Coach,",
+      "vi_text": "HLV ơi,"
+    },
+    {
+      "start": 2079.79,
+      "end": 2083.04,
+      "text": "with these two first-years around, this isn't even practice.",
+      "vi_text": "có hai đứa năm nhất thì đây không còn được tính là tập."
+    },
+    {
+      "start": 2101.45,
+      "end": 2102.91,
+      "text": "Good work, everyone!",
+      "vi_text": "Vất vả rồi!"
+    },
+    {
+      "start": 2103.49,
+      "end": 2105.37,
+      "text": "Well, what can you do?",
+      "vi_text": "Thôi, có thể làm gì chứ?"
+    },
+    {
+      "start": 2105.37,
+      "end": 2108.71,
+      "text": "There's no way it'd go perfectly from the very start.",
+      "vi_text": "Làm sao hoàn hảo ngay từ đầu được."
+    },
+    {
+      "start": 2111.5,
+      "end": 2113.71,
+      "text": "You two can go wash your faces.",
+      "vi_text": "Hai đứa đi rửa mặt đi."
+    },
+    {
+      "start": 2130.33,
+      "end": 2135.04,
+      "text": "Not a single one of them even saw me!",
+      "vi_text": "Không một ai trong số họ thèm nhìn mình!"
+    },
+    {
+      "start": 2168.64,
+      "end": 2170.6,
+      "text": "This is Team A!",
+      "vi_text": "Đây chính là đội A!"
+    },
+    {
+      "start": 2171.65,
+      "end": 2172.9,
+      "text": "It's amazing…",
+      "vi_text": "Tuyệt vời…"
+    },
+    {
+      "start": 2173.65,
+      "end": 2175.99,
+      "text": "Amazing!",
+      "vi_text": "Tuyệt quá!"
+    },
+    {
+      "start": 2293.99,
+      "end": 2295.24,
+      "text": "Something's being tested.",
+      "vi_text": "Họ đang thử thách."
+    },
+    {
+      "start": 2295.24,
+      "end": 2297.24,
+      "text": "- Kuribayashi. - Aoi,",
+      "vi_text": "- Kuribayashi. - Aoi,"
+    },
+    {
+      "start": 2297.24,
+      "end": 2300.74,
+      "text": "- did you really understand him? - He's an awesome guy.",
+      "vi_text": "- cậu có hiểu cậu ấy không? - Cậu ấy rất tuyệt vời."
+    },
+    {
+      "start": 2307.13,
+      "end": 2308.37,
+      "text": "Aoi, about the fullback position…",
+      "vi_text": "Aoi, về vị trí hậu vệ cánh…"
+    },
+    {
+      "start": 2308.96,
+      "end": 2310.79,
+      "text": "- He's scary. - Complete players are rare…",
+      "vi_text": "- Đáng sợ. - Cầu thủ thế hiếm lắm…"
+    },
+    {
+      "start": 2310.79,
+      "end": 2313.42,
+      "text": "The speed of these guys… It's…",
+      "vi_text": "Tốc độ của những người này… Thật là…"
+    },
+    {
+      "start": 2316.39,
+      "end": 2317.39,
+      "text": "Subtitle translation by: Hasan Hüseyin Öztürk",
+      "vi_text": "Biên dịch: Quỳnh Chi"
+    }
+  ],
+  "vi": [
+    {
+      "start": 18.35,
+      "end": 21.89,
+      "text": "CLB BÓNG ĐÁ ESPERION - 1983"
+    },
+    {
+      "start": 21.9,
+      "end": 22.94,
+      "text": "LÊN A: OTOMO, AOI…"
+    },
+    {
+      "start": 22.94,
+      "end": 23.86,
+      "text": "XUỐNG B: NAGANO…"
+    },
+    {
+      "start": 29.52,
+      "end": 30.39,
+      "text": "Đến lúc rồi."
+    },
+    {
+      "start": 31.39,
+      "end": 32.73,
+      "text": "Từ nay cậu vào đội A."
+    },
+    {
+      "start": 33.47,
+      "end": 35.22,
+      "text": "Cố lên nhé, Ashito."
+    },
+    {
+      "start": 41.6,
+      "end": 42.43,
+      "text": "Ừ."
+    },
+    {
+      "start": 42.97,
+      "end": 44.22,
+      "text": "Cậu nữa, Tachibana."
+    },
+    {
+      "start": 44.23,
+      "end": 45.23,
+      "text": "Tôi sẽ đợi cậu."
+    },
+    {
+      "start": 50.58,
+      "end": 53.08,
+      "text": "Nhờ cậu hết, Yuma! Chỉ còn hy vọng ở cậu!"
+    },
+    {
+      "start": 53.09,
+      "end": 56.64,
+      "text": "Giúp bọn này \\N thu hẹp khoảng cách với các đàn anh đội A!"
+    },
+    {
+      "start": 64.04,
+      "end": 66.88,
+      "text": "Chúng ta cần quái gì thu hẹp chứ."
+    },
+    {
+      "start": 66.88,
+      "end": 69.01,
+      "text": "Khoan, cậu nói gì thế, Togashi?"
+    },
+    {
+      "start": 69.72,
+      "end": 73.68,
+      "text": "Chẳng việc gì phải kết bạn \\N với những kẻ sẽ bị ta đẩy lên ghế dự bị."
+    },
+    {
+      "start": 85.88,
+      "end": 88.55,
+      "text": "Tôi sẽ chả bao giờ quay lại đội B!"
+    },
+    {
+      "start": 93.19,
+      "end": 94.27,
+      "text": "Tôi cũng vậy."
+    },
+    {
+      "start": 103.75,
+      "end": 105.84,
+      "text": "Tôi sẽ không quay lại đội B đâu!"
+    },
+    {
+      "start": 216.55,
+      "end": 219.76,
+      "text": "Nhìn hình như hơi đông nhỉ?"
+    },
+    {
+      "start": 219.76,
+      "end": 222.64,
+      "text": "Buổi tập của đội A lúc nào cũng thế này à?"
+    },
+    {
+      "start": 222.64,
+      "end": 224.1,
+      "text": "Không phải đâu."
+    },
+    {
+      "start": 232.5,
+      "end": 236.34,
+      "text": "Kuribayashi sắp quay lại \\N nên họ đến xem anh ấy."
+    },
+    {
+      "start": 237.21,
+      "end": 240.84,
+      "text": "Hôm nay anh ấy còn chẳng tập \\N nên họ uổng công rồi."
+    },
+    {
+      "start": 252.49,
+      "end": 256.74,
+      "text": "Tại Việt Nam, trong khuôn khổ \\N vòng bảng AFC Champions League,"
+    },
+    {
+      "start": 257.54,
+      "end": 261.63,
+      "text": "Tokyo City Esperion \\N đã đánh bại CLB Hà Nội với tỷ số 3 - 0."
+    },
+    {
+      "start": 262.25,
+      "end": 264.96,
+      "text": "Tài năng trẻ 16 tuổi \\N được kỳ vọng cao, Kuribayashi,"
+    },
+    {
+      "start": 277.58,
+      "end": 279.82,
+      "text": "đã được tung vào sân \\N ở phút 25 của hiệp hai."
+    },
+    {
+      "start": 280.66,
+      "end": 284.62,
+      "text": "Với trận này, kể từ khi ra mắt J1, \\N Kuribayashi đã ra sân sáu trận."
+    },
+    {
+      "start": 285.12,
+      "end": 288.83,
+      "text": "Người hâm mộ mong cậu là cầu thủ trẻ nhất \\N ghi bàn trong lịch sử ACL, nhưng…"
+    },
+    {
+      "start": 300.88,
+      "end": 301.71,
+      "text": "Kuribayashi."
+    },
+    {
+      "start": 303.18,
+      "end": 306.06,
+      "text": "Trận ACL đầu tiên của cậu thế nào?"
+    },
+    {
+      "start": 306.64,
+      "end": 311.52,
+      "text": "Quản lý Garulla có nói gì \\N về phần thi đấu của em không ạ?"
+    },
+    {
+      "start": 321.17,
+      "end": 323.38,
+      "text": "Vẫn như mọi khi. Ông ấy khen cậu."
+    },
+    {
+      "start": 324.3,
+      "end": 326.34,
+      "text": "Cậu đang làm rất tốt."
+    },
+    {
+      "start": 333.2,
+      "end": 334.95,
+      "text": "Dù vậy, Kuribayashi à."
+    },
+    {
+      "start": 336.45,
+      "end": 338.37,
+      "text": "Hành trình ở đội chính xong rồi."
+    },
+    {
+      "start": 342.85,
+      "end": 345.06,
+      "text": "Về Nhật thì trở lại đội thiếu niên đi."
+    },
+    {
+      "start": 345.64,
+      "end": 349.02,
+      "text": "Nhưng thầy vừa bảo em làm tốt mà. \\N Là do Quản lý Garulla…"
+    },
+    {
+      "start": 349.65,
+      "end": 351.65,
+      "text": "Không, là Fukuda."
+    },
+    {
+      "start": 362.13,
+      "end": 364.47,
+      "text": "Cậu ấy nhất quyết \\N đưa cậu về một thời gian."
+    },
+    {
+      "start": 372.21,
+      "end": 376.8,
+      "text": "Ngoài sân tập ồn ào quá đi mất!"
+    },
+    {
+      "start": 376.8,
+      "end": 379.89,
+      "text": "Mình tỉnh ngủ hẳn luôn rồi!"
+    },
+    {
+      "start": 379.88,
+      "end": 382.84,
+      "text": "Mình muốn ngủ cho đến sát giờ thôi."
+    },
+    {
+      "start": 393.62,
+      "end": 394.65,
+      "text": "Anh Yoshitsune."
+    },
+    {
+      "start": 394.66,
+      "end": 395.7,
+      "text": "Cái gì hả?"
+    },
+    {
+      "start": 395.7,
+      "end": 398.49,
+      "text": "Kuribayashi sắp về đấy."
+    },
+    {
+      "start": 405.75,
+      "end": 408.92,
+      "text": "Xem nào, bài này viết gì đây?"
+    },
+    {
+      "start": 410.0,
+      "end": 417.09,
+      "text": "\"Thần đồng Kuribayashi không được \\N Garulla tin tưởng. Ra mắt ở ACL mờ nhạt\"."
+    },
+    {
+      "start": 428.58,
+      "end": 433.12,
+      "text": "Tay phóng viên đó luôn viết cay nghiệt, \\N bất kể Kuribayashi chơi thế nào."
+    },
+    {
+      "start": 439.88,
+      "end": 440.84,
+      "text": "Thì ra là vậy."
+    },
+    {
+      "start": 443.18,
+      "end": 445.06,
+      "text": "Kuribayashi!"
+    },
+    {
+      "start": 445.05,
+      "end": 447.97,
+      "text": "Hả? Cậu vào trong \\N nhà câu lạc bộ từ lúc nào vậy?"
+    },
+    {
+      "start": 448.85,
+      "end": 452.6,
+      "text": "Cả một đám đông đang đợi cậu ngoài kia đó."
+    },
+    {
+      "start": 462.17,
+      "end": 466.42,
+      "text": "Anh Mibu ở bộ phận PR giúp tôi \\N đi bằng xe bán cơm bento của nhà anh ấy."
+    },
+    {
+      "start": 466.42,
+      "end": 467.76,
+      "text": "Kuribayashi Đầu Nhím!"
+    },
+    {
+      "start": 468.38,
+      "end": 471.84,
+      "text": "Đâu ai nghĩ \\N lại có cầu thủ ngồi trong xe đó chứ."
+    },
+    {
+      "start": 481.61,
+      "end": 484.4,
+      "text": "Cậu vẫn ổn chứ?"
+    },
+    {
+      "start": 484.4,
+      "end": 485.36,
+      "text": "HLV Fukuda đâu?"
+    },
+    {
+      "start": 490.87,
+      "end": 492.54,
+      "text": "Lúc nãy anh ấy ở sảnh với Akutsu…"
+    },
+    {
+      "start": 502.27,
+      "end": 504.19,
+      "text": "Chào Akkun."
+    },
+    {
+      "start": 509.4,
+      "end": 512.53,
+      "text": "Để họ nói chuyện riêng đi, các cậu."
+    },
+    {
+      "start": 512.53,
+      "end": 513.36,
+      "text": "Không sao đâu."
+    },
+    {
+      "start": 514.49,
+      "end": 516.66,
+      "text": "Tôi chả phiền nếu mọi người nghe."
+    },
+    {
+      "start": 525.56,
+      "end": 528.44,
+      "text": "Anh có thể \\N cho em biết lý do không, HLV Fukuda?"
+    },
+    {
+      "start": 539.3,
+      "end": 540.18,
+      "text": "À thì…"
+    },
+    {
+      "start": 540.76,
+      "end": 541.68,
+      "text": "linh cảm thôi."
+    },
+    {
+      "start": 546.16,
+      "end": 548.79,
+      "text": "Mà câu trả lời đó nhạt nhẽo nhỉ."
+    },
+    {
+      "start": 548.79,
+      "end": 549.67,
+      "text": "Thứ nhất,"
+    },
+    {
+      "start": 550.25,
+      "end": 553.42,
+      "text": "giải Premier League \\N hiện đang rất kịch tính!"
+    },
+    {
+      "start": 561.57,
+      "end": 564.28,
+      "text": "Ngồi dự bị ở J.League chỉ phí thời gian."
+    },
+    {
+      "start": 564.87,
+      "end": 566.41,
+      "text": "Mấy trường trung học đó."
+    },
+    {
+      "start": 566.41,
+      "end": 569.04,
+      "text": "Năm nay đội nào cũng giỏi. \\N Tất cả đều mạnh!"
+    },
+    {
+      "start": 577.36,
+      "end": 579.2,
+      "text": "Trung học Funabashi Gakuin đứng đầu."
+    },
+    {
+      "start": 579.7,
+      "end": 582.62,
+      "text": "Ta đứng thứ hai, \\N Trung học Aomori Seiran thứ ba."
+    },
+    {
+      "start": 583.32,
+      "end": 586.61,
+      "text": "Đúng như HLV Fukuda nói, \\N năm nay họ mạnh kinh khủng."
+    },
+    {
+      "start": 596.68,
+      "end": 598.47,
+      "text": "Đấu với họ sẽ học được nhiều."
+    },
+    {
+      "start": 599.18,
+      "end": 603.23,
+      "text": "Sắp tới ta có loạt trận đấu \\N với các trường trung học."
+    },
+    {
+      "start": 604.31,
+      "end": 605.35,
+      "text": "Dù vậy…"
+    },
+    {
+      "start": 615.0,
+      "end": 616.96,
+      "text": "Em sẽ học nhiều hơn ở đội chuyên."
+    },
+    {
+      "start": 617.96,
+      "end": 621.01,
+      "text": "Còn một lý do khác quan trọng hơn."
+    },
+    {
+      "start": 628.7,
+      "end": 629.83,
+      "text": "Cậu đấy…"
+    },
+    {
+      "start": 630.41,
+      "end": 631.74,
+      "text": "Cậu cần bình tĩnh lại."
+    },
+    {
+      "start": 636.47,
+      "end": 640.89,
+      "text": "Cậu dâng lên quá cao \\N trong mọi trận đấu ở đội chính."
+    },
+    {
+      "start": 640.89,
+      "end": 642.27,
+      "text": "Không giống cậu gì hết."
+    },
+    {
+      "start": 649.38,
+      "end": 652.72,
+      "text": "Cậu chỉ đang cố tạo ấn tượng thôi."
+    },
+    {
+      "start": 653.34,
+      "end": 654.8,
+      "text": "Ngay trận ACL vừa rồi,"
+    },
+    {
+      "start": 655.55,
+      "end": 659.8,
+      "text": "cậu cố tình chạm bóng hai nhịp \\N thay vì chuyền một chạm mượt mà."
+    },
+    {
+      "start": 671.03,
+      "end": 673.37,
+      "text": "Cậu muốn phô diễn kỹ thuật"
+    },
+    {
+      "start": 673.37,
+      "end": 676.42,
+      "text": "cho quản lý \\N và người hâm mộ thấy trước khi chuyền."
+    },
+    {
+      "start": 677.41,
+      "end": 678.87,
+      "text": "Tôi biết cậu làm gì."
+    },
+    {
+      "start": 686.86,
+      "end": 689.4,
+      "text": "Cậu muốn mọi người công nhận cậu đá chính."
+    },
+    {
+      "start": 689.98,
+      "end": 692.36,
+      "text": "Tôi hiểu cảm giác của cậu, Kuribayashi."
+    },
+    {
+      "start": 701.25,
+      "end": 706.51,
+      "text": "Nhưng tôi thấy \\N có vẻ cậu đang mất bình tĩnh."
+    },
+    {
+      "start": 706.5,
+      "end": 710.8,
+      "text": "Có lẽ là do đám đông ngoài kia."
+    },
+    {
+      "start": 721.33,
+      "end": 725.33,
+      "text": "Cậu đang đánh mất chính mình \\N khi cố đáp ứng kỳ vọng của họ."
+    },
+    {
+      "start": 726.12,
+      "end": 729.79,
+      "text": "Tôi muốn giúp cậu kiềm chế việc đó lại."
+    },
+    {
+      "start": 746.19,
+      "end": 749.82,
+      "text": "Nếu em mất bình tĩnh"
+    },
+    {
+      "start": 749.82,
+      "end": 753.91,
+      "text": "thì anh lo nhất chuyện gì, HLV Fukuda?"
+    },
+    {
+      "start": 753.91,
+      "end": 756.75,
+      "text": "À thì…"
+    },
+    {
+      "start": 767.46,
+      "end": 769.83,
+      "text": "Bị chấn thương, tôi nghĩ vậy."
+    },
+    {
+      "start": 774.16,
+      "end": 775.5,
+      "text": "Các cậu cũng thế."
+    },
+    {
+      "start": 776.67,
+      "end": 778.3,
+      "text": "Đừng có để bị thương."
+    },
+    {
+      "start": 778.83,
+      "end": 780.33,
+      "text": "Giữ trực giác nhạy bén."
+    },
+    {
+      "start": 787.44,
+      "end": 790.53,
+      "text": "Nếu thấy nguy hiểm, \\N tôi muốn các cậu có can đảm để lùi lại."
+    },
+    {
+      "start": 791.36,
+      "end": 795.03,
+      "text": "Xin lỗi vì chỉ đạo mơ hồ, \\N nhưng đó là mọi thứ tôi có thể nói."
+    },
+    {
+      "start": 804.39,
+      "end": 805.39,
+      "text": "Em hiểu rồi."
+    },
+    {
+      "start": 805.93,
+      "end": 807.72,
+      "text": "Em sẽ theo chỉ đạo của anh."
+    },
+    {
+      "start": 813.32,
+      "end": 815.11,
+      "text": "Nghe ớn quá đi."
+    },
+    {
+      "start": 815.12,
+      "end": 816.58,
+      "text": "Cậu muốn gì ở tôi hả?"
+    },
+    {
+      "start": 822.65,
+      "end": 825.4,
+      "text": "Phải, chuyện đó thực ra…"
+    },
+    {
+      "start": 827.74,
+      "end": 829.45,
+      "text": "lại khiến em thấy nhẹ nhõm."
+    },
+    {
+      "start": 830.49,
+      "end": 833.2,
+      "text": "Garulla thực sự muốn giữ cậu ở lại."
+    },
+    {
+      "start": 833.7,
+      "end": 836.33,
+      "text": "Ông ấy dặn tôi là việc này chỉ hai tháng."
+    },
+    {
+      "start": 845.07,
+      "end": 848.15,
+      "text": "Thật vậy sao? \\N Dù sao thì hôm nay em sẽ đi ngủ."
+    },
+    {
+      "start": 848.15,
+      "end": 850.74,
+      "text": "Sáng nay em vừa từ Việt Nam về."
+    },
+    {
+      "start": 850.73,
+      "end": 853.11,
+      "text": "Được rồi, nghỉ ngơi cho tốt nhé."
+    },
+    {
+      "start": 862.37,
+      "end": 863.96,
+      "text": "À, nhân tiện,"
+    },
+    {
+      "start": 865.04,
+      "end": 867.46,
+      "text": "ai sẽ đá hậu vệ cánh thế?"
+    },
+    {
+      "start": 868.5,
+      "end": 869.71,
+      "text": "Vẫn chưa quyết định."
+    },
+    {
+      "start": 877.98,
+      "end": 878.81,
+      "text": "Em hiểu rồi."
+    },
+    {
+      "start": 881.24,
+      "end": 885.41,
+      "text": "Được rồi. Tôi đi đây. \\N Mấy cậu đừng có đi tập muộn đấy."
+    },
+    {
+      "start": 885.41,
+      "end": 886.54,
+      "text": "Rõ ạ."
+    },
+    {
+      "start": 899.61,
+      "end": 903.24,
+      "text": "Họ nói chuyện \\N ở đẳng cấp khác hẳn. Chết tiệt!"
+    },
+    {
+      "start": 903.86,
+      "end": 908.53,
+      "text": "Cậu ta cố tình \\N phô diễn kỹ thuật ở ACL sao?"
+    },
+    {
+      "start": 909.2,
+      "end": 911.79,
+      "text": "Và anh ấy bắt cậu ta về vì nguy hiểm?"
+    },
+    {
+      "start": 924.98,
+      "end": 927.57,
+      "text": "Cuộc trò chuyện của họ \\N đã vượt xa cấp độ chuyên nghiệp."
+    },
+    {
+      "start": 928.15,
+      "end": 931.53,
+      "text": "Nhưng mọi chuyện \\N mới chỉ bắt đầu thôi, Kuribayashi."
+    },
+    {
+      "start": 931.53,
+      "end": 935.49,
+      "text": "Tôi không có ý định an phận \\N làm người đứng sau cậu đâu."
+    },
+    {
+      "start": 946.15,
+      "end": 947.44,
+      "text": "Tôi sẽ vượt qua cậu!"
+    },
+    {
+      "start": 948.11,
+      "end": 949.7,
+      "text": "Tôi thề đấy!"
+    },
+    {
+      "start": 950.44,
+      "end": 954.57,
+      "text": "Kuribayashi trở lại thế này \\N chắc chắn đội bóng sẽ tràn đầy khí thế."
+    },
+    {
+      "start": 963.09,
+      "end": 965.0,
+      "text": "Ừ. Tôi rất mong chờ đấy."
+    },
+    {
+      "start": 965.67,
+      "end": 967.76,
+      "text": "Esperion mạnh nhất sẽ khó bị đánh bại."
+    },
+    {
+      "start": 968.3,
+      "end": 971.93,
+      "text": "Nhắc mới nhớ, không biết \\N họ có giúp chúng ta vững hơn không,"
+    },
+    {
+      "start": 980.87,
+      "end": 983.41,
+      "text": "nhưng hôm nay \\N có vài tân binh gia nhập đấy."
+    },
+    {
+      "start": 983.4,
+      "end": 986.24,
+      "text": "Được đôn lên từ đội B. \\N Bốn học sinh năm nhất."
+    },
+    {
+      "start": 986.24,
+      "end": 989.16,
+      "text": "Khá khen cho cậu \\N vì nắm rõ mấy chuyện đó, Taira."
+    },
+    {
+      "start": 997.55,
+      "end": 998.71,
+      "text": "Có Kuroda và…"
+    },
+    {
+      "start": 998.71,
+      "end": 1001.63,
+      "text": "Chúng ta đâu cần biết tên mấy đứa đó."
+    },
+    {
+      "start": 1002.29,
+      "end": 1004.25,
+      "text": "Dù gì lúc đầu cũng đâu theo kịp."
+    },
+    {
+      "start": 1016.47,
+      "end": 1018.05,
+      "text": "Hồi hộp thật nhỉ?"
+    },
+    {
+      "start": 1018.05,
+      "end": 1018.88,
+      "text": "Ừ."
+    },
+    {
+      "start": 1043.67,
+      "end": 1045.8,
+      "text": "Mặt cỏ tự nhiên mềm mại."
+    },
+    {
+      "start": 1046.88,
+      "end": 1049.51,
+      "text": "Đội A lúc nào cũng được tập ở đây."
+    },
+    {
+      "start": 1057.87,
+      "end": 1059.29,
+      "text": "Vô địch Premier League."
+    },
+    {
+      "start": 1059.91,
+      "end": 1061.45,
+      "text": "Đội thiếu niên mạnh nhất."
+    },
+    {
+      "start": 1066.59,
+      "end": 1067.43,
+      "text": "Mình…"
+    },
+    {
+      "start": 1068.93,
+      "end": 1071.6,
+      "text": "cuối cùng cũng đã chạm tới vạch xuất phát!"
+    },
+    {
+      "start": 1093.43,
+      "end": 1096.1,
+      "text": "Chị của Tachibana."
+    },
+    {
+      "start": 1098.35,
+      "end": 1099.52,
+      "text": "Cậu là…"
+    },
+    {
+      "start": 1099.52,
+      "end": 1102.15,
+      "text": "Cậu đến xem đội thiếu niên của bọn tôi à?"
+    },
+    {
+      "start": 1102.15,
+      "end": 1104.74,
+      "text": "Hôm nay tôi được nghỉ tập"
+    },
+    {
+      "start": 1111.72,
+      "end": 1113.39,
+      "text": "nên đến xem thử."
+    },
+    {
+      "start": 1113.39,
+      "end": 1117.39,
+      "text": "Đây là đội A. \\N Tachibana không có ở đây đâu."
+    },
+    {
+      "start": 1118.52,
+      "end": 1120.06,
+      "text": "Tôi cũng là cầu thủ,"
+    },
+    {
+      "start": 1129.3,
+      "end": 1130.3,
+      "text": "nên tôi tò mò."
+    },
+    {
+      "start": 1130.88,
+      "end": 1131.71,
+      "text": "Về cậu ấy."
+    },
+    {
+      "start": 1138.27,
+      "end": 1139.56,
+      "text": "Hôm qua ta vừa đấu."
+    },
+    {
+      "start": 1140.23,
+      "end": 1141.48,
+      "text": "Có vài người mới ở đây."
+    },
+    {
+      "start": 1141.98,
+      "end": 1143.9,
+      "text": "Chúng ta sẽ tập bài nhẹ nhàng."
+    },
+    {
+      "start": 1150.13,
+      "end": 1151.55,
+      "text": "Chuyền bóng kiểu Osim."
+    },
+    {
+      "start": 1152.09,
+      "end": 1156.47,
+      "text": "Ở đội B ta cũng tập bài này suốt. \\N Anh ấy hạ độ khó cho bằng bọn mình à?"
+    },
+    {
+      "start": 1156.47,
+      "end": 1158.51,
+      "text": "Trước hết,"
+    },
+    {
+      "start": 1167.54,
+      "end": 1168.83,
+      "text": "không đỡ bóng."
+    },
+    {
+      "start": 1168.83,
+      "end": 1170.92,
+      "text": "Chỉ được chuyền một chạm."
+    },
+    {
+      "start": 1170.92,
+      "end": 1175.72,
+      "text": "Một hậu vệ. Từ đó \\N chúng ta sẽ tăng dần độ khó. Thế thôi."
+    },
+    {
+      "start": 1184.05,
+      "end": 1184.91,
+      "text": "Dạ rõ."
+    },
+    {
+      "start": 1189.96,
+      "end": 1191.42,
+      "text": "Sao thế, Ashito?"
+    },
+    {
+      "start": 1196.51,
+      "end": 1198.59,
+      "text": "Bên kia là đội chính."
+    },
+    {
+      "start": 1198.59,
+      "end": 1199.51,
+      "text": "Anh Taira."
+    },
+    {
+      "start": 1199.51,
+      "end": 1203.51,
+      "text": "Anh Taira! Nhìn thấy mặt anh nhẹ cả người."
+    },
+    {
+      "start": 1210.66,
+      "end": 1214.91,
+      "text": "Mấy người mới các cậu \\N sẽ đá với bọn tôi ở nhóm dự bị của đội A."
+    },
+    {
+      "start": 1220.67,
+      "end": 1222.71,
+      "text": "Hả? Yuma đâu?"
+    },
+    {
+      "start": 1223.88,
+      "end": 1227.76,
+      "text": "Bọn tôi đang thiếu tiền đạo, \\N nhưng cậu ấy thực sự giỏi đấy."
+    },
+    {
+      "start": 1227.76,
+      "end": 1230.97,
+      "text": "Yuma, có chuyện gì \\N với việc thu hẹp khoảng cách vậy?"
+    },
+    {
+      "start": 1241.95,
+      "end": 1244.7,
+      "text": "Gì thế? Cậu muốn tham gia cùng họ à?"
+    },
+    {
+      "start": 1245.21,
+      "end": 1246.38,
+      "text": "- Vâng. \\N - Hả?"
+    },
+    {
+      "start": 1247.0,
+      "end": 1251.38,
+      "text": "Nếu phải gặp đối thủ chênh lệch trình độ \\N thì gặp càng sớm càng tốt."
+    },
+    {
+      "start": 1260.96,
+      "end": 1263.0,
+      "text": "Thằng nhóc này đang nói gì thế?"
+    },
+    {
+      "start": 1263.62,
+      "end": 1266.66,
+      "text": "À, cậu ấy chỉ nhiệt huyết thôi, Matsunaga."
+    },
+    {
+      "start": 1266.67,
+      "end": 1270.09,
+      "text": "Mới ngày đầu mà cậu có vẻ vội vàng,"
+    },
+    {
+      "start": 1279.89,
+      "end": 1283.77,
+      "text": "nhưng ngay cả ở nhóm dự bị của đội A, \\N lúc đầu cậu cũng không theo kịp đâu."
+    },
+    {
+      "start": 1284.61,
+      "end": 1285.78,
+      "text": "Cậu sẽ sớm nhận ra."
+    },
+    {
+      "start": 1298.73,
+      "end": 1299.86,
+      "text": "- Kuroda! \\N - Ashito!"
+    },
+    {
+      "start": 1299.85,
+      "end": 1300.81,
+      "text": "Taira!"
+    },
+    {
+      "start": 1300.81,
+      "end": 1302.06,
+      "text": "- Matsunaga! \\N - Baba!"
+    },
+    {
+      "start": 1306.2,
+      "end": 1308.24,
+      "text": "Bài tập chuyền bóng kiểu Osim."
+    },
+    {
+      "start": 1308.92,
+      "end": 1311.63,
+      "text": "Người giữ bóng chỉ định mục tiêu tiếp theo"
+    },
+    {
+      "start": 1311.63,
+      "end": 1314.72,
+      "text": "bằng cách gọi tên một cầu thủ khác."
+    },
+    {
+      "start": 1324.21,
+      "end": 1328.51,
+      "text": "Người nhận bóng \\N phải chuyền cho đúng cầu thủ đó."
+    },
+    {
+      "start": 1329.0,
+      "end": 1331.17,
+      "text": "Và ngay trước khi bóng tới chân,"
+    },
+    {
+      "start": 1331.17,
+      "end": 1334.17,
+      "text": "người nhận cần phải biết \\N mục tiêu của mình ở đâu,"
+    },
+    {
+      "start": 1344.28,
+      "end": 1345.41,
+      "text": "chọn một cầu thủ"
+    },
+    {
+      "start": 1345.4,
+      "end": 1349.15,
+      "text": "sao cho đường chuyền tiếp theo \\N không dễ bị hậu vệ cắt bóng."
+    },
+    {
+      "start": 1349.83,
+      "end": 1353.46,
+      "text": "Rồi chỉ định người tiếp theo và chuyền. \\N Một vòng lặp liên tục."
+    },
+    {
+      "start": 1363.23,
+      "end": 1368.99,
+      "text": "Sẽ hỏng bét nếu chỉ nhìn bóng \\N hoặc dựa vào động tác chân."
+    },
+    {
+      "start": 1369.57,
+      "end": 1371.57,
+      "text": "Quan sát xung quanh và nghĩ đi."
+    },
+    {
+      "start": 1372.07,
+      "end": 1374.74,
+      "text": "Bài tập này \\N đẩy các kỹ năng đó tới giới hạn."
+    },
+    {
+      "start": 1386.4,
+      "end": 1387.18,
+      "text": "Kuroda!"
+    },
+    {
+      "start": 1388.6,
+      "end": 1389.73,
+      "text": "Chậm quá!"
+    },
+    {
+      "start": 1392.1,
+      "end": 1392.98,
+      "text": "Đổi người."
+    },
+    {
+      "start": 1394.81,
+      "end": 1397.48,
+      "text": "Họ chuyền bóng quá nhanh!"
+    },
+    {
+      "start": 1397.48,
+      "end": 1398.61,
+      "text": "Kuroda!"
+    },
+    {
+      "start": 1398.61,
+      "end": 1400.28,
+      "text": "- Osieck! \\N - Aoi!"
+    },
+    {
+      "start": 1405.9,
+      "end": 1407.18,
+      "text": "Otomo!"
+    },
+    {
+      "start": 1407.18,
+      "end": 1410.43,
+      "text": "Não mình không theo kịp chân."
+    },
+    {
+      "start": 1410.44,
+      "end": 1414.69,
+      "text": "Bóng tới nơi trong khi mình \\N vẫn loay hoay tìm người tiếp theo!"
+    },
+    {
+      "start": 1423.58,
+      "end": 1426.95,
+      "text": "Mà từ đây \\N họ còn định tăng độ khó lên nữa sao?"
+    },
+    {
+      "start": 1426.95,
+      "end": 1428.79,
+      "text": "Đùa nhau à…"
+    },
+    {
+      "start": 1428.79,
+      "end": 1430.0,
+      "text": "Aoi!"
+    },
+    {
+      "start": 1436.52,
+      "end": 1437.93,
+      "text": "Này, nhóc năm nhất."
+    },
+    {
+      "start": 1438.51,
+      "end": 1442.76,
+      "text": "Trước khi mạnh mồm thì chứng minh \\N cậu làm được những điều cơ bản đã."
+    },
+    {
+      "start": 1442.76,
+      "end": 1443.93,
+      "text": "Ozzie!"
+    },
+    {
+      "start": 1453.1,
+      "end": 1455.35,
+      "text": "Nếu chứng minh được bản thân ở đây,"
+    },
+    {
+      "start": 1455.35,
+      "end": 1459.06,
+      "text": "dù mới học trung học \\N thì mình vẫn có thể đá giải J.League."
+    },
+    {
+      "start": 1459.07,
+      "end": 1461.61,
+      "text": "Đó là mục tiêu của đội chính J Thiếu niên."
+    },
+    {
+      "start": 1470.27,
+      "end": 1472.43,
+      "text": "Nếu làm được \\N thì ước mơ sẽ thành hiện thực."
+    },
+    {
+      "start": 1472.43,
+      "end": 1474.97,
+      "text": "Mình có thể gửi tiền về cho mẹ!"
+    },
+    {
+      "start": 1476.06,
+      "end": 1479.56,
+      "text": "Lúc đầu cậu cũng không theo kịp đâu. \\N Cậu sẽ sớm nhận ra."
+    },
+    {
+      "start": 1488.95,
+      "end": 1492.2,
+      "text": "Dù có phải bò, \\N mình cũng sẽ không rớt xuống đội B!"
+    },
+    {
+      "start": 1492.78,
+      "end": 1495.57,
+      "text": "Mình sẽ chứng minh bản thân ngay tại đây!"
+    },
+    {
+      "start": 1507.08,
+      "end": 1508.04,
+      "text": "Kuroda!"
+    },
+    {
+      "start": 1508.04,
+      "end": 1509.0,
+      "text": "- Aoi! \\N - Matsunaga!"
+    },
+    {
+      "start": 1509.0,
+      "end": 1510.25,
+      "text": "Otomo!"
+    },
+    {
+      "start": 1514.78,
+      "end": 1516.7,
+      "text": "Tên này…"
+    },
+    {
+      "start": 1517.9,
+      "end": 1520.82,
+      "text": "Ashito thực sự đang theo kịp!"
+    },
+    {
+      "start": 1529.8,
+      "end": 1531.01,
+      "text": "Tốt lắm!"
+    },
+    {
+      "start": 1531.01,
+      "end": 1533.3,
+      "text": "Thêm một quả bóng nữa nào!"
+    },
+    {
+      "start": 1533.3,
+      "end": 1534.97,
+      "text": "Gì cơ?"
+    },
+    {
+      "start": 1540.29,
+      "end": 1543.58,
+      "text": "Mấy cậu mới đến trông có vẻ mệt rồi."
+    },
+    {
+      "start": 1543.58,
+      "end": 1546.21,
+      "text": "À mà mọi thứ từ nãy đến giờ chỉ là cơ bản."
+    },
+    {
+      "start": 1546.21,
+      "end": 1549.09,
+      "text": "Kể từ bây giờ, \\N việc áp dụng nó mới quan trọng."
+    },
+    {
+      "start": 1557.99,
+      "end": 1559.85,
+      "text": "Áp dụng?"
+    },
+    {
+      "start": 1560.69,
+      "end": 1563.07,
+      "text": "Đùa nhau chắc."
+    },
+    {
+      "start": 1563.06,
+      "end": 1567.9,
+      "text": "Tốc độ này mình còn chưa theo kịp, \\N giờ lại thêm hai quả bóng nữa sao?"
+    },
+    {
+      "start": 1589.12,
+      "end": 1591.37,
+      "text": "Ra quyết định quá chậm!"
+    },
+    {
+      "start": 1591.37,
+      "end": 1594.75,
+      "text": "Đừng nhìn bóng! \\N Nhìn cầu thủ đi! Nhìn khoảng trống đi!"
+    },
+    {
+      "start": 1601.78,
+      "end": 1604.45,
+      "text": "Mình không làm được."
+    },
+    {
+      "start": 1604.45,
+      "end": 1608.33,
+      "text": "Giờ có hai quả bóng, \\N mình lại càng có ít thời gian nghĩ hơn."
+    },
+    {
+      "start": 1608.91,
+      "end": 1612.0,
+      "text": "Mình và Otomo \\N đang mắc hết lỗi này đến lỗi khác,"
+    },
+    {
+      "start": 1622.37,
+      "end": 1624.15,
+      "text": "nên bọn mình cứ phải phòng thủ."
+    },
+    {
+      "start": 1627.56,
+      "end": 1629.23,
+      "text": "Chỉ hai đứa mình thôi sao?"
+    },
+    {
+      "start": 1634.26,
+      "end": 1636.34,
+      "text": "Này, đừng lười, mấy nhóc năm nhất!"
+    },
+    {
+      "start": 1636.34,
+      "end": 1637.84,
+      "text": "Đến đây rồi này, Kuroda!"
+    },
+    {
+      "start": 1643.48,
+      "end": 1644.61,
+      "text": "- Kuroda! \\N - Baba!"
+    },
+    {
+      "start": 1644.61,
+      "end": 1645.69,
+      "text": "- Togashi! \\N - Aoi!"
+    },
+    {
+      "start": 1645.69,
+      "end": 1646.73,
+      "text": "Matsunaga!"
+    },
+    {
+      "start": 1650.13,
+      "end": 1651.09,
+      "text": "- Baba! \\N - Matsunaga!"
+    },
+    {
+      "start": 1651.09,
+      "end": 1652.01,
+      "text": "- Aoi! \\N - Togashi!"
+    },
+    {
+      "start": 1652.01,
+      "end": 1653.22,
+      "text": "Baba!"
+    },
+    {
+      "start": 1656.94,
+      "end": 1659.78,
+      "text": "Kuroda thì dễ hiểu vì cậu ta từng ở đội A,"
+    },
+    {
+      "start": 1659.78,
+      "end": 1661.82,
+      "text": "nhưng thằng tóc xoăn kia cũng theo kịp."
+    },
+    {
+      "start": 1662.44,
+      "end": 1665.94,
+      "text": "Nó vẫn trụ vững \\N ngay cả khi có hai quả bóng."
+    },
+    {
+      "start": 1675.09,
+      "end": 1676.01,
+      "text": "Kuroda!"
+    },
+    {
+      "start": 1676.01,
+      "end": 1676.93,
+      "text": "Taira!"
+    },
+    {
+      "start": 1676.92,
+      "end": 1677.88,
+      "text": "Togashi!"
+    },
+    {
+      "start": 1680.77,
+      "end": 1681.68,
+      "text": "Baba!"
+    },
+    {
+      "start": 1681.68,
+      "end": 1682.68,
+      "text": "- Ashito! \\N - Baba!"
+    },
+    {
+      "start": 1683.27,
+      "end": 1686.31,
+      "text": "Tốc độ đáng kinh ngạc! \\N Nhanh hơn đội B nhiều quá."
+    },
+    {
+      "start": 1691.95,
+      "end": 1692.9,
+      "text": "Nhưng…"
+    },
+    {
+      "start": 1692.9,
+      "end": 1696.45,
+      "text": "Cậu tưởng mọi thứ sẽ ổn \\N nếu cậu gia nhập đội Thiếu niên chứ gì?"
+    },
+    {
+      "start": 1696.45,
+      "end": 1700.29,
+      "text": "Cậu nghĩ sẽ làm được \\N vào một ngày nào đó, đúng không?"
+    },
+    {
+      "start": 1708.73,
+      "end": 1710.97,
+      "text": "Mình đã khác xưa rồi!"
+    },
+    {
+      "start": 1710.97,
+      "end": 1715.43,
+      "text": "Phải là lúc này! \\N Mình phải làm được việc này ngay lúc này!"
+    },
+    {
+      "start": 1715.43,
+      "end": 1717.47,
+      "text": "Chính vì mình đã được lên đội A!"
+    },
+    {
+      "start": 1726.31,
+      "end": 1727.56,
+      "text": "Togashi!"
+    },
+    {
+      "start": 1727.98,
+      "end": 1730.48,
+      "text": "Một đường chuyền bổng. Quả này là…"
+    },
+    {
+      "start": 1730.48,
+      "end": 1734.9,
+      "text": "Tôi đang thử cậu đấy, nhóc năm nhất. \\N Để xem cậu xử lý quả này thế nào."
+    },
+    {
+      "start": 1747.75,
+      "end": 1748.71,
+      "text": "Là ai đây?"
+    },
+    {
+      "start": 1749.67,
+      "end": 1750.96,
+      "text": "Từ chỗ của Togashi,"
+    },
+    {
+      "start": 1755.57,
+      "end": 1756.53,
+      "text": "là ai đây?"
+    },
+    {
+      "start": 1758.57,
+      "end": 1760.11,
+      "text": "Matsunaga!"
+    },
+    {
+      "start": 1767.75,
+      "end": 1770.54,
+      "text": "Khỉ gió! Mình đã thấy chính xác \\N chỗ cần chuyền!"
+    },
+    {
+      "start": 1771.04,
+      "end": 1775.0,
+      "text": "Nhưng bộ chân \\N và bước đầu của mình lại không theo kịp!"
+    },
+    {
+      "start": 1775.0,
+      "end": 1775.88,
+      "text": "Khốn kiếp!"
+    },
+    {
+      "start": 1785.4,
+      "end": 1788.99,
+      "text": "Đành chịu. Lượt tới tôi cướp bóng. \\N Tiếp tục chuyền đi."
+    },
+    {
+      "start": 1794.51,
+      "end": 1798.39,
+      "text": "Sao thế? Tiếp tục nào. \\N Mau lên, tiếp tục thôi, mọi người."
+    },
+    {
+      "start": 1804.29,
+      "end": 1806.21,
+      "text": "Ashito! Cả Kuroda nữa."
+    },
+    {
+      "start": 1806.88,
+      "end": 1808.47,
+      "text": "Qua đây đá với họ chút."
+    },
+    {
+      "start": 1816.12,
+      "end": 1819.29,
+      "text": "Thằng nhóc năm nhất tóc xoăn đó \\N di chuyển tốt đấy chứ."
+    },
+    {
+      "start": 1824.85,
+      "end": 1826.43,
+      "text": "Anh Kuribayashi?"
+    },
+    {
+      "start": 1826.44,
+      "end": 1829.11,
+      "text": "Tên cậu ấy là Aoi Ashito, đúng không?"
+    },
+    {
+      "start": 1829.11,
+      "end": 1831.07,
+      "text": "Sao anh lại ở đây?"
+    },
+    {
+      "start": 1837.44,
+      "end": 1841.6,
+      "text": "Gần như tất cả mọi người ngoài kia \\N hôm nay đều đến để xem anh đấy."
+    },
+    {
+      "start": 1841.6,
+      "end": 1844.44,
+      "text": "Mấy nhà tài trợ các em \\N thích lên lớp thật đấy."
+    },
+    {
+      "start": 1844.44,
+      "end": 1848.07,
+      "text": "Vừa từ Việt Nam về, \\N anh đã ngủ được chút nào chưa?"
+    },
+    {
+      "start": 1859.33,
+      "end": 1861.37,
+      "text": "Rồi, tôi ngủ được khoảng 30 phút."
+    },
+    {
+      "start": 1864.93,
+      "end": 1867.93,
+      "text": "Có vẻ cậu nhóc Aoi kia \\N sắp vào tập cùng đội chính."
+    },
+    {
+      "start": 1868.77,
+      "end": 1869.9,
+      "text": "Chắc sẽ hay ho đây."
+    },
+    {
+      "start": 1870.52,
+      "end": 1873.94,
+      "text": "Cho hai đứa này chơi không bị phạt."
+    },
+    {
+      "start": 1883.84,
+      "end": 1886.39,
+      "text": "Dù mắc lỗi \\N cũng sẽ không bị xuống phòng ngự."
+    },
+    {
+      "start": 1897.8,
+      "end": 1899.76,
+      "text": "HLV Fukuda khó đoán thật."
+    },
+    {
+      "start": 1900.3,
+      "end": 1902.39,
+      "text": "Chắc anh ấy chỉ đang thử bọn mình."
+    },
+    {
+      "start": 1903.05,
+      "end": 1905.39,
+      "text": "Nhưng mà Aoi, đây là cơ hội của ta."
+    },
+    {
+      "start": 1913.87,
+      "end": 1917.08,
+      "text": "Đúng, Kuroda. Cho họ thấy ta làm được gì."
+    },
+    {
+      "start": 1930.86,
+      "end": 1933.24,
+      "text": "Gì đây? Cái quái gì thế này?"
+    },
+    {
+      "start": 1933.24,
+      "end": 1934.24,
+      "text": "- Shimura! \\N - Yuma!"
+    },
+    {
+      "start": 1934.24,
+      "end": 1935.41,
+      "text": "Akutsu."
+    },
+    {
+      "start": 1940.11,
+      "end": 1941.1,
+      "text": "Tốc độ này…"
+    },
+    {
+      "start": 1941.1,
+      "end": 1945.73,
+      "text": "Tất cả bọn họ đều lập tức chuyển đổi \\N cách di chuyển chân, chuyền nhẹ"
+    },
+    {
+      "start": 1945.73,
+      "end": 1949.23,
+      "text": "và chuyền nhanh để luân chuyển bóng."
+    },
+    {
+      "start": 1958.45,
+      "end": 1961.65,
+      "text": "Ý tưởng chuyền bóng của họ \\N cũng hoàn toàn khác biệt."
+    },
+    {
+      "start": 1961.66,
+      "end": 1965.16,
+      "text": "Mình không theo kịp. \\N Mình không thể bắt được nhịp!"
+    },
+    {
+      "start": 1965.16,
+      "end": 1966.41,
+      "text": "Shimu…"
+    },
+    {
+      "start": 1979.38,
+      "end": 1980.22,
+      "text": "Bóng."
+    },
+    {
+      "start": 1981.43,
+      "end": 1983.31,
+      "text": "Xin bóng nào."
+    },
+    {
+      "start": 1993.15,
+      "end": 1996.15,
+      "text": "Akutsu, hôm nay cậu chơi dưới sức đấy."
+    },
+    {
+      "start": 1997.07,
+      "end": 2000.49,
+      "text": "Ra tranh bóng đi. Cậu mất tập trung quá."
+    },
+    {
+      "start": 2000.99,
+      "end": 2002.12,
+      "text": "Có chuyện gì à?"
+    },
+    {
+      "start": 2024.36,
+      "end": 2025.24,
+      "text": "Đừng thua."
+    },
+    {
+      "start": 2026.03,
+      "end": 2026.95,
+      "text": "Đừng thua."
+    },
+    {
+      "start": 2027.7,
+      "end": 2028.66,
+      "text": "- Đừng! \\N - Shimura."
+    },
+    {
+      "start": 2033.11,
+      "end": 2034.64,
+      "text": "- Kiriki. \\N - Takasugi."
+    },
+    {
+      "start": 2034.65,
+      "end": 2035.61,
+      "text": "Yoshitsune."
+    },
+    {
+      "start": 2035.61,
+      "end": 2036.99,
+      "text": "- Yamada. \\N - Đừng thua."
+    },
+    {
+      "start": 2040.97,
+      "end": 2042.29,
+      "text": "Không được thua!"
+    },
+    {
+      "start": 2042.29,
+      "end": 2043.29,
+      "text": "Yoshitsune."
+    },
+    {
+      "start": 2043.29,
+      "end": 2044.67,
+      "text": "Chính là lúc này!"
+    },
+    {
+      "start": 2048.47,
+      "end": 2049.25,
+      "text": "- Aoi! \\N - Shimura!"
+    },
+    {
+      "start": 2049.83,
+      "end": 2051.08,
+      "text": "Là ai đây?"
+    },
+    {
+      "start": 2051.08,
+      "end": 2053.33,
+      "text": "Lựa chọn tốt nhất lúc này là ai?"
+    },
+    {
+      "start": 2059.58,
+      "end": 2060.62,
+      "text": "Yuma!"
+    },
+    {
+      "start": 2069.59,
+      "end": 2070.88,
+      "text": "Chết tiệt!"
+    },
+    {
+      "start": 2071.47,
+      "end": 2072.3,
+      "text": "HLV ơi,"
+    },
+    {
+      "start": 2072.97,
+      "end": 2076.31,
+      "text": "có hai đứa năm nhất \\N thì đây không còn được tính là tập."
+    },
+    {
+      "start": 2084.54,
+      "end": 2085.79,
+      "text": "Cho hai cậu ta về đi."
+    },
+    {
+      "start": 2094.14,
+      "end": 2095.68,
+      "text": "Vất vả rồi!"
+    },
+    {
+      "start": 2095.68,
+      "end": 2098.14,
+      "text": "Thôi, có thể làm gì chứ?"
+    },
+    {
+      "start": 2098.14,
+      "end": 2101.35,
+      "text": "Làm sao hoàn hảo ngay từ đầu được."
+    },
+    {
+      "start": 2108.71,
+      "end": 2111.41,
+      "text": "Hai đứa đi rửa mặt đi."
+    },
+    {
+      "start": 2119.88,
+      "end": 2120.92,
+      "text": "Ashito…"
+    },
+    {
+      "start": 2122.63,
+      "end": 2123.88,
+      "text": "Họ không thèm nhìn."
+    },
+    {
+      "start": 2125.43,
+      "end": 2130.19,
+      "text": "Không một ai trong số họ thèm nhìn mình!"
+    },
+    {
+      "start": 2155.27,
+      "end": 2156.1,
+      "text": "Tuyệt…"
+    },
+    {
+      "start": 2157.98,
+      "end": 2159.86,
+      "text": "Tuyệt quá!"
+    },
+    {
+      "start": 2161.19,
+      "end": 2163.15,
+      "text": "Đây chính là đội A!"
+    },
+    {
+      "start": 2164.2,
+      "end": 2165.45,
+      "text": "Tuyệt vời…"
+    },
+    {
+      "start": 2166.2,
+      "end": 2168.54,
+      "text": "Tuyệt quá!"
+    },
+    {
+      "start": 2287.14,
+      "end": 2288.39,
+      "text": "Họ đang thử thách."
+    },
+    {
+      "start": 2288.39,
+      "end": 2290.39,
+      "text": "- Kuribayashi. \\N - Aoi,"
+    },
+    {
+      "start": 2290.39,
+      "end": 2293.89,
+      "text": "- cậu có hiểu cậu ấy không? \\N - Cậu ấy rất tuyệt vời."
+    },
+    {
+      "start": 2300.79,
+      "end": 2302.03,
+      "text": "Aoi, về vị trí hậu vệ cánh…"
+    },
+    {
+      "start": 2302.66,
+      "end": 2304.45,
+      "text": "- Đáng sợ. \\N - Cầu thủ thế hiếm lắm…"
+    },
+    {
+      "start": 2304.45,
+      "end": 2307.08,
+      "text": "Tốc độ của những người này… Thật là…"
+    },
+    {
+      "start": 2315.34,
+      "end": 2316.34,
+      "text": "Biên dịch: Quỳnh Chi"
+    }
+  ]
+}

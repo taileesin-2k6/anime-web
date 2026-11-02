@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
 import { getValidAccessToken } from '@/lib/gdrive-auth';
+import { getAllAnime } from '@/lib/db';
 
 export const dynamic = 'force-dynamic';
 export const maxDuration = 60;
@@ -19,29 +20,26 @@ function resolveMediaInfo(request: NextRequest): { targetFilename: string; gdriv
 
   if ((!targetFilename || !gdriveId) && (slug || ep || gdriveIdParam)) {
     try {
-      const animeJsonPath = path.join(process.cwd(), 'data', 'anime.json');
-      if (fs.existsSync(animeJsonPath)) {
-        const animeList = JSON.parse(fs.readFileSync(animeJsonPath, 'utf-8'));
-        for (const a of animeList) {
-          if (slug && a.slug !== slug && a.id !== slug) continue;
-          for (const item of a.episodes || []) {
-            if (gdriveIdParam && (item.gdriveId === gdriveIdParam || (item.videoUrl && item.videoUrl.includes(gdriveIdParam)))) {
-              targetFilename = targetFilename || item.filename || '';
-              gdriveId = gdriveId || item.gdriveId || '';
-              break;
-            }
-            const isChitoseEp2Alias = slug === 'chitose-kun-wa-ramune-bin-no-naka' && ep === '2' && item.episodeNumber === 15;
-            if (ep && (item.episodeNumber === parseInt(ep, 10) || isChitoseEp2Alias)) {
-              targetFilename = targetFilename || item.filename || '';
-              gdriveId = gdriveId || item.gdriveId || '';
-              break;
-            }
+      const animeList = getAllAnime();
+      for (const a of animeList) {
+        if (slug && a.slug !== slug && a.id !== slug) continue;
+        for (const item of a.episodes || []) {
+          if (gdriveIdParam && (item.gdriveId === gdriveIdParam || (item.videoUrl && item.videoUrl.includes(gdriveIdParam)))) {
+            targetFilename = targetFilename || item.filename || '';
+            gdriveId = gdriveId || item.gdriveId || '';
+            break;
           }
-          if (targetFilename && gdriveId) break;
+          const isChitoseEp2Alias = slug === 'chitose-kun-wa-ramune-bin-no-naka' && ep === '2' && item.episodeNumber === 15;
+          if (ep && (item.episodeNumber === parseInt(ep, 10) || isChitoseEp2Alias)) {
+            targetFilename = targetFilename || item.filename || '';
+            gdriveId = gdriveId || item.gdriveId || '';
+            break;
+          }
         }
+        if (targetFilename && gdriveId) break;
       }
     } catch (err) {
-      console.warn('Error finding media info from anime.json:', err);
+      console.warn('Error finding media info from anime list:', err);
     }
   }
 
@@ -407,63 +405,66 @@ export async function GET(request: NextRequest) {
   // Local fallback
   const filePathParam = request.nextUrl.searchParams.get('file') || targetFilename;
   if (filePathParam) {
-    let resolvedPath = filePathParam;
-    if (!fs.existsSync(resolvedPath)) {
-      const rel = filePathParam.replace(/^\/+/, '');
-      const pPublic = path.join(process.cwd(), 'public', rel);
-      const pVideos = path.join(process.cwd(), 'public', 'videos', rel);
-      const pRoot = path.join(process.cwd(), rel);
-      if (fs.existsSync(pPublic)) {
-        resolvedPath = pPublic;
-      } else if (fs.existsSync(pVideos)) {
-        resolvedPath = pVideos;
-      } else if (fs.existsSync(pRoot)) {
-        resolvedPath = pRoot;
+    try {
+      let resolvedPath = filePathParam;
+      if (typeof fs !== 'undefined' && fs.existsSync) {
+        if (!fs.existsSync(/*turbopackIgnore: true*/ resolvedPath)) {
+          const rel = filePathParam.replace(/^\/+/, '');
+          const pPublic = path.join(process.cwd(), 'public', rel);
+          const pVideos = path.join(process.cwd(), 'public', 'videos', rel);
+          if (fs.existsSync(/*turbopackIgnore: true*/ pPublic)) {
+            resolvedPath = pPublic;
+          } else if (fs.existsSync(/*turbopackIgnore: true*/ pVideos)) {
+            resolvedPath = pVideos;
+          }
+        }
+        resolvedPath = path.normalize(resolvedPath);
+
+        if (fs.existsSync(/*turbopackIgnore: true*/ resolvedPath)) {
+          const stat = fs.statSync(/*turbopackIgnore: true*/ resolvedPath);
+          const fileSize = stat.size;
+          const range = request.headers.get('range');
+
+          const ext = path.extname(resolvedPath).toLowerCase();
+          let contentType = 'video/mp4';
+          if (ext === '.mkv') contentType = 'video/x-matroska';
+          else if (ext === '.webm') contentType = 'video/webm';
+
+          if (range) {
+            const parts = range.replace(/bytes=/, '').split('-');
+            const start = parseInt(parts[0], 10);
+            const end = parts[1] ? parseInt(parts[1], 10) : fileSize - 1;
+            const chunksize = end - start + 1;
+
+            const fileStream = fs.createReadStream(/*turbopackIgnore: true*/ resolvedPath, { start, end });
+            const head = {
+              'Content-Range': `bytes ${start}-${end}/${fileSize}`,
+              'Accept-Ranges': 'bytes',
+              'Content-Length': chunksize.toString(),
+              'Content-Type': contentType,
+            };
+
+            return new NextResponse(fileStream as any, {
+              status: 206,
+              headers: head,
+            });
+          }
+
+          const fileStream = fs.createReadStream(/*turbopackIgnore: true*/ resolvedPath);
+          const head = {
+            'Accept-Ranges': 'bytes',
+            'Content-Length': fileSize.toString(),
+            'Content-Type': contentType,
+          };
+
+          return new NextResponse(fileStream as any, {
+            status: 200,
+            headers: head,
+          });
+        }
       }
-    }
-    resolvedPath = path.normalize(resolvedPath);
-
-    if (fs.existsSync(/*turbopackIgnore: true*/ resolvedPath)) {
-      const stat = fs.statSync(/*turbopackIgnore: true*/ resolvedPath);
-      const fileSize = stat.size;
-      const range = request.headers.get('range');
-
-      const ext = path.extname(resolvedPath).toLowerCase();
-      let contentType = 'video/mp4';
-      if (ext === '.mkv') contentType = 'video/x-matroska';
-      else if (ext === '.webm') contentType = 'video/webm';
-
-      if (range) {
-        const parts = range.replace(/bytes=/, '').split('-');
-        const start = parseInt(parts[0], 10);
-        const end = parts[1] ? parseInt(parts[1], 10) : fileSize - 1;
-        const chunksize = end - start + 1;
-
-        const fileStream = fs.createReadStream(/*turbopackIgnore: true*/ resolvedPath, { start, end });
-        const head = {
-          'Content-Range': `bytes ${start}-${end}/${fileSize}`,
-          'Accept-Ranges': 'bytes',
-          'Content-Length': chunksize.toString(),
-          'Content-Type': contentType,
-        };
-
-        return new NextResponse(fileStream as any, {
-          status: 206,
-          headers: head,
-        });
-      }
-
-      const fileStream = fs.createReadStream(/*turbopackIgnore: true*/ resolvedPath);
-      const head = {
-        'Accept-Ranges': 'bytes',
-        'Content-Length': fileSize.toString(),
-        'Content-Type': contentType,
-      };
-
-      return new NextResponse(fileStream as any, {
-        status: 200,
-        headers: head,
-      });
+    } catch {
+      // Local fallback unavailable
     }
   }
 

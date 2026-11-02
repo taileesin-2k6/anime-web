@@ -1,34 +1,50 @@
 import fs from 'fs';
 import path from 'path';
 import { Anime } from './types';
+import staticAnimeList from '../../data/anime.json';
 
 const dataDir = path.join(process.cwd(), 'data');
 const dbFilePath = path.join(dataDir, 'anime.json');
 
 function ensureDbFile(): void {
-  if (!fs.existsSync(dataDir)) {
-    fs.mkdirSync(dataDir, { recursive: true });
-  }
-  if (!fs.existsSync(dbFilePath)) {
-    fs.writeFileSync(dbFilePath, JSON.stringify([], null, 2), 'utf-8');
+  try {
+    if (typeof fs !== 'undefined' && fs.existsSync) {
+      if (!fs.existsSync(dataDir)) {
+        fs.mkdirSync(dataDir, { recursive: true });
+      }
+      if (!fs.existsSync(dbFilePath)) {
+        fs.writeFileSync(dbFilePath, JSON.stringify(staticAnimeList || [], null, 2), 'utf-8');
+      }
+    }
+  } catch (e) {
+    // Read-only filesystem or edge worker isolate
   }
 }
 
 export function getAllAnime(): Anime[] {
-  ensureDbFile();
   try {
-    const raw = fs.readFileSync(dbFilePath, 'utf-8');
-    const parsed = JSON.parse(raw);
-    return Array.isArray(parsed) ? parsed : [];
+    if (typeof fs !== 'undefined' && fs.existsSync && fs.existsSync(dbFilePath)) {
+      const raw = fs.readFileSync(dbFilePath, 'utf-8');
+      const parsed = JSON.parse(raw);
+      if (Array.isArray(parsed) && parsed.length > 0) {
+        return parsed as Anime[];
+      }
+    }
   } catch (error) {
-    console.error('Error reading anime db:', error);
-    return [];
+    // Read-only / isolate fallback
   }
+  return (staticAnimeList || []) as unknown as Anime[];
 }
 
 export function saveAllAnime(animes: Anime[]): void {
-  ensureDbFile();
-  fs.writeFileSync(dbFilePath, JSON.stringify(animes, null, 2), 'utf-8');
+  try {
+    ensureDbFile();
+    if (typeof fs !== 'undefined' && fs.writeFileSync) {
+      fs.writeFileSync(dbFilePath, JSON.stringify(animes, null, 2), 'utf-8');
+    }
+  } catch (e) {
+    console.warn('Cannot write to filesystem in this runtime:', e);
+  }
 }
 
 export function getAnimeByIdOrSlug(idOrSlug: string): Anime | null {
