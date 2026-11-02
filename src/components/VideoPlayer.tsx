@@ -63,6 +63,14 @@ export default function VideoPlayer({
   const [isCinema, setIsCinema] = useState(false);
   const [hasError, setHasError] = useState(false);
   const [useEmbedFallback, setUseEmbedFallback] = useState(false);
+
+  // Always reset error state on episode change
+  useEffect(() => {
+    setHasError(false);
+    setUseEmbedFallback(false);
+    setCurrentTime(0);
+    setIsPlaying(false);
+  }, [videoUrl, episodeNumber]);
   const [subtitlesEnabled, setSubtitlesEnabled] = useState(true);
   const [playbackSpeed, setPlaybackSpeed] = useState<number>(1.0);
   const [playerSpeedMenuOpen, setPlayerSpeedMenuOpen] = useState(false);
@@ -454,11 +462,11 @@ export default function VideoPlayer({
 
             {hasError && !useEmbedFallback && (
               <div className="absolute inset-0 z-40 bg-black/90 flex flex-col items-center justify-center p-6 text-center space-y-4">
-                <AlertCircle className="w-12 h-12 text-amber-400" />
+                <AlertCircle className="w-12 h-12 text-rose-500 animate-pulse" />
                 <div className="space-y-1">
-                  <p className="text-white text-base font-semibold">Đang nạp lại luồng video...</p>
+                  <p className="text-white text-base font-semibold">Đang nạp lại luồng video Song Ngữ 1080p...</p>
                   <p className="text-gray-400 text-xs max-w-sm">
-                    Nếu mạng tải chậm hoặc bị nghẽn, bạn có thể tải lại hoặc chuyển sang Server Google Drive Embed.
+                    Nếu kết nối mạng bị gián đoạn, nhấn nút bên dưới để nạp lại luồng phát trực tiếp kèm phụ đề Song Ngữ.
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-2 justify-center">
@@ -471,19 +479,10 @@ export default function VideoPlayer({
                         videoRef.current.play().catch(() => {});
                       }
                     }}
-                    className="px-3.5 py-2 rounded-xl bg-rose-600 hover:bg-rose-500 text-white text-xs font-semibold shadow-md active:scale-95 transition-all"
+                    className="px-5 py-2.5 rounded-xl bg-rose-600 hover:bg-rose-500 text-white text-xs font-bold shadow-lg shadow-rose-600/30 active:scale-95 transition-all"
                   >
                     Tải lại luồng
                   </button>
-                  {embedUrl && (
-                    <button
-                      type="button"
-                      onClick={() => setUseEmbedFallback(true)}
-                      className="px-3.5 py-2 rounded-xl bg-gray-800 hover:bg-gray-700 text-gray-200 border border-gray-700 text-xs font-semibold active:scale-95 transition-all"
-                    >
-                      Dùng Player GDrive Embed
-                    </button>
-                  )}
                 </div>
               </div>
             )}
@@ -950,29 +949,7 @@ export default function VideoPlayer({
             </button>
           )}
 
-          {/* Server Switch (Direct HTML5 with Subtitles vs GDrive Embed) */}
-          {embedUrl && (
-            <button
-              type="button"
-              onClick={() => {
-                setUseEmbedFallback(!useEmbedFallback);
-                setHasError(false);
-              }}
-              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-medium border transition-colors ${
-                useEmbedFallback
-                  ? 'bg-amber-500/20 text-amber-300 border-amber-500/40 hover:bg-amber-500/30'
-                  : 'bg-gray-800 text-gray-300 border-gray-700 hover:bg-gray-700 hover:text-white'
-              }`}
-              title={
-                useEmbedFallback
-                  ? 'Đang dùng Player GDrive Embed. Nhấn để về Server Trực Tiếp (tra từ, phụ đề)'
-                  : 'Đang dùng Server Trực Tiếp. Nhấn nếu muốn chuyển sang Player GDrive Embed dự phòng'
-              }
-            >
-              <span className={`w-1.5 h-1.5 rounded-full ${useEmbedFallback ? 'bg-amber-400' : 'bg-emerald-400'}`} />
-              <span>{useEmbedFallback ? 'GDrive Embed' : 'Server Chính'}</span>
-            </button>
-          )}
+
 
           {/* Cinema mode toggle (Desktop only) */}
           <button

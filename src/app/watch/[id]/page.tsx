@@ -28,7 +28,26 @@ export default async function WatchPage({ params, searchParams }: WatchPageProps
     notFound();
   }
 
-  let initialEpNumber = ep ? Number(ep) : (anime.episodes[0]?.episodeNumber || 1);
+  let initialEpNumber = 1;
+  if (ep) {
+    const directNum = Number(ep);
+    if (!isNaN(directNum) && directNum > 0) {
+      initialEpNumber = directNum;
+    } else {
+      const matched = anime.episodes.find((e) => e.id === ep || e.episodeNumber.toString() === ep);
+      if (matched) {
+        initialEpNumber = matched.episodeNumber;
+      } else {
+        const digits = ep.replace(/\D+/g, '');
+        const parsed = parseInt(digits, 10);
+        if (!isNaN(parsed) && parsed > 0) {
+          initialEpNumber = parsed;
+        }
+      }
+    }
+  } else if (anime.episodes[0]?.episodeNumber) {
+    initialEpNumber = anime.episodes[0].episodeNumber;
+  }
   if (anime.slug === 'chitose-kun-wa-ramune-bin-no-naka' && initialEpNumber === 2 && !anime.episodes.some((e) => e.episodeNumber === 2)) {
     initialEpNumber = 15;
   }
