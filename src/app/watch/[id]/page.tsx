@@ -1,7 +1,17 @@
 import React from 'react';
 import { notFound } from 'next/navigation';
-import { getAnimeByIdOrSlug } from '@/lib/db';
+import { getAnimeByIdOrSlug, getAllAnime } from '@/lib/db';
 import WatchClient from './WatchClient';
+
+export function generateStaticParams() {
+  const animes = getAllAnime();
+  const paths: { id: string }[] = [];
+  for (const a of animes) {
+    if (a.slug) paths.push({ id: a.slug });
+    if (a.id && a.id !== a.slug) paths.push({ id: a.id });
+  }
+  return paths;
+}
 
 interface WatchPageProps {
   params: Promise<{ id: string }>;

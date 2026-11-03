@@ -6,7 +6,11 @@ import staticAnimeList from '../../data/anime.json';
 const dataDir = path.join(process.cwd(), 'data');
 const dbFilePath = path.join(dataDir, 'anime.json');
 
+const isProduction = process.env.NODE_ENV === 'production' || Boolean(process.env.CF_PAGES || process.env.CLOUDFLARE);
+let memoizedAnimeList: Anime[] | null = null;
+
 function ensureDbFile(): void {
+  if (isProduction) return;
   try {
     if (typeof fs !== 'undefined' && fs.existsSync) {
       if (!fs.existsSync(dataDir)) {
@@ -22,21 +26,34 @@ function ensureDbFile(): void {
 }
 
 export function getAllAnime(): Anime[] {
+  if (memoizedAnimeList) return memoizedAnimeList;
+
+  // In production / Cloudflare Workers, avoid touching the filesystem polyfill completely
+  if (isProduction) {
+    memoizedAnimeList = (staticAnimeList || []) as unknown as Anime[];
+    return memoizedAnimeList;
+  }
+
   try {
     if (typeof fs !== 'undefined' && fs.existsSync && fs.existsSync(dbFilePath)) {
       const raw = fs.readFileSync(dbFilePath, 'utf-8');
       const parsed = JSON.parse(raw);
       if (Array.isArray(parsed) && parsed.length > 0) {
-        return parsed as Anime[];
+        memoizedAnimeList = parsed as Anime[];
+        return memoizedAnimeList;
       }
     }
   } catch (error) {
-    // Read-only / isolate fallback
+    // Fallback to static
   }
-  return (staticAnimeList || []) as unknown as Anime[];
+
+  memoizedAnimeList = (staticAnimeList || []) as unknown as Anime[];
+  return memoizedAnimeList;
 }
 
 export function saveAllAnime(animes: Anime[]): void {
+  memoizedAnimeList = animes;
+  if (isProduction) return;
   try {
     ensureDbFile();
     if (typeof fs !== 'undefined' && fs.writeFileSync) {

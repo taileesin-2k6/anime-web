@@ -17,9 +17,29 @@ export default function WatchClient({ anime, initialEpNumber }: WatchClientProps
   const [bannerSrc, setBannerSrc] = useState<string | undefined>(anime.banner);
   const [posterError, setPosterError] = useState<boolean>(false);
 
-  // Sync state if initial changes
+  // Sync state if initial changes and read URL query param
   useEffect(() => {
-    setCurrentEpNum(initialEpNumber);
+    let targetEp = initialEpNumber;
+    if (typeof window !== 'undefined') {
+      const sp = new URLSearchParams(window.location.search);
+      const epParam = sp.get('ep');
+      if (epParam) {
+        const directNum = Number(epParam);
+        if (!isNaN(directNum) && directNum > 0) {
+          targetEp = directNum;
+        } else {
+          const matched = anime.episodes.find((e) => e.id === epParam || e.episodeNumber.toString() === epParam);
+          if (matched) {
+            targetEp = matched.episodeNumber;
+          } else {
+            const digits = epParam.replace(/\D+/g, '');
+            const parsed = parseInt(digits, 10);
+            if (!isNaN(parsed) && parsed > 0) targetEp = parsed;
+          }
+        }
+      }
+    }
+    setCurrentEpNum(targetEp);
     setPosterSrc(anime.poster);
     setBannerSrc(anime.banner);
     setPosterError(false);

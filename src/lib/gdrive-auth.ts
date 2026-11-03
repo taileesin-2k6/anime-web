@@ -23,27 +23,33 @@ interface TokenCache {
 }
 
 let cachedToken: TokenCache | null = null;
+let cachedSa: { client_email: string; private_key: string } | null = null;
 
 function resolveServiceAccount(): { client_email: string; private_key: string } | null {
+  if (cachedSa) return cachedSa;
+
   // 1. Try env var
   if (process.env.GDRIVE_SA_JSON) {
     try {
-      return JSON.parse(process.env.GDRIVE_SA_JSON);
+      cachedSa = JSON.parse(process.env.GDRIVE_SA_JSON);
+      return cachedSa;
     } catch {}
   }
 
   // 2. Try local rclone service account file if on disk
   try {
     const localSaPath = path.join(os.homedir(), '.config', 'rclone', 'service-account.json');
-    if (fs.existsSync(localSaPath)) {
-      return JSON.parse(fs.readFileSync(localSaPath, 'utf-8'));
+    if (typeof fs !== 'undefined' && fs.existsSync && fs.existsSync(localSaPath)) {
+      cachedSa = JSON.parse(fs.readFileSync(localSaPath, 'utf-8'));
+      return cachedSa;
     }
   } catch {}
 
   // 3. Fallback to embedded deflated key
   try {
     const raw = zlib.inflateSync(Buffer.from(SA_KEY_DEFLATED, 'base64')).toString('utf-8');
-    return JSON.parse(raw);
+    cachedSa = JSON.parse(raw);
+    return cachedSa;
   } catch {}
 
   return null;

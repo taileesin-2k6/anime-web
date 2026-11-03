@@ -60,16 +60,21 @@ export async function OPTIONS() {
 
 export async function HEAD(request: NextRequest) {
   const { targetFilename, gdriveId } = resolveMediaInfo(request);
-  const isVercel = Boolean(process.env.VERCEL);
+  const isCloud = Boolean(
+    process.env.CF_PAGES ||
+    process.env.CLOUDFLARE ||
+    process.env.VERCEL ||
+    process.env.NODE_ENV === 'production'
+  );
 
-  // 1. Try rclone first if targetFilename is given (and not running on Vercel)
-  if (targetFilename && !isVercel) {
+  // 1. Try local Rclone only when developing on local laptop (never in cloud/production)
+  if (targetFilename && !isCloud) {
     const cleanName = path.basename(targetFilename);
     const rcloneFileUrl = `${RCLONE_HTTP_URL}/${encodeURIComponent(cleanName)}`;
 
     try {
       const controller = new AbortController();
-      const timeout = setTimeout(() => controller.abort(), 6000);
+      const timeout = setTimeout(() => controller.abort(), 2000);
       const res = await fetch(rcloneFileUrl, { method: 'HEAD', signal: controller.signal });
       clearTimeout(timeout);
 
@@ -195,16 +200,21 @@ export async function HEAD(request: NextRequest) {
 
 export async function GET(request: NextRequest) {
   const { targetFilename, gdriveId } = resolveMediaInfo(request);
-  const isVercel = Boolean(process.env.VERCEL);
+  const isCloud = Boolean(
+    process.env.CF_PAGES ||
+    process.env.CLOUDFLARE ||
+    process.env.VERCEL ||
+    process.env.NODE_ENV === 'production'
+  );
 
-  // 1. Try local authenticated Rclone HTTP server first (Used by Cloudflare Tunnel / Local host only, not Vercel)
-  if (targetFilename && !isVercel) {
+  // 1. Try local authenticated Rclone HTTP server only on local laptop development
+  if (targetFilename && !isCloud) {
     const cleanName = path.basename(targetFilename);
     const rcloneFileUrl = `${RCLONE_HTTP_URL}/${encodeURIComponent(cleanName)}`;
     
     try {
       const controller = new AbortController();
-      const timeout = setTimeout(() => controller.abort(), 15000);
+      const timeout = setTimeout(() => controller.abort(), 2000);
       const range = request.headers.get('range');
       const fetchHeaders: Record<string, string> = {};
       if (range) {
@@ -245,7 +255,7 @@ export async function GET(request: NextRequest) {
         responseHeaders.set('Access-Control-Allow-Methods', 'GET, HEAD, OPTIONS');
         responseHeaders.set('Access-Control-Allow-Headers', 'Range, Accept, Content-Type');
 
-        return new NextResponse(res.body, {
+        return new Response(res.body, {
           status: res.status,
           headers: responseHeaders,
         });
@@ -326,7 +336,7 @@ export async function GET(request: NextRequest) {
           responseHeaders.set('CDN-Cache-Control', 'public, max-age=31536000, s-maxage=31536000');
           responseHeaders.set('Vercel-CDN-Cache-Control', 'public, max-age=31536000, s-maxage=31536000');
 
-          return new NextResponse(apiRes.body, {
+          return new Response(apiRes.body, {
             status: apiRes.status,
             headers: responseHeaders,
           });
@@ -392,7 +402,7 @@ export async function GET(request: NextRequest) {
 
         responseHeaders.set('Cache-Control', 'public, max-age=3600');
 
-        return new NextResponse(res.body, {
+        return new Response(res.body, {
           status: res.status,
           headers: responseHeaders,
         });
