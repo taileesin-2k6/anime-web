@@ -8,27 +8,30 @@ export const dynamic = 'force-dynamic';
 export const maxDuration = 60;
 
 const RCLONE_HTTP_URL = 'http://127.0.0.1:8088';
+const fileSizeCache = new Map<string, string>();
 
 function resolveMediaInfo(request: NextRequest): { targetFilename: string; gdriveId: string } {
   const gdriveIdParam = request.nextUrl.searchParams.get('gdriveId') || request.nextUrl.searchParams.get('id');
   const filePathParam = request.nextUrl.searchParams.get('file');
+
+  // FAST PATH: If gdriveId is already present in query params, return immediately!
+  // Zero CPU, zero DB scan, zero memory allocation.
+  if (gdriveIdParam) {
+    return { targetFilename: filePathParam || '', gdriveId: gdriveIdParam };
+  }
+
   const slug = request.nextUrl.searchParams.get('slug');
   const ep = request.nextUrl.searchParams.get('ep');
 
   let targetFilename = filePathParam || '';
-  let gdriveId = gdriveIdParam || '';
+  let gdriveId = '';
 
-  if ((!targetFilename || !gdriveId) && (slug || ep || gdriveIdParam)) {
+  if (slug || ep) {
     try {
       const animeList = getAllAnime();
       for (const a of animeList) {
         if (slug && a.slug !== slug && a.id !== slug) continue;
         for (const item of a.episodes || []) {
-          if (gdriveIdParam && (item.gdriveId === gdriveIdParam || (item.videoUrl && item.videoUrl.includes(gdriveIdParam)))) {
-            targetFilename = targetFilename || item.filename || '';
-            gdriveId = gdriveId || item.gdriveId || '';
-            break;
-          }
           const isChitoseEp2Alias = slug === 'chitose-kun-wa-ramune-bin-no-naka' && ep === '2' && item.episodeNumber === 15;
           if (ep && (item.episodeNumber === parseInt(ep, 10) || isChitoseEp2Alias)) {
             targetFilename = targetFilename || item.filename || '';
@@ -36,10 +39,10 @@ function resolveMediaInfo(request: NextRequest): { targetFilename: string; gdriv
             break;
           }
         }
-        if (targetFilename && gdriveId) break;
+        if (gdriveId) break;
       }
     } catch (err) {
-      console.warn('Error finding media info from anime list:', err);
+      console.warn('Error resolving media info:', err);
     }
   }
 
@@ -100,89 +103,57 @@ export async function HEAD(request: NextRequest) {
     }
   }
 
-  // 2. Authenticated Google Drive API v3 probe (for Vercel Cloud or when Rclone is offline)
+  // 2. Authenticated Google Drive metadata probe (lightweight JSON query)
   if (gdriveId) {
+    const cachedSize = fileSizeCache.get(gdriveId);
+    if (cachedSize) {
+      return new NextResponse(null, {
+        status: 200,
+        headers: {
+          'Content-Type': 'video/mp4',
+          'Accept-Ranges': 'bytes',
+          'Content-Length': cachedSize,
+          'Access-Control-Allow-Origin': '*',
+          'Access-Control-Allow-Methods': 'GET, HEAD, OPTIONS',
+          'Access-Control-Allow-Headers': 'Range, Accept, Content-Type',
+          'Cache-Control': 'public, max-age=31536000, immutable',
+        },
+      });
+    }
+
     try {
       const accessToken = await getValidAccessToken();
       if (accessToken) {
-        const driveApiUrl = `https://www.googleapis.com/drive/v3/files/${gdriveId}?alt=media&supportsAllDrives=true`;
+        const metaUrl = `https://www.googleapis.com/drive/v3/files/${gdriveId}?fields=size,mimeType&supportsAllDrives=true`;
         const controller = new AbortController();
-        const timeout = setTimeout(() => controller.abort(), 6000);
-        const res = await fetch(driveApiUrl, {
-          method: 'GET',
-          headers: {
-            Authorization: `Bearer ${accessToken}`,
-            Range: 'bytes=0-0',
-          },
+        const timeout = setTimeout(() => controller.abort(), 4000);
+        const res = await fetch(metaUrl, {
+          headers: { Authorization: `Bearer ${accessToken}` },
           signal: controller.signal,
         });
         clearTimeout(timeout);
 
-        if (res.ok || res.status === 206) {
-          const responseHeaders = new Headers();
-          responseHeaders.set('Content-Type', 'video/mp4');
-          responseHeaders.set('Accept-Ranges', 'bytes');
-          responseHeaders.set('Access-Control-Allow-Origin', '*');
-          responseHeaders.set('Access-Control-Allow-Methods', 'GET, HEAD, OPTIONS');
-          responseHeaders.set('Access-Control-Allow-Headers', 'Range, Accept, Content-Type');
-          responseHeaders.set(
-            'Cache-Control',
-            'public, max-age=31536000, s-maxage=31536000, stale-while-revalidate=86400, immutable'
-          );
-          responseHeaders.set('CDN-Cache-Control', 'public, max-age=31536000, s-maxage=31536000');
-          responseHeaders.set('Vercel-CDN-Cache-Control', 'public, max-age=31536000, s-maxage=31536000');
-
-          const cr = res.headers.get('content-range');
-          if (cr) {
-            const total = cr.split('/')[1];
-            if (total) responseHeaders.set('Content-Length', total);
+        if (res.ok) {
+          const data = (await res.json()) as { size?: string; mimeType?: string };
+          if (data.size) {
+            fileSizeCache.set(gdriveId, data.size);
+            return new NextResponse(null, {
+              status: 200,
+              headers: {
+                'Content-Type': data.mimeType || 'video/mp4',
+                'Accept-Ranges': 'bytes',
+                'Content-Length': data.size,
+                'Access-Control-Allow-Origin': '*',
+                'Access-Control-Allow-Methods': 'GET, HEAD, OPTIONS',
+                'Access-Control-Allow-Headers': 'Range, Accept, Content-Type',
+                'Cache-Control': 'public, max-age=31536000, immutable',
+              },
+            });
           }
-
-          return new NextResponse(null, {
-            status: 200,
-            headers: responseHeaders,
-          });
         }
       }
     } catch {
       // Fallback
-    }
-  }
-
-  // 3. Fallback to Google Drive direct
-  if (gdriveId) {
-    const gdriveDirectUrl = `https://drive.usercontent.google.com/download?id=${gdriveId}&export=download&confirm=t`;
-    try {
-      const controller = new AbortController();
-      const timeout = setTimeout(() => controller.abort(), 6000);
-      const res = await fetch(gdriveDirectUrl, {
-        method: 'HEAD',
-        headers: {
-          'User-Agent':
-            'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-        },
-        signal: controller.signal,
-      });
-      clearTimeout(timeout);
-
-      const ct = res.headers.get('content-type') || '';
-      if (!ct.includes('text/html') && (res.ok || res.status === 206)) {
-        const responseHeaders = new Headers();
-        responseHeaders.set('Content-Type', 'video/mp4');
-        responseHeaders.set('Accept-Ranges', 'bytes');
-        responseHeaders.set('Access-Control-Allow-Origin', '*');
-        responseHeaders.set('Access-Control-Allow-Methods', 'GET, HEAD, OPTIONS');
-        responseHeaders.set('Access-Control-Allow-Headers', 'Range, Accept, Content-Type');
-        const cl = res.headers.get('content-length');
-        if (cl) responseHeaders.set('Content-Length', cl);
-
-        return new NextResponse(null, {
-          status: 200,
-          headers: responseHeaders,
-        });
-      }
-    } catch {
-      // ignore
     }
   }
 
@@ -211,7 +182,7 @@ export async function GET(request: NextRequest) {
   if (targetFilename && !isCloud) {
     const cleanName = path.basename(targetFilename);
     const rcloneFileUrl = `${RCLONE_HTTP_URL}/${encodeURIComponent(cleanName)}`;
-    
+
     try {
       const controller = new AbortController();
       const timeout = setTimeout(() => controller.abort(), 2000);
@@ -265,7 +236,7 @@ export async function GET(request: NextRequest) {
     }
   }
 
-  // 2. Try Authenticated Google Drive API v3 (Used by Vercel Cloud or when local Rclone is offline)
+  // 2. Authenticated Google Drive API v3 (24/7 permanent cloud playback)
   if (gdriveId) {
     try {
       const accessToken = await getValidAccessToken();
@@ -276,16 +247,17 @@ export async function GET(request: NextRequest) {
           Authorization: `Bearer ${accessToken}`,
         };
 
-        // Smart Capped Range Chunking (RFC 7233)
-        // If client requests open-ended range (e.g. bytes=0-), cap to 8MB chunk for instant buffering & Edge CDN caching
-        const CHUNK_SIZE = 8 * 1024 * 1024; // 8MB optimal chunk
+        // Optimal 2MB Chunking:
+        // Keeps worker memory tiny (< 3MB), instant startup, zero 10ms CPU timeouts
+        const CHUNK_SIZE = 2 * 1024 * 1024; // 2MB
         if (range) {
           const match = range.match(/bytes=(\d+)-(\d*)/);
           if (match) {
             const start = parseInt(match[1], 10);
             if (match[2]) {
               const end = parseInt(match[2], 10);
-              apiHeaders['Range'] = `bytes=${start}-${end}`;
+              const effectiveEnd = (end - start > 4 * 1024 * 1024) ? start + CHUNK_SIZE - 1 : end;
+              apiHeaders['Range'] = `bytes=${start}-${effectiveEnd}`;
             } else {
               apiHeaders['Range'] = `bytes=${start}-${start + CHUNK_SIZE - 1}`;
             }
@@ -298,6 +270,11 @@ export async function GET(request: NextRequest) {
 
         const apiRes = await fetch(driveApiUrl, {
           headers: apiHeaders,
+          // @ts-ignore - Cloudflare Workers Edge Cache
+          cf: {
+            cacheEverything: true,
+            cacheTtl: 86400,
+          },
         });
 
         const contentType = apiRes.headers.get('content-type') || '';
@@ -328,13 +305,12 @@ export async function GET(request: NextRequest) {
           responseHeaders.set('Access-Control-Allow-Methods', 'GET, HEAD, OPTIONS');
           responseHeaders.set('Access-Control-Allow-Headers', 'Range, Accept, Content-Type');
 
-          // Enable persistent Edge CDN caching across Vercel nodes worldwide
+          // Enable persistent Edge CDN caching across nodes worldwide
           responseHeaders.set(
             'Cache-Control',
             'public, max-age=31536000, s-maxage=31536000, stale-while-revalidate=86400, immutable'
           );
           responseHeaders.set('CDN-Cache-Control', 'public, max-age=31536000, s-maxage=31536000');
-          responseHeaders.set('Vercel-CDN-Cache-Control', 'public, max-age=31536000, s-maxage=31536000');
 
           return new Response(apiRes.body, {
             status: apiRes.status,
@@ -343,7 +319,7 @@ export async function GET(request: NextRequest) {
         }
       }
     } catch (err: any) {
-      console.warn('Google Drive API v3 stream error, falling back to direct download:', err.message);
+      console.warn('Google Drive API v3 stream error, falling back:', err.message);
     }
   }
 
@@ -365,22 +341,7 @@ export async function GET(request: NextRequest) {
       });
 
       const contentType = res.headers.get('content-type') || '';
-      // Guard against quota exceeded HTML page returned by Google Drive with HTTP 200
-      if (contentType.includes('text/html')) {
-        console.warn('Google Drive direct download returned HTML (quota exceeded / confirmation page).');
-        return new NextResponse(
-          'Google Drive direct download quota exceeded. Please use the local Cloudflare tunnel / Rclone stream.',
-          {
-            status: 429,
-            headers: {
-              'Content-Type': 'text/plain; charset=utf-8',
-              'Access-Control-Allow-Origin': '*',
-            },
-          }
-        );
-      }
-
-      if (res.ok || res.status === 206) {
+      if (!contentType.includes('text/html') && (res.ok || res.status === 206)) {
         const responseHeaders = new Headers();
         responseHeaders.set('Content-Type', 'video/mp4');
         responseHeaders.set('Accept-Ranges', 'bytes');

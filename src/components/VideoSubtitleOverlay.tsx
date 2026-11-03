@@ -157,11 +157,16 @@ export default function VideoSubtitleOverlay({
     return () => window.removeEventListener('auth-changed', handleAuth);
   }, []);
 
-  // Fetch subtitle cues when episode changes
+  // Fetch subtitle cues when episode changes (fast direct static CDN asset first, API fallback)
   useEffect(() => {
     if (!animeSlug) return;
-    fetch(`/api/subtitles?slug=${encodeURIComponent(animeSlug)}&ep=${episodeNumber}`)
-      .then((res) => res.json())
+    const staticUrl = `/subtitles/${encodeURIComponent(animeSlug)}_${episodeNumber}.json`;
+    const apiUrl = `/api/subtitles?slug=${encodeURIComponent(animeSlug)}&ep=${episodeNumber}`;
+    fetch(staticUrl)
+      .then((res) => {
+        if (res.ok) return res.json();
+        return fetch(apiUrl).then((r) => r.json());
+      })
       .then((data) => {
         if (data.en) setSubtitlesEn(data.en);
       })
