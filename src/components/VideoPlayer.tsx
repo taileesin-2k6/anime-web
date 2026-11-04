@@ -98,6 +98,9 @@ export default function VideoPlayer({
   const containerRef = useRef<HTMLDivElement>(null);
   const progressBarRef = useRef<HTMLDivElement>(null);
   const hideControlsTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const currentTimeRef = useRef<number>(0);
+  const retryCountRef = useRef<number>(0);
+  const retryTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   // Toggle Fullscreen: On iPhone/iOS, use CSS Web Fullscreen (fixed full viewport) to preserve custom controls & subtitle overlay.
   // NEVER call video.webkitEnterFullscreen() on iPhone to avoid Apple's native controller stripping custom web UI.
@@ -370,6 +373,21 @@ export default function VideoPlayer({
       return;
     }
 
+    // Auto-retry transient network stalls (code 2) up to 2 times without disturbing user
+    if (retryCountRef.current < 2) {
+      retryCountRef.current += 1;
+      console.warn(`[VideoPlayer] Auto-recovering stream in 1s (attempt ${retryCountRef.current}/2)...`);
+      if (retryTimeoutRef.current) clearTimeout(retryTimeoutRef.current);
+      retryTimeoutRef.current = setTimeout(() => {
+        if (videoRef.current) {
+          const savedTime = currentTimeRef.current || 0;
+          videoRef.current.currentTime = savedTime;
+          videoRef.current.play().catch(() => {});
+        }
+      }, 1000);
+      return;
+    }
+
     setHasError(true);
   };
 
@@ -417,6 +435,7 @@ export default function VideoPlayer({
               onTimeUpdate={() => {
                 if (videoRef.current) {
                   const cur = videoRef.current.currentTime;
+                  currentTimeRef.current = cur;
                   setCurrentTime(cur);
                   const dur = videoRef.current.duration;
                   if (dur && !isNaN(dur) && dur > 0 && isFinite(dur)) {
@@ -469,6 +488,7 @@ export default function VideoPlayer({
               onPlay={() => {
                 setIsPlaying(true);
                 setHasError(false);
+                retryCountRef.current = 0;
               }}
               onPause={() => setIsPlaying(false)}
               onError={handleVideoError}
@@ -490,10 +510,10 @@ export default function VideoPlayer({
                   <button
                     type="button"
                     onClick={() => {
+                      retryCountRef.current = 0;
                       setHasError(false);
                       if (videoRef.current) {
-                        const savedTime = currentTime || 0;
-                        videoRef.current.load();
+                        const savedTime = currentTimeRef.current || currentTime || 0;
                         videoRef.current.currentTime = savedTime;
                         videoRef.current.play().catch(() => {});
                       }
