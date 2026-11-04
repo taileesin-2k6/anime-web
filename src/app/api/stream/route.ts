@@ -239,10 +239,38 @@ export async function GET(request: NextRequest) {
     }
   }
 
-  // 2. Google Drive Native Continuous Streaming with Failover
+  // 2. Google Drive Streaming with Smart 8MB Capped Chunking (RFC 7233)
+  // Provides 35s smooth buffer in browser while preventing subrequest timeouts and premature stream cuts
   const candidateIds = [gdriveId, backupId].filter(Boolean);
   if (candidateIds.length > 0) {
-    const clientRange = request.headers.get('range') || 'bytes=0-';
+    const rawRange = request.headers.get('range');
+    const CHUNK_SIZE = 8 * 1024 * 1024; // 8MB optimal chunk size
+
+    let start = 0;
+    let end: number | null = null;
+
+    if (rawRange) {
+      const match = rawRange.match(/bytes=(\d+)-(\d*)/);
+      if (match) {
+        start = parseInt(match[1], 10);
+        if (match[2]) {
+          const requestedEnd = parseInt(match[2], 10);
+          // If browser requested a huge range (> 12MB), cap to 8MB chunk for safe delivery
+          if (requestedEnd - start > 12 * 1024 * 1024) {
+            end = start + CHUNK_SIZE - 1;
+          } else {
+            end = requestedEnd;
+          }
+        } else {
+          // Open-ended range (bytes=start-) -> cap to 8MB chunk
+          end = start + CHUNK_SIZE - 1;
+        }
+      }
+    } else {
+      end = CHUNK_SIZE - 1;
+    }
+
+    const driveRangeHeader = end !== null ? `bytes=${start}-${end}` : `bytes=${start}-`;
 
     for (const driveId of candidateIds) {
       try {
@@ -252,11 +280,11 @@ export async function GET(request: NextRequest) {
         const driveApiUrl = `https://www.googleapis.com/drive/v3/files/${driveId}?alt=media&supportsAllDrives=true`;
         const apiHeaders: Record<string, string> = {
           Authorization: `Bearer ${accessToken}`,
-          Range: clientRange,
+          Range: driveRangeHeader,
         };
 
         const controller = new AbortController();
-        const timeout = setTimeout(() => controller.abort(), 12000); // 12s safety timeout
+        const timeout = setTimeout(() => controller.abort(), 15000); // 15s timeout
 
         const apiRes = await fetch(driveApiUrl, {
           headers: apiHeaders,
@@ -299,7 +327,7 @@ export async function GET(request: NextRequest) {
           responseHeaders.set('Access-Control-Allow-Methods', 'GET, HEAD, OPTIONS');
           responseHeaders.set('Access-Control-Allow-Headers', 'Range, Accept, Content-Type');
 
-          // Caching headers
+          // Edge Caching headers
           responseHeaders.set(
             'Cache-Control',
             'public, max-age=31536000, s-maxage=31536000, stale-while-revalidate=86400, immutable'
@@ -307,7 +335,6 @@ export async function GET(request: NextRequest) {
           responseHeaders.set('CDN-Cache-Control', 'public, max-age=31536000, s-maxage=31536000');
           responseHeaders.set('X-Active-Drive', driveId === gdriveId ? 'primary' : 'backup');
 
-          // Return native ReadableStream directly to client with ZERO memory allocation and ZERO CPU overhead
           return new Response(apiRes.body, {
             status: apiRes.status,
             headers: responseHeaders,
@@ -327,7 +354,7 @@ export async function GET(request: NextRequest) {
         const fetchHeaders: Record<string, string> = {
           'User-Agent':
             'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-          Range: clientRange,
+          Range: driveRangeHeader,
         };
 
         const res = await fetch(gdriveDirectUrl, {

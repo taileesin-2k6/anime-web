@@ -66,7 +66,6 @@ export default function VideoPlayer({
 }: VideoPlayerProps) {
   const [isCinema, setIsCinema] = useState(false);
   const [hasError, setHasError] = useState(false);
-  const [retryCount, setRetryCount] = useState(0);
   const [useEmbedFallback, setUseEmbedFallback] = useState(false);
 
   // Always reset error state on episode change
@@ -366,19 +365,8 @@ export default function VideoPlayer({
     const err = video?.error;
     console.warn('Video load error (code:', err?.code, 'msg:', err?.message, ') for:', finalVideoSrc);
 
-    // Auto-retry up to 3 times with state preservation before displaying the error banner
-    if (retryCount < 3) {
-      const nextCount = retryCount + 1;
-      setRetryCount(nextCount);
-      const savedTime = video?.currentTime || currentTime || 0;
-      console.log(`Auto-recovering video stream (attempt ${nextCount}/3) at ${savedTime}s...`);
-      setTimeout(() => {
-        if (videoRef.current) {
-          videoRef.current.load();
-          videoRef.current.currentTime = savedTime;
-          videoRef.current.play().catch(() => {});
-        }
-      }, 1000);
+    // Ignore MEDIA_ERR_ABORTED (code 1): browser cancelled in-flight request during range renegotiation
+    if (err && err.code === 1) {
       return;
     }
 
@@ -480,7 +468,6 @@ export default function VideoPlayer({
               }}
               onPlay={() => {
                 setIsPlaying(true);
-                setRetryCount(0);
                 setHasError(false);
               }}
               onPause={() => setIsPlaying(false)}
@@ -504,7 +491,6 @@ export default function VideoPlayer({
                     type="button"
                     onClick={() => {
                       setHasError(false);
-                      setRetryCount(0);
                       if (videoRef.current) {
                         const savedTime = currentTime || 0;
                         videoRef.current.load();
