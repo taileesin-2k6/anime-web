@@ -1,0 +1,50 @@
+{
+  "title": "BẢN CHẤT INTERRUPT TRONG VI XỬ LÝ",
+  "scenes": [
+    {
+      "brand": "VI XỬ LÝ & NHÚNG",
+      "topic_tag": "NGUY HIỂM · VÒNG LẶP CHẾT",
+      "title": "ĐỪNG BẮT CPU PHẢI CHỜ ĐỢI!",
+      "voice_text": "Đừng bao giờ bắt vi xử lý của bạn phải ngồi chờ một sự kiện bằng vòng lặp while. Cách làm này không chỉ biến con chip thành một cỗ máy ngớ ngẩn lãng phí năng lượng, mà còn làm bỏ lỡ các tín hiệu khẩn cấp!",
+      "subtitle": "Đừng bắt vi xử lý phải ngồi chờ bằng vòng lặp while: vừa lãng phí 99% năng lượng vừa bỏ lỡ sự kiện!",
+      "highlight_words": ["vòng lặp while", "lãng phí 99%", "bỏ lỡ sự kiện"],
+      "content_html": "<div class=\"glass-card card-glow-rose\"><div class=\"card-header\"><span class=\"card-title hl-rose\">⚠ Sai lầm kinh điển: Polling vô tận</span><span class=\"badge badge-danger\">Treo 100% CPU</span></div><div class=\"mono-code\"><span class=\"hl-purple\">while</span> (<span class=\"hl-cyan\">!button_pressed</span>) {<br>&nbsp;&nbsp;<span style=\"color:#64748B;\">// CPU ngồi quay cuồng hỏi từng chu kỳ clock</span><br>&nbsp;&nbsp;<span style=\"color:#64748B;\">// Không làm được bất kỳ tác vụ nào khác!</span><br>}</div><div class=\"diagram-box\" style=\"margin-top:14px; border-color:rgba(244,63,94,0.3);\"><div style=\"font-size:13px; color:#FDA4AF;\">💥 <b>Hậu quả:</b> Xung nhịp nóng rực, tốn pin, và nếu nút bấm chỉ gõ 1 micro-giây thì CPU sẽ hoàn toàn bỏ lỡ!</div></div></div>"
+    },
+    {
+      "brand": "VI XỬ LÝ & NHÚNG",
+      "topic_tag": "BẢN CHẤT · SỰ KHÁC BIỆT",
+      "title": "POLLING VS INTERRUPT",
+      "voice_text": "Đây chính là bản chất giữa Polling và Interrupt. Polling là cứ năm giây bạn lại chạy ra mở cửa xem shipper tới chưa. Còn Interrupt là shipper tự bấm chuông, lúc đó bạn mới ra nhận hàng.",
+      "subtitle": "Polling: cứ 5 giây ra ngó cửa xem shipper tới chưa. Interrupt: shipper bấm chuông mới chạy ra!",
+      "highlight_words": ["Polling", "Interrupt", "shipper bấm chuông"],
+      "content_html": "<div class=\"glass-card card-glow-rose\" style=\"margin-bottom:12px;\"><div class=\"card-header\"><span class=\"card-title hl-rose\">📦 POLLING (Hỏi tuần tự)</span><span class=\"badge badge-danger\">✗ Lãng phí</span></div><p style=\"font-size:13px; color:#CBD5E1;\">Cứ 5 giây lại chạy ra mở cửa xem shipper tới chưa. Mỏi chân, mất tập trung và không làm được việc gì khác.</p></div><div class=\"glass-card card-glow-green\"><div class=\"card-header\"><span class=\"card-title hl-green\">🔔 INTERRUPT (Ngắt tín hiệu)</span><span class=\"badge badge-success\">✓ Tối ưu 100%</span></div><p style=\"font-size:13px; color:#CBD5E1;\">Cứ thoải mái ngủ hoặc đọc sách. Khi nào shipper bấm chuông (tín hiệu ngắt), bạn mới đứng dậy mở cửa!</p></div>"
+    },
+    {
+      "brand": "VI XỬ LÝ & NHÚNG",
+      "topic_tag": "GIẢI PHẪU · 4 BƯỚC THỰC THI",
+      "title": "CPU LÀM GÌ KHI CÓ NGẮT?",
+      "voice_text": "Khi chân ngắt nhận tín hiệu, CPU lập tức làm bốn việc: dừng lệnh hiện tại, cất toàn bộ thanh ghi vào Stack, tra bảng Vector Table để nhảy vào hàm phục vụ ngắt, và cuối cùng quay trở lại làm tiếp như chưa có gì xảy ra!",
+      "subtitle": "CPU thực thi 4 bước: Dừng lệnh -> Cất thanh ghi vào Stack -> Nhảy vào hàm ISR -> Quay về chạy tiếp!",
+      "highlight_words": ["4 bước", "Cất thanh ghi vào Stack", "Vector Table", "hàm ISR"],
+      "content_html": "<div class=\"glass-card card-glow-cyan\"><div class=\"card-header\"><span class=\"card-title hl-cyan\">⚡ Chu trình xử lý ngắt phần cứng</span><span class=\"badge badge-info\">Cortex-M / AVR</span></div><div class=\"diagram-box\"><div class=\"flow-row\" style=\"margin-bottom:8px;\"><div class=\"flow-node\" style=\"border-color:#38BDF8;\">1. Tín hiệu IRQ<br><small style=\"color:#94A3B8;\">Chân ngắt kích hoạt</small></div><div class=\"flow-arrow\">→</div><div class=\"flow-node\" style=\"border-color:#A855F7;\">2. Push Stack<br><small style=\"color:#94A3B8;\">Lưu PC & Registers</small></div></div><div class=\"flow-row\"><div class=\"flow-node\" style=\"border-color:#F59E0B;\">3. Vector Table<br><small style=\"color:#94A3B8;\">Nhảy vào hàm ISR</small></div><div class=\"flow-arrow\">→</div><div class=\"flow-node\" style=\"border-color:#10B981;\">4. Lệnh RETI<br><small style=\"color:#94A3B8;\">Pop Stack, chạy tiếp</small></div></div></div><div style=\"font-size:12px; color:#94A3B8; margin-top:10px; text-align:center;\">Toàn bộ chương trình chính không hề biết mình vừa bị tạm dừng!</div></div>"
+    },
+    {
+      "brand": "VI XỬ LÝ & NHÚNG",
+      "topic_tag": "TOÁN HỌC · ĐỪNG ĐOÁN, HÃY TÍNH",
+      "title": "TỐC ĐỘ PHẢN XẠ CỰC NHANH",
+      "voice_text": "Đừng đoán, hãy tính! Với con chip chạy mười sáu megahertz, một chu kỳ chỉ mất sáu mươi hai phẩy năm nano-giây. Thời gian vi xử lý nhảy vào ngắt chỉ vỏn vẹn mười hai chu kỳ, tức là chưa đầy một micro-giây, nhanh hơn Polling hàng chục nghìn lần!",
+      "subtitle": "Đừng đoán, hãy tính: 16 MHz -> 1 clock = 62.5 ns. CPU phản xạ ngắt chỉ mất 0.75 micro-giây!",
+      "highlight_words": ["Đừng đoán, hãy tính", "62.5 ns", "0.75 micro-giây", "hàng chục nghìn lần"],
+      "content_html": "<div class=\"glass-card card-glow-amber\"><div class=\"card-header\"><span class=\"card-title hl-amber\">🔢 Đừng đoán, hãy tính</span><span class=\"badge badge-warn\">16 MHz System</span></div><div class=\"mono-code\"><span class=\"hl-cyan\">1 chu kỳ clock</span> &nbsp;&nbsp;&nbsp;= 1 / 16 MHz = <span class=\"hl-green\">62.5 ns</span><br><span class=\"hl-cyan\">Phần cứng lưu Stack</span> = <span class=\"hl-amber\">12 chu kỳ clock</span><br>----------------------------------------<br><span class=\"hl-amber\">Độ trễ phản xạ (Latency)</span> = 12 × 62.5 ns<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= <span class=\"hl-green\">750 ns (0.75 µs)</span></div><div style=\"margin-top:12px; font-size:13px; color:#FCD34D;\">⚡ <b>Kết luận:</b> CPU phản ứng với thế giới thực trong chưa đầy 1 phần triệu giây!</div></div>"
+    },
+    {
+      "brand": "VI XỬ LÝ & NHÚNG",
+      "topic_tag": "ỨNG DỤNG THỰC TẾ · TỔNG KẾT",
+      "title": "HỆ SINH THÁI TÚI KHÍ Ô TÔ",
+      "voice_text": "Nhờ có Interrupt phần cứng, hệ thống túi khí ô tô có thể nhận diện va chạm và bung túi khí chỉ trong vài mili-giây để cứu mạng bạn, điều mà cơ chế kiểm tra tuần tự không bao giờ làm kịp!",
+      "subtitle": "Nhờ Interrupt, hệ thống túi khí ô tô bung ra trong vài mili-giây để cứu mạng bạn!",
+      "highlight_words": ["Interrupt phần cứng", "túi khí ô tô", "vài mili-giây", "cứu mạng bạn"],
+      "content_html": "<div class=\"glass-card card-glow-green\"><div class=\"card-header\"><span class=\"card-title hl-green\">🚗 Ứng dụng sống còn: Hệ thống túi khí</span><span class=\"badge badge-success\">Cứu sinh</span></div><div class=\"diagram-box\"><div style=\"display:flex; flex-direction:column; gap:10px;\"><div class=\"flow-row\"><div class=\"flow-node\" style=\"border-color:#F43F5E;\">Cảm biến gia tốc<br><small style=\"color:#FDA4AF;\">Phát hiện va chạm</small></div><div class=\"flow-arrow\">⚡</div><div class=\"flow-node\" style=\"border-color:#F59E0B;\">Ngắt EXTI NVIC<br><small style=\"color:#FDE68A;\">Độ ưu tiên cao nhất</small></div></div><div class=\"flow-row\"><div class=\"flow-arrow\" style=\"transform:rotate(90deg); margin:0 auto;\">→</div></div><div class=\"flow-node\" style=\"border-color:#10B981; background:rgba(16,185,129,0.15); width:100%;\"><b style=\"color:#34D399; font-size:14px;\">KÍCH NỔ TÚI KHÍ TRONG 10 MS</b><br><small style=\"color:#CBD5E1;\">Bung phồng trước khi cơ thể va vào tay lái</small></div></div></div></div>"
+    }
+  ]
+}

@@ -1,0 +1,484 @@
+[
+  {
+    "id": "futsutsuka-na-akujo",
+    "title": "Futsutsuka na Akujo dewa Gozaimasu ga: Suuguu Chouso Torikae Den",
+    "originalTitle": "ふつつかな悪女ではございますが ～雛宮蝶鼠とりかえ伝～ (Though I Am an Inept Villainess)",
+    "slug": "futsutsuka-na-akujo-dewa-gozaimasu-ga",
+    "poster": "/posters/futsutsuka-na-akujo.jpg",
+    "banner": "/posters/futsutsuka-na-akujo.jpg",
+    "description": "Lấy bối cảnh tại Hậu cung Vương quốc Ei tráng lệ, câu chuyện xoay quanh hai phi tần dự tuyển đối nghịch nhau:\n\n• Kou Reirin: Thiếu nữ tài sắc vẹn toàn, được mệnh danh là 'cánh bướm' chốn cung đình nhưng lại mang thể trạng ốm yếu bẩm sinh.\n• Shu Keigetsu: Kẻ luôn mang lòng đố kỵ và tìm cách hãm hại Reirin.\n\nTrong một hiện tượng thiên văn kỳ lạ, Keigetsu sử dụng cấm thuật để hoán đổi thân xác với Reirin nhằm cướp đoạt thân phận của cô. Tuy nhiên, mọi chuyện bất ngờ đảo lộn khi Reirin vô cùng vui mừng vì lần đầu tiên có được một cơ thể khoẻ mạnh tràn đầy sinh lực! Bằng trí thông minh sắc bén cùng sức mạnh thể chất mới, Reirin bắt đầu hành trình sinh tồn và lật ngược tình thế trước những âm mưu thâm hiểm chốn hoàng cung.",
+    "genres": [
+      "Fantasy",
+      "Romance",
+      "Action",
+      "Supernatural",
+      "Historical"
+    ],
+    "status": "Đang chiếu",
+    "year": 2026,
+    "totalEpisodes": "11",
+    "quality": "FHD 1080p",
+    "season": "Mùa Hè 2026",
+    "episodes": [
+      {
+        "id": "ep-1-bilingual",
+        "episodeNumber": 1,
+        "title": "Tập 1 : Cánh Bướm và Chuột Cung Đình",
+        "videoUrl": "https://drive.google.com/open?id=1qLVVyQklq9sjJ8Jc7y3JPBjWpv1JNBDI",
+        "duration": "39:43",
+        "createdAt": "2026-09-27T15:40:41.073330Z",
+        "gdriveId": "1qLVVyQklq9sjJ8Jc7y3JPBjWpv1JNBDI",
+        "filename": "futsutsuka_ep01_bilingual.mp4",
+        "backupId": "1uCVbl104-4eXZ1OYy6fQ-sbMEWCy8WBc"
+      },
+      {
+        "id": "ep-2-bilingual",
+        "episodeNumber": 2,
+        "title": "Tập 2",
+        "videoUrl": "https://drive.google.com/open?id=1nFOj350f_vgl3yIO9F1pA_VOQXYUn09S",
+        "duration": "41:40",
+        "createdAt": "2026-10-23T02:59:02.836119Z",
+        "filename": "futsutsuka_ep02_bilingual.mp4",
+        "gdriveId": "1nFOj350f_vgl3yIO9F1pA_VOQXYUn09S",
+        "backupId": "1Ta7WaFKQdD4FaSgCdDiVxQbWQsyi7Xg8"
+      },
+      {
+        "id": "ep-3-bilingual",
+        "episodeNumber": 3,
+        "title": "Tập 3",
+        "videoUrl": "https://drive.google.com/open?id=1lKWHav5ISVEiiQaxxQ8iYjHEHusRbt3e",
+        "duration": "39:53",
+        "createdAt": "2026-10-23T16:52:52.815596Z",
+        "filename": "futsutsuka_ep03_bilingual.mp4",
+        "gdriveId": "1lKWHav5ISVEiiQaxxQ8iYjHEHusRbt3e",
+        "backupId": "1tu3WQYOAQsa3zFlx6Km7fCBUhNKTOUpX"
+      },
+      {
+        "id": "ep-4-bilingual",
+        "episodeNumber": 4,
+        "title": "Tập 4",
+        "videoUrl": "https://drive.google.com/open?id=1P4YUo89819gpbWytbXOLzSUk-nQd6v2_",
+        "duration": "41:00",
+        "createdAt": "2026-10-24T04:10:06.309629Z",
+        "filename": "futsutsuka_ep04_bilingual.mp4",
+        "gdriveId": "1P4YUo89819gpbWytbXOLzSUk-nQd6v2_",
+        "backupId": "1ZzZ_GHLeQyqIKIgl9hUKU_b9wVdTTqEX"
+      },
+      {
+        "id": "ep-5-bilingual",
+        "episodeNumber": 5,
+        "title": "Tập 5",
+        "videoUrl": "https://drive.google.com/open?id=11Gplr036fShKXC8Yx3qvka8zi_DZ84jB",
+        "duration": "37:26",
+        "createdAt": "2026-10-24T04:28:50.946867Z",
+        "filename": "futsutsuka_ep05_bilingual.mp4",
+        "gdriveId": "11Gplr036fShKXC8Yx3qvka8zi_DZ84jB",
+        "backupId": "1W04gT6GDp4IEsKFELY7u9uXw1TfmLufU"
+      },
+      {
+        "id": "ep-6-bilingual",
+        "episodeNumber": 6,
+        "title": "Tập 6",
+        "videoUrl": "https://drive.google.com/open?id=1Y1rVJoAToE9OsbxTnjznlRfTJYEqYwFq",
+        "duration": "37:42",
+        "createdAt": "2026-10-24T04:46:08.077968Z",
+        "filename": "futsutsuka_ep06_bilingual.mp4",
+        "gdriveId": "1Y1rVJoAToE9OsbxTnjznlRfTJYEqYwFq",
+        "backupId": "1X5VfSaCbEbnKEUm4R3IoijQ14wdDh_uj"
+      },
+      {
+        "id": "ep-7-bilingual",
+        "episodeNumber": 7,
+        "title": "Tập 7",
+        "videoUrl": "https://drive.google.com/open?id=1NSAaAwQQkgiilQ396XJTCt_JdPigAaD8",
+        "duration": "40:15",
+        "createdAt": "2026-10-24T05:18:51.045972Z",
+        "filename": "futsutsuka_ep07_bilingual.mp4",
+        "gdriveId": "1NSAaAwQQkgiilQ396XJTCt_JdPigAaD8",
+        "backupId": "1wf556E-MmfjaKVg2Tfbcd8NBbyGBOCma"
+      },
+      {
+        "id": "ep-8-bilingual",
+        "episodeNumber": 8,
+        "title": "Tập 8",
+        "videoUrl": "https://drive.google.com/open?id=1qg0xEETtrOUAsGpyu5zbNPN4Q_aaRXEq",
+        "duration": "41:16",
+        "createdAt": "2026-10-24T05:38:47.269789Z",
+        "filename": "futsutsuka_ep08_bilingual.mp4",
+        "gdriveId": "1qg0xEETtrOUAsGpyu5zbNPN4Q_aaRXEq",
+        "backupId": "1frRSMwsQM-j7jYI1Eb072CbnG27SlpDd"
+      },
+      {
+        "id": "ep-9-bilingual",
+        "episodeNumber": 9,
+        "title": "Tập 9",
+        "videoUrl": "https://drive.google.com/open?id=1xqTupHq3-lJVzsYKJkbqRyU1lB1rU_4J",
+        "duration": "30:50",
+        "createdAt": "2026-10-24T05:53:58.647485Z",
+        "filename": "futsutsuka_ep09_bilingual.mp4",
+        "gdriveId": "1xqTupHq3-lJVzsYKJkbqRyU1lB1rU_4J",
+        "backupId": "1WWnaDXI9Do7Y6fHqm-NX5WSBtVNO1255"
+      },
+      {
+        "id": "ep-10-bilingual",
+        "episodeNumber": 10,
+        "title": "Tập 10",
+        "videoUrl": "https://drive.google.com/open?id=1hrBM27iXsiOUA5RTJRos2xXDgB9Xeplb",
+        "duration": "40:06",
+        "createdAt": "2026-10-24T06:15:11.959244Z",
+        "filename": "futsutsuka_ep10_bilingual.mp4",
+        "gdriveId": "1hrBM27iXsiOUA5RTJRos2xXDgB9Xeplb",
+        "backupId": "19Tw0_YGf_Eo_GEchgrsOD10HJSfi0XBd"
+      },
+      {
+        "id": "ep-11-bilingual",
+        "episodeNumber": 11,
+        "title": "Tập 11",
+        "videoUrl": "https://drive.google.com/open?id=1x1Pq91iaGWfBiJXm_vIIbuUhLPOF7nib",
+        "duration": "36:50",
+        "createdAt": "2026-10-24T06:36:59.254261Z",
+        "filename": "futsutsuka_ep11_bilingual.mp4",
+        "gdriveId": "1x1Pq91iaGWfBiJXm_vIIbuUhLPOF7nib",
+        "backupId": "1wleLo07oGRbK9Aw80E_12u0sbbXdNNMv"
+      }
+    ],
+    "createdAt": "2026-09-22T01:25:00.000Z",
+    "updatedAt": "2026-10-24T07:28:05.574602Z"
+  },
+  {
+    "id": "the-apothecary-diaries-season-3",
+    "title": "Kusuriya no Hitorigoto 3rd Season",
+    "originalTitle": "薬屋のひとりごと 第3期 (The Apothecary Diaries Season 3)",
+    "slug": "the-apothecary-diaries-season-3",
+    "poster": "/posters/the-apothecary-diaries-season-3.jpg",
+    "banner": "/posters/the-apothecary-diaries-season-3.jpg",
+    "description": "In the aftermath of the Shi Clan’s rebellion, things have finally settled down, and Maomao has returned to her old life as a pharmacist in the pleasure district.\n\nOne day, triggered by a breakfast served at the Verdigris House, Maomao senses an anomaly and begins investigating its true nature.\n\nMeanwhile, Jinshi, who has revealed his true identity as the Imperial brother and begun to face his heavy responsibilities, is deeply troubled by the final message left by Loulan: a warning of an impending \"disaster that will strike the nation.\"\n\nTo make matters worse, rumors of a mysterious shrine maiden who deceives the people begin to spread, casting a dark shadow over the country of Li once again.\n\nFrom the depths of the inner court to the city streets, and across foreign borders—the world grows wider, and the stakes even higher for Maomao and Jinshi.\n\n(Source: Crunchyroll News)",
+    "genres": [
+      "Drama",
+      "Mystery"
+    ],
+    "status": "Đang chiếu",
+    "year": 2026,
+    "totalEpisodes": "12",
+    "quality": "FHD 1080p",
+    "season": "Mùa Thu 2026",
+    "episodes": [
+      {
+        "id": "ep-1-bilingual",
+        "episodeNumber": 1,
+        "title": "Tập 1 : Đàn Châu Chấu",
+        "videoUrl": "https://drive.google.com/open?id=1EwrRWBqRm574HMbzj4q9EQJq6WVx_56R",
+        "duration": "38:32",
+        "createdAt": "2026-10-02T19:46:11.666236Z",
+        "filename": "the_ep01_bilingual.mp4",
+        "gdriveId": "1EwrRWBqRm574HMbzj4q9EQJq6WVx_56R",
+        "backupId": "1KQdTfwc57S0rJLSmckcICpLY8-Lc4HFX"
+      },
+      {
+        "id": "ep-2-bilingual",
+        "episodeNumber": 2,
+        "title": "Tập 2 : The Fire-Rat Cloak",
+        "videoUrl": "https://drive.google.com/open?id=13c_NVynWDTuEZQFMPoIJ-lnASN8eV3Tn",
+        "duration": "40:15",
+        "createdAt": "2026-10-14T15:11:53.509714Z",
+        "filename": "the_ep02_bilingual.mp4",
+        "gdriveId": "13c_NVynWDTuEZQFMPoIJ-lnASN8eV3Tn",
+        "backupId": "1kdog1YgbQBjjZRtTrQTC3ANcGwym6iVk"
+      },
+      {
+        "id": "ep-3-bilingual",
+        "episodeNumber": 3,
+        "title": "Tập 3 : If There Is No Bread",
+        "videoUrl": "https://drive.google.com/open?id=1JDrzf0L4RQ1knwnIy3c0hlyHtd1Pdnd9",
+        "duration": "37:13",
+        "createdAt": "2026-10-17T11:25:59.848750Z",
+        "filename": "the_ep03_bilingual.mp4",
+        "gdriveId": "1JDrzf0L4RQ1knwnIy3c0hlyHtd1Pdnd9",
+        "backupId": "1PrZavS8vAdYmAd2YnOEVGJW6zVPEJWsX"
+      },
+      {
+        "id": "ep-4-bilingual",
+        "episodeNumber": 4,
+        "title": "Tập 4 : The Last Volume",
+        "videoUrl": "https://drive.google.com/open?id=1_iw8d7zRMDnve2BIQyys4dfQxtJNFRuH",
+        "duration": "38:15",
+        "createdAt": "2026-10-24T04:09:33.080913Z",
+        "filename": "the_ep04_bilingual.mp4",
+        "gdriveId": "1_iw8d7zRMDnve2BIQyys4dfQxtJNFRuH",
+        "backupId": "1O38OH4jV8nz1gOTkPNMIiSCMQlHm7YWA"
+      },
+      {
+        "id": "ep-5-bilingual",
+        "episodeNumber": 5,
+        "title": "Tập 5 : The White-Snake Immortal",
+        "videoUrl": "https://drive.google.com/open?id=19bbAT3d5JR_DMdU2_PQVbZYxLaGjYW9h",
+        "duration": "37:29",
+        "createdAt": "2026-11-01T09:34:52.124584Z",
+        "filename": "the_ep05_bilingual.mp4",
+        "gdriveId": "19bbAT3d5JR_DMdU2_PQVbZYxLaGjYW9h",
+        "backupId": "18qVL0aQVKKB9uOrUsbAETPf6ucwWK49Q"
+      }
+    ],
+    "createdAt": "2026-10-02T19:24:44.055089Z",
+    "updatedAt": "2026-11-01T09:34:52.124951Z"
+  },
+  {
+    "id": "tokyo-revengers-santen-sensou-hen",
+    "title": "Tokyo Revengers: Santen Sensou-hen",
+    "originalTitle": "東京リベンジャーズ 三天戦争編",
+    "slug": "tokyo-revengers-santen-sensou-hen",
+    "poster": "/posters/tokyo-revengers-santen-sensou-hen.jpg",
+    "banner": "/posters/tokyo-revengers-santen-sensou-hen.jpg",
+    "description": "Sau trận chiến đẫm máu với Thiên Trúc (Tenjiku) tại Yokohama và sự sụp đổ của Kisaki Tetta, Takemichi Hanagaki ngỡ rằng đã cứu được tương lai hòa bình cho tất cả mọi người. Thế nhưng, Mikey đột ngột quyết định giải tán băng Tokyo Manji (Touman) và tự nhấn chìm bản thân vào bóng tối của \"Bản Năng Hắc Ám\" để bảo vệ những người bạn thân thương.\n\nHai năm sau, thế giới ngầm Tokyo rơi vào kỷ nguyên hỗn loạn chưa từng có – thời kỳ \"Tam Thiên\" (Santen) với sự tranh bá khốc liệt của ba đại băng đảng hùng mạnh nhất:\n• Phạm (Brahman): Băng nhóm ngầm do Kawaragi Senju dẫn dắt, quy tụ những huyền thoại đời đầu của Hắc Long.\n• Lục Ba La Đơn Đại (Rokuhara Tandai): Cỗ máy bạo lực do quái vật Terano South thống trị cùng tàn quân Thiên Trúc.\n• Kantou Manji: Thế lực mới do chính Mikey cầm đầu trong sự lạnh lùng và tàn nhẫn tuyệt đối.\n\nĐể giải cứu người bạn thân Mikey và kéo cậu ấy trở về với ánh sáng, Takemichi một lần nữa kích hoạt năng lực du hành thời gian, dấn thân vào cuộc Đại Chiến Tam Thiên khốc liệt nhất lịch sử bất lương Tokyo!",
+    "genres": [
+      "Hành Động",
+      "Kịch Tính",
+      "Du Hành Thời Gian",
+      "Băng Đảng"
+    ],
+    "status": "Đang chiếu",
+    "year": 2026,
+    "totalEpisodes": "13",
+    "quality": "FHD 1080p Song Ngữ",
+    "season": "Mùa Thu 2026",
+    "episodes": [
+      {
+        "id": "ep-1-bilingual",
+        "episodeNumber": 1,
+        "title": "Tập 1 : Tan Rã",
+        "videoUrl": "https://drive.google.com/open?id=1vZIIZ_-Wn4KtUGa9vH1HD-1rrovnuCvX",
+        "duration": "38:07",
+        "createdAt": "2026-10-03T06:37:35.467484Z",
+        "filename": "tokyo_ep01_bilingual.mp4",
+        "gdriveId": "1vZIIZ_-Wn4KtUGa9vH1HD-1rrovnuCvX",
+        "backupId": "19b9klJs7lxubt4PY-5nfdQOy_hpAasDO"
+      },
+      {
+        "id": "ep-2-bilingual",
+        "episodeNumber": 2,
+        "title": "Tập 2 : Be Left Behind The Times",
+        "videoUrl": "https://drive.google.com/open?id=1-EZfyPn8z-HJ0QEZ5iQwjqYMrXkjIIlU",
+        "duration": "41:48",
+        "createdAt": "2026-10-14T15:36:44.236145Z",
+        "filename": "tokyo_ep02_bilingual.mp4",
+        "gdriveId": "1-EZfyPn8z-HJ0QEZ5iQwjqYMrXkjIIlU",
+        "backupId": "1Aa0y9kIb-VBX8JSeQb1tVvZmiSaCnf9z"
+      }
+    ],
+    "createdAt": "2026-10-03T06:19:50.791774Z",
+    "updatedAt": "2026-10-14T15:36:44.236457Z"
+  },
+  {
+    "id": "black-clover-season-2",
+    "title": "Black Clover 2nd Season",
+    "originalTitle": "ブラッククローバー 第2期 (Black Clover Season 2)",
+    "slug": "black-clover-season-2",
+    "poster": "/posters/black-clover-season-2.jpg",
+    "banner": "/posters/black-clover-season-2.jpg",
+    "description": "As tyranny engulfs the Clover Kingdom, Asta and the Magic Knights launch a desperate raid on the Spade Kingdom to rescue their squad captains from the Dark Triad. But their mission leads them into a brutal battle against forces beyond anything they’ve ever faced. Now, Asta must rise above impossible odds to protect his friends and honor the promise he made to Yuno.\n\n(Source: Crunchyroll)",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Comedy",
+      "Fantasy"
+    ],
+    "status": "Đang chiếu",
+    "year": 2026,
+    "totalEpisodes": "12",
+    "quality": "FHD 1080p",
+    "season": "Mùa Thu 2026",
+    "episodes": [
+      {
+        "id": "ep-1-bilingual",
+        "episodeNumber": 1,
+        "title": "Tập 1 : The Battle Begins",
+        "videoUrl": "https://drive.google.com/open?id=12tZ6f3Q_NT7Cw7I2dFRtDTHx-pZxbgIC",
+        "duration": "39:56",
+        "createdAt": "2026-10-04T03:11:30.531890Z",
+        "filename": "black_ep01_bilingual.mp4",
+        "gdriveId": "12tZ6f3Q_NT7Cw7I2dFRtDTHx-pZxbgIC",
+        "backupId": "1w50AgG6SxQmdwpj_nzF-Z9DtJ1HLqhO5"
+      },
+      {
+        "id": "ep-2-bilingual",
+        "episodeNumber": 2,
+        "title": "Tập 2 : The Door to Hell",
+        "videoUrl": "https://drive.google.com/open?id=1aErWTVPRjKI-fvXN4Y8Pi2VLVAG_bx7o",
+        "duration": "37:24",
+        "createdAt": "2026-10-14T15:55:43.573311Z",
+        "filename": "black_ep02_bilingual.mp4",
+        "gdriveId": "1aErWTVPRjKI-fvXN4Y8Pi2VLVAG_bx7o",
+        "backupId": "10MHEoR3gyKlLOLpo_ah1Axzlv6LvFE6X"
+      }
+    ],
+    "createdAt": "2026-10-04T02:48:19.921434Z",
+    "updatedAt": "2026-10-14T15:55:43.573776Z"
+  },
+  {
+    "id": "aoashi-season-2",
+    "title": "Aoashi 2nd Season",
+    "originalTitle": "アオアシ 第2期 (Aoashi Season 2)",
+    "slug": "aoashi-season-2",
+    "poster": "/posters/aoashi-season-2.jpg",
+    "banner": "/posters/aoashi-season-2-banner.jpg",
+    "description": "Aoi Ashito’s game has now earned him a spot on the A team, but he is quickly overwhelmed by his harsh new reality. Surrounded by elite players like Kuribayashi and Akutsu, practices are just as merciless as the matches. In this U-18 Premier League of powerhouse talent, Ashito must evolve or be crushed, if he’s ever to be acknowledged.\n\n(Source: Crunchyroll)",
+    "genres": [
+      "Sports"
+    ],
+    "status": "Đang chiếu",
+    "year": 2026,
+    "totalEpisodes": "24",
+    "quality": "FHD 1080p",
+    "season": "Mùa Thu 2026",
+    "episodes": [
+      {
+        "id": "ep-1-bilingual",
+        "episodeNumber": 1,
+        "title": "Tập 1 : Đội A (Team A)",
+        "videoUrl": "https://drive.google.com/open?id=1Zb8tukc1nyDxusohZ1GOaNwyymo0AGeU",
+        "duration": "38:38",
+        "createdAt": "2026-10-04T13:27:39.919588Z",
+        "filename": "aoashi_ep01_bilingual.mp4",
+        "gdriveId": "1Zb8tukc1nyDxusohZ1GOaNwyymo0AGeU",
+        "backupId": "1hvEVegSKF7bis-bCMf6EBO8rea7V034m"
+      },
+      {
+        "id": "ep-2-bilingual",
+        "episodeNumber": 2,
+        "title": "Tập 2 : A Thinking Reed",
+        "videoUrl": "https://drive.google.com/open?id=1Z5B5AatcSV_SIgfKn9uGC6olWuK0kYlc",
+        "duration": "39:24",
+        "createdAt": "2026-10-14T16:00:15.909548Z",
+        "filename": "aoashi_ep02_bilingual.mp4",
+        "gdriveId": "1Z5B5AatcSV_SIgfKn9uGC6olWuK0kYlc",
+        "backupId": "1C_Ub_DoGNjKejbZxA8qaxAe5pPfpSwhC"
+      }
+    ],
+    "createdAt": "2026-10-04T13:07:40.595502Z",
+    "updatedAt": "2026-10-15T00:43:29.310645Z"
+  },
+  {
+    "id": "blue-box-season-2",
+    "title": "Blue Box Season 2",
+    "originalTitle": "アオのハコ Season 2 (Ao no Hako Season 2)",
+    "slug": "blue-box-season-2",
+    "poster": "/posters/blue-box-season-2.jpg",
+    "banner": "/posters/blue-box-season-2-banner.jpg",
+    "description": "Tiếp nối thành công của mùa đầu tiên, Blue Box Mùa 2 (Ao no Hako Season 2) tiếp tục khắc họa câu chuyện thanh xuân vườn trường tươi đẹp và giàu cảm xúc giữa thể thao nhiệt huyết và tình yêu đầu trong sáng:\n\n• Inomata Taiki: Tuyển thủ cầu lông năm nhất trung học Eimei, luôn nỗ lực không ngừng để chạm tới giải toàn quốc (Inter-High) và xứng đáng đứng cạnh người con gái mình thương.\n• Kano Chinatsu: Đàn chị năm hai, ngôi sao sáng giá của đội tuyển bóng rổ nữ và hiện đang sống chung dưới một mái nhà với gia đình Taiki.\n• Chouno Hina: Ngôi sao thể dục nghệ thuật, bạn thân từ thuở nhỏ của Taiki, người luôn mang trong mình tình cảm chân thành dành cho cậu.\n\nBước sang mùa thứ hai, sau kỳ nghỉ hè đầy biến động, Taiki lần đầu tiên chủ động mở lời mời Chinatsu cho một buổi hẹn hò thực sự. Đồng thời, ngọn lửa đam mê trên sân tập càng bùng cháy mãnh liệt khi các giải đấu tuyển chọn đang cận kề. Liệu Taiki có thể bứt phá trên sân cầu lông và thổ lộ thành công tình cảm sâu đậm trong lòng với chị Chinatsu?",
+    "genres": [
+      "Romance",
+      "Slice of Life",
+      "Sports",
+      "School",
+      "Shounen"
+    ],
+    "status": "Đang chiếu",
+    "year": 2026,
+    "totalEpisodes": "12",
+    "quality": "FHD 1080p",
+    "season": "Mùa Thu 2026",
+    "episodes": [
+      {
+        "id": "ep-1-bilingual",
+        "episodeNumber": 1,
+        "title": "Tập 1 : Déjà Vu",
+        "videoUrl": "https://drive.google.com/open?id=1VJ7AlmGULpHuZMmpfEWAqOSj94MD2jRd",
+        "duration": "37:08",
+        "createdAt": "2026-10-04T13:43:33.799222Z",
+        "filename": "blue_ep01_bilingual.mp4",
+        "gdriveId": "1VJ7AlmGULpHuZMmpfEWAqOSj94MD2jRd",
+        "backupId": "1xVvJNK4_NiTabNot2rtMafqL6B-TgnVl"
+      },
+      {
+        "id": "ep-2-bilingual",
+        "episodeNumber": 2,
+        "title": "Tập 2 : You Have to Go to Nationals",
+        "videoUrl": "https://drive.google.com/open?id=1JuQISX01SGMGYPyR0v9Losa8uAHS-6Cf",
+        "duration": "38:53",
+        "createdAt": "2026-10-14T14:12:37.791837Z",
+        "filename": "blue_ep02_bilingual.mp4",
+        "gdriveId": "1JuQISX01SGMGYPyR0v9Losa8uAHS-6Cf",
+        "backupId": "1VcZrtJ3X6iDIaNIz7vS9l5LG57a7k9vl"
+      },
+      {
+        "id": "ep-3-bilingual",
+        "episodeNumber": 3,
+        "title": "Tập 3 : They're One and the Same",
+        "videoUrl": "https://drive.google.com/open?id=1-1Y6WoZsyuYIwT_KVKbG_FeZIUyLXXPu",
+        "duration": "38:22",
+        "createdAt": "2026-10-23T02:05:09.355685Z",
+        "filename": "blue_ep03_bilingual.mp4",
+        "gdriveId": "1-1Y6WoZsyuYIwT_KVKbG_FeZIUyLXXPu",
+        "backupId": "1ZPb_5nkxY2sC8S8ZF1Teb6asUDSbAbIN"
+      },
+      {
+        "id": "ep-4-bilingual",
+        "episodeNumber": 4,
+        "title": "Tập 4 : Love Is the Most Powerful Feeling",
+        "videoUrl": "https://drive.google.com/open?id=1DzCWQoDmiKZ4pk9PFPbSzKcdoKrRpKyH",
+        "duration": "37:22",
+        "createdAt": "2026-10-25T18:19:56.352963Z",
+        "filename": "blue_ep04_bilingual.mp4",
+        "gdriveId": "1DzCWQoDmiKZ4pk9PFPbSzKcdoKrRpKyH",
+        "backupId": "1Y9DQ-_uApqoiv2q_G4Pm4rwHCstzf5RR"
+      }
+    ],
+    "createdAt": "2026-10-04T13:27:21.144458Z",
+    "updatedAt": "2026-10-25T18:19:56.352989Z"
+  },
+  {
+    "id": "chitose-kun-wa-ramune-bin-no-naka",
+    "title": "Chitose-kun wa Ramune Bin no Naka",
+    "originalTitle": "千歳くんはラムネ瓶のなか (Chitose Is in the Ramune Bottle)",
+    "slug": "chitose-kun-wa-ramune-bin-no-naka",
+    "poster": "/posters/chitose-kun-wa-ramune-bin-no-naka.jpg",
+    "banner": "/posters/chitose-kun-wa-ramune-bin-no-naka-banner.jpg",
+    "description": "Being popular isn’t easy. It’s hard to beat Saku Chitose. The most popular kid in his high school? Check. An ironclad reputation that can weather even vicious online attacks? Check. A group of friends as attractive on the outside as they are inside? Check. But when a teacher asks for his help bringing back a student who has been shut away in his room for months, Saku’s perfect world will never be the same. What is this, some kind of normie harem story...?\n\n(Source: Yen Press)\n\nNote: The first episode has an extended runtime of ~34 minutes.",
+    "genres": [
+      "Comedy",
+      "Romance"
+    ],
+    "status": "Đang chiếu",
+    "year": 2025,
+    "totalEpisodes": "13",
+    "quality": "FHD 1080p",
+    "season": "Mùa Thu 2025",
+    "episodes": [
+      {
+        "id": "ep-14-bilingual",
+        "episodeNumber": 14,
+        "title": "Tập 14 : Your Elopement with Senpai",
+        "videoUrl": "https://drive.google.com/open?id=1uYw4AzqIgCKLXQ5Ev4YPotcxxTqf1pS5",
+        "duration": "37:38",
+        "createdAt": "2026-10-15T02:33:14.060153Z",
+        "filename": "chitose_ep14_bilingual.mp4",
+        "gdriveId": "1uYw4AzqIgCKLXQ5Ev4YPotcxxTqf1pS5",
+        "backupId": "1mHo3NAWliMXIEW8fhRkKl53UajNqSQxi"
+      },
+      {
+        "id": "ep-15-bilingual",
+        "episodeNumber": 15,
+        "title": "Tập 15 : The Blue Night of the Distant Sky That I Will Recall Someday",
+        "videoUrl": "https://drive.google.com/open?id=1JV97abD6Y00tlArAztstdHvlTmAed9uj",
+        "duration": "38:52",
+        "createdAt": "2026-10-23T02:02:41.645442Z",
+        "filename": "chitose_ep15_bilingual.mp4",
+        "gdriveId": "1JV97abD6Y00tlArAztstdHvlTmAed9uj",
+        "backupId": "1H-7WF-JgFoIQV86Z4P8pUOHn-JH89x6a"
+      },
+      {
+        "id": "ep-16-bilingual",
+        "episodeNumber": 16,
+        "title": "Tập 16 : Tomorrow's Wind",
+        "videoUrl": "https://drive.google.com/open?id=1sqjllxul0DberN7UrEI4DlIrCTeeu7uw",
+        "duration": "40:03",
+        "createdAt": "2026-10-28T04:36:42.753555Z",
+        "filename": "chitose_ep16_bilingual.mp4",
+        "gdriveId": "1sqjllxul0DberN7UrEI4DlIrCTeeu7uw",
+        "backupId": "1A4qeKKPuQ8h0r-zcp8A-D216v1cA-8MG"
+      }
+    ],
+    "createdAt": "2026-10-15T02:18:15.704201Z",
+    "updatedAt": "2026-10-28T04:36:42.753633Z"
+  }
+]
