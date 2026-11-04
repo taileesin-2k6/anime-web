@@ -239,72 +239,11 @@ export async function GET(request: NextRequest) {
     }
   }
 
-  // 2. Google Drive Streaming with Edge Cache and Failover
+  // 2. Google Drive Native Continuous Streaming with Failover
   const candidateIds = [gdriveId, backupId].filter(Boolean);
   if (candidateIds.length > 0) {
-    // Determine 2MB Range Chunk
-    const range = request.headers.get('range');
-    const CHUNK_SIZE = 2 * 1024 * 1024; // 2MB chunk
-    let start = 0;
-    let effectiveEnd = CHUNK_SIZE - 1;
+    const clientRange = request.headers.get('range') || 'bytes=0-';
 
-    if (range) {
-      const match = range.match(/bytes=(\d+)-(\d*)/);
-      if (match) {
-        start = parseInt(match[1], 10);
-        if (match[2]) {
-          const end = parseInt(match[2], 10);
-          effectiveEnd = (end - start > 4 * 1024 * 1024) ? start + CHUNK_SIZE - 1 : end;
-        } else {
-          effectiveEnd = start + CHUNK_SIZE - 1;
-        }
-      }
-    }
-
-    // Cloudflare Edge Cache API check
-    const edgeCache = typeof caches !== 'undefined' ? ((caches as any).default || caches) : null;
-    const primaryId = candidateIds[0];
-    const cacheUrl = new URL(`/_edge_cache/${primaryId}/${start}_${effectiveEnd}`, request.url).toString();
-
-    if (edgeCache) {
-      try {
-        const cachedRes = await edgeCache.match(cacheUrl);
-        if (cachedRes) {
-          const cachedBuffer = await cachedRes.arrayBuffer();
-          if (cachedBuffer && cachedBuffer.byteLength > 0) {
-            const hitHeaders = new Headers();
-            hitHeaders.set('Content-Type', 'video/mp4');
-            hitHeaders.set('Accept-Ranges', 'bytes');
-            hitHeaders.set('Content-Length', cachedBuffer.byteLength.toString());
-            const cr = cachedRes.headers.get('X-Content-Range');
-            if (cr) {
-              hitHeaders.set('Content-Range', cr);
-            } else {
-              hitHeaders.set('Content-Range', `bytes ${start}-${start + cachedBuffer.byteLength - 1}/*`);
-            }
-            hitHeaders.set('Access-Control-Allow-Origin', '*');
-            hitHeaders.set('Access-Control-Allow-Methods', 'GET, HEAD, OPTIONS');
-            hitHeaders.set('Access-Control-Allow-Headers', 'Range, Accept, Content-Type');
-            hitHeaders.set(
-              'Cache-Control',
-              'public, max-age=31536000, s-maxage=31536000, stale-while-revalidate=86400, immutable'
-            );
-            hitHeaders.set('CDN-Cache-Control', 'public, max-age=31536000, s-maxage=31536000');
-            hitHeaders.set('X-Edge-Cache', 'HIT');
-            hitHeaders.set('X-Active-Drive', 'edge-cache');
-
-            return new Response(cachedBuffer, {
-              status: 206,
-              headers: hitHeaders,
-            });
-          }
-        }
-      } catch (cacheErr) {
-        console.warn('Edge cache match error, continuing:', cacheErr);
-      }
-    }
-
-    // On Cache Miss: Fetch chunk from Google Drive with Failover
     for (const driveId of candidateIds) {
       try {
         const accessToken = await getValidAccessToken();
@@ -313,15 +252,20 @@ export async function GET(request: NextRequest) {
         const driveApiUrl = `https://www.googleapis.com/drive/v3/files/${driveId}?alt=media&supportsAllDrives=true`;
         const apiHeaders: Record<string, string> = {
           Authorization: `Bearer ${accessToken}`,
-          Range: `bytes=${start}-${effectiveEnd}`,
+          Range: clientRange,
         };
 
         const controller = new AbortController();
-        const timeout = setTimeout(() => controller.abort(), 8000); // 8s timeout
+        const timeout = setTimeout(() => controller.abort(), 12000); // 12s safety timeout
 
         const apiRes = await fetch(driveApiUrl, {
           headers: apiHeaders,
           signal: controller.signal,
+          // @ts-ignore
+          cf: {
+            cacheEverything: true,
+            cacheTtl: 86400,
+          },
         });
         clearTimeout(timeout);
 
@@ -332,72 +276,42 @@ export async function GET(request: NextRequest) {
           !contentType.includes('text/html') &&
           !contentType.includes('json')
         ) {
-          const chunkBuffer = await apiRes.arrayBuffer();
-          if (chunkBuffer.byteLength > 0) {
-            const contentRange =
-              apiRes.headers.get('content-range') ||
-              `bytes ${start}-${start + chunkBuffer.byteLength - 1}/*`;
+          const responseHeaders = new Headers();
+          const passthroughHeaders = [
+            'content-type',
+            'content-length',
+            'content-range',
+            'last-modified',
+            'etag',
+          ];
 
-            // Cache 2MB chunk in Cloudflare Edge Cache
-            if (edgeCache) {
-              try {
-                const cacheStoreHeaders = new Headers();
-                cacheStoreHeaders.set('Content-Type', 'video/mp4');
-                cacheStoreHeaders.set('Content-Length', chunkBuffer.byteLength.toString());
-                cacheStoreHeaders.set('X-Content-Range', contentRange);
-                cacheStoreHeaders.set('Cache-Control', 'public, max-age=2592000, s-maxage=2592000');
-                const responseToCache = new Response(chunkBuffer, {
-                  status: 200,
-                  headers: cacheStoreHeaders,
-                });
-                await edgeCache.put(cacheUrl, responseToCache);
-              } catch (cachePutErr) {
-                console.warn('Edge cache put error:', cachePutErr);
-              }
+          apiRes.headers.forEach((val, key) => {
+            if (passthroughHeaders.includes(key.toLowerCase())) {
+              responseHeaders.set(key, val);
             }
+          });
 
-            const responseHeaders = new Headers();
-            const passthroughHeaders = [
-              'content-type',
-              'content-length',
-              'content-range',
-              'accept-ranges',
-              'last-modified',
-              'etag',
-            ];
-
-            apiRes.headers.forEach((val, key) => {
-              if (passthroughHeaders.includes(key.toLowerCase())) {
-                responseHeaders.set(key, val);
-              }
-            });
-
-            if (!responseHeaders.has('Content-Type')) {
-              responseHeaders.set('Content-Type', 'video/mp4');
-            }
-            if (!responseHeaders.has('Accept-Ranges')) {
-              responseHeaders.set('Accept-Ranges', 'bytes');
-            }
-            responseHeaders.set('Content-Length', chunkBuffer.byteLength.toString());
-            responseHeaders.set('Content-Range', contentRange);
-            responseHeaders.set('Access-Control-Allow-Origin', '*');
-            responseHeaders.set('Access-Control-Allow-Methods', 'GET, HEAD, OPTIONS');
-            responseHeaders.set('Access-Control-Allow-Headers', 'Range, Accept, Content-Type');
-
-            // Persistent Edge CDN caching headers
-            responseHeaders.set(
-              'Cache-Control',
-              'public, max-age=31536000, s-maxage=31536000, stale-while-revalidate=86400, immutable'
-            );
-            responseHeaders.set('CDN-Cache-Control', 'public, max-age=31536000, s-maxage=31536000');
-            responseHeaders.set('X-Edge-Cache', 'MISS');
-            responseHeaders.set('X-Active-Drive', driveId === gdriveId ? 'primary' : 'backup');
-
-            return new Response(chunkBuffer, {
-              status: 206,
-              headers: responseHeaders,
-            });
+          if (!responseHeaders.has('Content-Type')) {
+            responseHeaders.set('Content-Type', 'video/mp4');
           }
+          responseHeaders.set('Accept-Ranges', 'bytes');
+          responseHeaders.set('Access-Control-Allow-Origin', '*');
+          responseHeaders.set('Access-Control-Allow-Methods', 'GET, HEAD, OPTIONS');
+          responseHeaders.set('Access-Control-Allow-Headers', 'Range, Accept, Content-Type');
+
+          // Caching headers
+          responseHeaders.set(
+            'Cache-Control',
+            'public, max-age=31536000, s-maxage=31536000, stale-while-revalidate=86400, immutable'
+          );
+          responseHeaders.set('CDN-Cache-Control', 'public, max-age=31536000, s-maxage=31536000');
+          responseHeaders.set('X-Active-Drive', driveId === gdriveId ? 'primary' : 'backup');
+
+          // Return native ReadableStream directly to client with ZERO memory allocation and ZERO CPU overhead
+          return new Response(apiRes.body, {
+            status: apiRes.status,
+            headers: responseHeaders,
+          });
         } else {
           console.warn(`Drive ID ${driveId} returned status ${apiRes.status} (${contentType}), trying next candidate...`);
         }
@@ -413,7 +327,7 @@ export async function GET(request: NextRequest) {
         const fetchHeaders: Record<string, string> = {
           'User-Agent':
             'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-          Range: `bytes=${start}-${effectiveEnd}`,
+          Range: clientRange,
         };
 
         const res = await fetch(gdriveDirectUrl, {
@@ -422,27 +336,23 @@ export async function GET(request: NextRequest) {
 
         const contentType = res.headers.get('content-type') || '';
         if (!contentType.includes('text/html') && !contentType.includes('json') && (res.ok || res.status === 206)) {
-          const chunkBuffer = await res.arrayBuffer();
-          if (chunkBuffer.byteLength > 0) {
-            const responseHeaders = new Headers();
-            responseHeaders.set('Content-Type', 'video/mp4');
-            responseHeaders.set('Accept-Ranges', 'bytes');
-            responseHeaders.set('Content-Length', chunkBuffer.byteLength.toString());
-            responseHeaders.set(
-              'Content-Range',
-              res.headers.get('content-range') || `bytes ${start}-${start + chunkBuffer.byteLength - 1}/*`
-            );
-            responseHeaders.set('Access-Control-Allow-Origin', '*');
-            responseHeaders.set('Access-Control-Allow-Methods', 'GET, HEAD, OPTIONS');
-            responseHeaders.set('Access-Control-Allow-Headers', 'Range, Accept, Content-Type');
-            responseHeaders.set('Cache-Control', 'public, max-age=3600');
-            responseHeaders.set('X-Active-Drive', 'direct-download');
+          const responseHeaders = new Headers();
+          responseHeaders.set('Content-Type', 'video/mp4');
+          responseHeaders.set('Accept-Ranges', 'bytes');
+          const cl = res.headers.get('content-length');
+          if (cl) responseHeaders.set('Content-Length', cl);
+          const cr = res.headers.get('content-range');
+          if (cr) responseHeaders.set('Content-Range', cr);
+          responseHeaders.set('Access-Control-Allow-Origin', '*');
+          responseHeaders.set('Access-Control-Allow-Methods', 'GET, HEAD, OPTIONS');
+          responseHeaders.set('Access-Control-Allow-Headers', 'Range, Accept, Content-Type');
+          responseHeaders.set('Cache-Control', 'public, max-age=3600');
+          responseHeaders.set('X-Active-Drive', 'direct-download');
 
-            return new Response(chunkBuffer, {
-              status: 206,
-              headers: responseHeaders,
-            });
-          }
+          return new Response(res.body, {
+            status: res.status,
+            headers: responseHeaders,
+          });
         }
       } catch (err: any) {
         console.warn('Direct Google Drive stream fetch error:', err.message);
