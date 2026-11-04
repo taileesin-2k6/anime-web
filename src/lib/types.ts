@@ -4,6 +4,7 @@ export interface Episode {
   title: string;
   videoUrl: string; // Google Drive link, embed link, or direct mp4
   gdriveId?: string;
+  backupId?: string;
   filename?: string;
   duration?: string;
   createdAt: string;

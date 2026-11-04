@@ -10,21 +10,22 @@ export const maxDuration = 60;
 const RCLONE_HTTP_URL = 'http://127.0.0.1:8088';
 const fileSizeCache = new Map<string, string>();
 
-function resolveMediaInfo(request: NextRequest): { targetFilename: string; gdriveId: string } {
+function resolveMediaInfo(request: NextRequest): { targetFilename: string; gdriveId: string; backupId: string } {
   const gdriveIdParam = request.nextUrl.searchParams.get('gdriveId') || request.nextUrl.searchParams.get('id');
+  const backupIdParam = request.nextUrl.searchParams.get('backupId');
   const filePathParam = request.nextUrl.searchParams.get('file');
 
-  // FAST PATH: If gdriveId is already present in query params, return immediately!
-  // Zero CPU, zero DB scan, zero memory allocation.
-  if (gdriveIdParam) {
-    return { targetFilename: filePathParam || '', gdriveId: gdriveIdParam };
+  let targetFilename = filePathParam || '';
+  let gdriveId = gdriveIdParam || '';
+  let backupId = backupIdParam || '';
+
+  // Fast path: If both IDs are present in query params, return immediately!
+  if (gdriveId && backupId) {
+    return { targetFilename, gdriveId, backupId };
   }
 
   const slug = request.nextUrl.searchParams.get('slug');
   const ep = request.nextUrl.searchParams.get('ep');
-
-  let targetFilename = filePathParam || '';
-  let gdriveId = '';
 
   if (slug || ep) {
     try {
@@ -36,17 +37,18 @@ function resolveMediaInfo(request: NextRequest): { targetFilename: string; gdriv
           if (ep && (item.episodeNumber === parseInt(ep, 10) || isChitoseEp2Alias)) {
             targetFilename = targetFilename || item.filename || '';
             gdriveId = gdriveId || item.gdriveId || '';
+            backupId = backupId || item.backupId || '';
             break;
           }
         }
-        if (gdriveId) break;
+        if (gdriveId && backupId) break;
       }
     } catch (err) {
       console.warn('Error resolving media info:', err);
     }
   }
 
-  return { targetFilename, gdriveId };
+  return { targetFilename, gdriveId, backupId };
 }
 
 export async function OPTIONS() {
@@ -62,7 +64,7 @@ export async function OPTIONS() {
 }
 
 export async function HEAD(request: NextRequest) {
-  const { targetFilename, gdriveId } = resolveMediaInfo(request);
+  const { targetFilename, gdriveId, backupId } = resolveMediaInfo(request);
   const isCloud = Boolean(
     process.env.CF_PAGES ||
     process.env.CLOUDFLARE ||
@@ -104,8 +106,9 @@ export async function HEAD(request: NextRequest) {
   }
 
   // 2. Authenticated Google Drive metadata probe (lightweight JSON query)
-  if (gdriveId) {
-    const cachedSize = fileSizeCache.get(gdriveId);
+  const candidateIds = [gdriveId, backupId].filter(Boolean);
+  for (const driveId of candidateIds) {
+    const cachedSize = fileSizeCache.get(driveId);
     if (cachedSize) {
       return new NextResponse(null, {
         status: 200,
@@ -124,7 +127,7 @@ export async function HEAD(request: NextRequest) {
     try {
       const accessToken = await getValidAccessToken();
       if (accessToken) {
-        const metaUrl = `https://www.googleapis.com/drive/v3/files/${gdriveId}?fields=size,mimeType&supportsAllDrives=true`;
+        const metaUrl = `https://www.googleapis.com/drive/v3/files/${driveId}?fields=size,mimeType&supportsAllDrives=true`;
         const controller = new AbortController();
         const timeout = setTimeout(() => controller.abort(), 4000);
         const res = await fetch(metaUrl, {
@@ -136,7 +139,7 @@ export async function HEAD(request: NextRequest) {
         if (res.ok) {
           const data = (await res.json()) as { size?: string; mimeType?: string };
           if (data.size) {
-            fileSizeCache.set(gdriveId, data.size);
+            fileSizeCache.set(driveId, data.size);
             return new NextResponse(null, {
               status: 200,
               headers: {
@@ -153,7 +156,7 @@ export async function HEAD(request: NextRequest) {
         }
       }
     } catch {
-      // Fallback
+      // Continue to next candidate
     }
   }
 
@@ -170,7 +173,7 @@ export async function HEAD(request: NextRequest) {
 }
 
 export async function GET(request: NextRequest) {
-  const { targetFilename, gdriveId } = resolveMediaInfo(request);
+  const { targetFilename, gdriveId, backupId } = resolveMediaInfo(request);
   const isCloud = Boolean(
     process.env.CF_PAGES ||
     process.env.CLOUDFLARE ||
@@ -236,144 +239,218 @@ export async function GET(request: NextRequest) {
     }
   }
 
-  // 2. Authenticated Google Drive API v3 (24/7 permanent cloud playback)
-  if (gdriveId) {
-    try {
-      const accessToken = await getValidAccessToken();
-      if (accessToken) {
-        const driveApiUrl = `https://www.googleapis.com/drive/v3/files/${gdriveId}?alt=media&supportsAllDrives=true`;
-        const range = request.headers.get('range');
+  // 2. Google Drive Streaming with Edge Cache and Failover
+  const candidateIds = [gdriveId, backupId].filter(Boolean);
+  if (candidateIds.length > 0) {
+    // Determine 2MB Range Chunk
+    const range = request.headers.get('range');
+    const CHUNK_SIZE = 2 * 1024 * 1024; // 2MB chunk
+    let start = 0;
+    let effectiveEnd = CHUNK_SIZE - 1;
+
+    if (range) {
+      const match = range.match(/bytes=(\d+)-(\d*)/);
+      if (match) {
+        start = parseInt(match[1], 10);
+        if (match[2]) {
+          const end = parseInt(match[2], 10);
+          effectiveEnd = (end - start > 4 * 1024 * 1024) ? start + CHUNK_SIZE - 1 : end;
+        } else {
+          effectiveEnd = start + CHUNK_SIZE - 1;
+        }
+      }
+    }
+
+    // Cloudflare Edge Cache API check
+    const edgeCache = typeof caches !== 'undefined' ? ((caches as any).default || caches) : null;
+    const primaryId = candidateIds[0];
+    const cacheUrl = new URL(`/_edge_cache/${primaryId}/${start}_${effectiveEnd}`, request.url).toString();
+
+    if (edgeCache) {
+      try {
+        const cachedRes = await edgeCache.match(cacheUrl);
+        if (cachedRes) {
+          const cachedBuffer = await cachedRes.arrayBuffer();
+          if (cachedBuffer && cachedBuffer.byteLength > 0) {
+            const hitHeaders = new Headers();
+            hitHeaders.set('Content-Type', 'video/mp4');
+            hitHeaders.set('Accept-Ranges', 'bytes');
+            hitHeaders.set('Content-Length', cachedBuffer.byteLength.toString());
+            const cr = cachedRes.headers.get('X-Content-Range');
+            if (cr) {
+              hitHeaders.set('Content-Range', cr);
+            } else {
+              hitHeaders.set('Content-Range', `bytes ${start}-${start + cachedBuffer.byteLength - 1}/*`);
+            }
+            hitHeaders.set('Access-Control-Allow-Origin', '*');
+            hitHeaders.set('Access-Control-Allow-Methods', 'GET, HEAD, OPTIONS');
+            hitHeaders.set('Access-Control-Allow-Headers', 'Range, Accept, Content-Type');
+            hitHeaders.set(
+              'Cache-Control',
+              'public, max-age=31536000, s-maxage=31536000, stale-while-revalidate=86400, immutable'
+            );
+            hitHeaders.set('CDN-Cache-Control', 'public, max-age=31536000, s-maxage=31536000');
+            hitHeaders.set('X-Edge-Cache', 'HIT');
+            hitHeaders.set('X-Active-Drive', 'edge-cache');
+
+            return new Response(cachedBuffer, {
+              status: 206,
+              headers: hitHeaders,
+            });
+          }
+        }
+      } catch (cacheErr) {
+        console.warn('Edge cache match error, continuing:', cacheErr);
+      }
+    }
+
+    // On Cache Miss: Fetch chunk from Google Drive with Failover
+    for (const driveId of candidateIds) {
+      try {
+        const accessToken = await getValidAccessToken();
+        if (!accessToken) continue;
+
+        const driveApiUrl = `https://www.googleapis.com/drive/v3/files/${driveId}?alt=media&supportsAllDrives=true`;
         const apiHeaders: Record<string, string> = {
           Authorization: `Bearer ${accessToken}`,
+          Range: `bytes=${start}-${effectiveEnd}`,
         };
 
-        // Optimal 2MB Chunking:
-        // Keeps worker memory tiny (< 3MB), instant startup, zero 10ms CPU timeouts
-        const CHUNK_SIZE = 2 * 1024 * 1024; // 2MB
-        if (range) {
-          const match = range.match(/bytes=(\d+)-(\d*)/);
-          if (match) {
-            const start = parseInt(match[1], 10);
-            if (match[2]) {
-              const end = parseInt(match[2], 10);
-              const effectiveEnd = (end - start > 4 * 1024 * 1024) ? start + CHUNK_SIZE - 1 : end;
-              apiHeaders['Range'] = `bytes=${start}-${effectiveEnd}`;
-            } else {
-              apiHeaders['Range'] = `bytes=${start}-${start + CHUNK_SIZE - 1}`;
-            }
-          } else {
-            apiHeaders['Range'] = range;
-          }
-        } else {
-          apiHeaders['Range'] = `bytes=0-${CHUNK_SIZE - 1}`;
-        }
+        const controller = new AbortController();
+        const timeout = setTimeout(() => controller.abort(), 8000); // 8s timeout
 
         const apiRes = await fetch(driveApiUrl, {
           headers: apiHeaders,
-          // @ts-ignore - Cloudflare Workers Edge Cache
-          cf: {
-            cacheEverything: true,
-            cacheTtl: 86400,
-          },
+          signal: controller.signal,
         });
+        clearTimeout(timeout);
 
         const contentType = apiRes.headers.get('content-type') || '';
-        if ((apiRes.ok || apiRes.status === 206) && !contentType.includes('text/html') && !contentType.includes('json')) {
-          const responseHeaders = new Headers();
-          const passthroughHeaders = [
-            'content-type',
-            'content-length',
-            'content-range',
-            'accept-ranges',
-            'last-modified',
-            'etag',
-          ];
+        // If quota exceeded or error, Google returns HTML or JSON
+        if (
+          (apiRes.ok || apiRes.status === 206) &&
+          !contentType.includes('text/html') &&
+          !contentType.includes('json')
+        ) {
+          const chunkBuffer = await apiRes.arrayBuffer();
+          if (chunkBuffer.byteLength > 0) {
+            const contentRange =
+              apiRes.headers.get('content-range') ||
+              `bytes ${start}-${start + chunkBuffer.byteLength - 1}/*`;
 
-          apiRes.headers.forEach((val, key) => {
-            if (passthroughHeaders.includes(key.toLowerCase())) {
-              responseHeaders.set(key, val);
+            // Cache 2MB chunk in Cloudflare Edge Cache
+            if (edgeCache) {
+              try {
+                const cacheStoreHeaders = new Headers();
+                cacheStoreHeaders.set('Content-Type', 'video/mp4');
+                cacheStoreHeaders.set('Content-Length', chunkBuffer.byteLength.toString());
+                cacheStoreHeaders.set('X-Content-Range', contentRange);
+                cacheStoreHeaders.set('Cache-Control', 'public, max-age=2592000, s-maxage=2592000');
+                const responseToCache = new Response(chunkBuffer, {
+                  status: 200,
+                  headers: cacheStoreHeaders,
+                });
+                await edgeCache.put(cacheUrl, responseToCache);
+              } catch (cachePutErr) {
+                console.warn('Edge cache put error:', cachePutErr);
+              }
             }
-          });
 
-          if (!responseHeaders.has('Content-Type')) {
-            responseHeaders.set('Content-Type', 'video/mp4');
+            const responseHeaders = new Headers();
+            const passthroughHeaders = [
+              'content-type',
+              'content-length',
+              'content-range',
+              'accept-ranges',
+              'last-modified',
+              'etag',
+            ];
+
+            apiRes.headers.forEach((val, key) => {
+              if (passthroughHeaders.includes(key.toLowerCase())) {
+                responseHeaders.set(key, val);
+              }
+            });
+
+            if (!responseHeaders.has('Content-Type')) {
+              responseHeaders.set('Content-Type', 'video/mp4');
+            }
+            if (!responseHeaders.has('Accept-Ranges')) {
+              responseHeaders.set('Accept-Ranges', 'bytes');
+            }
+            responseHeaders.set('Content-Length', chunkBuffer.byteLength.toString());
+            responseHeaders.set('Content-Range', contentRange);
+            responseHeaders.set('Access-Control-Allow-Origin', '*');
+            responseHeaders.set('Access-Control-Allow-Methods', 'GET, HEAD, OPTIONS');
+            responseHeaders.set('Access-Control-Allow-Headers', 'Range, Accept, Content-Type');
+
+            // Persistent Edge CDN caching headers
+            responseHeaders.set(
+              'Cache-Control',
+              'public, max-age=31536000, s-maxage=31536000, stale-while-revalidate=86400, immutable'
+            );
+            responseHeaders.set('CDN-Cache-Control', 'public, max-age=31536000, s-maxage=31536000');
+            responseHeaders.set('X-Edge-Cache', 'MISS');
+            responseHeaders.set('X-Active-Drive', driveId === gdriveId ? 'primary' : 'backup');
+
+            return new Response(chunkBuffer, {
+              status: 206,
+              headers: responseHeaders,
+            });
           }
-          if (!responseHeaders.has('Accept-Ranges')) {
-            responseHeaders.set('Accept-Ranges', 'bytes');
-          }
-          responseHeaders.set('Access-Control-Allow-Origin', '*');
-          responseHeaders.set('Access-Control-Allow-Methods', 'GET, HEAD, OPTIONS');
-          responseHeaders.set('Access-Control-Allow-Headers', 'Range, Accept, Content-Type');
-
-          // Enable persistent Edge CDN caching across nodes worldwide
-          responseHeaders.set(
-            'Cache-Control',
-            'public, max-age=31536000, s-maxage=31536000, stale-while-revalidate=86400, immutable'
-          );
-          responseHeaders.set('CDN-Cache-Control', 'public, max-age=31536000, s-maxage=31536000');
-
-          return new Response(apiRes.body, {
-            status: apiRes.status,
-            headers: responseHeaders,
-          });
+        } else {
+          console.warn(`Drive ID ${driveId} returned status ${apiRes.status} (${contentType}), trying next candidate...`);
         }
+      } catch (driveErr: any) {
+        console.warn(`Drive ID ${driveId} fetch error (${driveErr.message}), failing over...`);
       }
-    } catch (err: any) {
-      console.warn('Google Drive API v3 stream error, falling back:', err.message);
     }
-  }
 
-  // 3. Fallback to unauthenticated Google Drive direct link
-  if (gdriveId) {
-    const gdriveDirectUrl = `https://drive.usercontent.google.com/download?id=${gdriveId}&export=download&confirm=t`;
-    try {
-      const range = request.headers.get('range');
-      const fetchHeaders: Record<string, string> = {
-        'User-Agent':
-          'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-      };
-      if (range) {
-        fetchHeaders['Range'] = range;
-      }
+    // 3. Fallback to unauthenticated Google Drive direct link
+    for (const driveId of candidateIds) {
+      const gdriveDirectUrl = `https://drive.usercontent.google.com/download?id=${driveId}&export=download&confirm=t`;
+      try {
+        const fetchHeaders: Record<string, string> = {
+          'User-Agent':
+            'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+          Range: `bytes=${start}-${effectiveEnd}`,
+        };
 
-      const res = await fetch(gdriveDirectUrl, {
-        headers: fetchHeaders,
-      });
-
-      const contentType = res.headers.get('content-type') || '';
-      if (!contentType.includes('text/html') && (res.ok || res.status === 206)) {
-        const responseHeaders = new Headers();
-        responseHeaders.set('Content-Type', 'video/mp4');
-        responseHeaders.set('Accept-Ranges', 'bytes');
-        responseHeaders.set('Access-Control-Allow-Origin', '*');
-        responseHeaders.set('Access-Control-Allow-Methods', 'GET, HEAD, OPTIONS');
-        responseHeaders.set('Access-Control-Allow-Headers', 'Range, Accept, Content-Type');
-
-        const cl = res.headers.get('content-length');
-        if (cl) responseHeaders.set('Content-Length', cl);
-
-        const cr = res.headers.get('content-range');
-        if (cr) responseHeaders.set('Content-Range', cr);
-
-        const etag = res.headers.get('etag');
-        if (etag) responseHeaders.set('ETag', etag);
-
-        const lastMod = res.headers.get('last-modified');
-        if (lastMod) responseHeaders.set('Last-Modified', lastMod);
-
-        responseHeaders.set('Cache-Control', 'public, max-age=3600');
-
-        return new Response(res.body, {
-          status: res.status,
-          headers: responseHeaders,
+        const res = await fetch(gdriveDirectUrl, {
+          headers: fetchHeaders,
         });
+
+        const contentType = res.headers.get('content-type') || '';
+        if (!contentType.includes('text/html') && !contentType.includes('json') && (res.ok || res.status === 206)) {
+          const chunkBuffer = await res.arrayBuffer();
+          if (chunkBuffer.byteLength > 0) {
+            const responseHeaders = new Headers();
+            responseHeaders.set('Content-Type', 'video/mp4');
+            responseHeaders.set('Accept-Ranges', 'bytes');
+            responseHeaders.set('Content-Length', chunkBuffer.byteLength.toString());
+            responseHeaders.set(
+              'Content-Range',
+              res.headers.get('content-range') || `bytes ${start}-${start + chunkBuffer.byteLength - 1}/*`
+            );
+            responseHeaders.set('Access-Control-Allow-Origin', '*');
+            responseHeaders.set('Access-Control-Allow-Methods', 'GET, HEAD, OPTIONS');
+            responseHeaders.set('Access-Control-Allow-Headers', 'Range, Accept, Content-Type');
+            responseHeaders.set('Cache-Control', 'public, max-age=3600');
+            responseHeaders.set('X-Active-Drive', 'direct-download');
+
+            return new Response(chunkBuffer, {
+              status: 206,
+              headers: responseHeaders,
+            });
+          }
+        }
+      } catch (err: any) {
+        console.warn('Direct Google Drive stream fetch error:', err.message);
       }
-    } catch (err: any) {
-      console.warn('Error fetching stream from Google Drive:', err);
     }
   }
 
-  // Local fallback
+  // 4. Local disk fallback (if on local dev)
   const filePathParam = request.nextUrl.searchParams.get('file') || targetFilename;
   if (filePathParam) {
     try {

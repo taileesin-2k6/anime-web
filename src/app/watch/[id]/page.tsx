@@ -3,6 +3,9 @@ import { notFound } from 'next/navigation';
 import { getAnimeByIdOrSlug, getAllAnime } from '@/lib/db';
 import WatchClient from './WatchClient';
 
+export const dynamic = 'force-static';
+export const revalidate = false;
+
 export function generateStaticParams() {
   const animes = getAllAnime();
   const paths: { id: string }[] = [];

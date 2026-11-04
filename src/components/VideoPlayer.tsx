@@ -26,6 +26,8 @@ import VideoSubtitleOverlay from './VideoSubtitleOverlay';
 
 interface VideoPlayerProps {
   videoUrl?: string;
+  gdriveId?: string;
+  backupId?: string;
   title: string;
   animeTitle?: string;
   episodeNumber: number;
@@ -51,6 +53,8 @@ const formatTime = (seconds: number) => {
 
 export default function VideoPlayer({
   videoUrl = '',
+  gdriveId,
+  backupId,
   title,
   animeTitle,
   episodeNumber,
@@ -338,6 +342,8 @@ export default function VideoPlayer({
   let videoSrc: string | null = null;
   if (directUrl) {
     const queryParts: string[] = [];
+    if (gdriveId) queryParts.push(`id=${encodeURIComponent(gdriveId)}`);
+    if (backupId) queryParts.push(`backupId=${encodeURIComponent(backupId)}`);
     if (animeSlug) queryParts.push(`slug=${encodeURIComponent(animeSlug)}`);
     if (episodeNumber) queryParts.push(`ep=${encodeURIComponent(episodeNumber)}`);
     if (queryParts.length > 0) {
