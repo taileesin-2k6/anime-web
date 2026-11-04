@@ -476,9 +476,20 @@
         "filename": "chitose_ep16_bilingual.mp4",
         "gdriveId": "1sqjllxul0DberN7UrEI4DlIrCTeeu7uw",
         "backupId": "1A4qeKKPuQ8h0r-zcp8A-D216v1cA-8MG"
+      },
+      {
+        "id": "ep-17-bilingual",
+        "episodeNumber": 17,
+        "title": "Tập 17 : The Entrance to Summer",
+        "videoUrl": "https://drive.google.com/open?id=1wzyQT7X60GJAzLaQd12GrAnjx-CcfbSc",
+        "duration": "37:12",
+        "createdAt": "2026-11-04T08:25:47.312Z",
+        "filename": "chitose_ep17_bilingual.mp4",
+        "gdriveId": "1wzyQT7X60GJAzLaQd12GrAnjx-CcfbSc",
+        "backupId": "1uDlksXM58KpfwnKfDC24M4i1byaUGBhX"
       }
     ],
     "createdAt": "2026-10-15T02:18:15.704201Z",
-    "updatedAt": "2026-10-28T04:36:42.753633Z"
+    "updatedAt": "2026-11-04T08:25:47.312Z"
   }
 ]
