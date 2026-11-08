@@ -217,10 +217,19 @@
         "filename": "the_ep05_bilingual.mp4",
         "gdriveId": "19bbAT3d5JR_DMdU2_PQVbZYxLaGjYW9h",
         "backupId": "1UUf86979UVUhm1n8Hq0Bppjhav1A1Q7q"
+      },
+      {
+        "id": "ep-6-bilingual",
+        "episodeNumber": 6,
+        "title": "Tập 6 : The Paper Village",
+        "videoUrl": "/videos/the_ep06_bilingual.mp4",
+        "duration": "38:44",
+        "createdAt": "2026-11-08T07:47:20.905091Z",
+        "filename": "the_ep06_bilingual.mp4"
       }
     ],
     "createdAt": "2026-10-02T19:24:44.055089Z",
-    "updatedAt": "2026-11-01T09:34:52.124951Z"
+    "updatedAt": "2026-11-08T07:47:20.905119Z"
   },
   {
     "id": "tokyo-revengers-santen-sensou-hen",
