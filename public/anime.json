@@ -506,10 +506,19 @@
         "createdAt": "2026-11-04T08:25:47.312Z",
         "filename": "chitose_ep17_bilingual.mp4",
         "gdriveId": "1wzyQT7X60GJAzLaQd12GrAnjx-CcfbSc",
-        "backupId": "1k7HZ4Me3vnJB93pIN0IV9oiogiT041D5"
+        "backupId": "1uDlksXM58KpfwnKfDC24M4i1byaUGBhX"
+      },
+      {
+        "id": "ep-18-bilingual",
+        "episodeNumber": 18,
+        "title": "Tập 18 : After-School Pool and Barefoot Ponytail",
+        "videoUrl": "/videos/chitose_ep18_bilingual.mp4",
+        "duration": "36:43",
+        "createdAt": "2026-11-11T09:12:55.787929Z",
+        "filename": "chitose_ep18_bilingual.mp4"
       }
     ],
     "createdAt": "2026-10-15T02:18:15.704201Z",
-    "updatedAt": "2026-11-04T08:25:47.312Z"
+    "updatedAt": "2026-11-11T09:12:55.787951Z"
   }
 ]
