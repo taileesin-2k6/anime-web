@@ -9,6 +9,7 @@ export const maxDuration = 60;
 
 const RCLONE_HTTP_URL = 'http://127.0.0.1:8088';
 const fileSizeCache = new Map<string, string>();
+const directCdnFailedCache = new Set<string>();
 
 function resolveMediaInfo(request: NextRequest): { targetFilename: string; gdriveId: string; backupId: string } {
   const gdriveIdParam = request.nextUrl.searchParams.get('gdriveId') || request.nextUrl.searchParams.get('id');
@@ -19,8 +20,8 @@ function resolveMediaInfo(request: NextRequest): { targetFilename: string; gdriv
   let gdriveId = gdriveIdParam || '';
   let backupId = backupIdParam || '';
 
-  // Fast path: If both IDs are present in query params, return immediately!
-  if (gdriveId && backupId) {
+  // Fast path: If both IDs and targetFilename are present in query params, return immediately!
+  if (gdriveId && backupId && targetFilename) {
     return { targetFilename, gdriveId, backupId };
   }
 
@@ -41,7 +42,7 @@ function resolveMediaInfo(request: NextRequest): { targetFilename: string; gdriv
             break;
           }
         }
-        if (gdriveId && backupId) break;
+        if (gdriveId && backupId && targetFilename) break;
       }
     } catch (err) {
       console.warn('Error resolving media info:', err);
@@ -126,39 +127,49 @@ export async function HEAD(request: NextRequest) {
       });
     }
 
-    try {
-      const gdriveDirectUrl = `https://drive.usercontent.google.com/download?id=${driveId}&export=download&confirm=t`;
-      const controller = new AbortController();
-      const timeout = setTimeout(() => controller.abort(), 3000);
-      const res = await fetch(gdriveDirectUrl, {
-        method: 'HEAD',
-        headers: {
-          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-        },
-        signal: controller.signal,
-      });
-      clearTimeout(timeout);
-
-      const cl = res.headers.get('content-length');
-      const ct = res.headers.get('content-type') || '';
-      if (res.ok && cl && !ct.includes('text/html')) {
-        fileSizeCache.set(driveId, cl);
-        return new NextResponse(null, {
-          status: 200,
+    if (directCdnFailedCache.has(driveId)) {
+      // Fast path: Already known that this file cannot be served via anonymous direct CDN
+      // Skip directly to authenticated Google Drive metadata probe below
+    } else {
+      try {
+        const gdriveDirectUrl = `https://drive.usercontent.google.com/download?id=${driveId}&export=download&confirm=t`;
+        const controller = new AbortController();
+        const timeout = setTimeout(() => controller.abort(), 3000);
+        const res = await fetch(gdriveDirectUrl, {
+          method: 'HEAD',
+          redirect: 'manual',
           headers: {
-            'Content-Type': ct || 'video/mp4',
-            'Accept-Ranges': 'bytes',
-            'Content-Length': cl,
-            'Access-Control-Allow-Origin': '*',
-            'Access-Control-Allow-Methods': 'GET, HEAD, OPTIONS',
-            'Access-Control-Allow-Headers': 'Range, Accept, Content-Type',
-            'Cache-Control': 'public, max-age=31536000, immutable',
-            'CDN-Cache-Control': 'public, max-age=31536000, s-maxage=31536000',
-            'Cloudflare-CDN-Cache-Control': 'public, max-age=31536000, s-maxage=31536000',
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
           },
+          signal: controller.signal,
         });
-      }
-    } catch {}
+        clearTimeout(timeout);
+
+        if (res.status === 301 || res.status === 302 || res.type === 'opaqueredirect') {
+          directCdnFailedCache.add(driveId);
+        } else {
+          const cl = res.headers.get('content-length');
+          const ct = res.headers.get('content-type') || '';
+          if (res.ok && cl && !ct.includes('text/html')) {
+            fileSizeCache.set(driveId, cl);
+            return new NextResponse(null, {
+              status: 200,
+              headers: {
+                'Content-Type': ct || 'video/mp4',
+                'Accept-Ranges': 'bytes',
+                'Content-Length': cl,
+                'Access-Control-Allow-Origin': '*',
+                'Access-Control-Allow-Methods': 'GET, HEAD, OPTIONS',
+                'Access-Control-Allow-Headers': 'Range, Accept, Content-Type',
+                'Cache-Control': 'public, max-age=31536000, immutable',
+                'CDN-Cache-Control': 'public, max-age=31536000, s-maxage=31536000',
+                'Cloudflare-CDN-Cache-Control': 'public, max-age=31536000, s-maxage=31536000',
+              },
+            });
+          }
+        }
+      } catch {}
+    }
 
     // 3. Fallback to authenticated Google Drive metadata probe (lightweight JSON query)
     try {
@@ -313,12 +324,19 @@ export async function GET(request: NextRequest) {
 
     // 2.1 PRIMARY FAST PATH: Direct Google UploadServer CDN (0.6s - 1.2s delivery, zero CPU, zero RSA signing)
     for (const driveId of candidateIds) {
+      if (directCdnFailedCache.has(driveId)) {
+        // Already known that this file requires authenticated API v3, skip 0ms to fallback below!
+        continue;
+      }
+
       const gdriveDirectUrl = `https://drive.usercontent.google.com/download?id=${driveId}&export=download&confirm=t`;
       try {
         const controller = new AbortController();
-        const timeout = setTimeout(() => controller.abort(), 7000); // 7s fast timeout
+        const timeout = setTimeout(() => controller.abort(), 4000); // 4s fast timeout
 
         const res = await fetch(gdriveDirectUrl, {
+          method: 'GET',
+          redirect: 'manual', // Never follow Google login redirect! Catch 302 in 60ms!
           headers: {
             'User-Agent':
               'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
@@ -332,6 +350,12 @@ export async function GET(request: NextRequest) {
           },
         });
         clearTimeout(timeout);
+
+        // If Google redirects (301, 302, opaqueredirect), this file is private/restricted
+        if (res.status === 301 || res.status === 302 || res.type === 'opaqueredirect') {
+          directCdnFailedCache.add(driveId);
+          continue;
+        }
 
         const contentType = res.headers.get('content-type') || '';
         if (!contentType.includes('text/html') && !contentType.includes('json') && (res.ok || res.status === 206)) {
@@ -372,9 +396,11 @@ export async function GET(request: NextRequest) {
             headers: responseHeaders,
           });
         } else {
+          directCdnFailedCache.add(driveId);
           console.warn(`Direct CDN for ${driveId} returned ${res.status} (${contentType}), trying next...`);
         }
       } catch (err: any) {
+        directCdnFailedCache.add(driveId);
         console.warn(`Direct CDN fetch error for ${driveId} (${err.message}), trying next...`);
       }
     }

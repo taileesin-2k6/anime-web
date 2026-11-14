@@ -67,13 +67,16 @@ export default function VideoPlayer({
   const [isCinema, setIsCinema] = useState(false);
   const [hasError, setHasError] = useState(false);
   const [useEmbedFallback, setUseEmbedFallback] = useState(false);
+  const [isBuffering, setIsBuffering] = useState(false);
 
   // Always reset error state on episode change
   useEffect(() => {
     setHasError(false);
     setUseEmbedFallback(false);
     setCurrentTime(0);
+    setDuration(0);
     setIsPlaying(false);
+    setIsBuffering(true);
   }, [videoUrl, episodeNumber]);
   const [subtitlesEnabled, setSubtitlesEnabled] = useState(true);
   const [playbackSpeed, setPlaybackSpeed] = useState<number>(1.0);
@@ -469,7 +472,15 @@ export default function VideoPlayer({
                   videoRef.current.muted = isMuted;
                 }
               }}
+              onWaiting={() => setIsBuffering(true)}
+              onPlaying={() => {
+                setIsPlaying(true);
+                setIsBuffering(false);
+                setHasError(false);
+                retryCountRef.current = 0;
+              }}
               onLoadedData={() => {
+                setIsBuffering(false);
                 if (videoRef.current) {
                   const dur = videoRef.current.duration;
                   if (dur && !isNaN(dur) && dur > 0 && isFinite(dur)) {
@@ -478,6 +489,7 @@ export default function VideoPlayer({
                 }
               }}
               onCanPlay={() => {
+                setIsBuffering(false);
                 if (videoRef.current) {
                   const dur = videoRef.current.duration;
                   if (dur && !isNaN(dur) && dur > 0 && isFinite(dur)) {
@@ -496,6 +508,26 @@ export default function VideoPlayer({
             >
               Trình duyệt không hỗ trợ thẻ video HTML5.
             </video>
+
+            {/* Buffering Loading Spinner */}
+            {isBuffering && !hasError && (
+              <div className="absolute inset-0 z-20 flex flex-col items-center justify-center pointer-events-none bg-black/40 backdrop-blur-[1px]">
+                <div className="w-12 h-12 rounded-full border-4 border-rose-500/20 border-t-rose-500 animate-spin" />
+                <p className="mt-3 text-xs font-medium text-gray-200 tracking-wide drop-shadow">Đang tải luồng video 1080p...</p>
+              </div>
+            )}
+
+            {/* Center Big Play Button when Paused */}
+            {!isPlaying && !isBuffering && !hasError && (
+              <button
+                type="button"
+                onClick={togglePlay}
+                className="absolute inset-0 z-20 m-auto w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-rose-600/90 hover:bg-rose-500 text-white flex items-center justify-center shadow-2xl shadow-rose-600/50 hover:scale-110 active:scale-95 transition-all duration-200 group/center-play"
+                aria-label="Phát video"
+              >
+                <Play className="w-8 h-8 sm:w-10 sm:h-10 ml-1 text-white fill-white transition-transform group-hover/center-play:scale-105" />
+              </button>
+            )}
 
             {hasError && !useEmbedFallback && (
               <div className="absolute inset-0 z-40 bg-black/90 flex flex-col items-center justify-center p-6 text-center space-y-4">
