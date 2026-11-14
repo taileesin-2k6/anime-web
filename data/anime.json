@@ -226,10 +226,21 @@
         "duration": "38:44",
         "createdAt": "2026-11-08T07:47:20.899824Z",
         "filename": "the_ep06_bilingual.mp4"
+      },
+      {
+        "id": "ep-7-bilingual",
+        "episodeNumber": 7,
+        "title": "Tập 7 : The Bet",
+        "videoUrl": "https://drive.google.com/open?id=1wSyPi4WzEEMgP6t_Eu6U6nK7di_AD_mZ",
+        "duration": "38:40",
+        "createdAt": "2026-11-14T13:57:09.701275Z",
+        "filename": "the_ep07_bilingual.mp4",
+        "gdriveId": "1wSyPi4WzEEMgP6t_Eu6U6nK7di_AD_mZ",
+        "backupId": "1ueBHXgX1CjV97AtuO3WKCdrmusyQFWTO"
       }
     ],
     "createdAt": "2026-10-02T19:24:44.055089Z",
-    "updatedAt": "2026-11-08T07:47:20.900134Z"
+    "updatedAt": "2026-11-14T13:57:09.701534Z"
   },
   {
     "id": "tokyo-revengers-santen-sensou-hen",
