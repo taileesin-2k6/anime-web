@@ -40,5 +40,23 @@ export async function GET(request: NextRequest) {
     }
   } catch {}
 
+  // 4. Ultra-resilient GitHub Raw fallback (zero latency fallback even before Cloudflare rebuilds)
+  try {
+    const ghRawUrl = `https://raw.githubusercontent.com/taileesin-2k6/anime-web/main/public/subtitles/${encodeURIComponent(slug)}_${encodeURIComponent(ep)}.json`;
+    const ghRes = await fetch(ghRawUrl, {
+      headers: { 'User-Agent': 'Mozilla/5.0' },
+      // @ts-ignore
+      cf: { cacheEverything: true, cacheTtl: 86400 },
+    });
+    if (ghRes.ok) {
+      const data = await ghRes.json();
+      return NextResponse.json(data, {
+        headers: {
+          'Cache-Control': 'public, max-age=86400, s-maxage=86400, stale-while-revalidate=86400',
+        },
+      });
+    }
+  } catch {}
+
   return NextResponse.json({ en: [], vi: [] });
 }
