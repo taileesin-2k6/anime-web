@@ -87,6 +87,46 @@ async function createShortcut(token, targetFileId, filename, targetFolderId) {
   return data.id;
 }
 
+function getUserOAuthToken() {
+  try {
+    const rcloneConf = fs.readFileSync(path.join(process.env.HOME || '', '.config', 'rclone', 'rclone.conf'), 'utf-8');
+    const tokenMatch = rcloneConf.match(/token\s*=\s*(\{.*?\})/);
+    if (tokenMatch) {
+      const parsed = JSON.parse(tokenMatch[1]);
+      return parsed.access_token;
+    }
+  } catch (e) {}
+  return null;
+}
+
+async function makeFilePublic(fileId) {
+  const userToken = getUserOAuthToken();
+  const tokensToTry = [userToken].filter(Boolean);
+  
+  for (const t of tokensToTry) {
+    try {
+      const res = await fetch(`https://www.googleapis.com/drive/v3/files/${fileId}/permissions?supportsAllDrives=true`, {
+        method: 'POST',
+        headers: {
+          Authorization: `Bearer ${t}`,
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          role: 'reader',
+          type: 'anyone',
+        }),
+      });
+      if (res.ok) {
+        console.log(`[+] Đã mở quyền công khai Anyone with link cho file ${fileId}`);
+        return true;
+      }
+    } catch (e) {
+      console.warn(`[!] Lỗi khi cấp quyền public cho file: ${e.message}`);
+    }
+  }
+  return false;
+}
+
 async function syncDualDrive(filename, animeSlug, epNum) {
   const token = await getAccessToken();
 
@@ -97,6 +137,9 @@ async function syncDualDrive(filename, animeSlug, epNum) {
   }
 
   const primaryId = primaryFile.id;
+
+  // Make primary file public for direct UploadServer CDN streaming
+  await makeFilePublic(primaryId);
 
   // 2. Check or create backup shortcut
   let backupFile = await findFileByName(token, BACKUP_FOLDER_ID, filename);
