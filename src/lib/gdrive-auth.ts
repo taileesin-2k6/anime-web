@@ -56,43 +56,48 @@ function resolveServiceAccount(): { client_email: string; private_key: string } 
 }
 
 async function getServiceAccountToken(): Promise<string | null> {
-  const sa = resolveServiceAccount();
-  if (!sa || !sa.client_email || !sa.private_key) return null;
+  try {
+    const sa = resolveServiceAccount();
+    if (!sa || !sa.client_email || !sa.private_key) return null;
 
-  const now = Math.floor(Date.now() / 1000);
-  const header = Buffer.from(JSON.stringify({ alg: 'RS256', typ: 'JWT' })).toString('base64url');
-  const payload = Buffer.from(JSON.stringify({
-    iss: sa.client_email,
-    scope: 'https://www.googleapis.com/auth/drive.readonly',
-    aud: 'https://oauth2.googleapis.com/token',
-    exp: now + 3600,
-    iat: now
-  })).toString('base64url');
+    const now = Math.floor(Date.now() / 1000);
+    const header = Buffer.from(JSON.stringify({ alg: 'RS256', typ: 'JWT' })).toString('base64url');
+    const payload = Buffer.from(JSON.stringify({
+      iss: sa.client_email,
+      scope: 'https://www.googleapis.com/auth/drive.readonly',
+      aud: 'https://oauth2.googleapis.com/token',
+      exp: now + 3600,
+      iat: now
+    })).toString('base64url');
 
-  const signer = crypto.createSign('RSA-SHA256');
-  signer.update(`${header}.${payload}`);
-  const sig = signer.sign(sa.private_key, 'base64url');
-  const assertion = `${header}.${payload}.${sig}`;
+    const signer = crypto.createSign('RSA-SHA256');
+    signer.update(`${header}.${payload}`);
+    const sig = signer.sign(sa.private_key, 'base64url');
+    const assertion = `${header}.${payload}.${sig}`;
 
-  const body = new URLSearchParams({
-    grant_type: 'urn:ietf:params:oauth:grant-type:jwt-bearer',
-    assertion
-  });
+    const body = new URLSearchParams({
+      grant_type: 'urn:ietf:params:oauth:grant-type:jwt-bearer',
+      assertion
+    });
 
-  const res = await fetch('https://oauth2.googleapis.com/token', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-    body: body.toString()
-  });
+    const res = await fetch('https://oauth2.googleapis.com/token', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: body.toString()
+    });
 
-  if (!res.ok) {
-    const errText = await res.text();
-    console.warn('Failed to get Service Account token:', res.status, errText);
+    if (!res.ok) {
+      const errText = await res.text();
+      console.warn('Failed to get Service Account token:', res.status, errText);
+      return null;
+    }
+
+    const data = await res.json();
+    return data.access_token || null;
+  } catch (err: any) {
+    console.warn('getServiceAccountToken exception:', err.message);
     return null;
   }
-
-  const data = await res.json();
-  return data.access_token || null;
 }
 
 function decodeBytes(arr: number[]): string {
@@ -167,11 +172,20 @@ export async function getValidAccessToken(): Promise<string | null> {
   tokenFlightPromise = (async () => {
     try {
       // 1. Try Service Account (primary, permanent, zero expiration)
-      let token = await getServiceAccountToken();
+      let token: string | null = null;
+      try {
+        token = await getServiceAccountToken();
+      } catch (saErr: any) {
+        console.warn('Service Account token fetch error:', saErr.message);
+      }
 
       // 2. Fallback to OAuth token if needed
       if (!token) {
-        token = await getOAuthToken();
+        try {
+          token = await getOAuthToken();
+        } catch (oauthErr: any) {
+          console.warn('OAuth token fetch error:', oauthErr.message);
+        }
       }
 
       if (token) {
@@ -181,6 +195,9 @@ export async function getValidAccessToken(): Promise<string | null> {
         };
         return token;
       }
+      return null;
+    } catch (globalErr: any) {
+      console.warn('getValidAccessToken top-level error:', globalErr.message);
       return null;
     } finally {
       tokenFlightPromise = null;

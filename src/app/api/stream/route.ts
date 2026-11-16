@@ -223,7 +223,8 @@ export async function HEAD(request: NextRequest) {
 }
 
 export async function GET(request: NextRequest) {
-  const { targetFilename, gdriveId, backupId } = resolveMediaInfo(request);
+  try {
+    const { targetFilename, gdriveId, backupId } = resolveMediaInfo(request);
   const isCloud = Boolean(
     process.env.CF_PAGES ||
     process.env.CLOUDFLARE ||
@@ -332,7 +333,7 @@ export async function GET(request: NextRequest) {
       const gdriveDirectUrl = `https://drive.usercontent.google.com/download?id=${driveId}&export=download&confirm=t`;
       try {
         const controller = new AbortController();
-        const timeout = setTimeout(() => controller.abort(), 4000); // 4s fast timeout
+        const timeout = setTimeout(() => controller.abort(), 9000); // 9s safe streaming timeout
 
         const res = await fetch(gdriveDirectUrl, {
           method: 'GET',
@@ -396,11 +397,14 @@ export async function GET(request: NextRequest) {
             headers: responseHeaders,
           });
         } else {
-          directCdnFailedCache.add(driveId);
+          // If returned HTML, Google quota warning or login page
+          if (contentType.includes('text/html')) {
+            directCdnFailedCache.add(driveId);
+          }
           console.warn(`Direct CDN for ${driveId} returned ${res.status} (${contentType}), trying next...`);
         }
       } catch (err: any) {
-        directCdnFailedCache.add(driveId);
+        // Do NOT blacklist driveId on transient network/abort timeouts!
         console.warn(`Direct CDN fetch error for ${driveId} (${err.message}), trying next...`);
       }
     }
@@ -546,5 +550,9 @@ export async function GET(request: NextRequest) {
     }
   }
 
-  return new NextResponse('Video stream not available', { status: 404 });
+    return new NextResponse('Video stream not available', { status: 404 });
+  } catch (globalErr: any) {
+    console.error('[Stream Global Error]', globalErr);
+    return new NextResponse('Video stream error, please reload', { status: 503 });
+  }
 }
