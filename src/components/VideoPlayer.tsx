@@ -69,6 +69,18 @@ export default function VideoPlayer({
   const [useEmbedFallback, setUseEmbedFallback] = useState(false);
   const [isBuffering, setIsBuffering] = useState(false);
 
+  // Auto-clear stuck buffering after timeout if video is actually ready
+  useEffect(() => {
+    if (isBuffering) {
+      const timer = setTimeout(() => {
+        if (videoRef.current && (videoRef.current.readyState >= 2 || videoRef.current.paused)) {
+          setIsBuffering(false);
+        }
+      }, 3500);
+      return () => clearTimeout(timer);
+    }
+  }, [isBuffering]);
+
   // Always reset error state on episode change
   useEffect(() => {
     setHasError(false);
@@ -472,6 +484,13 @@ export default function VideoPlayer({
                   videoRef.current.muted = isMuted;
                 }
               }}
+              onSeeking={() => setIsBuffering(true)}
+              onSeeked={() => {
+                setIsBuffering(false);
+                if (videoRef.current && !videoRef.current.paused) {
+                  setIsPlaying(true);
+                }
+              }}
               onWaiting={() => setIsBuffering(true)}
               onPlaying={() => {
                 setIsPlaying(true);
@@ -497,6 +516,9 @@ export default function VideoPlayer({
                   }
                 }
               }}
+              onCanPlayThrough={() => {
+                setIsBuffering(false);
+              }}
               onPlay={() => {
                 setIsPlaying(true);
                 setHasError(false);
@@ -518,7 +540,7 @@ export default function VideoPlayer({
             )}
 
             {/* Center Big Play Button when Paused */}
-            {!isPlaying && !isBuffering && !hasError && (
+            {!isPlaying && !hasError && (
               <button
                 type="button"
                 onClick={togglePlay}
