@@ -547,10 +547,12 @@
         "id": "ep-19-bilingual",
         "episodeNumber": 19,
         "title": "Tập 19 : The Swing of Promise under the Starry Sky",
-        "videoUrl": "/videos/chitose_ep19_bilingual.mp4",
+        "videoUrl": "https://drive.google.com/open?id=1qC8TfiUOb9YIP9dQGTJbdbQB3zWIuJG6",
         "duration": "39:02",
         "createdAt": "2026-11-18T08:18:45.845018Z",
-        "filename": "chitose_ep19_bilingual.mp4"
+        "filename": "chitose_ep19_bilingual.mp4",
+        "gdriveId": "1qC8TfiUOb9YIP9dQGTJbdbQB3zWIuJG6",
+        "backupId": "1Eb2bqv7C9upu71YPZ2ezgG9gCudv_yBe"
       }
     ],
     "createdAt": "2026-10-15T02:18:15.704201Z",
