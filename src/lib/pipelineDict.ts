@@ -351,6 +351,8 @@ function isPosValidPhrase(
   return true;
 }
 
+export const HAS_VIETNAMESE = /[àáạảãâầấậẩẫăằắặẳẵèéẹẻẽêềếệểễìíịỉĩòóọỏõôồốộổỗơờớợởỡùúụủũưừứựửữỳýỵỷỹđ]/i;
+
 /**
  * Tokenize a subtitle sentence into words and phrases
  * (greedy longest n-gram matching with inflected verb stemming & POS context validation)
@@ -435,12 +437,13 @@ export function tokenizeSubtitleSentence(sentence: string): SubtitleToken[] {
         rawText += tok;
       }
 
+      const phraseMeaning = matchedData.m && HAS_VIETNAMESE.test(matchedData.m) ? matchedData.m : '';
       tokens.push({
         text: rawText,
         clean: matchedPhraseKey,
         isPhrase: true,
         phraseType: (matchedData.t as any) || 'phrasal',
-        meaning: matchedData.m || '',
+        meaning: phraseMeaning,
         score: matchedData.s || 100,
       });
       i += matchedRawLen;
@@ -456,12 +459,13 @@ export function tokenizeSubtitleSentence(sentence: string): SubtitleToken[] {
         }
       }
 
+      const wordMeaning = wData?.m && HAS_VIETNAMESE.test(wData.m) ? wData.m : '';
       tokens.push({
         text: raw,
         clean: wClean,
         isPhrase: false,
         phraseType: 'single',
-        meaning: wData?.m || '',
+        meaning: wordMeaning,
         ipa: wData?.i || '',
         pos: wData?.p || '',
       });
@@ -484,17 +488,28 @@ export async function lookupLocalDb(term: string, origin?: string): Promise<Dict
     const phrasesIdx = getPhrasesIndex();
     if (phrasesIdx[clean]) {
       const p = phrasesIdx[clean];
-      return {
-        word: term,
-        short_mean: p.m,
-        full_mean: p.en || p.m,
-        examples: p.ex || '',
-        phrase_type: (p.t as any) || 'phrasal',
-        audio_url: `https://dict.youdao.com/dictvoice?audio=${encodeURIComponent(clean)}&type=2`,
-        audio_us_url: `https://dict.youdao.com/dictvoice?audio=${encodeURIComponent(clean)}&type=2`,
-        audio_uk_url: `https://dict.youdao.com/dictvoice?audio=${encodeURIComponent(clean)}&type=1`,
-        source: p.t === 'collocation' ? 'Oxford & Cambridge Collocations' : 'Phrasal Verbs & Idioms',
-      };
+      if (p.m && HAS_VIETNAMESE.test(p.m)) {
+        const pDefs = p.m.split(';').map((s: string) => s.trim()).filter(Boolean);
+        const pTypeLabel = p.t === 'collocation' ? 'Cụm liên kết (Collocation)' : (p.t === 'idiom' ? 'Thành ngữ (Idiom)' : 'Cụm động từ (Phrasal Verb)');
+        return {
+          word: term,
+          short_mean: p.m,
+          full_mean: p.m,
+          pos: pTypeLabel,
+          pos_list: [pTypeLabel],
+          definitions: pDefs.map((def: string) => ({
+            pos: pTypeLabel,
+            meaning: def,
+            example: p.ex || null,
+          })),
+          examples: p.ex || '',
+          phrase_type: (p.t as any) || 'phrasal',
+          audio_url: `https://dict.youdao.com/dictvoice?audio=${encodeURIComponent(clean)}&type=2`,
+          audio_us_url: `https://dict.youdao.com/dictvoice?audio=${encodeURIComponent(clean)}&type=2`,
+          audio_uk_url: `https://dict.youdao.com/dictvoice?audio=${encodeURIComponent(clean)}&type=1`,
+          source: p.t === 'collocation' ? 'Oxford Collocations Anh - Việt' : 'Cụm từ & Thành ngữ Anh - Việt',
+        };
+      }
     }
 
     // Stemmed multiword lookup (e.g. "puts in" -> "put in", "took off" -> "take off")
@@ -505,32 +520,44 @@ export async function lookupLocalDb(term: string, origin?: string): Promise<Dict
         const rootKey = [firstInf.root, ...words.slice(1)].join(' ');
         if (phrasesIdx[rootKey]) {
           const p = phrasesIdx[rootKey];
-          let infLabel = `Dạng chia thì của cụm từ gốc "${rootKey}"`;
-          if (firstInf.type === 'past') {
-            infLabel = `Dạng Quá khứ / Phân từ của cụm từ gốc "${rootKey}"`;
-          } else if (firstInf.type === 'v_ing') {
-            infLabel = `Dạng V-ing của cụm từ gốc "${rootKey}"`;
-          } else if (firstInf.type === '3rd_singular' || firstInf.type === 'plural') {
-            infLabel = `Ngôi thứ 3 số ít (Hiện tại đơn) của cụm từ gốc "${rootKey}"`;
-          }
+          if (p.m && HAS_VIETNAMESE.test(p.m)) {
+            let infLabel = `Dạng chia thì của cụm từ gốc "${rootKey}"`;
+            if (firstInf.type === 'past') {
+              infLabel = `Dạng Quá khứ / Phân từ của cụm từ gốc "${rootKey}"`;
+            } else if (firstInf.type === 'v_ing') {
+              infLabel = `Dạng V-ing của cụm từ gốc "${rootKey}"`;
+            } else if (firstInf.type === '3rd_singular' || firstInf.type === 'plural') {
+              infLabel = `Ngôi thứ 3 số ít (Hiện tại đơn) của cụm từ gốc "${rootKey}"`;
+            }
 
-          return {
-            word: term,
-            root_word: rootKey,
-            inflection: {
-              root: rootKey,
-              type: firstInf.type,
-              label: infLabel,
-            },
-            short_mean: p.m,
-            full_mean: p.en || p.m,
-            examples: p.ex || '',
-            phrase_type: (p.t as any) || 'phrasal',
-            audio_url: `https://dict.youdao.com/dictvoice?audio=${encodeURIComponent(rootKey)}&type=2`,
-            audio_us_url: `https://dict.youdao.com/dictvoice?audio=${encodeURIComponent(rootKey)}&type=2`,
-            audio_uk_url: `https://dict.youdao.com/dictvoice?audio=${encodeURIComponent(rootKey)}&type=1`,
-            source: p.t === 'collocation' ? 'Oxford & Cambridge Collocations' : 'Phrasal Verbs & Idioms',
-          };
+            const pDefs = p.m.split(';').map((s: string) => s.trim()).filter(Boolean);
+            const pTypeLabel = p.t === 'collocation' ? 'Cụm liên kết (Collocation)' : (p.t === 'idiom' ? 'Thành ngữ (Idiom)' : 'Cụm động từ (Phrasal Verb)');
+
+            return {
+              word: term,
+              root_word: rootKey,
+              inflection: {
+                root: rootKey,
+                type: firstInf.type,
+                label: infLabel,
+              },
+              short_mean: p.m,
+              full_mean: p.m,
+              pos: pTypeLabel,
+              pos_list: [pTypeLabel],
+              definitions: pDefs.map((def: string) => ({
+                pos: pTypeLabel,
+                meaning: def,
+                example: p.ex || null,
+              })),
+              examples: p.ex || '',
+              phrase_type: (p.t as any) || 'phrasal',
+              audio_url: `https://dict.youdao.com/dictvoice?audio=${encodeURIComponent(rootKey)}&type=2`,
+              audio_us_url: `https://dict.youdao.com/dictvoice?audio=${encodeURIComponent(rootKey)}&type=2`,
+              audio_uk_url: `https://dict.youdao.com/dictvoice?audio=${encodeURIComponent(rootKey)}&type=1`,
+              source: p.t === 'collocation' ? 'Oxford Collocations Anh - Việt' : 'Cụm từ & Thành ngữ Anh - Việt',
+            };
+          }
         }
       }
     }
@@ -857,7 +884,7 @@ export function getSearchSuggestions(query: string, limit: number = 8): SearchSu
   const phrasesIdx = getPhrasesIndex();
 
   // 1. Exact match first if exists
-  if (phrasesIdx[q]) {
+  if (phrasesIdx[q] && phrasesIdx[q].m && HAS_VIETNAMESE.test(phrasesIdx[q].m)) {
     const p = phrasesIdx[q];
     results.push({
       word: q,
@@ -878,10 +905,10 @@ export function getSearchSuggestions(query: string, limit: number = 8): SearchSu
     seen.add(q);
   }
 
-  // 2. Prefix match for Collocations & Phrases
+  // 2. Prefix match for Collocations & Phrases (only with Vietnamese meanings)
   for (const [key, p] of Object.entries(phrasesIdx)) {
     if (results.length >= limit) break;
-    if (!seen.has(key) && key.startsWith(q)) {
+    if (!seen.has(key) && key.startsWith(q) && p.m && HAS_VIETNAMESE.test(p.m)) {
       results.push({
         word: key,
         short_mean: p.m,
@@ -911,7 +938,7 @@ export function getSearchSuggestions(query: string, limit: number = 8): SearchSu
   if (results.length < limit && q.length >= 3) {
     for (const [key, p] of Object.entries(phrasesIdx)) {
       if (results.length >= limit) break;
-      if (!seen.has(key) && key.includes(q)) {
+      if (!seen.has(key) && key.includes(q) && p.m && HAS_VIETNAMESE.test(p.m)) {
         results.push({
           word: key,
           short_mean: p.m,
