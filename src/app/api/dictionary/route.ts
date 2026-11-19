@@ -42,20 +42,22 @@ export async function GET(request: NextRequest) {
   }
 
   const cleanWord = word.trim();
+  const origin = request.nextUrl.origin;
 
   // 2. Query Local Database (MinhQND + Kaikki/Wiktionary + Linguatools)
-  const localResult = await lookupLocalDb(cleanWord);
+  const localResult = await lookupLocalDb(cleanWord, origin);
   if (localResult) {
     return NextResponse.json(localResult);
   }
 
-  // 3. Fallback: Groq AI
+  // 3. Fallback: Google Translate + Oxford Audio Online
   const aiResult = await lookupGroqAiFallback(cleanWord, context || undefined);
   return NextResponse.json(aiResult);
 }
 
 export async function POST(request: NextRequest) {
   try {
+    const origin = request.nextUrl.origin;
     const body = await request.json();
     const word = (body.word || '').trim();
     const sentence = body.batch_sentence || body.sentence;
@@ -79,7 +81,7 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'Word is required' }, { status: 400 });
     }
 
-    const localResult = await lookupLocalDb(word);
+    const localResult = await lookupLocalDb(word, origin);
     if (localResult) {
       return NextResponse.json(localResult);
     }

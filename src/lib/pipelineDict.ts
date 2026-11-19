@@ -118,19 +118,38 @@ function getInflections(): Record<string, WordInflection> {
   return inflectionsCache!;
 }
 
-function getLetterChunk(char: string): Record<string, any> {
+async function getLetterChunk(char: string, origin?: string): Promise<Record<string, any>> {
   const key = (char || '_').toLowerCase();
   if (letterChunksCache.has(key)) return letterChunksCache.get(key)!;
   try {
     const filePath = path.join(process.cwd(), `data/dict/pipeline_chunks/${key}.json`);
-    if (fs.existsSync(filePath)) {
+    if (typeof fs !== 'undefined' && fs.existsSync && fs.existsSync(filePath)) {
       const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
       letterChunksCache.set(key, data);
       return data;
     }
-  } catch (e) {
-    console.error(`Failed to load chunk ${key}:`, e);
+  } catch (e) {}
+
+  try {
+    const pubPath = path.join(process.cwd(), `public/dict/chunks/${key}.json`);
+    if (typeof fs !== 'undefined' && fs.existsSync && fs.existsSync(pubPath)) {
+      const data = JSON.parse(fs.readFileSync(pubPath, 'utf8'));
+      letterChunksCache.set(key, data);
+      return data;
+    }
+  } catch (e) {}
+
+  if (origin) {
+    try {
+      const res = await fetch(`${origin}/dict/chunks/${encodeURIComponent(key)}.json`);
+      if (res.ok) {
+        const data = await res.json();
+        letterChunksCache.set(key, data);
+        return data;
+      }
+    } catch (e) {}
   }
+
   return {};
 }
 
@@ -456,7 +475,7 @@ export function tokenizeSubtitleSentence(sentence: string): SubtitleToken[] {
 /**
  * Perform local lookup in Skypedia & Phrases
  */
-export function lookupLocalDb(term: string): DictLookupResult | null {
+export async function lookupLocalDb(term: string, origin?: string): Promise<DictLookupResult | null> {
   const clean = term.toLowerCase().trim().replace(/^[^a-z0-9\s]+|[^a-z0-9\s]+$/g, '');
   if (!clean) return null;
 
@@ -522,7 +541,7 @@ export function lookupLocalDb(term: string): DictLookupResult | null {
   const inflection = detectInflection(clean) || undefined;
 
   // 2. Pure Skypedia single word lookup
-  const chunk = getLetterChunk(clean[0] || '_');
+  const chunk = await getLetterChunk(clean[0] || '_', origin);
 
   if (chunk[clean]) {
     const entry = chunk[clean];
@@ -590,7 +609,7 @@ export function lookupLocalDb(term: string): DictLookupResult | null {
 
   // 5. If inflection root word exists, load root word entry
   if (inflection?.root) {
-    const rootChunk = getLetterChunk(inflection.root[0] || '_');
+    const rootChunk = await getLetterChunk(inflection.root[0] || '_', origin);
     if (rootChunk[inflection.root]) {
       const entry = rootChunk[inflection.root];
       return {
@@ -629,59 +648,86 @@ export async function lookupOnline(
       word: term,
       short_mean: term,
       audio_url: `https://dict.youdao.com/dictvoice?audio=${encodeURIComponent(term)}&type=2`,
-      source: 'Từ Điển Trực Tuyến',
+      source: 'Từ Điển Anh - Việt',
     };
   }
 
   let viMean = '';
-  // 1. Google Translate (clients5 Chrome Extension endpoint, ultra fast, no datacenter blocks)
+  const viDefinitions: DefinitionItem[] = [];
+  const posSet = new Set<string>();
+
+  // 1. Google Translate Bilingual Dictionary (dt=bd gives structured Vietnamese definitions by POS)
   try {
-    const cUrl = `https://clients5.google.com/translate_a/t?client=dict-chrome-ex&sl=en&tl=vi&q=${encodeURIComponent(clean)}`;
-    const cRes = await fetch(cUrl, {
+    const bdUrl = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=vi&dt=t&dt=bd&dt=rm&q=${encodeURIComponent(clean)}`;
+    const bdRes = await fetch(bdUrl, {
       headers: { 'User-Agent': 'Mozilla/5.0' },
       next: { revalidate: 86400 },
     });
-    if (cRes.ok) {
-      const cData = await cRes.json();
-      if (Array.isArray(cData) && typeof cData[0] === 'string') {
-        viMean = cData[0].trim();
+    if (bdRes.ok) {
+      const bdData = await bdRes.json();
+      // Primary translation
+      if (Array.isArray(bdData) && Array.isArray(bdData[0])) {
+        viMean = bdData[0].map((x: any) => x[0]).join('').trim();
+      }
+
+      // Bilingual dictionary entries (POSIX parts of speech translated to Vietnamese)
+      if (Array.isArray(bdData[1])) {
+        const posTransMap: Record<string, string> = {
+          noun: 'Danh từ',
+          verb: 'Động từ',
+          adjective: 'Tính từ',
+          adverb: 'Phó từ',
+          preposition: 'Giới từ',
+          pronoun: 'Đại từ',
+          conjunction: 'Liên từ',
+          interjection: 'Thán từ',
+          phrase: 'Cụm từ',
+        };
+
+        for (const item of bdData[1]) {
+          const rawPos = (item[0] || '').toLowerCase();
+          const vnPos = posTransMap[rawPos] || rawPos;
+          posSet.add(vnPos);
+          const meanings: string[] = item[1] || [];
+          if (meanings.length > 0) {
+            viDefinitions.push({
+              pos: vnPos,
+              meaning: meanings.slice(0, 5).join(', '),
+              example: null,
+            });
+          }
+        }
       }
     }
   } catch (e) {
-    // fallback to gtx
+    console.error('Google Translate bd error:', e);
   }
 
-  // 1.1. Fallback to Google Translate GTx
+  // 1.1. Fallback to clients5 if gtx didn't return viMean
   if (!viMean) {
     try {
-      const gUrl = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=vi&dt=t&q=${encodeURIComponent(clean)}`;
-      const gRes = await fetch(gUrl, {
+      const cUrl = `https://clients5.google.com/translate_a/t?client=dict-chrome-ex&sl=en&tl=vi&q=${encodeURIComponent(clean)}`;
+      const cRes = await fetch(cUrl, {
         headers: { 'User-Agent': 'Mozilla/5.0' },
         next: { revalidate: 86400 },
       });
-      if (gRes.ok) {
-        const gData = await gRes.json();
-        if (Array.isArray(gData) && Array.isArray(gData[0])) {
-          viMean = gData[0].map((x: any) => x[0]).join('').trim();
+      if (cRes.ok) {
+        const cData = await cRes.json();
+        if (Array.isArray(cData) && typeof cData[0] === 'string') {
+          viMean = cData[0].trim();
         }
       }
-    } catch (e) {
-      console.error('Google Translate error:', e);
-    }
+    } catch (e) {}
   }
 
-  // 2. Free Dictionary API (IPA, parts of speech, English definitions, native audio MP3)
+  // 2. Free Dictionary API (Used ONLY for IPA phonetic transcript & native US/UK MP3 audio)
   let ipa = '';
-  let pos = '';
-  const definitions: DefinitionItem[] = [];
   let audioUs = `https://dict.youdao.com/dictvoice?audio=${encodeURIComponent(clean)}&type=2`;
   let audioUk = `https://dict.youdao.com/dictvoice?audio=${encodeURIComponent(clean)}&type=1`;
 
   try {
     const dUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${encodeURIComponent(clean.toLowerCase())}`;
-    const dRes = await fetch(dUrl, {
-      next: { revalidate: 86400 },
-    });
+    const dRes = await fetch(dUrl, { next: { revalidate: 86400 } });
     if (dRes.ok) {
       const dData = await dRes.json();
       if (Array.isArray(dData) && dData.length > 0) {
@@ -693,43 +739,34 @@ export async function lookupOnline(
           else if (p.audio.includes('-uk') || p.audio.includes('/en-uk')) audioUk = p.audio;
           else if (!audioUs.startsWith('https://api.dictionaryapi.dev')) audioUs = p.audio;
         }
-        if (item.meanings && item.meanings.length > 0) {
-          pos = item.meanings.map((m: any) => m.partOfSpeech).join(' / ');
-          for (const m of item.meanings) {
-            for (const d of m.definitions || []) {
-              if (d.definition) {
-                definitions.push({
-                  pos: m.partOfSpeech,
-                  meaning: d.definition,
-                  example: d.example || null,
-                });
-              }
-            }
-          }
-        }
       }
     }
-  } catch (e) {
-    console.error('Dictionary API error:', e);
+  } catch (e) {}
+
+  // If no definitions yet, use primary translation
+  if (viDefinitions.length === 0 && viMean) {
+    viDefinitions.push({
+      pos: 'Từ vựng',
+      meaning: viMean,
+      example: null,
+    });
   }
 
-  // If Google Translate didn't return, fallback to first definition or term
-  if (!viMean && definitions.length > 0) {
-    viMean = definitions[0].meaning;
-  }
+  const posList = Array.from(posSet);
+  const posStr = posList.length > 0 ? posList.join(' / ') : 'Từ vựng';
 
   return {
     word: term,
     short_mean: viMean || clean,
-    full_mean: definitions[0]?.meaning || viMean,
+    full_mean: viDefinitions[0]?.meaning || viMean || clean,
     ipa: ipa,
-    pos: pos || 'Từ vựng',
-    pos_list: pos ? pos.split(' / ') : [],
-    definitions: definitions.slice(0, 10),
+    pos: posStr,
+    pos_list: posList.length > 0 ? posList : ['Từ vựng'],
+    definitions: viDefinitions, // 100% TIẾNG VIỆT!
     audio_url: audioUs,
     audio_us_url: audioUs,
     audio_uk_url: audioUk,
-    source: 'Từ Điển Anh - Việt (Oxford & Google Translate)',
+    source: 'Từ Điển Anh - Việt',
   };
 }
 
