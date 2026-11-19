@@ -634,21 +634,40 @@ export async function lookupOnline(
   }
 
   let viMean = '';
-  // 1. Google Translate GTx (Free, fast, 100% accurate translation)
+  // 1. Google Translate (clients5 Chrome Extension endpoint, ultra fast, no datacenter blocks)
   try {
-    const gUrl = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=vi&dt=t&q=${encodeURIComponent(clean)}`;
-    const gRes = await fetch(gUrl, {
+    const cUrl = `https://clients5.google.com/translate_a/t?client=dict-chrome-ex&sl=en&tl=vi&q=${encodeURIComponent(clean)}`;
+    const cRes = await fetch(cUrl, {
       headers: { 'User-Agent': 'Mozilla/5.0' },
       next: { revalidate: 86400 },
     });
-    if (gRes.ok) {
-      const gData = await gRes.json();
-      if (Array.isArray(gData) && Array.isArray(gData[0])) {
-        viMean = gData[0].map((x: any) => x[0]).join('').trim();
+    if (cRes.ok) {
+      const cData = await cRes.json();
+      if (Array.isArray(cData) && typeof cData[0] === 'string') {
+        viMean = cData[0].trim();
       }
     }
   } catch (e) {
-    console.error('Google Translate error:', e);
+    // fallback to gtx
+  }
+
+  // 1.1. Fallback to Google Translate GTx
+  if (!viMean) {
+    try {
+      const gUrl = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=vi&dt=t&q=${encodeURIComponent(clean)}`;
+      const gRes = await fetch(gUrl, {
+        headers: { 'User-Agent': 'Mozilla/5.0' },
+        next: { revalidate: 86400 },
+      });
+      if (gRes.ok) {
+        const gData = await gRes.json();
+        if (Array.isArray(gData) && Array.isArray(gData[0])) {
+          viMean = gData[0].map((x: any) => x[0]).join('').trim();
+        }
+      }
+    } catch (e) {
+      console.error('Google Translate error:', e);
+    }
   }
 
   // 2. Free Dictionary API (IPA, parts of speech, English definitions, native audio MP3)
