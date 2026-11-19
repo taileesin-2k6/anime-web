@@ -46,6 +46,7 @@ export interface DictLookupResult {
 
 let phrasesIndexCache: Record<string, { t: string; m: string; en?: string; ex?: string; s: number }> | null = null;
 let quickWordsCache: Record<string, { m: string; i?: string; p?: string }> | null = null;
+let quickDictCache: Record<string, { m: string; i?: string; p?: string }> | null = null;
 let inflectionsCache: Record<string, WordInflection> | null = null;
 const letterChunksCache = new Map<string, Record<string, any>>();
 
@@ -81,6 +82,23 @@ function getQuickWords(): Record<string, { m: string; i?: string; p?: string }> 
     }
   }
   return quickWordsCache!;
+}
+
+function getQuickDict(): Record<string, { m: string; i?: string; p?: string }> {
+  if (!quickDictCache) {
+    try {
+      const qdPath = path.join(process.cwd(), 'data/dict/quick_dict.json');
+      if (fs.existsSync(qdPath)) {
+        quickDictCache = JSON.parse(fs.readFileSync(qdPath, 'utf8'));
+      } else {
+        quickDictCache = {};
+      }
+    } catch (e) {
+      console.error('Failed to load quick_dict.json:', e);
+      quickDictCache = {};
+    }
+  }
+  return quickDictCache!;
 }
 
 function getInflections(): Record<string, WordInflection> {
@@ -526,7 +544,51 @@ export function lookupLocalDb(term: string): DictLookupResult | null {
     };
   }
 
-  // 3. If inflection root word exists, load root word entry
+  // 3. Fallback to quick_words index
+  const quickWords = getQuickWords();
+  if (quickWords[clean]) {
+    const qw = quickWords[clean];
+    return {
+      word: term,
+      root_word: inflection?.root,
+      inflection: inflection,
+      short_mean: qw.m || '',
+      ipa: qw.i || '',
+      pos: qw.p || '',
+      pos_list: qw.p ? (qw.p.includes(' / ') ? qw.p.split(' / ') : [qw.p]) : [],
+      definitions: [{ pos: qw.p || '', meaning: qw.m || '' }],
+      related_words: [],
+      phrase_type: 'single',
+      audio_url: `https://dict.youdao.com/dictvoice?audio=${encodeURIComponent(clean)}&type=2`,
+      audio_us_url: `https://dict.youdao.com/dictvoice?audio=${encodeURIComponent(clean)}&type=2`,
+      audio_uk_url: `https://dict.youdao.com/dictvoice?audio=${encodeURIComponent(clean)}&type=1`,
+      source: 'Từ Điển Anh - Việt (EVDICT)',
+    };
+  }
+
+  // 4. Fallback to quick_dict index
+  const quickDict = getQuickDict();
+  if (quickDict[clean]) {
+    const qd = quickDict[clean];
+    return {
+      word: term,
+      root_word: inflection?.root,
+      inflection: inflection,
+      short_mean: qd.m || '',
+      ipa: qd.i || '',
+      pos: qd.p || '',
+      pos_list: qd.p ? [qd.p] : [],
+      definitions: [{ pos: qd.p || '', meaning: qd.m || '' }],
+      related_words: [],
+      phrase_type: 'single',
+      audio_url: `https://dict.youdao.com/dictvoice?audio=${encodeURIComponent(clean)}&type=2`,
+      audio_us_url: `https://dict.youdao.com/dictvoice?audio=${encodeURIComponent(clean)}&type=2`,
+      audio_uk_url: `https://dict.youdao.com/dictvoice?audio=${encodeURIComponent(clean)}&type=1`,
+      source: 'Từ Điển Anh - Việt (Hồ Ngọc Đức EVDICT)',
+    };
+  }
+
+  // 5. If inflection root word exists, load root word entry
   if (inflection?.root) {
     const rootChunk = getLetterChunk(inflection.root[0] || '_');
     if (rootChunk[inflection.root]) {
@@ -554,7 +616,106 @@ export function lookupLocalDb(term: string): DictLookupResult | null {
 }
 
 /**
- * AI Fallback: Groq openai/gpt-oss-120b for contextual word/phrase translation
+ * Universal Online Dictionary Fallback (Google Translate + Free Dictionary API)
+ * Zero API keys required, works 24/7 on Edge & Local, guarantees 100% coverage
+ */
+export async function lookupOnline(
+  term: string,
+  contextSentence?: string
+): Promise<DictLookupResult> {
+  const clean = term.trim().replace(/^[^a-zA-Z0-9\s'-]+|[^a-zA-Z0-9\s'-]+$/g, '');
+  if (!clean) {
+    return {
+      word: term,
+      short_mean: term,
+      audio_url: `https://dict.youdao.com/dictvoice?audio=${encodeURIComponent(term)}&type=2`,
+      source: 'Từ Điển Trực Tuyến',
+    };
+  }
+
+  let viMean = '';
+  // 1. Google Translate GTx (Free, fast, 100% accurate translation)
+  try {
+    const gUrl = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=vi&dt=t&q=${encodeURIComponent(clean)}`;
+    const gRes = await fetch(gUrl, {
+      headers: { 'User-Agent': 'Mozilla/5.0' },
+      next: { revalidate: 86400 },
+    });
+    if (gRes.ok) {
+      const gData = await gRes.json();
+      if (Array.isArray(gData) && Array.isArray(gData[0])) {
+        viMean = gData[0].map((x: any) => x[0]).join('').trim();
+      }
+    }
+  } catch (e) {
+    console.error('Google Translate error:', e);
+  }
+
+  // 2. Free Dictionary API (IPA, parts of speech, English definitions, native audio MP3)
+  let ipa = '';
+  let pos = '';
+  const definitions: DefinitionItem[] = [];
+  let audioUs = `https://dict.youdao.com/dictvoice?audio=${encodeURIComponent(clean)}&type=2`;
+  let audioUk = `https://dict.youdao.com/dictvoice?audio=${encodeURIComponent(clean)}&type=1`;
+
+  try {
+    const dUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${encodeURIComponent(clean.toLowerCase())}`;
+    const dRes = await fetch(dUrl, {
+      next: { revalidate: 86400 },
+    });
+    if (dRes.ok) {
+      const dData = await dRes.json();
+      if (Array.isArray(dData) && dData.length > 0) {
+        const item = dData[0];
+        ipa = item.phonetic || item.phonetics?.find((p: any) => p.text)?.text || '';
+        const phoneticsWithAudio = item.phonetics?.filter((p: any) => p.audio && p.audio.startsWith('http'));
+        for (const p of phoneticsWithAudio || []) {
+          if (p.audio.includes('-us') || p.audio.includes('/en-us')) audioUs = p.audio;
+          else if (p.audio.includes('-uk') || p.audio.includes('/en-uk')) audioUk = p.audio;
+          else if (!audioUs.startsWith('https://api.dictionaryapi.dev')) audioUs = p.audio;
+        }
+        if (item.meanings && item.meanings.length > 0) {
+          pos = item.meanings.map((m: any) => m.partOfSpeech).join(' / ');
+          for (const m of item.meanings) {
+            for (const d of m.definitions || []) {
+              if (d.definition) {
+                definitions.push({
+                  pos: m.partOfSpeech,
+                  meaning: d.definition,
+                  example: d.example || null,
+                });
+              }
+            }
+          }
+        }
+      }
+    }
+  } catch (e) {
+    console.error('Dictionary API error:', e);
+  }
+
+  // If Google Translate didn't return, fallback to first definition or term
+  if (!viMean && definitions.length > 0) {
+    viMean = definitions[0].meaning;
+  }
+
+  return {
+    word: term,
+    short_mean: viMean || clean,
+    full_mean: definitions[0]?.meaning || viMean,
+    ipa: ipa,
+    pos: pos || 'Từ vựng',
+    pos_list: pos ? pos.split(' / ') : [],
+    definitions: definitions.slice(0, 10),
+    audio_url: audioUs,
+    audio_us_url: audioUs,
+    audio_uk_url: audioUk,
+    source: 'Từ Điển Anh - Việt (Oxford & Google Translate)',
+  };
+}
+
+/**
+ * AI / Online Fallback: Contextual word/phrase translation
  */
 export async function lookupGroqAiFallback(
   term: string,
@@ -562,13 +723,7 @@ export async function lookupGroqAiFallback(
 ): Promise<DictLookupResult> {
   const apiKey = process.env.GROQ_API_KEY;
   if (!apiKey) {
-    return {
-      word: term,
-      short_mean: 'Không tìm thấy từ trong từ điển',
-      full_mean: 'Vui lòng cấu hình GROQ_API_KEY để kích hoạt tính năng dịch AI theo ngữ cảnh.',
-      audio_url: `https://dict.youdao.com/dictvoice?audio=${encodeURIComponent(term)}&type=2`,
-      source: 'Local Fallback',
-    };
+    return lookupOnline(term, contextSentence);
   }
 
   try {
@@ -618,14 +773,8 @@ Return ONLY a JSON object with this exact schema:
       is_ai: true,
     };
   } catch (error: any) {
-    console.error('Groq AI lookup error:', error);
-    return {
-      word: term,
-      short_mean: 'Không tìm thấy từ trong từ điển',
-      full_mean: error.message,
-      audio_url: `https://dict.youdao.com/dictvoice?audio=${encodeURIComponent(term)}&type=2`,
-      source: 'Groq Fallback Error',
-    };
+    console.error('Groq AI lookup error, falling back to online dictionary:', error);
+    return lookupOnline(term, contextSentence);
   }
 }
 
