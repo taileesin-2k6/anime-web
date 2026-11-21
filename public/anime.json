@@ -239,10 +239,21 @@
         "filename": "the_ep07_bilingual.mp4",
         "gdriveId": "1wSyPi4WzEEMgP6t_Eu6U6nK7di_AD_mZ",
         "backupId": "1ueBHXgX1CjV97AtuO3WKCdrmusyQFWTO"
+      },
+      {
+        "id": "ep-8-bilingual",
+        "episodeNumber": 8,
+        "title": "Tập 8 : Hemp and Folk Religion",
+        "videoUrl": "https://drive.google.com/open?id=17PKoWZjWqJARgFzYxR3ojBvi4iKnVbp5",
+        "duration": "39:06",
+        "createdAt": "2026-11-21T03:59:12.241637Z",
+        "filename": "the_ep08_bilingual.mp4",
+        "gdriveId": "17PKoWZjWqJARgFzYxR3ojBvi4iKnVbp5",
+        "backupId": "19XSsnHziDvn1j9qIt7nmARFDEsdbv8wm"
       }
     ],
     "createdAt": "2026-10-02T19:24:44.055089Z",
-    "updatedAt": "2026-11-17T10:58:40.130597Z"
+    "updatedAt": "2026-11-21T03:59:12.241637Z"
   },
   {
     "id": "tokyo-revengers-santen-sensou-hen",
