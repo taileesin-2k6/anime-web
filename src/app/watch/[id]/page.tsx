@@ -21,24 +21,28 @@ interface WatchPageProps {
 }
 
 export async function generateMetadata({ params }: WatchPageProps) {
-  const { id } = await params;
-  const anime = getAnimeByIdOrSlug(id);
-  if (!anime) return { title: 'Không tìm thấy Anime - AniStore' };
+  try {
+    const { id } = await params;
+    const anime = getAnimeByIdOrSlug((id || '').trim());
+    if (!anime) return { title: 'Không tìm thấy Anime - AniStore' };
 
-  return {
-    title: `Xem Phim ${anime.title} - AniStore`,
-    description: anime.description || `Xem anime ${anime.title} full HD vietsub online`,
-  };
+    return {
+      title: `Xem Phim ${anime.title} - AniStore`,
+      description: anime.description || `Xem anime ${anime.title} full HD vietsub online`,
+    };
+  } catch {
+    return { title: 'Xem Phim Anime Song Ngữ - AniStore' };
+  }
 }
 
 export default async function WatchPage({ params }: WatchPageProps) {
   const { id } = await params;
-  const anime = getAnimeByIdOrSlug(id);
+  const anime = getAnimeByIdOrSlug((id || '').trim());
 
   if (!anime) {
     notFound();
   }
 
-  const initialEpNumber = anime.episodes[0]?.episodeNumber || 1;
+  const initialEpNumber = anime.episodes?.[0]?.episodeNumber || 1;
   return <WatchClient anime={anime} initialEpNumber={initialEpNumber} />;
 }

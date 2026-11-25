@@ -9,50 +9,58 @@ import {
 export const dynamic = 'force-dynamic';
 
 export async function GET(request: NextRequest) {
-  const { searchParams } = request.nextUrl;
-  const suggest = searchParams.get('suggest') || searchParams.get('q');
-  const word = searchParams.get('word');
-  const sentence = searchParams.get('sentence');
-  const context = searchParams.get('context') || '';
+  try {
+    const { searchParams } = request.nextUrl;
+    const suggest = searchParams.get('suggest') || searchParams.get('q');
+    const word = searchParams.get('word');
+    const sentence = searchParams.get('sentence');
+    const context = searchParams.get('context') || '';
 
-  // 1. Instant prefix suggestions (TFlat style)
-  if (suggest) {
-    const limit = parseInt(searchParams.get('limit') || '8', 10);
-    const suggestions = getSearchSuggestions(suggest, limit);
-    return NextResponse.json({ suggestions });
-  }
-
-  // 2. Batch sentence tokenization & instant meaning resolution
-  if (sentence) {
-    const tokens = tokenizeSubtitleSentence(sentence);
-    const meaningsMap: Record<string, string> = {};
-    for (const t of tokens) {
-      if (t.clean && t.meaning) {
-        meaningsMap[t.clean] = t.meaning;
-      }
+    // 1. Instant prefix suggestions (TFlat style)
+    if (suggest) {
+      const limit = parseInt(searchParams.get('limit') || '8', 10);
+      const suggestions = getSearchSuggestions(suggest, limit);
+      return NextResponse.json({ suggestions });
     }
-    return NextResponse.json({
-      tokens,
-      meanings: meaningsMap,
-    });
+
+    // 2. Batch sentence tokenization & instant meaning resolution
+    if (sentence) {
+      const tokens = tokenizeSubtitleSentence(sentence);
+      const meaningsMap: Record<string, string> = {};
+      for (const t of tokens) {
+        if (t.clean && t.meaning) {
+          meaningsMap[t.clean] = t.meaning;
+        }
+      }
+      return NextResponse.json({
+        tokens,
+        meanings: meaningsMap,
+      });
+    }
+
+    if (!word) {
+      return NextResponse.json({ error: 'Word, sentence, or suggest query is required' }, { status: 400 });
+    }
+
+    const cleanWord = word.trim();
+    const origin = request.nextUrl.origin;
+
+    // 2. Query Local Database (MinhQND + Kaikki/Wiktionary + Linguatools)
+    const localResult = await lookupLocalDb(cleanWord, origin);
+    if (localResult) {
+      return NextResponse.json(localResult);
+    }
+
+    // 3. Fallback: Google Translate + Oxford Audio Online
+    const aiResult = await lookupGroqAiFallback(cleanWord, context || undefined);
+    return NextResponse.json(aiResult);
+  } catch (error: any) {
+    console.error('Dictionary API GET Error:', error);
+    return NextResponse.json(
+      { error: error?.message || 'Dictionary lookup failed' },
+      { status: 200 } // Graceful 200 with error property so client never receives 500
+    );
   }
-
-  if (!word) {
-    return NextResponse.json({ error: 'Word, sentence, or suggest query is required' }, { status: 400 });
-  }
-
-  const cleanWord = word.trim();
-  const origin = request.nextUrl.origin;
-
-  // 2. Query Local Database (MinhQND + Kaikki/Wiktionary + Linguatools)
-  const localResult = await lookupLocalDb(cleanWord, origin);
-  if (localResult) {
-    return NextResponse.json(localResult);
-  }
-
-  // 3. Fallback: Google Translate + Oxford Audio Online
-  const aiResult = await lookupGroqAiFallback(cleanWord, context || undefined);
-  return NextResponse.json(aiResult);
 }
 
 export async function POST(request: NextRequest) {

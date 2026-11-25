@@ -64,10 +64,11 @@ export function saveAllAnime(animes: Anime[]): void {
   }
 }
 
-export function getAnimeByIdOrSlug(idOrSlug: string): Anime | null {
+export function getAnimeByIdOrSlug(idOrSlug?: string): Anime | null {
+  if (!idOrSlug) return null;
   const animes = getAllAnime();
-  const lower = idOrSlug.toLowerCase();
-  return animes.find(a => a.id.toLowerCase() === lower || a.slug.toLowerCase() === lower) || null;
+  const lower = idOrSlug.trim().toLowerCase();
+  return animes.find(a => (a.id && a.id.toLowerCase() === lower) || (a.slug && a.slug.toLowerCase() === lower)) || null;
 }
 
 export function createAnime(data: Omit<Anime, 'id' | 'createdAt' | 'updatedAt' | 'episodes'> & { episodes?: Anime['episodes'] }): Anime {

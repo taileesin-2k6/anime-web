@@ -100,6 +100,7 @@ export default function WatchClient({ anime, initialEpNumber }: WatchClientProps
             videoUrl={currentEpisode?.videoUrl}
             gdriveId={currentEpisode?.gdriveId}
             backupId={currentEpisode?.backupId}
+            filename={currentEpisode?.filename}
             title={currentEpisode?.title || `Tập ${currentEpNum}`}
             animeTitle={anime.title}
             episodeNumber={currentEpNum}

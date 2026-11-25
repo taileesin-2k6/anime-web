@@ -182,18 +182,17 @@ export default function VideoSubtitleOverlay({
     setActiveCueEn(matchEn || null);
   }, [currentTime, subtitlesEn]);
 
-  // Pre-tokenize subtitle sentence & fetch pipeline meanings
+  // Instant client-side tokenization (0ms, 0 network requests during video playback)
   useEffect(() => {
     if (!activeCueEn?.text) {
       setActiveTokens([]);
-      setMeaningsCache({});
       setHoveredToken(null);
       return;
     }
 
     const currentSentence = activeCueEn.text;
 
-    // Check memory cache first (instant response, 0ms, 0 network requests)
+    // Check memory cache first
     if (sentenceTokenCacheRef.current[currentSentence]) {
       const cached = sentenceTokenCacheRef.current[currentSentence];
       setActiveTokens(cached.tokens);
@@ -201,28 +200,22 @@ export default function VideoSubtitleOverlay({
       return;
     }
 
-    // Fast initial fallback tokens
-    const rawWords = currentSentence.split(/\s+/).filter(Boolean);
-    const initialTokens: SubtitleToken[] = rawWords.map((w) => ({
-      text: w,
-      clean: w.toLowerCase().replace(/^[^a-z0-9]+|[^a-z0-9]+$/g, ''),
-      isPhrase: false,
-      phraseType: 'single',
-      meaning: '',
-    }));
-    setActiveTokens(initialTokens);
+    // Instant zero-cost tokenization using regex
+    const rawTokens = currentSentence.match(/[A-Za-z0-9']+|[^\s\w]/g) || [];
+    const tokens: SubtitleToken[] = rawTokens.map((raw) => {
+      const isWord = /^[A-Za-z0-9]/.test(raw);
+      const clean = isWord ? raw.toLowerCase().replace(/^'+|'+$/g, '') : '';
+      return {
+        text: raw,
+        clean,
+        isPhrase: false,
+        phraseType: isWord ? 'single' : 'punct',
+        meaning: meaningsCache[clean] || '',
+      };
+    });
 
-    // Call Pipeline Tokenizer & Dictionary API once per sentence
-    fetch(`/api/dictionary?sentence=${encodeURIComponent(currentSentence)}`)
-      .then((res) => res.json())
-      .then((data) => {
-        const tokens = data.tokens && Array.isArray(data.tokens) ? data.tokens : initialTokens;
-        const meanings = data.meanings || {};
-        sentenceTokenCacheRef.current[currentSentence] = { tokens, meanings };
-        setActiveTokens(tokens);
-        setMeaningsCache(meanings);
-      })
-      .catch((err) => console.error('Failed to tokenize cue words:', err));
+    sentenceTokenCacheRef.current[currentSentence] = { tokens, meanings: meaningsCache };
+    setActiveTokens(tokens);
   }, [activeCueEn?.text]);
 
   // Hover on token -> Auto-pause video and show instant meaning tooltip
@@ -238,22 +231,42 @@ export default function VideoSubtitleOverlay({
       videoRef.current.pause();
     }
 
-    const meaning = token.meaning || meaningsCache[token.clean] || '';
-    if (!meaning) return;
-
     const tokenEl = e.currentTarget;
-    const tokenRect = tokenEl.getBoundingClientRect();
-    const parentRect = containerRef.current?.getBoundingClientRect();
+    const currentSentence = activeCueEn?.text || '';
+    const meaning = token.meaning || meaningsCache[token.clean] || '';
 
-    if (parentRect) {
-      const x = tokenRect.left - parentRect.left + tokenRect.width / 2;
-      const y = tokenRect.top - parentRect.top;
-      setHoveredToken({
-        token,
-        meaning,
-        x,
-        y,
-      });
+    if (meaning) {
+      const tokenRect = tokenEl.getBoundingClientRect();
+      const parentRect = containerRef.current?.getBoundingClientRect();
+      if (parentRect) {
+        setHoveredToken({
+          token,
+          meaning,
+          x: tokenRect.left - parentRect.left + tokenRect.width / 2,
+          y: tokenRect.top - parentRect.top,
+        });
+      }
+    } else if (token.clean) {
+      // Lazy on-demand lookup only when user hovers
+      fetch(`/api/dictionary?word=${encodeURIComponent(token.clean)}&context=${encodeURIComponent(currentSentence)}`)
+        .then((res) => res.json())
+        .then((data) => {
+          const quickMean = data.short_mean || data.full_mean || '';
+          if (quickMean) {
+            setMeaningsCache((prev) => ({ ...prev, [token.clean]: quickMean }));
+            const tokenRect = tokenEl.getBoundingClientRect();
+            const parentRect = containerRef.current?.getBoundingClientRect();
+            if (parentRect) {
+              setHoveredToken({
+                token,
+                meaning: quickMean,
+                x: tokenRect.left - parentRect.left + tokenRect.width / 2,
+                y: tokenRect.top - parentRect.top,
+              });
+            }
+          }
+        })
+        .catch(() => {});
     }
   };
 

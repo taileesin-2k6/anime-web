@@ -28,6 +28,7 @@ interface VideoPlayerProps {
   videoUrl?: string;
   gdriveId?: string;
   backupId?: string;
+  filename?: string;
   title: string;
   animeTitle?: string;
   episodeNumber: number;
@@ -55,6 +56,7 @@ export default function VideoPlayer({
   videoUrl = '',
   gdriveId,
   backupId,
+  filename,
   title,
   animeTitle,
   episodeNumber,
@@ -362,6 +364,7 @@ export default function VideoPlayer({
     const queryParts: string[] = [];
     if (gdriveId) queryParts.push(`id=${encodeURIComponent(gdriveId)}`);
     if (backupId) queryParts.push(`backupId=${encodeURIComponent(backupId)}`);
+    if (filename) queryParts.push(`file=${encodeURIComponent(filename)}`);
     if (animeSlug) queryParts.push(`slug=${encodeURIComponent(animeSlug)}`);
     if (episodeNumber) queryParts.push(`ep=${encodeURIComponent(episodeNumber)}`);
     if (queryParts.length > 0) {
@@ -388,10 +391,11 @@ export default function VideoPlayer({
       return;
     }
 
-    // Auto-retry transient network stalls (code 2) up to 2 times without disturbing user
+    // Auto-retry transient network stalls (code 2) with gentle exponential backoff
     if (retryCountRef.current < 2) {
       retryCountRef.current += 1;
-      console.warn(`[VideoPlayer] Auto-recovering stream in 1s (attempt ${retryCountRef.current}/2)...`);
+      const delayMs = retryCountRef.current * 1500;
+      console.warn(`[VideoPlayer] Auto-recovering stream in ${delayMs}ms (attempt ${retryCountRef.current}/2)...`);
       if (retryTimeoutRef.current) clearTimeout(retryTimeoutRef.current);
       retryTimeoutRef.current = setTimeout(() => {
         if (videoRef.current) {
@@ -399,7 +403,7 @@ export default function VideoPlayer({
           videoRef.current.currentTime = savedTime;
           videoRef.current.play().catch(() => {});
         }
-      }, 1000);
+      }, delayMs);
       return;
     }
 
