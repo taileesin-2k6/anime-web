@@ -345,7 +345,30 @@ export default function VideoSubtitleOverlay({
       .then((res) => res.json())
       .then((data) => {
         if (!data.error) {
-          setPopoverData(data);
+          // If API returned fallback that just repeats raw search term, preserve token's curated contextual meaning
+          if (
+            token.meaning &&
+            (!data.short_mean || data.short_mean.toLowerCase() === termToSearch.toLowerCase())
+          ) {
+            setPopoverData((prev) =>
+              prev
+                ? {
+                    ...data,
+                    short_mean: token.meaning,
+                    full_mean: token.meaning,
+                    definitions: [
+                      {
+                        pos: data.pos || 'Thành ngữ / Cụm từ',
+                        meaning: token.meaning,
+                        example: null,
+                      },
+                    ],
+                  }
+                : data
+            );
+          } else {
+            setPopoverData(data);
+          }
         }
       })
       .catch((err) => {

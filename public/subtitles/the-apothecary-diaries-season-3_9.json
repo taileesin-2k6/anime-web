@@ -70,11 +70,31 @@
           "pos": "Giới từ / Phó từ"
         },
         {
-          "text": "choose a wife",
-          "clean": "choose a wife",
-          "isPhrase": true,
-          "phraseType": "collocation",
-          "meaning": "chọn vợ / tuyển chọn thê tử"
+          "text": "choose",
+          "clean": "choose",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "Chọn, lựa chọn, kén chọn.",
+          "ipa": "/tʃuːz/",
+          "pos": "Động từ"
+        },
+        {
+          "text": "a",
+          "clean": "a",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "Một (mạo từ không xác định trước phụ âm).",
+          "ipa": "/ə/",
+          "pos": "Mạo từ"
+        },
+        {
+          "text": "wife",
+          "clean": "wife",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "Vợ.",
+          "ipa": "/waɪf/",
+          "pos": "Danh từ"
         },
         {
           "text": ".",
@@ -787,11 +807,22 @@
           "pos": "Mạo từ"
         },
         {
-          "text": "best outcome",
-          "clean": "best outcome",
-          "isPhrase": true,
-          "phraseType": "collocation",
-          "meaning": "kết cục tốt nhất"
+          "text": "best",
+          "clean": "best",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "tốt nhất, tối ưu",
+          "ipa": "",
+          "pos": "Từ vựng"
+        },
+        {
+          "text": "outcome",
+          "clean": "outcome",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "Hậu quả, kết quả.",
+          "ipa": "/ˈaʊtkʌm/",
+          "pos": "Danh từ"
         },
         {
           "text": "for",
@@ -1097,11 +1128,22 @@
           "pos": "Phó từ"
         },
         {
-          "text": "topple nations",
-          "clean": "topple nations",
-          "isPhrase": true,
-          "phraseType": "idiom",
-          "meaning": "khuynh đảo quốc gia / khuynh quốc khuynh thành"
+          "text": "topple",
+          "clean": "topple",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "+ down, over) ngã, đổ, đổ nhào.",
+          "ipa": "/ˈtɒpl/",
+          "pos": "Động từ"
+        },
+        {
+          "text": "nations",
+          "clean": "nations",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "",
+          "ipa": "",
+          "pos": ""
         },
         {
           "text": ".",
@@ -1318,11 +1360,22 @@
           "pos": "Động từ"
         },
         {
-          "text": "related to",
-          "clean": "related to",
-          "isPhrase": true,
-          "phraseType": "collocation",
-          "meaning": "liên quan đến"
+          "text": "related",
+          "clean": "related",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "Quá khứ và phân từ quá khứ của relate",
+          "ipa": "/rɪˈleɪtɪd/",
+          "pos": "Động từ / Tính từ"
+        },
+        {
+          "text": "to",
+          "clean": "to",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "Đến, tới, về.",
+          "ipa": "/tə/",
+          "pos": "Giới từ / Phó từ"
         },
         {
           "text": "that",
@@ -1543,11 +1596,49 @@
           "pos": "Tính từ"
         },
         {
-          "text": "lady-in-waiting",
-          "clean": "lady-in-waiting",
-          "isPhrase": true,
-          "phraseType": "collocation",
-          "meaning": "thị nữ / tỳ nữ hầu cận"
+          "text": "lady",
+          "clean": "lady",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "Vợ, phu nhân.",
+          "ipa": "/ˈleɪdi/",
+          "pos": "Danh từ"
+        },
+        {
+          "text": "-",
+          "clean": "",
+          "isPhrase": false,
+          "phraseType": "punct",
+          "meaning": "",
+          "ipa": "",
+          "pos": ""
+        },
+        {
+          "text": "in",
+          "clean": "in",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "Ở, tại, trong (nơi chốn, không gian...).",
+          "ipa": "/ɪn/",
+          "pos": "Giới từ / Phó từ / Danh từ / Tính từ / Động từ"
+        },
+        {
+          "text": "-",
+          "clean": "",
+          "isPhrase": false,
+          "phraseType": "punct",
+          "meaning": "",
+          "ipa": "",
+          "pos": ""
+        },
+        {
+          "text": "waiting",
+          "clean": "waiting",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "Sự đợi, sự chờ; thời gian đợi.",
+          "ipa": "/ˈweɪtɪŋ/",
+          "pos": "Danh từ / Động từ / Tính từ"
         },
         {
           "text": "with",
@@ -1817,11 +1908,22 @@
           "pos": "Động từ"
         },
         {
-          "text": "a bit",
-          "clean": "a bit",
-          "isPhrase": true,
-          "phraseType": "idiom",
-          "meaning": "hơi / một chút"
+          "text": "a",
+          "clean": "a",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "Một (mạo từ không xác định trước phụ âm).",
+          "ipa": "/ə/",
+          "pos": "Mạo từ"
+        },
+        {
+          "text": "bit",
+          "clean": "bit",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "Miếng (thức ăn...); mảnh mẫu.",
+          "ipa": "/bɪt/",
+          "pos": "Danh từ / Động từ"
         },
         {
           "text": "hurtful",
@@ -1958,11 +2060,22 @@
           "pos": ""
         },
         {
-          "text": "used to",
-          "clean": "used to",
-          "isPhrase": true,
-          "phraseType": "phrasal",
-          "meaning": "đã quen với"
+          "text": "used",
+          "clean": "used",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "Quá khứ và phân từ quá khứ của use",
+          "ipa": "/juːst/",
+          "pos": "Động từ / Tính từ"
+        },
+        {
+          "text": "to",
+          "clean": "to",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "Đến, tới, về.",
+          "ipa": "/tə/",
+          "pos": "Giới từ / Phó từ"
         },
         {
           "text": "me",
@@ -2373,11 +2486,31 @@
           "pos": "Đại từ"
         },
         {
-          "text": "get engaged to",
-          "clean": "get engaged to",
-          "isPhrase": true,
-          "phraseType": "collocation",
-          "meaning": "đính hôn với"
+          "text": "get",
+          "clean": "get",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "Được, có được, kiếm được, lấy được.",
+          "ipa": "/ɡet/",
+          "pos": "Động từ"
+        },
+        {
+          "text": "engaged",
+          "clean": "engaged",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "Quá khứ và phân từ quá khứ của engage",
+          "ipa": "/ɪnˈɡeɪdʒd/",
+          "pos": "Động từ / Tính từ"
+        },
+        {
+          "text": "to",
+          "clean": "to",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "Đến, tới, về.",
+          "ipa": "/tə/",
+          "pos": "Giới từ / Phó từ"
         },
         {
           "text": "the",
@@ -2575,11 +2708,22 @@
           "pos": ""
         },
         {
-          "text": "at least",
-          "clean": "at least",
-          "isPhrase": true,
-          "phraseType": "idiom",
-          "meaning": "ít nhất thì"
+          "text": "at",
+          "clean": "at",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "Ở tại (chỉ vị trí).",
+          "ipa": "/ət/",
+          "pos": "Danh từ"
+        },
+        {
+          "text": "least",
+          "clean": "least",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "Tối thiểu, nhỏ nhất, ít nhất, kém nhất.",
+          "ipa": "/liːst/",
+          "pos": "Tính từ / Phó từ / Danh từ"
         },
         {
           "text": ".",
@@ -2714,11 +2858,31 @@
       "vi_text": "Trong trường hợp đó, có lẽ bạn có thể nghĩ ra lý do bọn cướp tấn công bạn?",
       "tokens": [
         {
-          "text": "In that case",
-          "clean": "in that case",
-          "isPhrase": true,
-          "phraseType": "idiom",
-          "meaning": "trong trường hợp đó / nếu vậy thì"
+          "text": "In",
+          "clean": "in",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "Ở, tại, trong (nơi chốn, không gian...).",
+          "ipa": "/ɪn/",
+          "pos": "Giới từ / Phó từ / Danh từ / Tính từ / Động từ"
+        },
+        {
+          "text": "that",
+          "clean": "that",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "Rằng, là.",
+          "ipa": "/ðæt/",
+          "pos": "Liên từ / Cụm từ / Đại từ / Phó từ"
+        },
+        {
+          "text": "case",
+          "clean": "case",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "Trường hợp, cảnh ngộ, hoàn cảnh, tình thế.",
+          "ipa": "/keɪs/",
+          "pos": "Danh từ / Động từ"
         },
         {
           "text": ",",
@@ -2757,11 +2921,22 @@
           "pos": "Danh từ / Động từ"
         },
         {
-          "text": "think of",
-          "clean": "think of",
-          "isPhrase": true,
-          "phraseType": "phrasal",
-          "meaning": "nghĩ ra"
+          "text": "think",
+          "clean": "think",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "Nghĩ, suy nghĩ, ngẫm nghĩ.",
+          "ipa": "/θɪŋk/",
+          "pos": "Động từ"
+        },
+        {
+          "text": "of",
+          "clean": "of",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "Của.",
+          "ipa": "/əv/",
+          "pos": "Giới từ"
         },
         {
           "text": "a",
@@ -2898,11 +3073,22 @@
           "pos": "Động từ"
         },
         {
-          "text": "right now",
-          "clean": "right now",
-          "isPhrase": true,
-          "phraseType": "idiom",
-          "meaning": "ngay lúc này"
+          "text": "right",
+          "clean": "right",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "Điều tốt, điều phải, điều đứng đắn; điều thiện.",
+          "ipa": "/raɪt/",
+          "pos": "Danh từ / Tính từ / Phó từ / Động từ"
+        },
+        {
+          "text": "now",
+          "clean": "now",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "Bây giờ, lúc này, giờ đây, hiện nay, ngày nay.",
+          "ipa": "/naʊ/",
+          "pos": "Phó từ / Liên từ / Danh từ"
         },
         {
           "text": ".",
@@ -3215,11 +3401,31 @@
           "pos": "Phó từ"
         },
         {
-          "text": "blood-related",
-          "clean": "blood-related",
-          "isPhrase": true,
-          "phraseType": "collocation",
-          "meaning": "cùng huyết thống / ruột thịt"
+          "text": "blood",
+          "clean": "blood",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "Máu, huyết.",
+          "ipa": "/blʌd/",
+          "pos": "Danh từ / Động từ"
+        },
+        {
+          "text": "-",
+          "clean": "",
+          "isPhrase": false,
+          "phraseType": "punct",
+          "meaning": "",
+          "ipa": "",
+          "pos": ""
+        },
+        {
+          "text": "related",
+          "clean": "related",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "Quá khứ và phân từ quá khứ của relate",
+          "ipa": "/rɪˈleɪtɪd/",
+          "pos": "Động từ / Tính từ"
         },
         {
           "text": "?",
@@ -3745,11 +3951,31 @@
           "pos": "Giới từ / Phó từ"
         },
         {
-          "text": "go back to",
-          "clean": "go back to",
-          "isPhrase": true,
-          "phraseType": "phrasal",
-          "meaning": "quay trở lại"
+          "text": "go",
+          "clean": "go",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "Đi, đi đến, đi tới.",
+          "ipa": "/ɡəʊ/",
+          "pos": "Động từ / Danh từ"
+        },
+        {
+          "text": "back",
+          "clean": "back",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "Lưng (người, vật).",
+          "ipa": "/bæk/",
+          "pos": "Danh từ / Tính từ / Phó từ / Động từ"
+        },
+        {
+          "text": "to",
+          "clean": "to",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "Đến, tới, về.",
+          "ipa": "/tə/",
+          "pos": "Giới từ / Phó từ"
         },
         {
           "text": "the",
@@ -4911,11 +5137,22 @@
           "pos": "Động từ"
         },
         {
-          "text": "via rumor",
-          "clean": "via rumor",
-          "isPhrase": true,
-          "phraseType": "collocation",
-          "meaning": "qua lời đồn"
+          "text": "via",
+          "clean": "via",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "Qua, theo đường.",
+          "ipa": "/ˈvaɪə/",
+          "pos": "Giới từ"
+        },
+        {
+          "text": "rumor",
+          "clean": "rumor",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "(như) rumour.",
+          "ipa": "/ˈruːmə(r)/",
+          "pos": "Danh từ"
         },
         {
           "text": "later",
@@ -5106,11 +5343,40 @@
           "pos": "Giới từ / Phó từ"
         },
         {
-          "text": "sit on his lap",
-          "clean": "sit on his lap",
-          "isPhrase": true,
-          "phraseType": "collocation",
-          "meaning": "ngồi vào lòng"
+          "text": "sit",
+          "clean": "sit",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "Ngồi.",
+          "ipa": "/sɪt/",
+          "pos": "Động từ"
+        },
+        {
+          "text": "on",
+          "clean": "on",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "Trên, ở trên.",
+          "ipa": "/ɒn/",
+          "pos": "Giới từ / Phó từ / Tính từ"
+        },
+        {
+          "text": "his",
+          "clean": "his",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "của nó, của hắn, của ông ấy, của anh ấy",
+          "ipa": "/hiz/",
+          "pos": "tính từ sở hữu"
+        },
+        {
+          "text": "lap",
+          "clean": "lap",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "Vạt áo, vạt váy.",
+          "ipa": "/læp/",
+          "pos": "Danh từ / Động từ"
         }
       ]
     },
@@ -5218,11 +5484,22 @@
           "pos": "Đại từ"
         },
         {
-          "text": "looks like",
-          "clean": "looks like",
-          "isPhrase": true,
-          "phraseType": "phrasal",
-          "meaning": "có vẻ như"
+          "text": "looks",
+          "clean": "looks",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "Động từ chia ở ngôi thứ ba số ít của look",
+          "ipa": "/lʊk/",
+          "pos": "Động từ"
+        },
+        {
+          "text": "like",
+          "clean": "like",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "Giống, giống nhau, như nhau, tương tự, cùng loại.",
+          "ipa": "/laɪk/",
+          "pos": "Tính từ / Giới từ / Phó từ / Liên từ / Danh từ / Động từ"
         },
         {
           "text": "if",
@@ -5404,11 +5681,22 @@
           "pos": "Mạo từ"
         },
         {
-          "text": "paternity test",
-          "clean": "paternity test",
-          "isPhrase": true,
-          "phraseType": "collocation",
-          "meaning": "xét nghiệm quan hệ cha con / huyết thống"
+          "text": "paternity",
+          "clean": "paternity",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "Tư cách làm cha, địa vị làm cha; quan hệ cha con.",
+          "ipa": "/pəˈtɜːnəti/",
+          "pos": "Danh từ"
+        },
+        {
+          "text": "test",
+          "clean": "test",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "Vỏ (tôm, cua); mai (rùa).",
+          "ipa": "/test/",
+          "pos": "Danh từ / Động từ"
         },
         {
           "text": "?",
@@ -5625,11 +5913,22 @@
           "pos": ""
         },
         {
-          "text": "had tea",
-          "clean": "had tea",
-          "isPhrase": true,
-          "phraseType": "collocation",
-          "meaning": "uống trà"
+          "text": "had",
+          "clean": "had",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "Dạng quá khứ đơn và phân từ quá khứ của have",
+          "ipa": "/həd/",
+          "pos": "Động từ"
+        },
+        {
+          "text": "tea",
+          "clean": "tea",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "Cây chè.",
+          "ipa": "/tiː/",
+          "pos": "Danh từ / Động từ"
         },
         {
           "text": "together",
@@ -5763,11 +6062,22 @@
           "pos": "Giới từ / Phó từ"
         },
         {
-          "text": "care about",
-          "clean": "care about",
-          "isPhrase": true,
-          "phraseType": "phrasal",
-          "meaning": "quan tâm đến"
+          "text": "care",
+          "clean": "care",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "Sự chăm sóc, sự chăm nom, sự giữ gìn, sự bảo dưỡng.",
+          "ipa": "/keə(r)/",
+          "pos": "Danh từ / Động từ"
+        },
+        {
+          "text": "about",
+          "clean": "about",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "Xung quanh, quanh quẩn, đây đó, rải rác.",
+          "ipa": "/əˈbaʊt/",
+          "pos": "Phó từ / Giới từ / Động từ"
         },
         {
           "text": "her",
@@ -17032,11 +17342,40 @@
           "pos": "Danh từ"
         },
         {
-          "text": "leave Lady Lishu's side",
-          "clean": "leave lady lishu's side",
-          "isPhrase": true,
-          "phraseType": "collocation",
-          "meaning": "rời khỏi bên cạnh nương nương"
+          "text": "leave",
+          "clean": "leave",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "Sự cho phép.",
+          "ipa": "/liːv/",
+          "pos": "Danh từ / Động từ"
+        },
+        {
+          "text": "Lady",
+          "clean": "lady",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "Vợ, phu nhân.",
+          "ipa": "/ˈleɪdi/",
+          "pos": "Danh từ"
+        },
+        {
+          "text": "Lishu's",
+          "clean": "lishu's",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "",
+          "ipa": "",
+          "pos": ""
+        },
+        {
+          "text": "side",
+          "clean": "side",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "Mặt, bên.",
+          "ipa": "/saɪd/",
+          "pos": "Danh từ / Động từ"
         },
         {
           "text": ".",
@@ -18955,11 +19294,22 @@
       "vi_text": "Bất kể cha mẹ thực sự của cô ấy là ai,",
       "tokens": [
         {
-          "text": "No matter",
-          "clean": "no matter",
-          "isPhrase": true,
-          "phraseType": "idiom",
-          "meaning": "bất kể / dù cho"
+          "text": "No",
+          "clean": "no",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "Không.",
+          "ipa": "/nəʊ/",
+          "pos": "Phó từ / Danh từ"
+        },
+        {
+          "text": "matter",
+          "clean": "matter",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "Chất, vật chất.",
+          "ipa": "/ˈmætə(r)/",
+          "pos": "Danh từ / Động từ"
         },
         {
           "text": "who",
@@ -19140,11 +19490,22 @@
           "pos": "Động từ"
         },
         {
-          "text": "held responsible",
-          "clean": "held responsible",
-          "isPhrase": true,
-          "phraseType": "collocation",
-          "meaning": "bị quy trách nhiệm"
+          "text": "held",
+          "clean": "held",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "Dạng quá khứ đơn và phân từ quá khứ của hold.",
+          "ipa": "/held/",
+          "pos": "Động từ"
+        },
+        {
+          "text": "responsible",
+          "clean": "responsible",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "Chịu trách nhiệm.",
+          "ipa": "/rɪˈspɒnsəbl/",
+          "pos": "Tính từ"
         },
         {
           "text": ".",
@@ -19173,11 +19534,40 @@
           "pos": "Đại từ / Danh từ"
         },
         {
-          "text": "feel really bad for",
-          "clean": "feel really bad for",
-          "isPhrase": true,
-          "phraseType": "idiom",
-          "meaning": "thấy rất thương cảm / tội nghiệp cho"
+          "text": "feel",
+          "clean": "feel",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "Sự sờ mó.",
+          "ipa": "/fiːl/",
+          "pos": "Danh từ / Động từ"
+        },
+        {
+          "text": "really",
+          "clean": "really",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "thực sự",
+          "ipa": "/ˈriəli/",
+          "pos": "Phó từ"
+        },
+        {
+          "text": "bad",
+          "clean": "bad",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "xấu",
+          "ipa": "/bæd/",
+          "pos": "Tính từ / Danh từ"
+        },
+        {
+          "text": "for",
+          "clean": "for",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "Thay cho, thế cho, đại diện cho.",
+          "ipa": "/fə(r)/",
+          "pos": "Giới từ / Liên từ"
         },
         {
           "text": "her",
@@ -19250,11 +19640,31 @@
       "vi_text": "Cảm ơn bạn đã mời tôi ngày hôm nay.",
       "tokens": [
         {
-          "text": "Thank you for",
-          "clean": "thank you for",
-          "isPhrase": true,
-          "phraseType": "collocation",
-          "meaning": "cảm ơn vì"
+          "text": "Thank",
+          "clean": "thank",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "Cám ơn, biết ơn.",
+          "ipa": "/θæŋk/",
+          "pos": "Động từ"
+        },
+        {
+          "text": "you",
+          "clean": "you",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "Bạn, anh, chị, em, cậu, mày, các bạn.",
+          "ipa": "/juː/",
+          "pos": "Đại từ"
+        },
+        {
+          "text": "for",
+          "clean": "for",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "Thay cho, thế cho, đại diện cho.",
+          "ipa": "/fə(r)/",
+          "pos": "Giới từ / Liên từ"
         },
         {
           "text": "inviting",
@@ -20269,11 +20679,22 @@
           "pos": "Giới từ / Phó từ"
         },
         {
-          "text": "clean up",
-          "clean": "clean up",
-          "isPhrase": true,
-          "phraseType": "phrasal",
-          "meaning": "dọn dẹp"
+          "text": "clean",
+          "clean": "clean",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "Sạch, sạch sẽ.",
+          "ipa": "/kliːn/",
+          "pos": "Tính từ / Danh từ / Phó từ / Động từ"
+        },
+        {
+          "text": "up",
+          "clean": "up",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "Ở trên, lên trên, lên.",
+          "ipa": "/ʌp/",
+          "pos": "Phó từ / Giới từ / Tính từ / Danh từ / Động từ"
         },
         {
           "text": ".",
@@ -22017,11 +22438,40 @@
           "pos": ""
         },
         {
-          "text": "There are talks of",
-          "clean": "there are talks of",
-          "isPhrase": true,
-          "phraseType": "collocation",
-          "meaning": "đang có tin đồn / bàn tán về"
+          "text": "There",
+          "clean": "there",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "Ở đó, tại đó, chỗ đó, chỗ ấy, đấy.",
+          "ipa": "/ðeə(r)/",
+          "pos": "Phó từ / O / Danh từ"
+        },
+        {
+          "text": "are",
+          "clean": "are",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "A (đơn vị diện tích ruộng đất, bằng 100m2).",
+          "ipa": "/ə(r)/",
+          "pos": "Danh từ / Động từ"
+        },
+        {
+          "text": "talks",
+          "clean": "talks",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "Động từ chia ở ngôi thứ ba số ít của talk",
+          "ipa": "/ˈtɑks/",
+          "pos": "Động từ"
+        },
+        {
+          "text": "of",
+          "clean": "of",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "Của.",
+          "ipa": "/əv/",
+          "pos": "Giới từ"
         },
         {
           "text": "bestowing",
@@ -23136,11 +23586,40 @@
           "pos": "Mạo từ"
         },
         {
-          "text": "mother of the nation",
-          "clean": "mother of the nation",
-          "isPhrase": true,
-          "phraseType": "collocation",
-          "meaning": "mẫu nghi thiên hạ / hoàng hậu"
+          "text": "mother",
+          "clean": "mother",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "Mẹ, mẹ đẻ.",
+          "ipa": "/ˈmʌðə(r)/",
+          "pos": "Danh từ / Động từ"
+        },
+        {
+          "text": "of",
+          "clean": "of",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "Của.",
+          "ipa": "/əv/",
+          "pos": "Giới từ"
+        },
+        {
+          "text": "the",
+          "clean": "the",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "Cái, con, người (mạo từ xác định).",
+          "ipa": "/ðə/",
+          "pos": "Mạo từ"
+        },
+        {
+          "text": "nation",
+          "clean": "nation",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "Dân tộc.",
+          "ipa": "/ˈneɪʃn/",
+          "pos": "Danh từ"
         },
         {
           "text": ",",
@@ -23347,11 +23826,31 @@
           "pos": "Liên từ / Phó từ / Giới từ / Đại từ / Danh từ / Động từ"
         },
         {
-          "text": "there's no way",
-          "clean": "there's no way",
-          "isPhrase": true,
-          "phraseType": "idiom",
-          "meaning": "không đời nào / làm sao mà"
+          "text": "there's",
+          "clean": "there's",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "*  (thông tục) (viết tắt) của there is,  there has",
+          "ipa": "/ðeəz/",
+          "pos": "(thông tục) (viết tắt) của there is,  there has"
+        },
+        {
+          "text": "no",
+          "clean": "no",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "Không.",
+          "ipa": "/nəʊ/",
+          "pos": "Phó từ / Danh từ"
+        },
+        {
+          "text": "way",
+          "clean": "way",
+          "isPhrase": false,
+          "phraseType": "single",
+          "meaning": "Đường, đường đi, lối đi.",
+          "ipa": "/ˈweɪ/",
+          "pos": "Danh từ"
         },
         {
           "text": "he",
