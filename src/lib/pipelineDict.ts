@@ -420,10 +420,17 @@ export function tokenizeSubtitleSentence(sentence: string): SubtitleToken[] {
         const prev2 = prevWords.length > 1 ? prevWords[prevWords.length - 2] : '';
 
         if (isPosValidPhrase(wordsInWindow[0], pEntry, prev1, prev2, wordsIdx)) {
-          matchedPhraseKey = rootKey;
-          matchedData = pEntry;
-          matchedRawLen = k;
-          break;
+          // Trim any trailing punctuation from matched window k so punctuation remains separate punct tokens
+          let actualLen = k;
+          while (actualLen > 0 && !/^[A-Za-z0-9]/.test(rawTokens[i + actualLen - 1])) {
+            actualLen--;
+          }
+          if (actualLen >= 2) {
+            matchedPhraseKey = rootKey;
+            matchedData = pEntry;
+            matchedRawLen = actualLen;
+            break;
+          }
         }
       }
     }

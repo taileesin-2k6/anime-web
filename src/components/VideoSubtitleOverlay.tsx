@@ -32,6 +32,7 @@ interface SubtitleCue {
   end: number;
   text: string;
   vi_text?: string;
+  tokens?: SubtitleToken[];
 }
 
 interface VideoSubtitleOverlayProps {
@@ -190,6 +191,12 @@ export default function VideoSubtitleOverlay({
       return;
     }
 
+    // 1. If activeCueEn has pre-baked tokens (from subtitle JSON), use them immediately (0ms, 0 network requests)
+    if (activeCueEn.tokens && activeCueEn.tokens.length > 0) {
+      setActiveTokens(activeCueEn.tokens);
+      return;
+    }
+
     const currentSentence = activeCueEn.text;
 
     // Check memory cache first
@@ -200,7 +207,7 @@ export default function VideoSubtitleOverlay({
       return;
     }
 
-    // Instant zero-cost tokenization using regex
+    // Instant zero-cost fallback tokenization using regex
     const rawTokens = currentSentence.match(/[A-Za-z0-9']+|[^\s\w]/g) || [];
     const tokens: SubtitleToken[] = rawTokens.map((raw) => {
       const isWord = /^[A-Za-z0-9]/.test(raw);
@@ -216,7 +223,7 @@ export default function VideoSubtitleOverlay({
 
     sentenceTokenCacheRef.current[currentSentence] = { tokens, meanings: meaningsCache };
     setActiveTokens(tokens);
-  }, [activeCueEn?.text]);
+  }, [activeCueEn?.text, activeCueEn?.tokens]);
 
   // Hover on token -> Auto-pause video and show instant meaning tooltip
   const handleTokenHover = (
