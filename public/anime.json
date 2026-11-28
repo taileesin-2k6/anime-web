@@ -255,10 +255,12 @@
         "id": "ep-9-bilingual",
         "episodeNumber": 9,
         "title": "Tập 9 : Problems Accumulate",
-        "videoUrl": "/videos/the_ep09_bilingual.mp4",
+        "videoUrl": "https://drive.google.com/open?id=15Wmdr5FfQjqvRP6Zg7PhZoIxLqLcAB8o",
         "duration": "38:06",
         "createdAt": "2026-11-28T09:04:13.794729Z",
-        "filename": "the_ep09_bilingual.mp4"
+        "filename": "the_ep09_bilingual.mp4",
+        "gdriveId": "15Wmdr5FfQjqvRP6Zg7PhZoIxLqLcAB8o",
+        "backupId": "1jLdLerVAut7LD0Sw7555hPxjds_iHyZo"
       }
     ],
     "createdAt": "2026-10-02T19:24:44.055089Z",
