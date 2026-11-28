@@ -586,9 +586,20 @@
         "filename": "chitose_ep19_bilingual.mp4",
         "gdriveId": "1qC8TfiUOb9YIP9dQGTJbdbQB3zWIuJG6",
         "backupId": "1Eb2bqv7C9upu71YPZ2ezgG9gCudv_yBe"
+      },
+      {
+        "id": "ep-20-bilingual",
+        "episodeNumber": 20,
+        "title": "Tập 20 : The Steaming Orihime and the Moping Hikoboshi",
+        "videoUrl": "https://drive.google.com/open?id=1R3qGAchVsRXwuzhF6L6rI_iJL5iVtuCR",
+        "duration": "39:35",
+        "createdAt": "2026-11-28T11:22:22.510296Z",
+        "filename": "chitose_ep20_bilingual.mp4",
+        "gdriveId": "1R3qGAchVsRXwuzhF6L6rI_iJL5iVtuCR",
+        "backupId": "1X0A3PWPPwRiYF3xaG5HcsILWazjrTfPC"
       }
     ],
     "createdAt": "2026-10-15T02:18:15.704201Z",
-    "updatedAt": "2026-11-18T08:18:45.845036Z"
+    "updatedAt": "2026-11-28T11:22:22.510301Z"
   }
 ]
